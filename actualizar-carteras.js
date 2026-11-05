@@ -18,7 +18,9 @@ const FONDOS = [
   { id: 'greenlight', cik: 1079114, gestor: 'David Einhorn', estilo: 'Value / long-short' },
 ];
 
-const UA = { 'User-Agent': 'PanelAR personal-research-tool', 'Accept-Encoding': 'gzip, deflate' };
+// La SEC pide identificarse con un nombre y un contacto. Se puede configurar con la variable SEC_USER_AGENT
+// (en GitHub: Settings > Secrets and variables > Actions > Variables), por ejemplo "PanelAR tu-mail@ejemplo.com".
+const UA = { 'User-Agent': process.env.SEC_USER_AGENT || 'PanelAR personal-research-tool', 'Accept-Encoding': 'gzip, deflate' };
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const FIGI_CACHE = path.join(__dirname, '.cache-figi.json');
 
@@ -143,6 +145,14 @@ const MAX_ANTIGUEDAD_DIAS = 365;
       console.log(`\n${f.id} (${nombre}): ${pos.length} posiciones, período ${filings[0].periodo}, ${(enCedear * 100).toFixed(0)}% en CEDEARs`);
     } catch (e) { console.log(`\n${f.id}: error ${e.message}`); }
   }
-  fs.writeFileSync(path.join(__dirname, 'carteras.json'), JSON.stringify(out, null, 1));
-  console.log(`\ncarteras.json listo (${out.carteras.length} carteras)`);
+  // Si un fondo falló (por ejemplo, la SEC bloqueó el pedido), se conserva su versión anterior
+  const file = path.join(__dirname, 'carteras.json');
+  const prev = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : { carteras: [] };
+  const okIds = new Set(out.carteras.map(c => c.id));
+  const kept = prev.carteras.filter(c => !okIds.has(c.id) && FONDOS.some(f => f.id === c.id)
+    && (Date.now() - Date.parse(c.periodo)) / 864e5 <= MAX_ANTIGUEDAD_DIAS);
+  out.carteras = FONDOS.map(f => out.carteras.find(c => c.id === f.id) || kept.find(c => c.id === f.id)).filter(Boolean);
+  if (!okIds.size) { console.log(`\nNo se pudo actualizar ninguna cartera; se deja carteras.json como estaba (${prev.carteras.length}).`); return; }
+  fs.writeFileSync(file, JSON.stringify(out, null, 1));
+  console.log(`\ncarteras.json listo (${okIds.size} actualizadas, ${kept.length} sin cambios)`);
 })();

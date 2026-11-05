@@ -26,7 +26,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
 
       - name: Noticias
         run: node actualizar-noticias.js
@@ -38,6 +38,8 @@ jobs:
       - name: Carteras públicas (13F)
         if: github.event.schedule == '30 11 * * 1' || github.event_name == 'workflow_dispatch'
         run: node actualizar-carteras.js
+        env:
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT }}
 
       - name: Guardar cambios
         run: |
