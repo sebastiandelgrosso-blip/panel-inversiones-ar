@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel de Inversiones AR</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">Panel AR <span class="sub">Acciones · CEDEARs · Bonos · ONs</span></div>
+    <div class="fx" id="fx"></div>
+    <div class="actions">
+      <span id="status" class="status"></span>
+      <button id="btnRefresh" title="Volver a traer cotizaciones">⟳ Actualizar</button>
+      <button id="btnParams">⚙ Parámetros</button>
+    </div>
+  </header>
+
+  <nav class="tabs" id="tabs">
+    <button data-tab="acciones" class="active">Acciones AR</button>
+    <button data-tab="cedears">CEDEARs</button>
+    <button data-tab="bonos">Bonos</button>
+    <button data-tab="ons">ONs</button>
+    <button data-tab="favoritos">★ Favoritos</button>
+    <button data-tab="cartera">Mi cartera</button>
+    <button data-tab="seguir">Seguir carteras</button>
+    <button data-tab="estrategia">Estrategia</button>
+  </nav>
+
+  <main>
+    <section id="viewTable">
+      <div class="tmain">
+      <div class="toolbar">
+        <input id="q" type="search" placeholder="Buscar ticker…" autocomplete="off">
+        <select id="sigFilter">
+          <option value="">Todas las señales</option>
+          <option value="COMPRAR">Comprar</option>
+          <option value="ACUMULAR">Acumular</option>
+          <option value="MANTENER">Mantener / esperar</option>
+          <option value="REDUCIR">Reducir</option>
+          <option value="VENDER">Vender / evitar</option>
+          <option value="__sin">Sin analizar</option>
+        </select>
+        <label id="lblLider"><input type="checkbox" id="fLider"> Solo panel líder</label>
+        <label><input type="checkbox" id="fVol" checked> Solo con volumen</label>
+        <label id="lblTir"><input type="checkbox" id="fTir"> Solo con TIR</label>
+        <label><input type="checkbox" id="fVar"> Mostrar especies D/C</label>
+        <span class="spacer"></span>
+        <button id="btnTop" class="primary">Analizar top por volumen</button>
+        <button id="btnVis">Analizar visibles</button>
+        <button id="btnStop" hidden>Detener</button>
+      </div>
+      <div id="summary" class="summary"></div>
+      <div class="tablewrap">
+        <table id="tbl"><thead></thead><tbody></tbody></table>
+      </div>
+      <p class="note" id="tabNote"></p>
+      </div>
+      <aside id="newsBox" class="news"></aside>
+    </section>
+
+    <section id="viewCartera" hidden></section>
+    <section id="viewSeguir" hidden></section>
+
+    <section id="viewStrategy" class="strategy" hidden>
+      <h1>Estrategia: Tendencia + Momentum + Retroceso (TMR)</h1>
+      <p class="lead">Cada instrumento recibe un <b>puntaje de −100 a +100</b> combinando cuatro ideas con respaldo empírico.
+        El puntaje se traduce en una señal y, según dónde esté el precio (máximos, mínimos o rango medio), en una recomendación concreta con stop, objetivo y tamaño de posición.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>1 · Tendencia <span class="pts">±40 pts</span></h3>
+          <p>Precio sobre/bajo la media lenta (200 ruedas): ±20. Media rápida sobre/bajo la lenta: ±10. Pendiente de la media lenta en el último mes: ±10.</p>
+          <p class="src">Base: seguimiento de tendencia con media de 10 meses / 200 días (Faber, 2007), que históricamente reduce caídas profundas.</p>
+        </div>
+        <div class="card">
+          <h3>2 · Momentum <span class="pts">±20 pts</span></h3>
+          <p>Retorno de 12 meses excluyendo el último (12‑1). +30% o más da el máximo; −30% o menos el mínimo; lineal en el medio.</p>
+          <p class="src">Base: efecto momentum (Jegadeesh &amp; Titman, 1993): lo que más subió en 3‑12 meses tiende a seguir rindiendo mejor en el corto/mediano plazo.</p>
+        </div>
+        <div class="card">
+          <h3>3 · Impulso de corto plazo <span class="pts">±10 pts</span></h3>
+          <p>Histograma MACD (12, 26, 9) positivo: +10; negativo: −10.</p>
+          <p class="src">Confirma si el movimiento reciente acompaña la tendencia.</p>
+        </div>
+        <div class="card">
+          <h3>4 · Retroceso y extremos <span class="pts">±25 pts</span></h3>
+          <p>En tendencia alcista: RSI bajo (sobreventa + 10) suma +15 (comprar el retroceso); RSI muy alto resta −10 (sobreextendido).
+            Cerca del máximo de 52 semanas con tendencia alcista: +10. Cerca del mínimo de 52 semanas con tendencia bajista: −10.
+            En tendencia bajista, sobreventa extrema solo suma +5 (rebote posible pero contra tendencia).</p>
+          <p class="src">Base: efecto "máximo de 52 semanas" (George &amp; Hwang, 2004) y compras en retrocesos con RSI (Wilder, 1978; Connors).</p>
+        </div>
+      </div>
+
+      <h2>Señales (perfil moderado)</h2>
+      <table class="simple">
+        <tr><th>Puntaje</th><th>Señal</th><th>Qué significa</th></tr>
+        <tr><td>≥ 50</td><td><span class="sig s-COMPRAR">COMPRAR</span></td><td>Tendencia y momentum a favor. Entrar escalonado.</td></tr>
+        <tr><td>20 a 49</td><td><span class="sig s-ACUMULAR">ACUMULAR</span></td><td>Sesgo positivo: comprar en retrocesos hacia la media rápida.</td></tr>
+        <tr><td>−19 a 19</td><td><span class="sig s-MANTENER">MANTENER</span></td><td>Sin ventaja clara. Si tenés, mantené con stop; si no, esperá.</td></tr>
+        <tr><td>−49 a −20</td><td><span class="sig s-REDUCIR">REDUCIR</span></td><td>Sesgo negativo: bajar exposición, ajustar stops.</td></tr>
+        <tr><td>≤ −50</td><td><span class="sig s-VENDER">VENDER</span></td><td>Tendencia bajista consolidada: evitar o salir.</td></tr>
+      </table>
+      <p>El perfil <b>conservador</b> exige más puntaje para comprar (60) y vende antes (−40); el <b>agresivo</b> compra con 40 y tolera hasta −60.</p>
+
+      <h2>Qué hacer según la zona de precio</h2>
+      <table class="simple">
+        <tr><th>Situación</th><th>Recomendación</th></tr>
+        <tr><td>En máximos históricos, tendencia sana</td><td>No vender solo por estar en máximos: los activos en máximos tienden a seguir fuertes. Mantener con <b>stop móvil</b> (máximo reciente − k×ATR). Compras nuevas, de a tercios.</td></tr>
+        <tr><td>En máximos con RSI en sobrecompra</td><td>Tomar ganancia parcial (20–33%) y subir el stop. No abrir posiciones grandes; esperar retroceso a la media rápida.</td></tr>
+        <tr><td>Retroceso dentro de tendencia alcista</td><td>Mejor zona de compra: escalonar entre la media rápida y la lenta, stop bajo la media lenta / ATR.</td></tr>
+        <tr><td>Cerca de mínimos con tendencia bajista</td><td>No "atajar el cuchillo". Esperar confirmación: precio sobre la media rápida y MACD positivo.</td></tr>
+        <tr><td>Sobreventa extrema contra tendencia</td><td>Rebote técnico posible: solo perfil agresivo, posición chica y stop corto.</td></tr>
+        <tr><td>Muy lejos del máximo histórico (&gt; 50%)</td><td>Potencial de recuperación, pero actuar solo con tendencia confirmada.</td></tr>
+      </table>
+
+      <h2>Gestión de riesgo</h2>
+      <ul>
+        <li><b>Stop:</b> precio − k × ATR(14) (k configurable, 2,5 por defecto). En máximos se usa stop móvil desde el máximo del último mes.</li>
+        <li><b>Tamaño de posición:</b> % de cartera = riesgo por operación ÷ distancia al stop. Ej: riesgo 1% y stop a 10% → posición de 10% de la cartera (tope 20%).</li>
+        <li><b>Objetivo:</b> máximo de 52 semanas o máximo histórico como resistencia; si ya está en máximos, se deja correr con el stop móvil.</li>
+      </ul>
+
+      <h2>Por qué analizar en dólares (CCL)</h2>
+      <p>Con inflación alta, casi todo activo en pesos marca "máximos históricos" nominales todo el tiempo. Por eso, por defecto, los precios históricos en pesos se dividen por el dólar CCL de cada día.
+        Los bonos con especie D (ej. AL30D) se analizan directo en dólares. Podés cambiar a pesos nominales en Parámetros.</p>
+
+      <h2>Bonos y ONs</h2>
+      <p>En bonos, estar cerca de máximos significa TIR comprimida: el recorrido que queda depende de cupones y de que siga bajando el riesgo país.</p>
+      <ul>
+        <li><b>TIR:</b> rendimiento anual en dólares si mantenés el bono hasta el vencimiento y el emisor paga. Se calcula con el precio de la especie D (MEP), liquidación 24 hs, y los flujos del canje 2020 para AL29/GD29, AL30/GD30, AL35/GD35, AE38/GD38, AL41/GD41 y GD46.</li>
+        <li><b>Duration modificada:</b> cuánto se mueve el precio (en %) si la TIR cambia 1 punto. Más duration = más ganancia si baja el riesgo país, y más pérdida si sube.</li>
+        <li><b>Paridad:</b> precio ÷ valor técnico (capital residual + intereses corridos). Por debajo de 100% cotiza con descuento.</li>
+        <li>Ley NY (GD) suele rendir menos que ley local (AL) por tener mejor protección legal: la diferencia es el "spread de legislación".</li>
+      </ul>
+      <p><b>En pesos:</b> las LECAP/BONCAP muestran la tasa efectiva anual (TEA), mensual (TEM) y nominal (TNA), con el pago final de cada letra.
+        Los bonos CER (TX, TZX, LECER X, DICP, PARP) muestran la <b>tasa real</b>: el precio se divide por el coeficiente CER
+        (índice del BCRA de 10 días hábiles antes) y se calcula la TIR sobre los flujos sin ajustar. "CER +5%" = inflación más 5% anual.
+        Comparar una LECAP con un CER de plazo parecido da la <b>inflación implícita</b> que descuenta el mercado.</p>
+      <p><b>BOPREAL</b> (bonos del BCRA en dólares): Serie 1 paga 5% anual y vence el 31/10/2027; Serie 4 paga 3% y vence el 31/10/2028. Los strips A–D comparten los mismos pagos.</p>
+      <p><b>ONs y soberanos nuevos</b> (AO27, AO28, AO29, AN29, BPD7): la TIR se calcula con los flujos de fondos publicados por el proyecto
+        <a href="https://github.com/arisbdar/rendimientos-ar" target="_blank" rel="noopener">rendimientos-ar</a>, por cada 100 de valor nominal y con el precio en dólar MEP.
+        Si una TIR aparece con "?", el precio probablemente esté desactualizado por poca liquidez. Las ONs no tienen análisis técnico porque la fuente no publica su histórico.</p>
+
+      <p class="disclaimer">Herramienta educativa y de análisis técnico. No es asesoramiento financiero personalizado. Los rendimientos pasados no garantizan resultados futuros. Verificá precios en tu broker antes de operar.</p>
+    </section>
+  </main>
+
+  <aside id="params" class="drawer left" hidden>
+    <div class="drawer-head"><h2>Parámetros</h2><button class="x" data-close="params">✕</button></div>
+    <form id="paramsForm"></form>
+    <div class="drawer-foot">
+      <button id="btnReset">Restaurar valores</button>
+    </div>
+  </aside>
+
+  <aside id="detail" class="drawer right" hidden></aside>
+  <div id="backdrop" hidden></div>
+  <div id="progress"></div>
+
+  <footer>Datos: data912.com (BYMA, demorados), argentinadatos.com (CCL histórico), dolarapi.com. Uso educativo, no es recomendación de inversión.</footer>
+
+  <script src="app.js"></script>
+  <script src="cartera.js"></script>
+  <script src="extras.js"></script>
+</body>
+</html>

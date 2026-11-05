@@ -1,0 +1,2252 @@
+{
+ "fuente": "SEC EDGAR (formulario 13F)",
+ "descargado": "2026-11-05",
+ "carteras": [
+  {
+   "id": "berkshire",
+   "nombre": "BERKSHIRE HATHAWAY INC",
+   "gestor": "Warren Buffett / Greg Abel",
+   "estilo": "Value, largo plazo",
+   "cik": 1067983,
+   "periodo": "2026-06-30",
+   "presentado": "2026-08-14",
+   "periodoAnterior": "2026-03-31",
+   "totalUSD": 299253556246,
+   "posiciones": [
+    {
+     "ticker": "AAPL",
+     "nombre": "APPLE INC",
+     "peso": 0.22038,
+     "ar": {
+      "sym": "AAPL",
+      "tab": "cedears",
+      "usa": "AAPL"
+     },
+     "cambio": 0
+    },
+    {
+     "ticker": "AXP",
+     "nombre": "AMERICAN EXPRESS CO",
+     "peso": 0.17137,
+     "ar": {
+      "sym": "AXP",
+      "tab": "cedears",
+      "usa": "AXP"
+     },
+     "cambio": 0
+    },
+    {
+     "ticker": "KO",
+     "nombre": "COCA COLA CO",
+     "peso": 0.10863,
+     "ar": {
+      "sym": "KO",
+      "tab": "cedears",
+      "usa": "KO"
+     },
+     "cambio": 0
+    },
+    {
+     "ticker": "GOOGL",
+     "nombre": "ALPHABET INC",
+     "peso": 0.09409,
+     "ar": {
+      "sym": "GOOGL",
+      "tab": "cedears",
+      "usa": "GOOGL"
+     },
+     "cambio": 0.4524
+    },
+    {
+     "ticker": "BAC",
+     "nombre": "BANK OF AMER CORP",
+     "peso": 0.09204,
+     "ar": {
+      "sym": "BA.C",
+      "tab": "cedears",
+      "usa": "BAC"
+     },
+     "cambio": -0.0589
+    },
+    {
+     "ticker": "CVX",
+     "nombre": "CHEVRON CORPORATION",
+     "peso": 0.04674,
+     "ar": {
+      "sym": "CVX",
+      "tab": "cedears",
+      "usa": "CVX"
+     },
+     "cambio": 0
+    },
+    {
+     "ticker": "OXY",
+     "nombre": "OCCIDENTAL PETE CORP",
+     "peso": 0.043,
+     "ar": {
+      "sym": "OXY",
+      "tab": "cedears",
+      "usa": "OXY"
+     },
+     "cambio": 0
+    },
+    {
+     "ticker": "CHUBB LIMITED",
+     "nombre": "CHUBB LIMITED",
+     "peso": 0.039,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "MCO",
+     "nombre": "MOODYS CORP",
+     "peso": 0.03734,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "GOOG",
+     "nombre": "ALPHABET INC",
+     "peso": 0.0321,
+     "ar": {
+      "sym": "GOOGL",
+      "tab": "cedears",
+      "usa": "GOOG"
+     },
+     "cambio": 6.5835
+    },
+    {
+     "ticker": "KHC",
+     "nombre": "KRAFT HEINZ CO",
+     "peso": 0.0257,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "DVA",
+     "nombre": "DAVITA INC",
+     "peso": 0.02147,
+     "ar": null,
+     "cambio": -0.0405
+    },
+    {
+     "ticker": "DAL",
+     "nombre": "DELTA AIR LINES INC",
+     "peso": 0.01794,
+     "ar": {
+      "sym": "DAL",
+      "tab": "cedears",
+      "usa": "DAL"
+     },
+     "cambio": 0.4399
+    },
+    {
+     "ticker": "SIRI",
+     "nombre": "SIRIUSXM HOLDINGS INC",
+     "peso": 0.01232,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "VRSN",
+     "nombre": "VERISIGN INC",
+     "peso": 0.00756,
+     "ar": {
+      "sym": "VRSN",
+      "tab": "cedears",
+      "usa": "VRSN"
+     },
+     "cambio": 0
+    },
+    {
+     "ticker": "KR",
+     "nombre": "KROGER CO",
+     "peso": 0.00724,
+     "ar": null,
+     "cambio": -0.22
+    },
+    {
+     "ticker": "ALLY",
+     "nombre": "ALLY FINL INC",
+     "peso": 0.00415,
+     "ar": null,
+     "cambio": -0.069
+    },
+    {
+     "ticker": "LEN",
+     "nombre": "LENNAR CORP",
+     "peso": 0.00396,
+     "ar": null,
+     "cambio": 0.2982
+    },
+    {
+     "ticker": "LLYVK",
+     "nombre": "LIBERTY LIVE HOLDINGS INC",
+     "peso": 0.00374,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "NYT",
+     "nombre": "NEW YORK TIMES CO MTN BE",
+     "peso": 0.00367,
+     "ar": null,
+     "cambio": 0.0365
+    },
+    {
+     "ticker": "COF",
+     "nombre": "CAPITAL ONE FINL CORP",
+     "peso": 0.00201,
+     "ar": null,
+     "cambio": -0.5804
+    },
+    {
+     "ticker": "LLYVA",
+     "nombre": "LIBERTY LIVE HOLDINGS INC",
+     "peso": 0.00169,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "LPX",
+     "nombre": "LOUISIANA PAC CORP",
+     "peso": 0.00149,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "NUE",
+     "nombre": "NUCOR CORP",
+     "peso": 0.00138,
+     "ar": {
+      "sym": "NUE",
+      "tab": "cedears",
+      "usa": "NUE"
+     },
+     "cambio": -0.5245
+    },
+    {
+     "ticker": "M",
+     "nombre": "MACYS INC",
+     "peso": 0.00058,
+     "ar": null,
+     "cambio": 1.4182
+    },
+    {
+     "ticker": "NVR",
+     "nombre": "NVR INC",
+     "peso": 0.00025,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "LEN/B",
+     "nombre": "LENNAR CORP",
+     "peso": 0.00009,
+     "ar": null,
+     "cambio": 0.2542
+    },
+    {
+     "ticker": "JEF",
+     "nombre": "JEFFERIES FINANCIAL GROUP IN",
+     "peso": 0.00007,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "DHI",
+     "nombre": "D R HORTON INC",
+     "peso": 0,
+     "ar": null,
+     "cambio": "nueva"
+    }
+   ],
+   "vendidas": [
+    "STZ"
+   ],
+   "pesoEnCedear": 0.8352
+  },
+  {
+   "id": "pershing",
+   "nombre": "Pershing Square Capital Management, L.P.",
+   "gestor": "Bill Ackman",
+   "estilo": "Concentrada, activista",
+   "cik": 1336528,
+   "periodo": "2026-03-31",
+   "presentado": "2026-05-15",
+   "periodoAnterior": "2025-12-31",
+   "totalUSD": 13714299861,
+   "posiciones": [
+    {
+     "ticker": "BN",
+     "nombre": "BROOKFIELD CORP",
+     "peso": 0.17616,
+     "ar": null,
+     "cambio": -0.0278
+    },
+    {
+     "ticker": "AMZN",
+     "nombre": "AMAZON COM INC",
+     "peso": 0.17391,
+     "ar": {
+      "sym": "AMZN",
+      "tab": "cedears",
+      "usa": "AMZN"
+     },
+     "cambio": 0.1919
+    },
+    {
+     "ticker": "UBER",
+     "nombre": "UBER TECHNOLOGIES INC",
+     "peso": 0.15713,
+     "ar": {
+      "sym": "UBER",
+      "tab": "cedears",
+      "usa": "UBER"
+     },
+     "cambio": -0.0082
+    },
+    {
+     "ticker": "MSFT",
+     "nombre": "MICROSOFT CORP",
+     "peso": 0.15261,
+     "ar": {
+      "sym": "MSFT",
+      "tab": "cedears",
+      "usa": "MSFT"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "QSR",
+     "nombre": "RESTAURANT BRANDS INTL INC",
+     "peso": 0.12203,
+     "ar": null,
+     "cambio": -0.0097
+    },
+    {
+     "ticker": "META",
+     "nombre": "META PLATFORMS INC",
+     "peso": 0.11101,
+     "ar": {
+      "sym": "META",
+      "tab": "cedears",
+      "usa": "META"
+     },
+     "cambio": -0.0048
+    },
+    {
+     "ticker": "HHH",
+     "nombre": "HOWARD HUGHES HOLDINGS INC",
+     "peso": 0.08696,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "SEG",
+     "nombre": "SEAPORT ENTMT GROUP INC",
+     "peso": 0.00787,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "GOOG",
+     "nombre": "ALPHABET INC",
+     "peso": 0.00652,
+     "ar": {
+      "sym": "GOOGL",
+      "tab": "cedears",
+      "usa": "GOOG"
+     },
+     "cambio": -0.9494
+    },
+    {
+     "ticker": "HTZ",
+     "nombre": "HERTZ GLOBAL HLDGS INC",
+     "peso": 0.00512,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "GOOGL",
+     "nombre": "ALPHABET INC",
+     "peso": 0.00068,
+     "ar": {
+      "sym": "GOOGL",
+      "tab": "cedears",
+      "usa": "GOOGL"
+     },
+     "cambio": -0.9523
+    }
+   ],
+   "vendidas": [
+    "HLT"
+   ],
+   "pesoEnCedear": 0.6019
+  },
+  {
+   "id": "himalaya",
+   "nombre": "Himalaya Capital Management LLC",
+   "gestor": "Li Lu",
+   "estilo": "Value, muy concentrada",
+   "cik": 1709323,
+   "periodo": "2026-06-30",
+   "presentado": "2026-08-14",
+   "periodoAnterior": "2026-03-31",
+   "totalUSD": 3702921099,
+   "posiciones": [
+    {
+     "ticker": "GOOGL",
+     "nombre": "ALPHABET INC",
+     "peso": 0.24545,
+     "ar": {
+      "sym": "GOOGL",
+      "tab": "cedears",
+      "usa": "GOOGL"
+     },
+     "cambio": 0
+    },
+    {
+     "ticker": "GOOG",
+     "nombre": "ALPHABET INC",
+     "peso": 0.2339,
+     "ar": {
+      "sym": "GOOGL",
+      "tab": "cedears",
+      "usa": "GOOG"
+     },
+     "cambio": 0
+    },
+    {
+     "ticker": "PDD",
+     "nombre": "PDD HOLDINGS INC",
+     "peso": 0.22168,
+     "ar": {
+      "sym": "PDD",
+      "tab": "cedears",
+      "usa": "PDD"
+     },
+     "cambio": 1.3353
+    },
+    {
+     "ticker": "BRK/B",
+     "nombre": "BERKSHIRE HATHAWAY INC DEL",
+     "peso": 0.14977,
+     "ar": {
+      "sym": "BRKB",
+      "tab": "cedears",
+      "usa": "BRKB"
+     },
+     "cambio": 0.2346
+    },
+    {
+     "ticker": "EWBC",
+     "nombre": "EAST WEST BANCORP INC",
+     "peso": 0.09679,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "CROX",
+     "nombre": "CROCS INC",
+     "peso": 0.0289,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "TME",
+     "nombre": "TENCENT MUSIC ENTERTAINM",
+     "peso": 0.01486,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "AAPL",
+     "nombre": "APPLE INC",
+     "peso": 0.00864,
+     "ar": {
+      "sym": "AAPL",
+      "tab": "cedears",
+      "usa": "AAPL"
+     },
+     "cambio": 0
+    }
+   ],
+   "vendidas": [
+    "MCO",
+    "OXY",
+    "BAC",
+    "HRB",
+    "MSCI",
+    "SPGI"
+   ],
+   "pesoEnCedear": 0.8594
+  },
+  {
+   "id": "appaloosa",
+   "nombre": "Appaloosa LP",
+   "gestor": "David Tepper",
+   "estilo": "Oportunista",
+   "cik": 1656456,
+   "periodo": "2026-06-30",
+   "presentado": "2026-08-14",
+   "periodoAnterior": "2026-03-31",
+   "totalUSD": 7471257999,
+   "posiciones": [
+    {
+     "ticker": "AMZN",
+     "nombre": "AMAZON COM INC",
+     "peso": 0.1595,
+     "ar": {
+      "sym": "AMZN",
+      "tab": "cedears",
+      "usa": "AMZN"
+     },
+     "cambio": 0.1574
+    },
+    {
+     "ticker": "MU",
+     "nombre": "MICRON TECHNOLOGY INC",
+     "peso": 0.15063,
+     "ar": {
+      "sym": "MU",
+      "tab": "cedears",
+      "usa": "MU"
+     },
+     "cambio": -0.4144
+    },
+    {
+     "ticker": "TSM",
+     "nombre": "TAIWAN SEMICONDUCTOR MANUFAC",
+     "peso": 0.10547,
+     "ar": {
+      "sym": "TSM",
+      "tab": "cedears",
+      "usa": "TSM"
+     },
+     "cambio": 0.2429
+    },
+    {
+     "ticker": "GOOG",
+     "nombre": "ALPHABET INC",
+     "peso": 0.08749,
+     "ar": {
+      "sym": "GOOGL",
+      "tab": "cedears",
+      "usa": "GOOG"
+     },
+     "cambio": 0.0677
+    },
+    {
+     "ticker": "UBER",
+     "nombre": "UBER TECHNOLOGIES INC",
+     "peso": 0.07431,
+     "ar": {
+      "sym": "UBER",
+      "tab": "cedears",
+      "usa": "UBER"
+     },
+     "cambio": 0.215
+    },
+    {
+     "ticker": "EWY",
+     "nombre": "ISHARES INC",
+     "peso": 0.06553,
+     "ar": {
+      "sym": "EWY",
+      "tab": "cedears",
+      "usa": "EWY"
+     },
+     "cambio": 0.0104
+    },
+    {
+     "ticker": "META",
+     "nombre": "META PLATFORMS INC",
+     "peso": 0.05089,
+     "ar": {
+      "sym": "META",
+      "tab": "cedears",
+      "usa": "META"
+     },
+     "cambio": 0.5464
+    },
+    {
+     "ticker": "VST",
+     "nombre": "VISTRA CORP",
+     "peso": 0.04703,
+     "ar": {
+      "sym": "VST",
+      "tab": "cedears",
+      "usa": "VST"
+     },
+     "cambio": 0.0954
+    },
+    {
+     "ticker": "NVDA",
+     "nombre": "NVIDIA CORPORATION",
+     "peso": 0.04084,
+     "ar": {
+      "sym": "NVDA",
+      "tab": "cedears",
+      "usa": "NVDA"
+     },
+     "cambio": 0.0364
+    },
+    {
+     "ticker": "NRG",
+     "nombre": "NRG ENERGY INC",
+     "peso": 0.03441,
+     "ar": null,
+     "cambio": 0.0147
+    },
+    {
+     "ticker": "BABA",
+     "nombre": "ALIBABA GROUP HLDG LTD",
+     "peso": 0.02569,
+     "ar": {
+      "sym": "BABA",
+      "tab": "cedears",
+      "usa": "BABA"
+     },
+     "cambio": -0.4228
+    },
+    {
+     "ticker": "BA",
+     "nombre": "BOEING CO",
+     "peso": 0.02318,
+     "ar": {
+      "sym": "BA",
+      "tab": "cedears",
+      "usa": "BA"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "LRCX",
+     "nombre": "LAM RESEARCH CORP",
+     "peso": 0.02218,
+     "ar": {
+      "sym": "LRCX",
+      "tab": "cedears",
+      "usa": "LRCX"
+     },
+     "cambio": 0
+    },
+    {
+     "ticker": "BIDU",
+     "nombre": "BAIDU INC",
+     "peso": 0.01981,
+     "ar": {
+      "sym": "BIDU",
+      "tab": "cedears",
+      "usa": "BIDU"
+     },
+     "cambio": 0.8711
+    },
+    {
+     "ticker": "AAL",
+     "nombre": "AMERICAN AIRLINES GROUP INC",
+     "peso": 0.01814,
+     "ar": {
+      "sym": "AAL",
+      "tab": "cedears",
+      "usa": "AAL"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "AMD",
+     "nombre": "ADVANCED MICRO DEVICES INC",
+     "peso": 0.01536,
+     "ar": {
+      "sym": "AMD",
+      "tab": "cedears",
+      "usa": "AMD"
+     },
+     "cambio": -0.1079
+    },
+    {
+     "ticker": "CRWV",
+     "nombre": "COREWEAVE INC",
+     "peso": 0.01437,
+     "ar": {
+      "sym": "CRWV",
+      "tab": "cedears",
+      "usa": "CRWV"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "ASML HLDG NV",
+     "nombre": "ASML HLDG NV",
+     "peso": 0.01331,
+     "ar": null,
+     "cambio": 0.0101
+    },
+    {
+     "ticker": "AVGO",
+     "nombre": "BROADCOM INC",
+     "peso": 0.00758,
+     "ar": {
+      "sym": "AVGO",
+      "tab": "cedears",
+      "usa": "AVGO"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "QCOM",
+     "nombre": "QUALCOMM INC",
+     "peso": 0.00618,
+     "ar": {
+      "sym": "QCOM",
+      "tab": "cedears",
+      "usa": "QCOM"
+     },
+     "cambio": -0.4986
+    },
+    {
+     "ticker": "SPCX",
+     "nombre": "SPACE EXPLORATION TECHN CORP",
+     "peso": 0.00515,
+     "ar": {
+      "sym": "SPCX",
+      "tab": "cedears",
+      "usa": "SPCX"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "ET",
+     "nombre": "ENERGY TRANSFER L P",
+     "peso": 0.00403,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "MPLX",
+     "nombre": "MPLX LP",
+     "peso": 0.00379,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "WHR",
+     "nombre": "WHIRLPOOL CORP",
+     "peso": 0.00377,
+     "ar": null,
+     "cambio": -0.6333
+    },
+    {
+     "ticker": "GT",
+     "nombre": "GOODYEAR TIRE &amp; RUBR CO",
+     "peso": 0.00133,
+     "ar": {
+      "sym": "GT",
+      "tab": "cedears",
+      "usa": "GT"
+     },
+     "cambio": "nueva"
+    }
+   ],
+   "vendidas": [
+    "GLW",
+    "KWEB",
+    "LHX",
+    "MSFT",
+    "PDD",
+    "BALL",
+    "DEUTSCHE BK AG",
+    "JD",
+    "LYFT",
+    "RTX",
+    "SNDK",
+    "UNH"
+   ],
+   "pesoEnCedear": 0.9407
+  },
+  {
+   "id": "duquesne",
+   "nombre": "Duquesne Family Office LLC",
+   "gestor": "Stanley Druckenmiller",
+   "estilo": "Macro / tendencias",
+   "cik": 1536411,
+   "periodo": "2026-06-30",
+   "presentado": "2026-08-14",
+   "periodoAnterior": "2026-03-31",
+   "totalUSD": 4354220,
+   "posiciones": [
+    {
+     "ticker": "NTRA",
+     "nombre": "Natera Inc",
+     "peso": 0.19864,
+     "ar": {
+      "sym": "NTRA",
+      "tab": "cedears",
+      "usa": "NTRA"
+     },
+     "cambio": 0.0401
+    },
+    {
+     "ticker": "TSM",
+     "nombre": "Taiwan Semiconductor Manufac",
+     "peso": 0.06468,
+     "ar": {
+      "sym": "TSM",
+      "tab": "cedears",
+      "usa": "TSM"
+     },
+     "cambio": 0.1906
+    },
+    {
+     "ticker": "STM",
+     "nombre": "Stmicroelectronics N V",
+     "peso": 0.05337,
+     "ar": null,
+     "cambio": 0.1875
+    },
+    {
+     "ticker": "INSM",
+     "nombre": "Insmed Inc",
+     "peso": 0.03489,
+     "ar": null,
+     "cambio": 0.2345
+    },
+    {
+     "ticker": "YPF",
+     "nombre": "Ypf Sociedad Anonima",
+     "peso": 0.03278,
+     "ar": {
+      "sym": "YPFD",
+      "tab": "acciones"
+     },
+     "cambio": -0.03
+    },
+    {
+     "ticker": "AMZN",
+     "nombre": "Amazon Com Inc",
+     "peso": 0.02965,
+     "ar": {
+      "sym": "AMZN",
+      "tab": "cedears",
+      "usa": "AMZN"
+     },
+     "cambio": 10.8253
+    },
+    {
+     "ticker": "Bbb Foods Inc",
+     "nombre": "Bbb Foods Inc",
+     "peso": 0.02777,
+     "ar": null,
+     "cambio": -0.0667
+    },
+    {
+     "ticker": "GOOGL",
+     "nombre": "Alphabet Inc",
+     "peso": 0.0276,
+     "ar": {
+      "sym": "GOOGL",
+      "tab": "cedears",
+      "usa": "GOOGL"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "EWZ",
+     "nombre": "Ishares Inc",
+     "peso": 0.02723,
+     "ar": {
+      "sym": "EWZ",
+      "tab": "cedears",
+      "usa": "EWZ"
+     },
+     "cambio": 0
+    },
+    {
+     "ticker": "Seagate Technology Hldngs Pl",
+     "nombre": "Seagate Technology Hldngs Pl",
+     "peso": 0.02704,
+     "ar": null,
+     "cambio": 1.4063
+    },
+    {
+     "ticker": "FOXA",
+     "nombre": "Fox Corp",
+     "peso": 0.02641,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "UAL",
+     "nombre": "United Airls Hldgs Inc",
+     "peso": 0.02482,
+     "ar": {
+      "sym": "UAL",
+      "tab": "cedears",
+      "usa": "UAL"
+     },
+     "cambio": 2.0278
+    },
+    {
+     "ticker": "SE",
+     "nombre": "Sea Ltd",
+     "peso": 0.02421,
+     "ar": {
+      "sym": "SE",
+      "tab": "cedears",
+      "usa": "SE"
+     },
+     "cambio": 0
+    },
+    {
+     "ticker": "CDW",
+     "nombre": "Cdw Corp",
+     "peso": 0.02403,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "Newamsterdam Pharma Company",
+     "nombre": "Newamsterdam Pharma Company",
+     "peso": 0.0239,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "SNDK",
+     "nombre": "Sandisk Corp",
+     "peso": 0.01822,
+     "ar": {
+      "sym": "SNDK",
+      "tab": "cedears",
+      "usa": "SNDK"
+     },
+     "cambio": -0.0853
+    },
+    {
+     "ticker": "RVMD",
+     "nombre": "Revolution Medicines Inc",
+     "peso": 0.01719,
+     "ar": null,
+     "cambio": 0.2651
+    },
+    {
+     "ticker": "Bitdeer Technologies Group",
+     "nombre": "Bitdeer Technologies Group",
+     "peso": 0.01485,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "Crh Plc",
+     "nombre": "Crh Plc",
+     "peso": 0.0136,
+     "ar": null,
+     "cambio": 0.4662
+    },
+    {
+     "ticker": "DAL",
+     "nombre": "Delta Air Lines Inc",
+     "peso": 0.01297,
+     "ar": {
+      "sym": "DAL",
+      "tab": "cedears",
+      "usa": "DAL"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "FLR",
+     "nombre": "Fluor Corp",
+     "peso": 0.01182,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "DHI",
+     "nombre": "D R Horton Inc",
+     "peso": 0.01118,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "CPNG",
+     "nombre": "Coupang Inc",
+     "peso": 0.01064,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "AMD",
+     "nombre": "Advanced Micro Devices Inc",
+     "peso": 0.00973,
+     "ar": {
+      "sym": "AMD",
+      "tab": "cedears",
+      "usa": "AMD"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "PANW",
+     "nombre": "Palo Alto Networks Inc",
+     "peso": 0.00914,
+     "ar": {
+      "sym": "PANW",
+      "tab": "cedears",
+      "usa": "PANW"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "CLF",
+     "nombre": "Cleveland-Cliffs Inc New",
+     "peso": 0.00909,
+     "ar": null,
+     "cambio": 0.8225
+    },
+    {
+     "ticker": "HUT",
+     "nombre": "Hut 8 Corp",
+     "peso": 0.00833,
+     "ar": {
+      "sym": "HUT",
+      "tab": "cedears",
+      "usa": "HUT"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "CAI",
+     "nombre": "Caris Life Sciences Inc",
+     "peso": 0.00775,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "ARGT",
+     "nombre": "Global X Fds",
+     "peso": 0.00689,
+     "ar": null,
+     "cambio": -0.1513
+    },
+    {
+     "ticker": "FOX",
+     "nombre": "Fox Corp",
+     "peso": 0.00681,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "WWD",
+     "nombre": "Woodward Inc",
+     "peso": 0.00657,
+     "ar": null,
+     "cambio": -0.6821
+    },
+    {
+     "ticker": "NUVB",
+     "nombre": "Nuvation Bio Inc",
+     "peso": 0.00592,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "PTGX",
+     "nombre": "Protagonist Therapeutics Inc",
+     "peso": 0.00588,
+     "ar": null,
+     "cambio": 0.3081
+    },
+    {
+     "ticker": "ROKU",
+     "nombre": "Roku Inc",
+     "peso": 0.00584,
+     "ar": {
+      "sym": "ROKU",
+      "tab": "cedears",
+      "usa": "ROKU"
+     },
+     "cambio": -0.7547
+    },
+    {
+     "ticker": "CVCO",
+     "nombre": "Cavco Inds Inc Del",
+     "peso": 0.00557,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "ADMA",
+     "nombre": "Adma Biologics Inc",
+     "peso": 0.00535,
+     "ar": null,
+     "cambio": 0.8013
+    },
+    {
+     "ticker": "PURR",
+     "nombre": "Hyperliquid Strategies Inc",
+     "peso": 0.00532,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "RMBS",
+     "nombre": "Rambus Inc Del",
+     "peso": 0.00527,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "RYTM",
+     "nombre": "Rhythm Pharmaceuticals Inc",
+     "peso": 0.00519,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "SKY",
+     "nombre": "Champion Homes Inc",
+     "peso": 0.00515,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "DAKT",
+     "nombre": "Daktronics Inc",
+     "peso": 0.00505,
+     "ar": null,
+     "cambio": 0.9962
+    },
+    {
+     "ticker": "PCT",
+     "nombre": "Purecycle Technologies Inc",
+     "peso": 0.00499,
+     "ar": null,
+     "cambio": 1.7839
+    },
+    {
+     "ticker": "SCCO",
+     "nombre": "Southern Copper Corp",
+     "peso": 0.00492,
+     "ar": {
+      "sym": "SCCO",
+      "tab": "cedears",
+      "usa": "SCCO"
+     },
+     "cambio": 0.01
+    },
+    {
+     "ticker": "Linde Plc",
+     "nombre": "Linde Plc",
+     "peso": 0.00491,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "ENTG",
+     "nombre": "Entegris Inc",
+     "peso": 0.00489,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "Teva Pharmaceutical Inds Ltd",
+     "nombre": "Teva Pharmaceutical Inds Ltd",
+     "peso": 0.00486,
+     "ar": null,
+     "cambio": -0.7371
+    },
+    {
+     "ticker": "U",
+     "nombre": "Unity Software Inc",
+     "peso": 0.00485,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "AEVA",
+     "nombre": "Aeva Technologies Inc",
+     "peso": 0.00475,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "RIOT",
+     "nombre": "Riot Platforms Inc",
+     "peso": 0.00475,
+     "ar": {
+      "sym": "RIOT",
+      "tab": "cedears",
+      "usa": "RIOT"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "Q",
+     "nombre": "Qnity Electronics Inc",
+     "peso": 0.00471,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "EQIX",
+     "nombre": "Equinix Inc",
+     "peso": 0.00442,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "LRCX",
+     "nombre": "Lam Research Corp",
+     "peso": 0.00434,
+     "ar": {
+      "sym": "LRCX",
+      "tab": "cedears",
+      "usa": "LRCX"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "DFTX",
+     "nombre": "Definium Therapeutics Inc",
+     "peso": 0.00385,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "BLTE",
+     "nombre": "Belite Bio Inc Sponsored",
+     "peso": 0.00375,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "RSP",
+     "nombre": "Invesco Exchange Traded Fd T",
+     "peso": 0.00364,
+     "ar": {
+      "sym": "RSP",
+      "tab": "cedears",
+      "usa": "RSP"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "TXG",
+     "nombre": "10X Genomics Inc",
+     "peso": 0.00355,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "WAB",
+     "nombre": "Wabtec",
+     "peso": 0.0035,
+     "ar": null,
+     "cambio": -0.4036
+    },
+    {
+     "ticker": "LLY",
+     "nombre": "Eli Lilly &amp; Co",
+     "peso": 0.00341,
+     "ar": {
+      "sym": "LLY",
+      "tab": "cedears",
+      "usa": "LLY"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "XENE",
+     "nombre": "Xenon Pharmaceuticals Inc",
+     "peso": 0.00331,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "OLMA",
+     "nombre": "Olema Pharmaceuticals Inc",
+     "peso": 0.00284,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "RGEN",
+     "nombre": "Repligen Corp",
+     "peso": 0.00243,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "RKT",
+     "nombre": "Rocket Cos Inc",
+     "peso": 0.00236,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "BIDU",
+     "nombre": "Baidu Inc",
+     "peso": 0.00231,
+     "ar": {
+      "sym": "BIDU",
+      "tab": "cedears",
+      "usa": "BIDU"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "ARM",
+     "nombre": "Arm Holdings Plc",
+     "peso": 0.00229,
+     "ar": {
+      "sym": "ARM",
+      "tab": "cedears",
+      "usa": "ARM"
+     },
+     "cambio": -0.7367
+    },
+    {
+     "ticker": "CVNA",
+     "nombre": "Carvana Co",
+     "peso": 0.00228,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "RDDT",
+     "nombre": "Reddit Inc",
+     "peso": 0.00225,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "AA",
+     "nombre": "Alcoa Corp",
+     "peso": 0.00222,
+     "ar": null,
+     "cambio": -0.8757
+    },
+    {
+     "ticker": "TMO",
+     "nombre": "Thermo Fisher Scientific Inc",
+     "peso": 0.00221,
+     "ar": {
+      "sym": "TMO",
+      "tab": "cedears",
+      "usa": "TMO"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "DHR",
+     "nombre": "Danaher Corp Del",
+     "peso": 0.0022,
+     "ar": {
+      "sym": "DHR",
+      "tab": "cedears",
+      "usa": "DHR"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "FFIV",
+     "nombre": "F5 Inc",
+     "peso": 0.0021,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "VIST",
+     "nombre": "Vista Energy S.A.B. De C.V.",
+     "peso": 0.00197,
+     "ar": {
+      "sym": "VIST",
+      "tab": "cedears",
+      "usa": "VIST"
+     },
+     "cambio": 0
+    },
+    {
+     "ticker": "SKE",
+     "nombre": "Skeena Res Ltd New",
+     "peso": 0.00184,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "Jbs N.V.",
+     "nombre": "Jbs N.V.",
+     "peso": 0.00178,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "GLUE",
+     "nombre": "Monte Rosa Therapeutics Inc",
+     "peso": 0.00165,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "RLAY",
+     "nombre": "Relay Therapeutics Inc",
+     "peso": 0.0015,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "DBVT",
+     "nombre": "Dbv Technologies S A Sponsored",
+     "peso": 0.00144,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "CCC",
+     "nombre": "Ccc Intelligent Solutions Hl",
+     "peso": 0.00139,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "UWMC",
+     "nombre": "Uwm Holdings Corporation",
+     "peso": 0.00136,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "NVTS",
+     "nombre": "Navitas Semiconductor Corp",
+     "peso": 0.00128,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "SOLS",
+     "nombre": "Solstice Advanced Matls Inc",
+     "peso": 0.00127,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "Ftai Aviation Ltd",
+     "nombre": "Ftai Aviation Ltd",
+     "peso": 0.00126,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "BEAM",
+     "nombre": "Beam Therapeutics Inc",
+     "peso": 0.00121,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "AUR",
+     "nombre": "Aurora Innovation Inc",
+     "peso": 0.00099,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "Iren Limited",
+     "nombre": "Iren Limited",
+     "peso": 0.00091,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "GGAL",
+     "nombre": "Grupo Financiero Galicia S.A",
+     "peso": 0.00068,
+     "ar": {
+      "sym": "GGAL",
+      "tab": "acciones"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "Wave Life Sciences Ltd",
+     "nombre": "Wave Life Sciences Ltd",
+     "peso": 0.00023,
+     "ar": null,
+     "cambio": 0
+    }
+   ],
+   "vendidas": [
+    "ECHO",
+    "FIGR",
+    "HUM",
+    "INTC",
+    "JBL",
+    "LSCC",
+    "MU",
+    "WLK",
+    "ALM",
+    "BE",
+    "AVGO",
+    "CLS",
+    "NET",
+    "COHR",
+    "GSG",
+    "LITE",
+    "Lyondellbasell Industries Nv",
+    "MELI",
+    "OPCH",
+    "QSR",
+    "STUB",
+    "TWLO",
+    "TWST"
+   ],
+   "pesoEnCedear": 0.5266
+  },
+  {
+   "id": "baupost",
+   "nombre": "BAUPOST GROUP LLC/MA",
+   "gestor": "Seth Klarman",
+   "estilo": "Value, margen de seguridad",
+   "cik": 1061768,
+   "periodo": "2026-06-30",
+   "presentado": "2026-08-13",
+   "periodoAnterior": "2026-03-31",
+   "totalUSD": 5415853,
+   "posiciones": [
+    {
+     "ticker": "AMZN",
+     "nombre": "AMAZON COM INC",
+     "peso": 0.16476,
+     "ar": {
+      "sym": "AMZN",
+      "tab": "cedears",
+      "usa": "AMZN"
+     },
+     "cambio": 0.2004
+    },
+    {
+     "ticker": "ELV",
+     "nombre": "ELEVANCE HEALTH INC FORMERLY",
+     "peso": 0.09105,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "QSR",
+     "nombre": "RESTAURANT BRANDS INTL INC",
+     "peso": 0.0904,
+     "ar": null,
+     "cambio": -0.1642
+    },
+    {
+     "ticker": "GOOG",
+     "nombre": "ALPHABET INC",
+     "peso": 0.0895,
+     "ar": {
+      "sym": "GOOGL",
+      "tab": "cedears",
+      "usa": "GOOG"
+     },
+     "cambio": 0.1615
+    },
+    {
+     "ticker": "FERG",
+     "nombre": "FERGUSON ENTERPRISES INC",
+     "peso": 0.06357,
+     "ar": null,
+     "cambio": 0.0057
+    },
+    {
+     "ticker": "GPC",
+     "nombre": "GENUINE PARTS CO",
+     "peso": 0.06135,
+     "ar": null,
+     "cambio": 0.8896
+    },
+    {
+     "ticker": "UNP",
+     "nombre": "UNION PAC CORP",
+     "peso": 0.05953,
+     "ar": {
+      "sym": "UNP",
+      "tab": "cedears",
+      "usa": "UNP"
+     },
+     "cambio": -0.2308
+    },
+    {
+     "ticker": "V",
+     "nombre": "VISA INC",
+     "peso": 0.04443,
+     "ar": {
+      "sym": "V",
+      "tab": "cedears",
+      "usa": "V"
+     },
+     "cambio": 0
+    },
+    {
+     "ticker": "WCC",
+     "nombre": "WESCO INTL INC",
+     "peso": 0.04228,
+     "ar": null,
+     "cambio": -0.5387
+    },
+    {
+     "ticker": "AON PLC",
+     "nombre": "AON PLC",
+     "peso": 0.04207,
+     "ar": null,
+     "cambio": -0.1066
+    },
+    {
+     "ticker": "TFX",
+     "nombre": "TELEFLEX INCORPORATED",
+     "peso": 0.03298,
+     "ar": null,
+     "cambio": -0.1166
+    },
+    {
+     "ticker": "NORWEGIAN CRUISE LINE HLDGS",
+     "nombre": "NORWEGIAN CRUISE LINE HLDGS",
+     "peso": 0.03013,
+     "ar": null,
+     "cambio": 1.1295
+    },
+    {
+     "ticker": "MOH",
+     "nombre": "MOLINA HEALTHCARE INC",
+     "peso": 0.02676,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "CME",
+     "nombre": "CME GROUP INC",
+     "peso": 0.02524,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "HERBALIFE LTD",
+     "nombre": "HERBALIFE LTD",
+     "peso": 0.02248,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "EXP",
+     "nombre": "EAGLE MATLS INC",
+     "peso": 0.02205,
+     "ar": null,
+     "cambio": -0.4055
+    },
+    {
+     "ticker": "GDS",
+     "nombre": "GDS HLDGS LTD",
+     "peso": 0.0209,
+     "ar": null,
+     "cambio": 0.2381
+    },
+    {
+     "ticker": "COLD",
+     "nombre": "AMERICOLD REALTY TRUST INC",
+     "peso": 0.01983,
+     "ar": null,
+     "cambio": -0.1222
+    },
+    {
+     "ticker": "LIBERTY GLOBAL LTD",
+     "nombre": "LIBERTY GLOBAL LTD",
+     "peso": 0.01735,
+     "ar": null,
+     "cambio": -0.3623
+    },
+    {
+     "ticker": "AERO",
+     "nombre": "GRUPO AEROMEXICO SAB DE CV",
+     "peso": 0.01622,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "AXALTA COATING SYS LTD",
+     "nombre": "AXALTA COATING SYS LTD",
+     "peso": 0.00805,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "DNOW",
+     "nombre": "DNOW INC",
+     "peso": 0.00668,
+     "ar": null,
+     "cambio": -0.2309
+    },
+    {
+     "ticker": "PS",
+     "nombre": "PERSHING SQUARE INC",
+     "peso": 0.00238,
+     "ar": null,
+     "cambio": "nueva"
+    }
+   ],
+   "vendidas": [
+    "PCVX",
+    "WILLIS TOWERS WATSON PLC LTD"
+   ],
+   "pesoEnCedear": 0.3582
+  },
+  {
+   "id": "akre",
+   "nombre": "AKRE CAPITAL MANAGEMENT LLC",
+   "gestor": "Chuck Akre",
+   "estilo": "Calidad, compounders",
+   "cik": 1112520,
+   "periodo": "2026-06-30",
+   "presentado": "2026-08-14",
+   "periodoAnterior": "2026-03-31",
+   "totalUSD": 5106870308,
+   "posiciones": [
+    {
+     "ticker": "MA",
+     "nombre": "MASTERCARD INCORPORATED",
+     "peso": 0.20013,
+     "ar": {
+      "sym": "MA",
+      "tab": "cedears",
+      "usa": "MA"
+     },
+     "cambio": -0.1277
+    },
+    {
+     "ticker": "MCO",
+     "nombre": "MOODYS CORP",
+     "peso": 0.1026,
+     "ar": null,
+     "cambio": -0.0716
+    },
+    {
+     "ticker": "BN",
+     "nombre": "BROOKFIELD CORP",
+     "peso": 0.10108,
+     "ar": null,
+     "cambio": -0.2882
+    },
+    {
+     "ticker": "KKR",
+     "nombre": "KKR &amp; CO L P DEL",
+     "peso": 0.08953,
+     "ar": null,
+     "cambio": -0.2585
+    },
+    {
+     "ticker": "FICO",
+     "nombre": "FAIR ISAAC CORP",
+     "peso": 0.08465,
+     "ar": null,
+     "cambio": -0.0053
+    },
+    {
+     "ticker": "ROP",
+     "nombre": "ROPER TECHNOLOGIES INC",
+     "peso": 0.07796,
+     "ar": null,
+     "cambio": -0.0642
+    },
+    {
+     "ticker": "V",
+     "nombre": "VISA INC",
+     "peso": 0.07463,
+     "ar": {
+      "sym": "V",
+      "tab": "cedears",
+      "usa": "V"
+     },
+     "cambio": -0.3221
+    },
+    {
+     "ticker": "CSGP",
+     "nombre": "COSTAR GROUP INC",
+     "peso": 0.06488,
+     "ar": null,
+     "cambio": 0.1306
+    },
+    {
+     "ticker": "CPRT",
+     "nombre": "COPART INC",
+     "peso": 0.04408,
+     "ar": null,
+     "cambio": -0.0016
+    },
+    {
+     "ticker": "ORLY",
+     "nombre": "OREILLY AUTOMOTIVE INC",
+     "peso": 0.03898,
+     "ar": {
+      "sym": "ORLY",
+      "tab": "cedears",
+      "usa": "ORLY"
+     },
+     "cambio": -0.4437
+    },
+    {
+     "ticker": "ABNB",
+     "nombre": "AIRBNB INC",
+     "peso": 0.03317,
+     "ar": {
+      "sym": "ABNB",
+      "tab": "cedears",
+      "usa": "ABNB"
+     },
+     "cambio": -0.4182
+    },
+    {
+     "ticker": "CCC",
+     "nombre": "CCC INTELLIGENT SOLUTIONS HL",
+     "peso": 0.03017,
+     "ar": null,
+     "cambio": -0.0525
+    },
+    {
+     "ticker": "NOW",
+     "nombre": "SERVICENOW INC",
+     "peso": 0.02422,
+     "ar": {
+      "sym": "NOW",
+      "tab": "cedears",
+      "usa": "NOW"
+     },
+     "cambio": 0.1368
+    },
+    {
+     "ticker": "CRM",
+     "nombre": "SALESFORCE INC",
+     "peso": 0.02202,
+     "ar": {
+      "sym": "CRM",
+      "tab": "cedears",
+      "usa": "CRM"
+     },
+     "cambio": 0
+    },
+    {
+     "ticker": "GSHD",
+     "nombre": "GOOSEHEAD INS INC",
+     "peso": 0.00421,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "SOPHIA GENETICS SA",
+     "nombre": "SOPHIA GENETICS SA",
+     "peso": 0.0042,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "PRM",
+     "nombre": "PERIMETER SOLUTIONS INC",
+     "peso": 0.00175,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "AMT",
+     "nombre": "AMERICAN TOWER CORP NEW",
+     "peso": 0.00094,
+     "ar": null,
+     "cambio": -0.4238
+    },
+    {
+     "ticker": "BRK/B",
+     "nombre": "BERKSHIRE HATHAWAY INC DEL",
+     "peso": 0.0008,
+     "ar": {
+      "sym": "BRKB",
+      "tab": "cedears",
+      "usa": "BRKB"
+     },
+     "cambio": -0.2084
+    }
+   ],
+   "vendidas": [],
+   "pesoEnCedear": 0.394
+  },
+  {
+   "id": "fundsmith",
+   "nombre": "Fundsmith LLP",
+   "gestor": "Terry Smith",
+   "estilo": "Calidad, baja rotación",
+   "cik": 1569205,
+   "periodo": "2026-06-30",
+   "presentado": "2026-08-14",
+   "periodoAnterior": "2026-03-31",
+   "totalUSD": 13648923682,
+   "posiciones": [
+    {
+     "ticker": "MAR",
+     "nombre": "MARRIOTT INTL INC NEW",
+     "peso": 0.07021,
+     "ar": null,
+     "cambio": -0.2329
+    },
+    {
+     "ticker": "SYK",
+     "nombre": "STRYKER CORPORATION",
+     "peso": 0.06721,
+     "ar": null,
+     "cambio": -0.0482
+    },
+    {
+     "ticker": "WAT",
+     "nombre": "WATERS CORP",
+     "peso": 0.06247,
+     "ar": null,
+     "cambio": -0.2922
+    },
+    {
+     "ticker": "V",
+     "nombre": "VISA INC",
+     "peso": 0.05077,
+     "ar": {
+      "sym": "V",
+      "tab": "cedears",
+      "usa": "V"
+     },
+     "cambio": -0.3493
+    },
+    {
+     "ticker": "UBER",
+     "nombre": "UBER TECHNOLOGIES INC",
+     "peso": 0.04728,
+     "ar": {
+      "sym": "UBER",
+      "tab": "cedears",
+      "usa": "UBER"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "MA",
+     "nombre": "MASTERCARD INCORPORATED",
+     "peso": 0.04685,
+     "ar": {
+      "sym": "MA",
+      "tab": "cedears",
+      "usa": "MA"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "GOOGL",
+     "nombre": "ALPHABET INC",
+     "peso": 0.04643,
+     "ar": {
+      "sym": "GOOGL",
+      "tab": "cedears",
+      "usa": "GOOGL"
+     },
+     "cambio": -0.4001
+    },
+    {
+     "ticker": "CHD",
+     "nombre": "CHURCH &amp; DWIGHT CO INC",
+     "peso": 0.04583,
+     "ar": null,
+     "cambio": -0.0278
+    },
+    {
+     "ticker": "PG",
+     "nombre": "PROCTER &amp; GAMBLE CO",
+     "peso": 0.04382,
+     "ar": {
+      "sym": "PG",
+      "tab": "cedears",
+      "usa": "PG"
+     },
+     "cambio": -0.0289
+    },
+    {
+     "ticker": "MSFT",
+     "nombre": "MICROSOFT CORP",
+     "peso": 0.04364,
+     "ar": {
+      "sym": "MSFT",
+      "tab": "cedears",
+      "usa": "MSFT"
+     },
+     "cambio": -0.2322
+    },
+    {
+     "ticker": "META",
+     "nombre": "META PLATFORMS INC",
+     "peso": 0.04341,
+     "ar": {
+      "sym": "META",
+      "tab": "cedears",
+      "usa": "META"
+     },
+     "cambio": -0.204
+    },
+    {
+     "ticker": "ADP",
+     "nombre": "AUTOMATIC DATA PROCESSING IN",
+     "peso": 0.04269,
+     "ar": {
+      "sym": "ADP",
+      "tab": "cedears",
+      "usa": "ADP"
+     },
+     "cambio": -0.3252
+    },
+    {
+     "ticker": "FTNT",
+     "nombre": "FORTINET INC",
+     "peso": 0.04086,
+     "ar": null,
+     "cambio": -0.4104
+    },
+    {
+     "ticker": "TSM",
+     "nombre": "TAIWAN SEMICONDUCTOR MANUFAC",
+     "peso": 0.04018,
+     "ar": {
+      "sym": "TSM",
+      "tab": "cedears",
+      "usa": "TSM"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "IDXX",
+     "nombre": "IDEXX LABS INC",
+     "peso": 0.03934,
+     "ar": null,
+     "cambio": -0.3042
+    },
+    {
+     "ticker": "TXN",
+     "nombre": "TEXAS INSTRS INC",
+     "peso": 0.03929,
+     "ar": {
+      "sym": "TXN",
+      "tab": "cedears",
+      "usa": "TXN"
+     },
+     "cambio": -0.3141
+    },
+    {
+     "ticker": "PM",
+     "nombre": "PHILIP MORRIS INTL INC",
+     "peso": 0.03862,
+     "ar": {
+      "sym": "PM",
+      "tab": "cedears",
+      "usa": "PM"
+     },
+     "cambio": -0.4302
+    },
+    {
+     "ticker": "NFLX",
+     "nombre": "NETFLIX INC.",
+     "peso": 0.03657,
+     "ar": {
+      "sym": "NFLX",
+      "tab": "cedears",
+      "usa": "NFLX"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "GEV",
+     "nombre": "GE VERNOVA INC",
+     "peso": 0.03528,
+     "ar": {
+      "sym": "GEV",
+      "tab": "cedears",
+      "usa": "GEV"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "APP",
+     "nombre": "APPLOVIN CORP",
+     "peso": 0.02629,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "TJX",
+     "nombre": "TJX COS INC NEW",
+     "peso": 0.02523,
+     "ar": {
+      "sym": "TJX",
+      "tab": "cedears",
+      "usa": "TJX"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "NXT",
+     "nombre": "NEXTPOWER INC",
+     "peso": 0.02493,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "VEEV",
+     "nombre": "VEEVA SYS INC",
+     "peso": 0.01062,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "YUM",
+     "nombre": "YUM BRANDS INC",
+     "peso": 0.00651,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "MSCI",
+     "nombre": "MSCI INC",
+     "peso": 0.0022,
+     "ar": null,
+     "cambio": -0.173
+    },
+    {
+     "ticker": "MEDP",
+     "nombre": "MEDPACE HLDGS INC",
+     "peso": 0.00203,
+     "ar": null,
+     "cambio": -0.1643
+    },
+    {
+     "ticker": "NTNX",
+     "nombre": "NUTANIX INC",
+     "peso": 0.00201,
+     "ar": null,
+     "cambio": -0.0677
+    },
+    {
+     "ticker": "BMI",
+     "nombre": "BADGER METER INC",
+     "peso": 0.0019,
+     "ar": null,
+     "cambio": 0.2255
+    },
+    {
+     "ticker": "CLX",
+     "nombre": "CLOROX CO DEL",
+     "peso": 0.0019,
+     "ar": null,
+     "cambio": 0.0548
+    },
+    {
+     "ticker": "ROL",
+     "nombre": "ROLLINS INC",
+     "peso": 0.0019,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "MANH",
+     "nombre": "MANHATTAN ASSOCIATES INC",
+     "peso": 0.00176,
+     "ar": null,
+     "cambio": 0.4309
+    },
+    {
+     "ticker": "NSSC",
+     "nombre": "NAPCO SEC TECHNOLOGIES INC",
+     "peso": 0.00169,
+     "ar": null,
+     "cambio": 0.5823
+    },
+    {
+     "ticker": "FICO",
+     "nombre": "FAIR ISAAC CORP",
+     "peso": 0.00157,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "SABR",
+     "nombre": "SABRE CORP",
+     "peso": 0.00138,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "IDCC",
+     "nombre": "INTERDIGITAL INC",
+     "peso": 0.00125,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "ORLY",
+     "nombre": "OREILLY AUTOMOTIVE INC",
+     "peso": 0.0011,
+     "ar": {
+      "sym": "ORLY",
+      "tab": "cedears",
+      "usa": "ORLY"
+     },
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "VRT",
+     "nombre": "VERTIV HOLDINGS CO",
+     "peso": 0.00103,
+     "ar": null,
+     "cambio": -0.5409
+    },
+    {
+     "ticker": "VRSN",
+     "nombre": "VERISIGN INC",
+     "peso": 0.00103,
+     "ar": {
+      "sym": "VRSN",
+      "tab": "cedears",
+      "usa": "VRSN"
+     },
+     "cambio": -0.509
+    },
+    {
+     "ticker": "ADMA",
+     "nombre": "ADMA BIOLOGICS INC",
+     "peso": 0.00101,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "DOCS",
+     "nombre": "DOXIMITY INC",
+     "peso": 0.00099,
+     "ar": null,
+     "cambio": -0.0556
+    },
+    {
+     "ticker": "PAYC",
+     "nombre": "PAYCOM SOFTWARE INC",
+     "peso": 0.00093,
+     "ar": null,
+     "cambio": -0.5409
+    }
+   ],
+   "vendidas": [
+    "HD",
+    "MTD",
+    "CATALYST PHARMACEUTICALS INC",
+    "OTIS",
+    "QLYS",
+    "ZTS"
+   ],
+   "pesoEnCedear": 0.5822
+  }
+ ]
+}

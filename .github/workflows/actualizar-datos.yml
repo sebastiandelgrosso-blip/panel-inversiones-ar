@@ -1,0 +1,52 @@
+# Actualiza los archivos de datos del panel y los publica en GitHub Pages.
+# - Noticias: cada 30 minutos
+# - Flujos de bonos/ONs/LECAP/CER: todos los días
+# - Carteras públicas (13F): los lunes
+name: Actualizar datos
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+    - cron: '15 10 * * *'
+    - cron: '30 11 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-datos
+  cancel-in-progress: false
+
+jobs:
+  datos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Noticias
+        run: node actualizar-noticias.js
+
+      - name: Flujos de fondos
+        if: github.event.schedule == '15 10 * * *' || github.event_name == 'workflow_dispatch'
+        run: node actualizar-flujos.js
+
+      - name: Carteras públicas (13F)
+        if: github.event.schedule == '30 11 * * 1' || github.event_name == 'workflow_dispatch'
+        run: node actualizar-carteras.js
+
+      - name: Guardar cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add noticias.json flujos.json carteras.json .cache-figi.json
+          if git diff --cached --quiet; then
+            echo "Sin cambios"
+          else
+            git commit -m "Actualizar datos $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
