@@ -938,8 +938,7 @@ function findRow(key) {
    ============================================================ */
 function renderFX() {
   const it = (label, v, sub) => v ? `<span class="it">${label}<b>$${fmt(v, 0)}</b>${sub ? ` <small>${sub}</small>` : ''}</span>` : '';
-  const mepImpl = S.mepImpl ? it('MEP AL30', S.mepImpl, 'implícito') : '';
-  $('#fx').innerHTML = it('Oficial', S.fx.oficial) + it('MEP', S.fx.bolsa) + it('CCL', S.fx.contadoconliqui) + it('Blue', S.fx.blue) + mepImpl;
+  $('#fx').innerHTML = it('Oficial', S.fx.oficial) + it('MEP', S.fx.bolsa) + it('CCL', S.fx.contadoconliqui) + it('Blue', S.fx.blue);
 }
 
 /* ============================================================

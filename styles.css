@@ -16,6 +16,8 @@
   --c-vender: #d9474d;
 }
 * { box-sizing: border-box; }
+/* "hidden" siempre oculta, aunque el elemento tenga otro display (ej. la grilla con noticias) */
+[hidden] { display: none !important; }
 html, body { margin: 0; background: var(--bg); color: var(--text); font: 14px/1.45 "Segoe UI", system-ui, sans-serif; }
 button, input, select { font: inherit; color: inherit; }
 button { background: var(--panel2); border: 1px solid var(--line); border-radius: 6px; padding: 6px 12px; cursor: pointer; }
