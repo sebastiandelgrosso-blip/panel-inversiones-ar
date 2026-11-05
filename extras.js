@@ -89,7 +89,7 @@ async function runBacktestAll() {
   const ced = (S.live.cedears || []).filter(r => !r.variant && r.v > 0).sort((a, b) => b.monto - a.monto).slice(0, 30);
   const lid = (S.live.acciones || []).filter(r => LIDER.has(r.sym));
   const rows = [...lid, ...ced];
-  await analyzeMany(rows.filter(r => !S.an[r.tab + ':' + r.sym]));
+  await analyzeMany(rows, { front: true });
   const res = [];
   for (const r of rows) {
     const a = S.an[r.tab + ':' + r.sym];
@@ -292,7 +292,7 @@ async function checkAlerts() {
   await Promise.all([...new Set(keys.map(k => k.split(':')[0]))].map(t => loadLive(t).catch(() => { })));
   const rows = keys.map(findRow).filter(Boolean);
   const missing = rows.filter(r => !S.an[r.tab + ':' + r.sym]);
-  if (missing.length && !S.busy) await analyzeMany(missing);
+  if (missing.length) await analyzeMany(missing, { front: true });
   for (const r of rows) {
     const key = r.tab + ':' + r.sym, A = an(r);
     if (!A) continue;

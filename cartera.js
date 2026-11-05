@@ -91,7 +91,7 @@ async function renderCartera() {
   drawCartera();
   // Analiza las posiciones que todavía no tienen señal
   const pend = S.cartera.map(p => findRow(p.tab + ':' + p.sym)).filter(r => r && r.tab !== 'ons' && !S.an[r.tab + ':' + r.sym]);
-  if (pend.length) { await analyzeMany(pend); drawCartera(); }
+  if (pend.length) { await analyzeMany(pend, { front: true }); if (S.tab === 'cartera') drawCartera(); }
 }
 
 function drawCartera() {
@@ -291,6 +291,10 @@ async function renderSeguir() {
   v.innerHTML = '<p class="muted">Cargando carteras…</p>';
   try { await Promise.all([loadPublicas(), loadLive('cedears'), loadLive('acciones')]); }
   catch { v.innerHTML = '<p class="muted">No se pudieron cargar las carteras públicas (falta carteras.json: corré "node actualizar-carteras.js").</p>'; return; }
+  // La cartera modelo necesita las señales de acciones y CEDEARs: se analizan en segundo plano
+  const sinSenal = ['acciones', 'cedears'].flatMap(t => (S.live[t] || []).filter(r => !r.variant && r.v > 0 && !S.an[r.tab + ':' + r.sym]))
+    .sort((a, b) => b.monto - a.monto);
+  if (sinSenal.length) analyzeMany(sinSenal).then(() => { if (S.tab === 'seguir') renderSeguir(); });
   const list = [carteraModelo(), ...S.publicas.carteras];
   list.sort((a, b) => (!!S.seguidas[b.id] - !!S.seguidas[a.id]));
   v.innerHTML = `
@@ -303,7 +307,7 @@ async function renderSeguir() {
       return `<div class="card pub" data-pub="${c.id}">
         <h3>${S.seguidas[c.id] ? '★ ' : ''}${esc(c.gestor)}</h3>
         <div class="muted" style="font-size:12px">${esc(c.nombre)} · ${esc(c.estilo)}</div>
-        <p style="margin:8px 0 4px;font-size:13px">${top || '<span class="muted">Analizá instrumentos para armarla</span>'}</p>
+        <p style="margin:8px 0 4px;font-size:13px">${top || '<span class="muted">Se arma sola a medida que se analizan acciones y CEDEARs…</span>'}</p>
         <div class="muted" style="font-size:12px">${c.posiciones.length} posiciones · ${pct(c.pesoEnCedear, 0, false)} comprable en BYMA · ${c.modelo ? 'señales de hoy' : 'al ' + c.periodo}</div>
         <div class="perf" data-perf="${c.id}">${c.modelo ? '' : '<span class="muted">Calculando rendimiento…</span>'}</div>
       </div>`;
@@ -362,9 +366,13 @@ async function openPublica(id) {
     </table>
     ${c.posiciones.length > 60 ? `<p class="muted">… y ${c.posiciones.length - 60} posiciones más chicas.</p>` : ''}
     ${c.vendidas && c.vendidas.length ? `<p class="note">Vendió por completo en el último trimestre: ${c.vendidas.map(esc).join(', ')}.</p>` : ''}
-    <div style="margin-top:10px"><button id="btnAnalizarPub">Analizar señales de estas posiciones</button></div>
     <p class="note">${c.modelo ? 'Se arma con las señales COMPRAR/ACUMULAR de mayor puntaje entre los instrumentos ya analizados.' : 'Fuente: SEC EDGAR, formulario 13F. Solo incluye acciones de EE.UU. (no bonos, efectivo ni posiciones cortas). Rendimiento en dólares de la parte que cotiza en BYMA, con pesos fijos.'} No es una recomendación de inversión.</p>`;
   box.dataset.pub = c.id;
+  // Señales automáticas: si faltan, se analizan y se vuelve a dibujar
+  const faltan = c.posiciones.filter(p => p.ar).map(p => findRow(p.ar.tab + ':' + p.ar.sym)).filter(r => r && !S.an[r.tab + ':' + r.sym]);
+  if (faltan.length) analyzeMany(faltan, { front: true }).then(() => {
+    if (!box.hidden && box.dataset.pub === c.id) openPublica(c.id);
+  });
 }
 
 function copyPlan(c, monto, minW) {
@@ -396,12 +404,6 @@ function bindSeguir() {
     }
     const o = e.target.closest('[data-open]');
     if (o) { e.preventDefault(); openDetail(o.dataset.open); }
-    if (e.target.id === 'btnAnalizarPub') {
-      const c = id === 'modelo' ? carteraModelo() : S.publicas.carteras.find(x => x.id === id);
-      const rows = c.posiciones.filter(p => p.ar).map(p => findRow(p.ar.tab + ':' + p.ar.sym)).filter(Boolean);
-      await analyzeMany(rows);
-      openPublica(id);
-    }
     if (e.target.id === 'btnAddCopy') {
       const plan = JSON.parse(e.target.dataset.plan);
       plan.forEach(i => S.cartera.push({ id: String(Date.now()) + i.sym, tab: i.tab, sym: i.sym, qty: i.qty, px: i.px, cur: 'ARS', fecha: today(), origen: id }));

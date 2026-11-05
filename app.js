@@ -51,8 +51,6 @@ const PARAM_SPEC = [
   { k: 'comision', label: 'Comisión por operación (%)', type: 'number', min: 0, max: 3, step: 0.05, def: 0.5, help: 'Se usa en el backtest (compra y venta).' },
   { k: 'btStop', label: 'Backtest: salir también por stop', type: 'select', opts: [['no', 'No, solo por señal'], ['si', 'Sí (stop móvil k × ATR)']], def: 'no',
     help: 'En la prueba de 5 años el stop ajustado empeoró los resultados.' },
-  { grp: 'Escaneo' },
-  { k: 'topN', label: 'Cantidad en "top por volumen"', type: 'number', min: 5, max: 150, def: 30 },
 ];
 const DEFAULTS = Object.fromEntries(PARAM_SPEC.filter(p => p.k).map(p => [p.k, p.def]));
 const PERFILES = {
@@ -893,40 +891,63 @@ async function analyzeRow(row) {
   return S.an[key];
 }
 
-async function analyzeMany(rows) {
-  if (S.busy) return;
-  rows = rows.filter(r => r.tab !== 'ons');
-  if (!rows.length) return;
-  S.busy = true; S.stop = false;
-  $('#btnStop').hidden = false;
-  ['#btnTop', '#btnVis'].forEach(s => $(s).disabled = true);
-  if (S.params.moneda === 'USD') { setStatus('Cargando dólar CCL histórico…'); try { await loadCCL(); } catch { } }
-  let done = 0, i = 0;
+/* Cola de análisis automática: todo lo que se pide se analiza en segundo plano.
+   front = pasa adelante (la pestaña que estás mirando); force = recalcula aunque ya esté analizado. */
+const AQ = { queue: [], pending: new Map(), running: false, total: 0, done: 0 };
+function analyzeMany(rows, opts = {}) {
+  const proms = [], add = [];
+  for (const r of rows) {
+    if (!r || r.tab === 'ons') continue;
+    const k = r.tab + ':' + r.sym;
+    const pend = AQ.pending.get(k);
+    if (pend) {
+      proms.push(pend.p);
+      if (opts.front) { const i = AQ.queue.indexOf(r); if (i > 0) { AQ.queue.splice(i, 1); add.push(r); } }
+      continue;
+    }
+    if (S.an[k] && !opts.force) continue;
+    let res; const p = new Promise(x => res = x);
+    AQ.pending.set(k, { p, res });
+    add.push(r); proms.push(p);
+    AQ.total++;
+  }
+  if (opts.front) AQ.queue.unshift(...add); else AQ.queue.push(...add.filter(r => !AQ.queue.includes(r)));
+  if (!AQ.running && AQ.queue.length) runQueue();
+  return Promise.all(proms);
+}
+async function runQueue() {
+  AQ.running = S.busy = true;
+  if (S.params.moneda === 'USD') { try { await loadCCL(); } catch { } }
   const worker = async () => {
-    while (i < rows.length && !S.stop) {
-      const r = rows[i++];
+    while (AQ.queue.length) {
+      const r = AQ.queue.shift(), k = r.tab + ':' + r.sym;
       await analyzeRow(r);
-      done++;
-      progress(done / rows.length);
-      setStatus(`Analizando ${done}/${rows.length}…`);
-      if (done % 4 === 0) renderTable();
+      AQ.done++;
+      const pend = AQ.pending.get(k);
+      if (pend) { pend.res(); AQ.pending.delete(k); }
+      progress(AQ.done / AQ.total);
+      setStatus(`Analizando ${AQ.done}/${AQ.total}…`);
+      if (AQ.done % 6 === 0) renderTable();
     }
   };
-  await Promise.all([worker(), worker(), worker(), worker()]);
-  S.busy = false;
-  $('#btnStop').hidden = true;
-  ['#btnTop', '#btnVis'].forEach(s => $(s).disabled = false);
+  await Promise.all([worker(), worker(), worker(), worker(), worker()]);
+  AQ.running = S.busy = false; AQ.total = AQ.done = 0;
   progress(null);
-  setStatus(S.stop ? 'Análisis detenido' : `Análisis completo (${done})`);
+  setStatus('');
   renderTable();
 }
+// Analiza todo lo de la pestaña actual, primero lo de más volumen
+function autoAnalyze(tab) {
+  let rows;
+  if (tab === 'favoritos') rows = [...S.fav].map(findRow).filter(Boolean);
+  else rows = (S.live[tab] || []).filter(r => !r.variant).sort((a, b) => b.monto - a.monto);
+  if (rows.length) analyzeMany(rows, { front: true });
+}
 
-// Re-calcula con nuevos parámetros sin volver a descargar
+// Re-calcula con nuevos parámetros o precios (mientras tanto se ven los valores anteriores)
 async function reanalyzeAll() {
-  const keys = Object.keys(S.an);
-  const rows = keys.map(k => findRow(k)).filter(Boolean);
-  S.an = {};
-  if (rows.length) await analyzeMany(rows);
+  const rows = Object.keys(S.an).map(k => findRow(k)).filter(Boolean);
+  if (rows.length) await analyzeMany(rows, { force: true });
 }
 function findRow(key) {
   const [tab, sym] = key.split(':');
@@ -1350,7 +1371,6 @@ function onParamChange() {
   store.set('params', P);
   clearTimeout(paramTimer);
   paramTimer = setTimeout(async () => {
-    $('#btnTop').textContent = `Analizar top ${P.topN} por volumen`;
     await reanalyzeAll();
     if (!$('#detail').hidden && curDetail) {
       const key = curDetail.tab + ':' + curDetail.sym;
@@ -1376,9 +1396,6 @@ async function setTab(tab) {
   if (strat) return;
   $('#lblLider').style.display = tab === 'acciones' ? '' : 'none';
   $('#lblTir').style.display = tab === 'bonos' || tab === 'ons' ? '' : 'none';
-  $('#btnTop').style.display = tab === 'favoritos' || tab === 'ons' ? 'none' : '';
-  $('#btnVis').textContent = tab === 'favoritos' ? 'Analizar favoritos' : 'Analizar visibles';
-  $('#btnVis').style.display = tab === 'ons' ? 'none' : '';
   try {
     if (tab === 'favoritos') {
       const tabs = [...new Set([...S.fav].map(k => k.split(':')[0]))];
@@ -1394,6 +1411,7 @@ async function setTab(tab) {
     setStatus('Error al cargar cotizaciones: ' + e.message);
   }
   renderTable();
+  autoAnalyze(tab);
   if (typeof afterTab === 'function') afterTab(tab);
 }
 
@@ -1445,23 +1463,17 @@ function bind() {
   $('#paramsForm').addEventListener('change', onParamChange);
   $('#btnReset').addEventListener('click', () => { S.params = { ...DEFAULTS }; renderParams(); onParamChange(); });
 
-  $('#btnTop').addEventListener('click', () => {
-    const rows = (S.live[S.tab] || []).filter(r => !r.variant && r.v > 0)
-      .sort((a, b) => b.monto - a.monto).slice(0, S.params.topN);
-    analyzeMany(rows);
-  });
-  $('#btnVis').addEventListener('click', () => {
-    const rows = visibleRows().filter(r => !an(r)).slice(0, 80);
-    if (!rows.length) { setStatus('Todo lo visible ya está analizado'); return; }
-    analyzeMany(rows);
-  });
-  $('#btnStop').addEventListener('click', () => { S.stop = true; });
   $('#btnRefresh').addEventListener('click', () => refreshAll());
 }
 
 // Vuelve a traer cotizaciones y recalcula lo analizado (usa el histórico en memoria)
+let refreshing = false;
 async function refreshAll() {
-  if (SNAP || S.busy) return;
+  if (SNAP || refreshing) return;
+  refreshing = true;
+  try { await doRefresh(); } finally { refreshing = false; }
+}
+async function doRefresh() {
   setStatus('Actualizando…');
   const tabs = Object.keys(S.live);
   try { await Promise.all([loadFX(), ...tabs.map(t => loadLive(t, true))]); } catch (e) { setStatus('Error: ' + e.message); return; }
@@ -1484,7 +1496,6 @@ async function init() {
       <a href="https://sebastiandelgrosso-blip.github.io/panel-inversiones-ar/" target="_blank" rel="noopener" style="color:var(--accent)">Abrir la versión en vivo →</a>`;
     document.querySelector('.tabs').after(b);
   }
-  $('#btnTop').textContent = `Analizar top ${S.params.topN} por volumen`;
   loadFX();
   loadLive('bonos').catch(() => { }); // para el MEP implícito
   // Flujos de fondos de ONs y soberanos nuevos (archivo local generado por actualizar-flujos.js)
@@ -1498,9 +1509,6 @@ async function init() {
       renderTable();
     })
     .catch(() => { });
-  await setTab('acciones');
-  // Primer análisis automático: panel líder
-  const lider = (S.live.acciones || []).filter(r => LIDER.has(r.sym));
-  if (lider.length) await analyzeMany(lider);
+  await setTab('acciones'); // analiza sola toda la pestaña (ver autoAnalyze)
   if (typeof afterInit === 'function') afterInit();
 }
