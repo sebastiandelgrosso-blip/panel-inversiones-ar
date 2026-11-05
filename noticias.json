@@ -1,12 +1,572 @@
 {
- "actualizado": "2026-11-05T13:35:13.873Z",
+ "actualizado": "2026-11-05T16:57:46.841Z",
  "items": [
   {
-   "t": "Por qué no hay bancos mañana, viernes 6 de noviembre, en la Argentina",
-   "link": "https://www.lanacion.com.ar/economia/por-que-no-hay-bancos-manana-viernes-6-de-noviembre-en-la-argentina-nid05112026/",
+   "t": "We're raising our price target on Cardinal Health after another stellar quarter of profits",
+   "link": "https://www.cnbc.com/investingclub/2026/11/05/were-raising-our-price-target-on-cardinal-health-after-another-stellar-quarter-of-profits.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T16:51:58.000Z",
+   "tags": []
+  },
+  {
+   "t": "Las Vegas Raiders owner Mark Davis says he's 'not a fan' of sports gambling amid prediction market boom",
+   "link": "https://www.cnbc.com/2026/11/05/las-vegas-raiders-owner-mark-davis-on-sports-gambling-not-a-fan.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T16:48:55.000Z",
+   "tags": []
+  },
+  {
+   "t": "Democratic sweep puts crypto on defensive in Washington",
+   "link": "https://www.cnbc.com/2026/11/05/crypto-midterms-democrats-clarity-act.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T16:48:34.000Z",
+   "tags": []
+  },
+  {
+   "t": "Inside Wealth: Three tax proposals targeting the rich that the new Congress could revive",
+   "link": "https://www.cnbc.com/2026/11/05/three-tax-proposals-targeting-the-rich-the-new-congress-could-revive.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T16:45:24.000Z",
+   "tags": []
+  },
+  {
+   "t": "Micron, Sandisk and other AI stocks are falling hard: ‘Investors don’t like uncertainty.’",
+   "link": "https://www.marketwatch.com/story/micron-sandisk-and-other-ai-stocks-are-falling-hard-investors-dont-like-uncertainty-94d2a3b9?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-05T16:44:00.000Z",
+   "tags": [
+    "MU"
+   ]
+  },
+  {
+   "t": "Daniel Schteingart presentó su nuevo libro: cómo está la Argentina y qué futuro le espera al país",
+   "link": "https://www.infobae.com/economia/2026/11/05/daniel-schteingart-presento-su-nuevo-libro-como-esta-la-argentina-y-que-futuro-le-espera-al-pais/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-05T16:43:15.000Z",
+   "tags": []
+  },
+  {
+   "t": "El riesgo país de la Argentina sigue subiendo y rompe la barrera de los 900 puntos básicos",
+   "link": "https://www.infobae.com/economia/2026/11/05/el-riesgo-pais-de-la-argentina-sigue-subiendo-y-rompe-la-barrera-de-los-900-puntos-basicos/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-05T16:39:41.000Z",
+   "tags": [
+    "BONOS"
+   ]
+  },
+  {
+   "t": "Dólar hoy: a cuánto cotiza este jueves 5 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-jueves-5-noviembre-n6341737",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-05T16:39:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "El riesgo país se dispara a casi 920 puntos y una acción argentina se hunde 13% a dos días de la \"ola demócrata\" en EEUU",
+   "link": "https://www.ambito.com/finanzas/los-bonos-dolares-arrancan-rojo-wall-street-mientras-que-el-riesgo-pais-supera-los-850-puntos-n6341870",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-05T16:39:00.000Z",
+   "tags": [
+    "BONOS"
+   ]
+  },
+  {
+   "t": "Dólar blue hoy: a cuánto opera este jueves 5 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-jueves-5-noviembre-n6341738",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-05T16:39:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar hoy y dólar blue hoy minuto a minuto: a cuánto opera este jueves 5 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-hoy-y-dolar-blue-hoy-minuto-minuto-cuanto-opera-este-jueves-5-noviembre-n6341760",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-05T16:37:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Barkin sees interest rate hikes ahead, but at a gradual pace",
+   "link": "https://www.cnbc.com/2026/11/05/barkin-sees-interest-rate-hikes-ahead-but-at-a-gradual-pace.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T16:34:33.000Z",
+   "tags": []
+  },
+  {
+   "t": "Mercado Libre cae en Wall Street tras presentar sus resultados del tercer trimestre",
+   "link": "https://www.lanacion.com.ar/economia/negocios/mercado-libre-cae-en-wall-street-tras-presentar-sus-resultados-del-tercer-trimestre-nid05112026/",
    "src": "La Nación",
    "region": "AR",
-   "fecha": "2026-11-05T13:30:32.000Z",
+   "fecha": "2026-11-05T16:33:16.000Z",
+   "tags": [
+    "MELI",
+    "SPY"
+   ]
+  },
+  {
+   "t": "Se derrumba 4% el índice tecnológico de Wall Street por la fuerte caída de acciones vinculadas a la IA",
+   "link": "https://www.infobae.com/economia/2026/11/05/se-derrumba-5-el-indice-tecnologico-de-wall-street-por-la-fuerte-caida-de-acciones-vinculadas-a-la-ia/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-05T16:32:56.000Z",
+   "tags": [
+    "SPY"
+   ]
+  },
+  {
+   "t": "ANSES: cuándo cobro en noviembre 2026 si mi DNI termina en 4",
+   "link": "https://www.infobae.com/economia/2026/11/05/anses-cuando-cobro-en-noviembre-2026-si-mi-dni-termina-en-4/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-05T16:32:51.000Z",
+   "tags": []
+  },
+  {
+   "t": "Santiago Peña renunció a la Presidencia de Paraguay por el escándalo del Ueno Bank",
+   "link": "https://www.infobae.com/america/america-latina/2026/11/05/santiago-pena-renuncio-a-la-presidencia-de-paraguay-por-el-escandalo-del-ueno-bank/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-05T16:31:48.000Z",
+   "tags": []
+  },
+  {
+   "t": "Democrats to probe JPMorgan's relationship with Jeffrey Epstein when they take Senate control",
+   "link": "https://www.cnbc.com/2026/11/05/jpmorgan-epstein-democrats-erdoes-midterm-election.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T16:31:33.000Z",
+   "tags": [
+    "JPM"
+   ]
+  },
+  {
+   "t": "Cayó un banco con 3 millones de clientes en Paraguay y la City mira el caso de cerca",
+   "link": "https://www.iprofesional.com/finanzas/468295-ueno-bank-la-caida-del-banco-paraguayo-y-su-impacto-en-argentina",
+   "src": "iProfesional",
+   "region": "AR",
+   "fecha": "2026-11-05T16:30:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Cómo estalló el escándalo de Ueno Bank, que terminó con la renuncia de Peña en Paraguay",
+   "link": "https://www.iprofesional.com/finanzas/468355-como-estallo-el-escandalo-de-ueno-bank-que-termino-con-la-renuncia-de-pena-en-paraguay",
+   "src": "iProfesional",
+   "region": "AR",
+   "fecha": "2026-11-05T16:30:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Marc Lore's Wonder confidentially files for IPO",
+   "link": "https://www.cnbc.com/2026/11/05/wonder-confidential-ipo-filing.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T16:27:10.000Z",
+   "tags": []
+  },
+  {
+   "t": "El dólar mayorista sube en el cierre de la semana corta y vuelve ubicarse cerca de máximos nominales",
+   "link": "https://www.ambito.com/finanzas/el-dolar-se-mantiene-cerca-maximos-historicos-nominales-y-la-devaluacion-del-real-brasil-enciende-alertas-n6341762",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-05T16:26:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Trump's energy deals are about to face a wave of investigations by Democrats",
+   "link": "https://www.cnbc.com/2026/11/05/trump-election-energy-venezuela-critical-mineral-renewable-iran.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T16:23:48.000Z",
+   "tags": []
+  },
+  {
+   "t": "The year’s most successful stock-market trades are unraveling — perhaps for good",
+   "link": "https://www.marketwatch.com/story/the-years-most-successful-stock-market-trades-are-unraveling-perhaps-for-good-45f7a0dd?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-05T16:23:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "California’s billionaire tax faces defeat, but Democrats plan higher taxes on the wealthy",
+   "link": "https://www.cnbc.com/2026/11/05/as-california-billionaire-tax-fizzles-democrats-plan-taxes-on-wealthy.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T16:19:21.000Z",
+   "tags": []
+  },
+  {
+   "t": "El caso Ueno Bank: por qué cayó y cuál es su impacto sobre la economía de Paraguay",
+   "link": "https://www.infobae.com/economia/2026/11/05/el-caso-ueno-bank-por-que-cayo-y-cual-es-su-impacto-sobre-la-economia-de-paraguay/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-05T16:19:16.000Z",
+   "tags": []
+  },
+  {
+   "t": "Maíz tardío: genética para sostener los pisos y empujar los techos",
+   "link": "https://www.lanacion.com.ar/economia/campo/maiz-tardio-genetica-para-sostener-los-pisos-y-empujar-los-techos-nid05112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-05T16:16:40.000Z",
+   "tags": []
+  },
+  {
+   "t": "A record number of first-time home buyers now pay in cash. Here’s where they get the money.",
+   "link": "https://www.marketwatch.com/story/a-record-10-of-first-time-home-buyers-now-pay-in-cash-heres-where-they-get-the-money-70f2e656?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-05T16:15:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "This pancreatic cancer treatment is on track for ‘one of the best drug launches of all time’",
+   "link": "https://www.marketwatch.com/story/this-pancreatic-cancer-treatment-is-on-track-for-one-of-the-best-drug-launches-of-all-time-37bf86ce?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-05T16:12:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Qué pasó en Paraguay con la intervención del Ueno Bank: ¿Es un corralito?",
+   "link": "https://www.lanacion.com.ar/economia/sacude-a-paraguay-un-escandalo-financiero-que-le-impide-a-casi-tres-millones-de-personas-acceder-a-nid04112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-05T16:09:40.000Z",
+   "tags": []
+  },
+  {
+   "t": "Voters say the economy drove them to the polls — and blame Trump for their troubles",
+   "link": "https://www.cnbc.com/2026/11/04/2026-midterms-trump-economy-iran-war.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T16:07:59.000Z",
+   "tags": []
+  },
+  {
+   "t": "Seguro contra default: el costo para cubrirse de un incumplimiento de la Argentina alcanzó su nivel más alto en un año",
+   "link": "https://www.lanacion.com.ar/economia/seguro-contra-default-el-costo-para-cubrirse-de-un-incumplimiento-de-la-argentina-alcanzo-su-nivel-nid05112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-05T16:06:33.000Z",
+   "tags": []
+  },
+  {
+   "t": "El Banco Nación lanza nuevos créditos para compra de autos con tasa del 25%: requisitos y cómo acceder",
+   "link": "https://www.ambito.com/finanzas/el-banco-nacion-lanza-nuevos-creditos-compra-autos-tasa-del-25-requisitos-y-como-acceder-n6341950",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-05T16:03:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Bank of England hikes interest rate for the first time since Iran war, warns inflation will near 5%",
+   "link": "https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T16:01:47.000Z",
+   "tags": []
+  },
+  {
+   "t": "An Anthropic IPO when the AI trade is this turbulent? Goodspeed!",
+   "link": "https://www.marketwatch.com/story/an-anthropic-ipo-when-the-ai-trade-is-this-turbulent-godspeed-08ca0496?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-05T16:00:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Caen los bonos argentinos y se dispara el riesgo país por encima de los 900 puntos",
+   "link": "https://www.lanacion.com.ar/economia/se-dispara-el-riesgo-pais-por-encima-de-los-900-puntos-y-caen-los-bonos-argentinos-nid05112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-05T15:58:32.000Z",
+   "tags": [
+    "BONOS"
+   ]
+  },
+  {
+   "t": "La principal cámara de EEUU anticipó que la derrota de Trump limitará una posible asistencia financiera a la Argentina",
+   "link": "https://www.infobae.com/economia/2026/11/05/la-principal-camara-de-eeuu-anticipo-que-la-derrota-de-trump-limitara-una-posible-asistencia-financiera-a-la-argentina/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-05T15:50:45.000Z",
+   "tags": []
+  },
+  {
+   "t": "Retenciones: la Argentina quedó última en un ranking mundial de apoyo al campo y revelan cuánto pierde por los impuestos",
+   "link": "https://www.lanacion.com.ar/economia/campo/retenciones-la-argentina-quedo-ultima-en-un-ranking-mundial-de-apoyo-al-campo-y-revelan-cuanto-nid05112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-05T15:36:12.000Z",
+   "tags": []
+  },
+  {
+   "t": "Expedia CEO says AI agents aren't changing booking habits — yet",
+   "link": "https://www.cnbc.com/2026/11/05/expedia-ai-agents-booking-habits.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T15:34:55.000Z",
+   "tags": []
+  },
+  {
+   "t": "‘My life could be cut short’: I’m 55, married and have a brain tumor. Should I splash out on a $210,000 Porsche?",
+   "link": "https://www.marketwatch.com/story/my-life-could-be-cut-short-im-55-married-with-4-3-million-and-have-a-brain-tumor-should-i-buy-a-210-000-custom-porsche-ed825ada?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-05T15:30:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "‘I have no financial safety net’: I’m 66, rely on Social Security and have just $500 in savings. What hope do I have?",
+   "link": "https://www.marketwatch.com/story/i-have-no-financial-safety-net-im-66-rely-on-social-security-and-have-500-in-savings-what-politician-speaks-for-me-be2126cb?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-05T15:30:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "El colapso de Ueno Bank de Paraguay golpea en Argentina: tiene 900 empleados en Buenos Aires, no pagó sueldos y hay suspensiones",
+   "link": "https://www.infobae.com/economia/2026/11/05/el-colapso-de-ueno-bank-de-paraguay-golpea-en-argentina-tiene-900-empleados-en-buenos-aires-no-pago-sueldos-y-hay-suspensiones/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-05T15:28:54.000Z",
+   "tags": []
+  },
+  {
+   "t": "Bomb threats disrupt flights across Europe for the second time. Here’s what we know",
+   "link": "https://www.cnbc.com/2026/11/05/bomb-threats-flights-europe.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T15:26:06.000Z",
+   "tags": []
+  },
+  {
+   "t": "El escándalo de Ueno Bank llegó a la Argentina: suspenden empleados y admiten que no tienen fondos para pagar salarios",
+   "link": "https://www.lanacion.com.ar/economia/el-escandalo-de-ueno-bank-llego-a-la-argentina-suspenden-empleados-y-admiten-que-no-tienen-fondos-nid05112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-05T15:24:53.000Z",
+   "tags": []
+  },
+  {
+   "t": "Qualcomm slides 9% after earnings, leading postelection chip stock sell-off",
+   "link": "https://www.cnbc.com/2026/11/05/qualcomm-earnings-chip-stocks-election.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T15:24:47.000Z",
+   "tags": []
+  },
+  {
+   "t": "Los bonos argentinos caen hasta 3% y el riesgo país se acerca a los 1.000 puntos",
+   "link": "https://www.iprofesional.com/finanzas/468436-bonos-argentinos-caen-hasta-3-por-ciento-y-el-riesgo-pais-llega-a-982-puntos",
+   "src": "iProfesional",
+   "region": "AR",
+   "fecha": "2026-11-05T15:19:00.000Z",
+   "tags": [
+    "BONOS"
+   ]
+  },
+  {
+   "t": "“Pasaporte digital de la vaca”: una revolucionaria tecnología ayuda a estimar la grasa de la carne desde el celular y registrar datos clave",
+   "link": "https://www.lanacion.com.ar/economia/campo/pasaporte-digital-de-la-vaca-una-revolucionaria-tecnologia-ayuda-a-estimar-la-grasa-de-la-carne-nid05112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-05T15:18:27.000Z",
+   "tags": []
+  },
+  {
+   "t": "Learning from ‘Love Is Blind’ money drama",
+   "link": "https://www.marketwatch.com/story/learning-from-love-is-blind-money-drama-810175f9?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-05T15:16:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Sin intervenir el dólar desde 2021, el ministro de Economía de Uruguay explicó la receta detrás de la estabilidad",
+   "link": "https://www.lanacion.com.ar/economia/sin-intervenir-el-dolar-desde-2021-el-ministro-de-economia-de-uruguay-explico-la-receta-detras-de-la-nid05112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-05T15:13:56.000Z",
+   "tags": []
+  },
+  {
+   "t": "Cuánto cuesta el libro de León XIV, \"La fuerza del Evangelio\" y dónde comprarlo",
+   "link": "https://www.ambito.com/economia/cuanto-cuesta-el-libro-leon-xiv-la-fuerza-del-evangelio-y-donde-comprarlo-n6325182",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-05T15:09:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Wendy's rejects $1.4 billion takeover proposal from Nelson Peltz’s Trian",
+   "link": "https://www.cnbc.com/2026/11/05/wendys-rejects-takeover-proposal.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T15:08:05.000Z",
+   "tags": []
+  },
+  {
+   "t": "EEUU: el temblor político de Texas sacude a las grandes empresas",
+   "link": "https://www.ambito.com/finanzas/eeuu-el-temblor-politico-texas-sacude-las-grandes-empresas-n6341900",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-05T15:08:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Desplome en Wall Street: el Nasdaq cae 3% ante las pérdidas de las grandes empresas tecnológicas",
+   "link": "https://www.ambito.com/finanzas/las-acciones-tecnologicas-caen-fuerza-asia-y-los-futuros-wall-street-n6341789",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-05T15:08:00.000Z",
+   "tags": [
+    "SPY",
+    "QQQ"
+   ]
+  },
+  {
+   "t": "Los préstamos en pesos cortaron la racha negativa y abren una expectativa positiva para fin de año",
+   "link": "https://www.iprofesional.com/finanzas/468427-prestamos-en-pesos-cortaron-racha-negativa-y-abren-expectativas-positivas-para-fin-de-ano",
+   "src": "iProfesional",
+   "region": "AR",
+   "fecha": "2026-11-05T15:07:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Galicia Asset Management lanza gForce, el primer ETF local que seguirá al MSCI MERVAL",
+   "link": "https://www.iprofesional.com/finanzas/468362-galicia-asset-management-lanza-gforce-primer-etf-local-que-seguira-al-msci-merval",
+   "src": "iProfesional",
+   "region": "AR",
+   "fecha": "2026-11-05T15:02:00.000Z",
+   "tags": [
+    "GGAL"
+   ]
+  },
+  {
+   "t": "Billionaires aren’t off the hook for higher taxes, even if they did dodge California’s wealth tax",
+   "link": "https://www.marketwatch.com/story/billionaires-arent-off-the-hook-for-higher-taxes-even-if-they-did-dodge-californias-wealth-tax-a73f9045?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-05T15:01:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Two months after my father’s funeral, my stepmother asked me to repay his $40,000 wedding gift. Should I do what she says?",
+   "link": "https://www.marketwatch.com/story/shes-a-type-a-personality-my-stepmother-wants-me-to-repay-my-late-fathers-40-000-wedding-gift-should-i-oblige-51fc64f7?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-05T15:00:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Motorola renueva su ecosistema en la región con nuevos auriculares, relojes y un cargador magnético",
+   "link": "https://www.lanacion.com.ar/tecnologia/motorola-renueva-su-ecosistema-en-la-region-con-nuevos-auriculares-relojes-y-un-cargador-magnetico-nid05112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-05T14:55:52.000Z",
+   "tags": []
+  },
+  {
+   "t": "Vladimir Werning, vice del BCRA: \"La rentabilidad de los sectores exportadores tiene un efecto derrame fuertísimo\"",
+   "link": "https://www.ambito.com/economia/vladimir-werning-vice-del-bcra-la-rentabilidad-los-sectores-exportadores-tiene-un-efecto-derrame-fuertisimo-n6341886",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-05T14:53:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Donald Trump avanza contra la Fed: se fijó una audiencia para intentar apartar a Lisa Cook en diciembre",
+   "link": "https://www.ambito.com/economia/donald-trump-avanza-contra-la-fed-se-fijo-una-audiencia-intentar-apartar-lisa-cook-diciembre-n6341908",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-05T14:52:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "“Tres preocupaciones”: los riesgos que identifica el BCRA para la economía y por qué anticipan crecimiento del crédito",
+   "link": "https://www.lanacion.com.ar/economia/tres-preocupaciones-los-riesgos-que-identifica-el-bcra-para-la-economia-y-por-que-anticipan-nid05112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-05T14:51:32.000Z",
+   "tags": []
+  },
+  {
+   "t": "Qué pasará con el dólar de cara a 2027: el \"gurú del blue\" lanzó su predicción",
+   "link": "https://www.ambito.com/finanzas/que-pasara-el-dolar-cara-2027-el-guru-del-blue-lanzo-su-prediccion-n6341856",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-05T14:47:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "El Ministro de Economía de Brasil afirmó que la tasa Selic debe reducirse, pero de manera \"sostenible\"",
+   "link": "https://www.ambito.com/finanzas/el-ministro-economia-brasil-afirmo-que-la-tasa-selic-debe-reducirse-pero-manera-sostenible-n6341911",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-05T14:47:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Para el Santander, el Gobierno está “muchísimo mejor preparado” que en 2025 para enfrentar una corrida hacia el dólar",
+   "link": "https://www.lanacion.com.ar/economia/las-cuatro-megatendencias-que-marcaran-a-la-economia-mundial-en-los-proximos-anos-nid05112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-05T14:46:12.000Z",
+   "tags": []
+  },
+  {
+   "t": "Impacto financiero por el colapso del Ueno Bank: saltó el riesgo país de Paraguay y el guaraní se devaluó 8%",
+   "link": "https://www.infobae.com/economia/2026/11/05/impacto-financiero-por-el-colapso-del-ueno-bank-salto-el-riesgo-pais-de-paraguay-y-el-guarani-se-devaluo-8/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-05T14:37:14.000Z",
+   "tags": [
+    "BONOS"
+   ]
+  },
+  {
+   "t": "Here's what the Democratic election rout could mean for the U.S. economy",
+   "link": "https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T14:33:32.000Z",
+   "tags": []
+  },
+  {
+   "t": "La IA deja obsoletas tareas y a las estructuras de las empresas",
+   "link": "https://www.infobae.com/opinion/2026/11/05/la-ia-deja-obsoletas-tareas-y-a-las-estructuras-de-las-empresas/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-05T14:29:34.000Z",
+   "tags": []
+  },
+  {
+   "t": "World's largest olive oil company plummets 20% after rivals agree to takeover deal",
+   "link": "https://www.cnbc.com/2026/11/05/deoleo-olive-oil-takeover-dcoop-acesur.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T14:25:23.000Z",
+   "tags": []
+  },
+  {
+   "t": "El número dos del BCRA defendió la velocidad diferente a la que crecen los sectores exportadores: “Tienen un derrame fuertísimo”",
+   "link": "https://www.infobae.com/economia/2026/11/05/el-numero-dos-del-bcra-defendio-la-velocidad-diferente-a-la-que-crecen-los-sectores-exportadores-tienen-un-derrame-fuertisimo/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-05T14:24:47.000Z",
    "tags": []
   },
   {
@@ -14,8 +574,94 @@
    "link": "https://www.infobae.com/america/america-latina/2026/11/05/escandalo-del-ueno-bank-el-expresidente-horacio-cartes-dijo-que-su-partido-apoyara-el-juicio-politico-a-santiago-pena/",
    "src": "Infobae",
    "region": "AR",
-   "fecha": "2026-11-05T13:28:44.000Z",
+   "fecha": "2026-11-05T14:23:55.000Z",
    "tags": []
+  },
+  {
+   "t": "Gustavo Puccini, ministro de producción de Santa Fe: \"El RIGI no llegará a las pymes si las provincias no acercan las puntas\"",
+   "link": "https://www.ambito.com/economia/gustavo-puccini-ministro-produccion-santa-fe-el-rigi-no-llegara-las-pymes-si-las-provincias-no-acercan-las-puntas-n6341682",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-05T14:05:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Banks are turning cautious on lending, according to the Fed. What it means for the economy",
+   "link": "https://www.cnbc.com/2026/11/05/fed-bank-lending-standards-small-business.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T13:52:38.000Z",
+   "tags": []
+  },
+  {
+   "t": "Aumentaron las multas en la provincia de Buenos Aires: cuánto cuesta cada infracción a partir de noviembre 2026",
+   "link": "https://www.infobae.com/economia/2026/11/05/aumentaron-las-multas-en-la-provincia-de-buenos-aires-cuanto-cuesta-cada-infraccion-a-partir-de-noviembre-2026/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-05T13:52:02.000Z",
+   "tags": []
+  },
+  {
+   "t": "Alias bancario: cómo usar la cámara del celular para transferir por Mercado Pago",
+   "link": "https://www.iprofesional.com/finanzas/468413-como-transferir-dinero-por-mercado-pago-sin-escribir-el-alias-ni-cbu",
+   "src": "iProfesional",
+   "region": "AR",
+   "fecha": "2026-11-05T13:46:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Día cambia de manos: GDN, el dueño de ChangoMás, se quedó con la cadena",
+   "link": "https://www.lanacion.com.ar/economia/negocios/dia-cambia-de-manos-gdn-el-dueno-de-changomas-se-quedo-con-la-cadena-nid05112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-05T13:44:47.000Z",
+   "tags": []
+  },
+  {
+   "t": "OpenAI pledges to halt NDAs in new data center policy proposal after election rebuke",
+   "link": "https://www.cnbc.com/2026/11/05/openai-to-pay-for-data-center-power-after-election-shows-ai-concern.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T13:44:45.000Z",
+   "tags": []
+  },
+  {
+   "t": "What Wall Street billionaires are saying about Democrats' midterm sweep",
+   "link": "https://www.cnbc.com/2026/11/04/billionaires-musk-branson-democrats-midterms-ai-wall-street.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T13:44:27.000Z",
+   "tags": [
+    "SPY"
+   ]
+  },
+  {
+   "t": "Salto de los bonos en pesos: sospechan que el Gobierno inyectó $2 billones antes de una licitación clave",
+   "link": "https://www.ambito.com/finanzas/salto-los-bonos-pesos-sospechan-que-el-gobierno-inyecto-2-billones-antes-una-licitacion-clave-n6341794",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-05T13:41:00.000Z",
+   "tags": [
+    "BONOS"
+   ]
+  },
+  {
+   "t": "Por qué no hay bancos mañana, viernes 6 de noviembre, en la Argentina",
+   "link": "https://www.lanacion.com.ar/economia/por-que-no-hay-bancos-manana-viernes-6-de-noviembre-en-la-argentina-nid05112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-05T13:40:12.000Z",
+   "tags": []
+  },
+  {
+   "t": "Chinese AI lab Moonshot turned to Europe for Nvidia Blackwell access amid U.S. China curbs, sources tell CNBC",
+   "link": "https://www.cnbc.com/2026/11/05/moonshot-ai-nvidia-chips-europe-china.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-05T13:34:14.000Z",
+   "tags": [
+    "NVDA"
+   ]
   },
   {
    "t": "“El capital es escaso”: el desafío para la economía hacia las elecciones de 2027 y los desafíos de la “segunda etapa” del plan",
@@ -28,11 +674,11 @@
    ]
   },
   {
-   "t": "Wendy's rejects $1.4 billion takeover proposal from Nelson Peltz’s Trian",
-   "link": "https://www.cnbc.com/2026/11/05/wendys-rejects-takeover-proposal.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-05T13:26:28.000Z",
+   "t": "Los bancos no abrirán durante cinco días: qué se podrá hacer desde este viernes",
+   "link": "https://www.iprofesional.com/finanzas/468412-bancos-cerrados-que-dias-no-habra-atencion-al-publico-en-noviembre",
+   "src": "iProfesional",
+   "region": "AR",
+   "fecha": "2026-11-05T13:26:00.000Z",
    "tags": []
   },
   {
@@ -44,62 +690,6 @@
    "tags": [
     "BONOS"
    ]
-  },
-  {
-   "t": "OpenAI pledges to halt NDAs in new data center policy proposal after election rebuke",
-   "link": "https://www.cnbc.com/2026/11/05/openai-to-pay-for-data-center-power-after-election-shows-ai-concern.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-05T13:22:39.000Z",
-   "tags": []
-  },
-  {
-   "t": "Voters say the economy drove them to the polls — and blame Trump for their troubles",
-   "link": "https://www.cnbc.com/2026/11/04/2026-midterms-trump-economy-iran-war.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-05T13:19:34.000Z",
-   "tags": []
-  },
-  {
-   "t": "‘It seems bizarre’: We’re in our 80s with $950,000 in traditional IRAs. Why is our adviser pushing Roth conversions?",
-   "link": "https://www.marketwatch.com/story/it-seems-bizarre-were-in-our-80s-with-950-000-in-traditional-iras-why-is-our-adviser-pushing-us-to-do-roth-conversions-a665f990?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-05T13:15:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar hoy y dólar blue hoy minuto a minuto: a cuánto opera este jueves 5 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-hoy-y-dolar-blue-hoy-minuto-minuto-cuanto-opera-este-jueves-5-noviembre-n6341760",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-05T13:14:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar hoy: a cuánto cotiza este jueves 5 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-jueves-5-noviembre-n6341737",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-05T13:08:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar blue hoy: a cuánto opera este jueves 5 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-jueves-5-noviembre-n6341738",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-05T13:08:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "A prolonged war in Iran is the market’s real ‘black swan,’ says this strategist",
-   "link": "https://www.marketwatch.com/story/a-prolonged-war-in-iran-is-the-markets-real-black-swan-says-this-strategist-65d105c7?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-05T13:07:00.000Z",
-   "tags": []
   },
   {
    "t": "Bitcoin sube y busca consolidarse arriba de u$s80.000: el mercado apuesta a una menor incertidumbre global",
@@ -114,14 +704,6 @@
    "link": "https://www.lanacion.com.ar/tecnologia/con-el-motorola-signature-27-la-compania-hace-su-jugada-mas-ambiciosa-nid05112026/",
    "src": "La Nación",
    "region": "AR",
-   "fecha": "2026-11-05T13:01:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "‘He was heartbroken’: My husband’s kids abandoned him when he was dying. Was he right to leave everything to me?",
-   "link": "https://www.marketwatch.com/story/he-was-heartbroken-my-husbands-kids-never-helped-when-he-was-gravely-ill-was-he-right-to-leave-everything-to-me-1ad0616b?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
    "fecha": "2026-11-05T13:01:00.000Z",
    "tags": []
   },
@@ -142,35 +724,11 @@
    "tags": []
   },
   {
-   "t": "Here's what the Democratic election rout could mean for the U.S. economy",
-   "link": "https://www.cnbc.com/2026/11/05/emocratic-midterm-economy.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-05T12:53:14.000Z",
-   "tags": []
-  },
-  {
    "t": "Una petrolera noruega confirmó que volverá a buscar petróleo en el mar argentino",
    "link": "https://www.lanacion.com.ar/economia/una-petrolera-noruega-confirmo-que-volvera-a-buscar-petroleo-en-el-mar-argentino-nid05112026/",
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-05T12:46:05.000Z",
-   "tags": []
-  },
-  {
-   "t": "Robot maker Agility starts trading today — but its steep losses are raising red flags",
-   "link": "https://www.marketwatch.com/story/robot-maker-agility-starts-trading-today-but-its-steep-losses-are-raising-red-flags-f97c2cee?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-05T12:43:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Bank of England hikes interest rate for the first time since Iran war, warns inflation will near 5%",
-   "link": "https://www.cnbc.com/2026/11/05/interest-rates-inflation-uk.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-05T12:37:57.000Z",
    "tags": []
   },
   {
@@ -182,14 +740,6 @@
    "tags": []
   },
   {
-   "t": "Interest rates could go ‘significantly higher’ if oil prices keep climbing — even if the Iran war ends soon",
-   "link": "https://www.marketwatch.com/story/interest-rates-could-go-significantly-higher-if-oil-prices-keep-climbing-even-if-the-iran-war-ends-soon-e3493498?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-05T12:33:00.000Z",
-   "tags": []
-  },
-  {
    "t": "La Fiscalía de Paraguay pidió prisión preventiva para el fundador del intervenido Ueno Bank",
    "link": "https://www.infobae.com/america/america-latina/2026/11/05/la-fiscalia-de-paraguay-pidio-prision-preventiva-para-el-fundador-del-intervenido-ueno-bank/",
    "src": "Infobae",
@@ -198,45 +748,11 @@
    "tags": []
   },
   {
-   "t": "The real test for the artificial intelligence build-out is what happens in 2028, analysts say",
-   "link": "https://www.marketwatch.com/story/the-real-test-for-the-artificial-intelligence-build-out-is-what-happens-in-2028-analysts-say-c5978e48?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-05T12:23:00.000Z",
-   "tags": []
-  },
-  {
    "t": "China exige una baja de aranceles a EEUU para destrabar la compra de productos agrícolas",
    "link": "https://www.ambito.com/economia/china-exige-una-baja-aranceles-eeuu-destrabar-la-compra-productos-agricolas-n6341802",
    "src": "Ámbito",
    "region": "AR",
    "fecha": "2026-11-05T12:22:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Las acciones tecnológicas caen con fuerza en Asia y los futuros de Wall Street",
-   "link": "https://www.ambito.com/finanzas/las-acciones-tecnologicas-caen-fuerza-asia-y-los-futuros-wall-street-n6341789",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-05T12:21:00.000Z",
-   "tags": [
-    "SPY"
-   ]
-  },
-  {
-   "t": "An Anthropic IPO when the AI trade is this turbulent? Godspeed!",
-   "link": "https://www.marketwatch.com/story/an-anthropic-ipo-when-the-ai-trade-is-this-turbulent-godspeed-08ca0496?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-05T12:16:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "I constantly attend free meals hosted by people promoting annuities. Am I flirting with disaster?",
-   "link": "https://www.marketwatch.com/story/its-good-to-be-old-ive-been-invited-to-a-dozen-free-meals-that-turn-into-annuity-sales-pitches-should-i-stop-going-63df67ca?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-05T12:15:00.000Z",
    "tags": []
   },
   {
@@ -266,14 +782,6 @@
    "tags": []
   },
   {
-   "t": "A strategist draws a 1980s parallel to argue bipartisanship could power a ‘bull stampede’",
-   "link": "https://www.marketwatch.com/story/a-strategist-draws-a-1980s-parallel-to-argue-bipartisanship-could-power-a-bull-stampede-609ddc9b?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-05T11:56:00.000Z",
-   "tags": []
-  },
-  {
    "t": "Fin a una prohibición de más de 50 años: Sturzenegger celebró una exportación de ganado en pie por avión",
    "link": "https://www.lanacion.com.ar/economia/campo/finalizo-una-prohibicion-de-mas-de-50-anos-sturzenegger-celebro-una-exportacion-de-ganado-en-pie-por-nid04112026/",
    "src": "La Nación",
@@ -295,30 +803,6 @@
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-05T11:47:52.000Z",
-   "tags": []
-  },
-  {
-   "t": "El dólar se mantiene cerca de máximos históricos nominales y la devaluación del real en Brasil enciende alertas",
-   "link": "https://www.ambito.com/finanzas/el-dolar-se-mantiene-cerca-maximos-historicos-nominales-y-la-devaluacion-del-real-brasil-enciende-alertas-n6341762",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-05T11:45:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "‘I have no financial safety net’: I’m 66, rely on Social Security and have just $500 in savings. What hope do I have?",
-   "link": "https://www.marketwatch.com/story/i-have-no-financial-safety-net-im-66-rely-on-social-security-and-have-500-in-savings-what-politician-speaks-for-me-be2126cb?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-05T11:45:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "World's largest olive oil company plummets 18% after rivals agree to takeover deal",
-   "link": "https://www.cnbc.com/2026/11/05/deoleo-olive-oil-takeover-dcoop-acesur.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-05T11:42:28.000Z",
    "tags": []
   },
   {
@@ -550,35 +1034,11 @@
    ]
   },
   {
-   "t": "Rheinmetall shares plunge 17% after outlook cut as military contracts stall",
-   "link": "https://www.cnbc.com/2026/11/05/rheinmetall-stock-outlook-sales-germany.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-05T09:06:40.000Z",
-   "tags": []
-  },
-  {
-   "t": "From tanks to drones: South Korea’s defense firms face a new battlefield test",
-   "link": "https://www.cnbc.com/2026/11/05/south-korea-defense-weapon-war-stocks-fall.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-05T08:07:43.000Z",
-   "tags": []
-  },
-  {
    "t": "Nintendo Switch 2 sales plunge 41% as price hikes and memory crunch bite",
    "link": "https://www.cnbc.com/2026/11/05/nintendo-earnings-switch-2-sales.html",
    "src": "CNBC",
    "region": "US",
    "fecha": "2026-11-05T07:30:58.000Z",
-   "tags": []
-  },
-  {
-   "t": "Russia, China may be more aggressive if they feel Trump is on 'his way out': Brookings",
-   "link": "https://www.cnbc.com/2026/11/05/trump-russia-china-summit-apec-midterms.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-05T05:58:33.000Z",
    "tags": []
   },
   {
@@ -622,14 +1082,6 @@
    "tags": [
     "BONOS"
    ]
-  },
-  {
-   "t": "Inside the chip talent war: Trade secrets and rising Chinese rivals",
-   "link": "https://www.cnbc.com/2026/11/05/semiconductor-china-korea-talents-rivalry.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-05T03:53:18.000Z",
-   "tags": []
   },
   {
    "t": "Belén, veterinaria, eligió un tractor rosa: “Vamos a hacer algo muy disruptivo”",
@@ -698,30 +1150,6 @@
    "tags": []
   },
   {
-   "t": "White House panel delays hearing on Fed's Lisa Cook to Dec. 14",
-   "link": "https://www.cnbc.com/2026/11/04/trump-federal-reserve-lisa-cook-hearing.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-05T01:11:26.000Z",
-   "tags": []
-  },
-  {
-   "t": "Snap shares fall over 10% on third-quarter revenue miss",
-   "link": "https://www.cnbc.com/2026/11/04/snap-q3-earnings-report-2026.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-05T00:14:47.000Z",
-   "tags": []
-  },
-  {
-   "t": "Inside India newsletter: India weighs a tax cut to win over foreign investors. Will it work?",
-   "link": "https://www.cnbc.com/2026/11/05/india-tax-foreign-investors-nifty.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-05T00:04:36.000Z",
-   "tags": []
-  },
-  {
    "t": "Mercado Libre superó los USD 10.000 millones de ingresos en el tercer trimestre pero la acción cae más de 6%",
    "link": "https://www.infobae.com/economia/2026/11/04/mercado-libre-supero-los-usd-10000-millones-de-ingresos-en-el-tercer-trimestre-pero-la-accion-cae-mas-de-6/",
    "src": "Infobae",
@@ -740,22 +1168,6 @@
    "tags": []
   },
   {
-   "t": "Democrats flip dozens of GOP seats. Republicans haven't flipped a single one",
-   "link": "https://www.cnbc.com/2026/11/04/democrats-2026-midterm-election-results.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-04T23:44:18.000Z",
-   "tags": []
-  },
-  {
-   "t": "Qualcomm stock drops 7% on weak earnings forecast as memory shortage weighs on smartphone sales",
-   "link": "https://www.cnbc.com/2026/11/04/qualcomm-qcom-earnings-report-q4-2026.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-04T23:38:11.000Z",
-   "tags": []
-  },
-  {
    "t": "El Gobierno aprovecha el desplome, recompra bonos y baja la tasa de interés",
    "link": "https://www.iprofesional.com/economia/468366-el-gobierno-aprovecha-el-desplome-recompra-bonos-y-baja-la-tasa-de-interes",
    "src": "iProfesional",
@@ -766,14 +1178,6 @@
    ]
   },
   {
-   "t": "A 'demand decade' ahead for energy? BP, Baker Hughes CEOs weigh the investment outlook",
-   "link": "https://www.cnbc.com/2026/11/05/energy-leaders-investment-outlook.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-04T23:23:03.000Z",
-   "tags": []
-  },
-  {
    "t": "Uno de los gurúes preferidos de Milei recomienda a Caputo un plan B para conseguir dólares",
    "link": "https://www.iprofesional.com/finanzas/468367-uno-de-los-gurues-financieros-de-milei-alerta-a-caputo-por-la-canilla-de-dolares",
    "src": "iProfesional",
@@ -782,32 +1186,12 @@
    "tags": []
   },
   {
-   "t": "Jim Cramer warns investors may be reading too much into Wall Street's post-election rally",
-   "link": "https://www.cnbc.com/2026/11/04/cramer-midterms-ai-stocks.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-04T23:18:56.000Z",
-   "tags": [
-    "SPY"
-   ]
-  },
-  {
    "t": "El Gobierno anunció un nuevo Argentina Week para 2027 en Estados Unidos: cuándo será y a qué sectores apuntará",
    "link": "https://www.infobae.com/economia/2026/11/04/el-gobierno-anuncio-un-nuevo-argentina-week-para-2027-en-estados-unidos-cuando-sera-y-a-que-sectores-apuntara/",
    "src": "Infobae",
    "region": "AR",
    "fecha": "2026-11-04T23:18:15.000Z",
    "tags": []
-  },
-  {
-   "t": "What Wall Street billionaires are saying about Democrats' midterm sweep",
-   "link": "https://www.cnbc.com/2026/11/04/billionaires-musk-branson-democrats-midterms-ai-wall-street.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-04T23:17:56.000Z",
-   "tags": [
-    "SPY"
-   ]
   },
   {
    "t": "Se frenó el repunte de la actividad automotriz: la producción y las exportaciones volvieron a caer en octubre",
@@ -850,406 +1234,19 @@
    "tags": []
   },
   {
+   "t": "What was really behind Wednesday's monster rally? Trump quickly making peace",
+   "link": "https://www.cnbc.com/2026/11/04/stock-market-rally-trump-midterms.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-04T22:55:22.000Z",
+   "tags": []
+  },
+  {
    "t": "Volatilidad en los granos: había que blindarse para navegar la incertidumbre",
    "link": "https://www.lanacion.com.ar/economia/campo/volatilidad-en-los-granos-habia-que-blindarse-para-navegar-la-incertidumbre-nid04112026/",
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-04T22:48:59.000Z",
-   "tags": []
-  },
-  {
-   "t": "Analysis: The Democrats have one chance to extract concessions from Trump. Markets will hate it",
-   "link": "https://www.cnbc.com/2026/11/04/democrats-trump-debt-ceiling-fight.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-04T22:46:43.000Z",
-   "tags": []
-  },
-  {
-   "t": "Finanzas al día: novedades de bancos, inversiones y mercado de capitales",
-   "link": "https://www.ambito.com/economia/finanzas-al-dia-novedades-bancos-inversiones-y-mercado-capitales-n6335525",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-04T22:43:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Las acciones de Mercado Libre se desplomaron en el after market tras presentar su balance",
-   "link": "https://www.iprofesional.com/finanzas/468371-las-acciones-de-mercado-libre-se-desploman-en-el-after-market-tras-presentar-su-balance",
-   "src": "iProfesional",
-   "region": "AR",
-   "fecha": "2026-11-04T22:41:00.000Z",
-   "tags": [
-    "MELI"
-   ]
-  },
-  {
-   "t": "Qué piensan los empresarios industriales de los anuncios de Caputo y qué le reclaman al Gobierno",
-   "link": "https://www.infobae.com/economia/2026/11/04/que-piensan-los-empresarios-industriales-de-los-anuncios-de-caputo-y-que-le-reclaman-al-gobierno/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-04T22:26:59.000Z",
-   "tags": []
-  },
-  {
-   "t": "¿Mileísmo sin Milei en 2027? No se lo cree nadie",
-   "link": "https://www.lanacion.com.ar/economia/mileismo-sin-milei-en-2027-no-se-lo-cree-nadie-nid04112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-04T22:21:48.000Z",
-   "tags": []
-  },
-  {
-   "t": "Cramer: What must happen for Home Depot to keep its 25% monthlong rally going",
-   "link": "https://www.cnbc.com/investingclub/2026/11/04/cramer-what-must-happen-for-home-depot-to-keep-its-25percent-monthlong-rally-going.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-04T22:13:45.000Z",
-   "tags": []
-  },
-  {
-   "t": "Wall Street: el Dow Jones se disparó 3% tras la victoria demócrata en EEUU y el desplome del petróleo",
-   "link": "https://www.ambito.com/finanzas/los-futuros-wall-street-suben-y-el-dolar-se-debilita-la-derrota-electoral-donald-trump-n6341282",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-04T22:09:00.000Z",
-   "tags": [
-    "SPY",
-    "BONOS"
-   ]
-  },
-  {
-   "t": "Los bonos en dólares extendieron pérdidas y el riesgo país saltó por encima de los 850 puntos tras las elecciones en EEUU",
-   "link": "https://www.ambito.com/finanzas/los-bonos-argentinos-rebotan-el-reves-electoral-donald-trump-eeuu-n6341351",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-04T22:02:00.000Z",
-   "tags": [
-    "BONOS"
-   ]
-  },
-  {
-   "t": "Plazo fijo: cuánto debés invertir para ganar $500.000 en 30 días",
-   "link": "https://www.ambito.com/economia/plazo-fijo-cuanto-debes-invertir-ganar-500000-30-dias-n6341534",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-04T22:00:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Movimientos inusuales: fuerte rebote de los bonos en pesos que venían más castigados",
-   "link": "https://www.lanacion.com.ar/economia/movimientos-inusuales-fuerte-rebote-de-los-bonos-en-pesos-que-venian-mas-castigados-nid04112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-04T21:57:40.000Z",
-   "tags": [
-    "BONOS"
-   ]
-  },
-  {
-   "t": "Tras dos días sin sumar divisas, el Banco Central volvió a comprar dólares",
-   "link": "https://www.infobae.com/economia/2026/11/04/tras-dos-dias-sin-sumar-divisas-el-banco-central-volvio-a-comprar-dolares/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-04T21:52:12.000Z",
-   "tags": []
-  },
-  {
-   "t": "Mariel Fornoni, sobre las elecciones de 2027: “Vamos hacia un escenario que hoy no estamos viendo”",
-   "link": "https://www.lanacion.com.ar/economia/negocios/mariel-fornoni-sobre-las-elecciones-de-2027-vamos-hacia-un-escenario-que-hoy-no-estamos-viendo-nid04112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-04T21:50:26.000Z",
-   "tags": []
-  },
-  {
-   "t": "What Republicans' huge loss means for Trump",
-   "link": "https://www.cnbc.com/2026/11/04/trump-midterm-election-results-congress.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-04T21:50:05.000Z",
-   "tags": []
-  },
-  {
-   "t": "E.l.f. Beauty posts 51% sales increase, raises full-year guidance",
-   "link": "https://www.cnbc.com/2026/11/04/elf-beauty-elf-q2-2027-earnings.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-04T21:47:22.000Z",
-   "tags": []
-  },
-  {
-   "t": "Real blue: a cuánto operó este miércoles 4 de noviembre",
-   "link": "https://www.ambito.com/finanzas/copia-real-blue-cuanto-opero-este-martes-3-noviembre-n6341659",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-04T21:42:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Cóctel bajista: la soja cayó a su menor precio en casi tres meses en el mercado internacional y hay alerta por el impacto en el país",
-   "link": "https://www.lanacion.com.ar/economia/campo/coctel-bajista-la-soja-cayo-a-su-menor-precio-en-casi-tres-meses-en-el-mercado-internacional-y-hay-nid04112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-04T21:40:57.000Z",
-   "tags": []
-  },
-  {
-   "t": "El riesgo país superó los 850 puntos, el dólar cayó y las acciones argentinas se hundieron hasta 8% en Wall Street",
-   "link": "https://www.infobae.com/economia/2026/11/04/el-riesgo-pais-supero-los-850-puntos-el-dolar-cayo-y-las-acciones-argentinas-se-hundieron-hasta-8-en-wall-street/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-04T21:35:59.000Z",
-   "tags": [
-    "SPY",
-    "BONOS"
-   ]
-  },
-  {
-   "t": "Euro hoy y Euro blue hoy: a cuánto cotizó este miércoles 4 de noviembre",
-   "link": "https://www.ambito.com/finanzas/euro-hoy-y-euro-blue-hoy-cuanto-cotizo-este-miercoles-4-noviembre-n6341657",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-04T21:35:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "El BCRA retomó la compra de reservas tras dos días sin intervenir y bajó el dólar oficial",
-   "link": "https://www.iprofesional.com/finanzas/468359-el-bcra-volvio-a-comprar-dolares-tras-dos-dias-de-correrse-del-mercado",
-   "src": "iProfesional",
-   "region": "AR",
-   "fecha": "2026-11-04T21:30:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "El dólar mayorista bajó tras la elección en EEUU, pero el CCL rozó los $1.700",
-   "link": "https://www.ambito.com/finanzas/el-dolar-se-debilita-el-mundo-las-elecciones-eeuu-y-el-mercado-espera-el-impacto-cambiario-argentina-n6341300",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-04T21:27:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "A contramano de la suba de Wall Street tras la derrota de Trump, el riesgo país argentino subió a un nuevo máximo en un año",
-   "link": "https://www.infobae.com/economia/2026/11/04/suben-los-bonos-argentinos-y-cede-el-riesgo-pais-por-la-tendencia-positiva-de-las-bolsas-internacionales/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-04T21:25:55.000Z",
-   "tags": [
-    "SPY",
-    "BONOS"
-   ]
-  },
-  {
-   "t": "La Anses modificó fechas por los feriados: cuándo y cuánto cobrarán este mes los jubilados",
-   "link": "https://www.lanacion.com.ar/economia/la-anses-modifico-fechas-por-los-feriados-cuando-y-cuanto-cobraran-este-mes-los-jubilados-nid04112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-04T21:23:38.000Z",
-   "tags": []
-  },
-  {
-   "t": "El petróleo se hundió 9% y perforó los u$s100 ante expectativas de paz con Irán tras la derrota de Donald Trump",
-   "link": "https://www.ambito.com/finanzas/el-petroleo-se-hunde-9-y-perfora-los-us100-expectativas-paz-iran-la-derrota-donald-trump-n6341649",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-04T21:23:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Del prejuicio sobre las emociones a las exigencias de disponibilidad: qué obstáculos enfrentan las mujeres para llegar a puestos de liderazgo",
-   "link": "https://www.lanacion.com.ar/economia/negocios/del-prejuicio-sobre-las-emociones-a-las-exigencias-de-disponibilidad-que-obstaculos-enfrentan-las-nid04112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-04T21:16:28.000Z",
-   "tags": []
-  },
-  {
-   "t": "Optimismo en los mercados internacionales tras las derrota de Trump: subieron las acciones y el petróleo cayó 8%",
-   "link": "https://www.infobae.com/economia/2026/11/04/optimismo-en-los-mercados-internacionales-tras-las-derrota-de-trump-suben-las-acciones-y-cae-el-petroleo/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-04T21:06:42.000Z",
-   "tags": [
-    "BONOS"
-   ]
-  },
-  {
-   "t": "El dólar blue cerró debajo del tipo de cambio minorista por segundo día consecutivo",
-   "link": "https://www.ambito.com/finanzas/el-dolar-blue-cerro-debajo-del-tipo-cambio-minorista-segundo-dia-consecutivo-n6341634",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-04T20:57:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "El reto de liderar equipos con humanos y robots",
-   "link": "https://www.lanacion.com.ar/economia/negocios/el-desafio-de-liderar-equipos-con-humanos-y-robots-nid04112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-04T20:56:57.000Z",
-   "tags": []
-  },
-  {
-   "t": "Escándalo financiero en un banco sacude Paraguay y hay alerta por posible corralito",
-   "link": "https://www.iprofesional.com/finanzas/468355-escandalo-financiero-en-un-banco-sacude-paraguay-y-hay-alerta-por-posible-corralito",
-   "src": "iProfesional",
-   "region": "AR",
-   "fecha": "2026-11-04T20:53:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "El BCRA volvió a comprar tras una pausa de dos ruedas y las reservas se recuperaron gracias al oro",
-   "link": "https://www.ambito.com/finanzas/el-bcra-volvio-comprar-una-pausa-dos-ruedas-y-las-reservas-se-recuperaron-gracias-al-oro-n6341633",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-04T20:45:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "A contramano de Wall Street, el riesgo país volvió a subir y superó los 850 puntos",
-   "link": "https://www.iprofesional.com/finanzas/468323-a-contramano-de-wall-street-el-riesgo-pais-vuelve-a-subir-y-supera-los-840-puntos",
-   "src": "iProfesional",
-   "region": "AR",
-   "fecha": "2026-11-04T20:45:00.000Z",
-   "tags": [
-    "SPY",
-    "BONOS"
-   ]
-  },
-  {
-   "t": "El riesgo país superó los 850 puntos y las acciones argentinas cayeron hasta 7% en Wall Street",
-   "link": "https://www.lanacion.com.ar/economia/los-bonos-tienen-un-leve-rebote-y-las-acciones-argentinas-caen-hasta-casi-3-en-wall-street-tras-las-nid04112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-04T20:18:39.000Z",
-   "tags": [
-    "SPY",
-    "BONOS"
-   ]
-  },
-  {
-   "t": "Cayó un banco con 3 millones de clientes en Paraguay y la City mira el caso de cerca",
-   "link": "https://www.iprofesional.com/finanzas/468295-ueno-bank-la-caida-del-banco-paraguayo-y-su-impacto-en-argentina",
-   "src": "iProfesional",
-   "region": "AR",
-   "fecha": "2026-11-04T20:15:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Moody’s evaluó que la crisis por la intervención de Ueno Bank es “negativa” para el sistema financiero paraguayo, pero “manejable”",
-   "link": "https://www.lanacion.com.ar/economia/moodys-evaluo-que-la-crisis-por-la-intervencion-de-ueno-bank-es-negativa-para-el-sistema-financiero-nid04112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-04T20:14:41.000Z",
-   "tags": []
-  },
-  {
-   "t": "Empleados de Comercio: el Gobierno homologó el aumento del 5,7% y el bono de $50.000",
-   "link": "https://www.ambito.com/economia/empleados-comercio-el-gobierno-homologo-el-aumento-del-57-y-el-bono-50000-n6341611",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-04T20:11:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "La plataforma de inversiones etoro compró una fintech argentina y desembarca en el país",
-   "link": "https://www.iprofesional.com/finanzas/468351-plataforma-de-inversiones-etoro-compro-fintech-argentina-y-desembarca-en-el-pais",
-   "src": "iProfesional",
-   "region": "AR",
-   "fecha": "2026-11-04T20:10:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Demanda tranquila y precios en baja en el Mercado Agroganadero de Cañuelas",
-   "link": "https://www.lanacion.com.ar/economia/campo/demanda-tranquila-y-precios-en-baja-en-el-mercado-agroganadero-de-canuelas-nid04112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-04T20:09:01.000Z",
-   "tags": []
-  },
-  {
-   "t": "Los precios del comercio exterior mejoraron 4,2% en el tercer trimestre y aportaron u$s1.019 millones",
-   "link": "https://www.ambito.com/economia/los-precios-del-comercio-exterior-mejoraron-42-el-tercer-trimestre-y-aportaron-us1019-millones-n6341598",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-04T20:03:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "CVS Health plans to split itself up. Here's why a breakup could make sense now",
-   "link": "https://www.cnbc.com/2026/11/04/cvs-health-pharmacy-aetna-split.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-04T19:58:41.000Z",
-   "tags": []
-  },
-  {
-   "t": "Crisis en una reconocida fábrica de tractores: los trabajadores tomaron las plantas y exigen el pago de sueldos",
-   "link": "https://www.infobae.com/economia/2026/11/04/crisis-en-una-reconocida-fabrica-de-tractores-los-trabajadores-tomaron-las-plantas-y-exigen-el-pago-de-sueldos/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-04T19:54:35.000Z",
-   "tags": []
-  },
-  {
-   "t": "Cayeron las acciones vinculadas a la IA y las empresas de Musk después del revés electoral que sufrieron los data centers",
-   "link": "https://www.infobae.com/economia/2026/11/04/caen-las-acciones-vinculadas-a-la-ia-y-las-empresas-de-musk-despues-del-reves-electoral-que-sufrieron-los-data-centers/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-04T19:53:30.000Z",
-   "tags": []
-  },
-  {
-   "t": "Elecciones en EEUU: cómo cambia el escenario económico y financiero para la Argentina con el triunfo demócrata",
-   "link": "https://www.infobae.com/economia/2026/11/04/elecciones-en-eeuu-como-cambia-el-escenario-economico-y-financiero-para-la-argentina-con-el-triunfo-democrata/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-04T19:34:59.000Z",
-   "tags": [
-    "BONOS"
-   ]
-  },
-  {
-   "t": "El magnate que protagoniza un escándalo financiero en EEUU vende su equipo de Fórmula 1: cuál es su conexión con la Argentina",
-   "link": "https://www.infobae.com/economia/2026/11/04/el-magnate-que-protagoniza-un-escandalo-financiero-en-eeuu-vende-su-equipo-de-formula-1-cual-es-su-conexion-con-la-argentina/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-04T19:33:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "El Gobierno postergó la licitación del Belgrano Cargas y flexibilizó requisitos para competir por la privatización",
-   "link": "https://www.lanacion.com.ar/economia/el-gobierno-postergo-la-licitacion-del-belgrano-cargas-y-flexibilizo-requisitos-para-competir-por-la-nid04112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-04T19:30:39.000Z",
-   "tags": []
-  },
-  {
-   "t": "El acuerdo de AMD con Meta y OpenAI que le costó u$s1.200 millones",
-   "link": "https://www.ambito.com/finanzas/el-acuerdo-amd-meta-y-openai-que-le-costo-us1200-millones-n6341552",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-04T19:24:00.000Z",
-   "tags": [
-    "AMD"
-   ]
-  },
-  {
-   "t": "Dólar blue hoy: a cuánto cerró este miércoles 4 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-cerro-este-miercoles-4-noviembre-n6341582",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-04T19:16:55.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar hoy: a cuánto cerró este miércoles 4 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cerro-este-miercoles-4-noviembre-n6341581",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-04T19:16:46.000Z",
    "tags": []
   }
  ]
