@@ -959,7 +959,18 @@ function findRow(key) {
    ============================================================ */
 function renderFX() {
   const it = (label, v, sub) => v ? `<span class="it">${label}<b>$${fmt(v, 0)}</b>${sub ? ` <small>${sub}</small>` : ''}</span>` : '';
-  $('#fx').innerHTML = it('Oficial', S.fx.oficial) + it('MEP', S.fx.bolsa) + it('CCL', S.fx.contadoconliqui) + it('Blue', S.fx.blue);
+  $('#fx').innerHTML = it('Oficial', S.fx.oficial) + it('MEP', S.fx.bolsa) + it('CCL', S.fx.contadoconliqui) + it('Blue', S.fx.blue) + cerChip();
+}
+// CER que usan los bonos que se compran hoy: liquidación T+1 menos 10 días hábiles
+function cerChip() {
+  if (!S.cer || !S.cer.length) return '';
+  const settle = settleDate(today()), ref = businessDaysBack(settle, 10), v = cerAt(ref);
+  if (!v) return '';
+  const f = d => d.slice(8, 10) + '/' + d.slice(5, 7);
+  const hoy = cerAt(today());
+  const tip = `CER del ${f(ref)} (10 días hábiles antes de la liquidación del ${f(settle)}): es el que se usa para ajustar los bonos CER que comprás hoy.`
+    + (hoy ? ` CER de hoy: ${fmt(hoy, 4)}.` : '') + ' Fuente: BCRA.';
+  return `<span class="it" title="${esc(tip)}">CER<b>${fmt(v, 4)}</b> <small>${f(ref)}</small></span>`;
 }
 
 /* ============================================================
@@ -1506,6 +1517,7 @@ async function init() {
     .then(j => {
       const det = (j.results && j.results[0] && j.results[0].detalle) || [];
       S.cer = det.map(x => ({ d: x.fecha.slice(0, 10), v: x.valor })).sort((a, b) => a.d < b.d ? -1 : 1);
+      renderFX();
       renderTable();
     })
     .catch(() => { });

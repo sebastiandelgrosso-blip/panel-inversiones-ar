@@ -6,7 +6,7 @@ name: Actualizar datos
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '7,37 * * * *'   # minutos "raros": GitHub saltea menos estas corridas que las de en punto
     - cron: '15 10 * * *'
     - cron: '30 11 * * 1'
   workflow_dispatch:
