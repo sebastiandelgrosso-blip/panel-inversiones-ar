@@ -1,6 +1,6 @@
 {
  "fuente": "github.com/arisbdar/rendimientos-ar",
- "descargado": "2026-11-05",
+ "descargado": "2026-11-06",
  "ons": {
   "AERBD": {
    "nombre": "AA2000",
@@ -2228,13 +2228,13 @@
    "nombre": "LECAP/BONCAP",
    "venc": "2027-01-29",
    "fuente": "argentinadatos (estimado)",
-   "pago": 111.683
+   "pago": 111.685
   },
   "S26F7": {
    "nombre": "LECAP/BONCAP",
    "venc": "2027-02-26",
    "fuente": "argentinadatos (estimado)",
-   "pago": 108.366
+   "pago": 108.368
   }
  },
  "cer": {
