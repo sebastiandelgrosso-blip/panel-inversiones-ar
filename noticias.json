@@ -1,12 +1,150 @@
 {
- "actualizado": "2026-11-08T00:30:51.800Z",
+ "actualizado": "2026-11-08T06:40:18.011Z",
  "items": [
+  {
+   "t": "Dólar hoy: a cuánto cotiza este domingo 8 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-domingo-8-noviembre-n6342876",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-08T06:20:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar blue hoy: a cuánto opera este domingo 8 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-domingo-8-noviembre-n6342877",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-08T06:20:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Cathie Wood 'always feels better when the market is worried' — here's why",
+   "link": "https://www.cnbc.com/2026/11/08/cathie-wood-ai-selloff.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-08T06:00:01.000Z",
+   "tags": []
+  },
+  {
+   "t": "Ya está disponible: una plataforma pública permite hacer un mapeo del campo",
+   "link": "https://www.lanacion.com.ar/economia/campo/lanzamiento-una-plataforma-publica-permitira-hacer-un-mapeo-del-campo-nid08112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-08T06:00:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "El Gobierno busca encapsular la suba del riesgo país para evitar un impacto en el dólar y la actividad",
+   "link": "https://www.infobae.com/economia/2026/11/08/el-gobierno-busca-encapsular-la-suba-del-riesgo-pais-para-evitar-un-impacto-en-el-dolar-y-la-actividad/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-08T03:51:13.000Z",
+   "tags": [
+    "BONOS"
+   ]
+  },
+  {
+   "t": "Clima de Negocios: en medio del ruido financiero, los empresarios locales siguen de compras y miran atentos una norma del Gobierno",
+   "link": "https://www.infobae.com/economia/2026/11/08/clima-de-negocios-en-medio-del-ruido-financiero-los-empresarios-locales-siguen-de-compras-y-miran-atentos-una-norma-del-gobierno/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-08T03:50:46.000Z",
+   "tags": []
+  },
+  {
+   "t": "¿Habrá menos autos chinos?: todo lo que hay que saber del cupo de autos híbridos y eléctricos de 2027",
+   "link": "https://www.infobae.com/economia/2026/11/08/habra-menos-autos-chinos-todo-lo-que-hay-que-saber-del-cupo-de-autos-hibridos-y-electricos-de-2027/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-08T03:50:16.000Z",
+   "tags": []
+  },
+  {
+   "t": "Esteban Domecq: “Se necesita fortalecer la consistencia del programa para atravesar el año electoral”",
+   "link": "https://www.infobae.com/economia/2026/11/08/esteban-domecq-se-necesita-fortalecer-la-consistencia-del-programa-para-atravesar-el-ano-electoral/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-08T03:48:56.000Z",
+   "tags": []
+  },
+  {
+   "t": "Wait and see",
+   "link": "https://www.infobae.com/opinion/2026/11/08/wait-and-see/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-08T03:48:37.000Z",
+   "tags": []
+  },
+  {
+   "t": "Ajuste deflacionario con boom de dólares",
+   "link": "https://www.infobae.com/opinion/2026/11/08/ajuste-deflacionario-con-boom-de-dolares/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-08T03:48:19.000Z",
+   "tags": []
+  },
+  {
+   "t": "La “factura invisible”: más del 30% de las parejas tiene roces por plata",
+   "link": "https://www.infobae.com/opinion/2026/11/08/la-factura-invisible-mas-del-30-de-las-parejas-tiene-roces-por-plata/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-08T03:48:02.000Z",
+   "tags": []
+  },
+  {
+   "t": "Marc Fleurbaey: “Además de los ingresos, el bienestar debe contemplar la salud y las conexiones sociales”",
+   "link": "https://www.lanacion.com.ar/economia/marc-fleurbaey-ademas-de-los-ingresos-el-bienestar-debe-contemplar-la-salud-y-las-conexiones-nid08112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-08T03:39:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "De Marte a la conciencia: el dilema más antiguo de la Filosofía acelera motores con su “momento IA”",
+   "link": "https://www.lanacion.com.ar/economia/de-marte-a-la-conciencia-el-dilema-mas-antiguo-de-la-filosofia-acelera-motores-con-su-momento-ia-nid08112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-08T03:39:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Martín Redrado: “La Argentina necesita una segunda etapa de este programa”",
+   "link": "https://www.lanacion.com.ar/economia/martin-redrado-la-argentina-necesita-una-segunda-etapa-de-este-programa-nid08112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-08T03:14:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Lo que Perú consiguió y la Argentina aún tiene pendiente",
+   "link": "https://www.lanacion.com.ar/economia/peru-como-espejo-nid08112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-08T03:12:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Finanzas: nerviosismo e incertidumbre afuera y adentro",
+   "link": "https://www.lanacion.com.ar/economia/finanzas-nerviosismo-e-incertidumbre-afuera-y-adentro-nid08112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-08T03:01:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Cuál es el impacto del nuevo escenario mundial para la Argentina",
+   "link": "https://www.lanacion.com.ar/economia/cual-es-el-impacto-del-nuevo-escenario-mundial-para-la-argentina-nid08112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-08T03:01:00.000Z",
+   "tags": []
+  },
   {
    "t": "Dólar hoy: a cuánto cotiza este sábado 7 de noviembre",
    "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-sabado-7-noviembre-n6342693",
    "src": "Ámbito",
    "region": "AR",
-   "fecha": "2026-11-08T00:18:00.000Z",
+   "fecha": "2026-11-08T02:49:00.000Z",
    "tags": []
   },
   {
@@ -14,7 +152,7 @@
    "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-sabado-7-noviembre-n6342694",
    "src": "Ámbito",
    "region": "AR",
-   "fecha": "2026-11-08T00:18:00.000Z",
+   "fecha": "2026-11-08T02:49:00.000Z",
    "tags": []
   },
   {
@@ -835,14 +973,6 @@
    ]
   },
   {
-   "t": "OpenAI bugging suspect Alfozan pleads not guilty",
-   "link": "https://www.cnbc.com/2026/11/06/openai-bugging-alfozan-saudi.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-06T21:15:47.000Z",
-   "tags": []
-  },
-  {
    "t": "El riesgo país volvió a subir y se acercó a los 940 puntos, nuevo máximo en más de un año",
    "link": "https://www.iprofesional.com/finanzas/468549-el-riesgo-pais-volvio-a-subir-y-se-acerco-a-los-940-puntos-nuevo-maximo-en-mas-de-un-ano",
    "src": "iProfesional",
@@ -1067,14 +1197,6 @@
    "tags": []
   },
   {
-   "t": "Dólar blue hoy: a cuánto opera este viernes 6 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-viernes-6-noviembre-n6342235",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-06T18:42:00.000Z",
-   "tags": []
-  },
-  {
    "t": "Microsoft plans to use fewer neoclouds as AI buildout shows signs of strain",
    "link": "https://www.cnbc.com/2026/11/06/microsoft-moves-to-consolidate-its-relationships-with-neoclouds-in-ai.html",
    "src": "CNBC",
@@ -1126,130 +1248,6 @@
    "src": "Infobae",
    "region": "AR",
    "fecha": "2026-11-06T18:00:50.000Z",
-   "tags": []
-  },
-  {
-   "t": "Jubilaciones: un fallo declara inconstitucional la ley de movilidad de Alberto Fernández, pero con un efecto muy limitado",
-   "link": "https://www.lanacion.com.ar/economia/jubilaciones-un-fallo-declara-inconstitucional-la-ley-de-movilidad-de-alberto-fernandez-pero-dispone-nid06112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-06T17:47:33.000Z",
-   "tags": []
-  },
-  {
-   "t": "Riesgo país rumbo a 1.000 puntos: la City advierte que la corrida contra bonos se adelantó",
-   "link": "https://www.iprofesional.com/finanzas/468484-la-city-advierte-que-la-corrida-contra-bonos-argentinos-se-adelanto",
-   "src": "iProfesional",
-   "region": "AR",
-   "fecha": "2026-11-06T17:30:00.000Z",
-   "tags": [
-    "BONOS"
-   ]
-  },
-  {
-   "t": "La filial paraguaya de Puente tiene depósitos en Ueno Bank, aunque afirma que es por un monto bajo",
-   "link": "https://www.lanacion.com.ar/economia/la-filial-paraguaya-de-puente-tiene-depositos-en-ueno-bank-aunque-afirma-que-es-por-un-monto-bajo-nid06112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-06T17:19:11.000Z",
-   "tags": []
-  },
-  {
-   "t": "¿Freno al ingreso de equipos de telefonía celular de China? Argentina adhirió a un estándar de seguridad de EEUU",
-   "link": "https://www.infobae.com/economia/2026/11/06/freno-al-ingreso-de-equipos-de-telefonia-celular-de-china-argentina-adhirio-a-un-estandar-de-seguridad-de-eeuu/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-06T16:51:07.000Z",
-   "tags": []
-  },
-  {
-   "t": "Por qué no funcionan los bancos hoy, 6 de noviembre",
-   "link": "https://www.infobae.com/economia/2026/11/06/por-que-no-funcionan-los-bancos-hoy-6-de-noviembre/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-06T16:49:21.000Z",
-   "tags": []
-  },
-  {
-   "t": "Aunque se espera un rebote en el último trimestre, los economistas empeoraron las proyecciones de crecimiento de la actividad para 2026",
-   "link": "https://www.lanacion.com.ar/economia/aunque-se-espera-un-rebote-en-los-ultimos-meses-siguio-bajando-la-estimacion-de-crecimiento-para-nid06112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-06T16:46:38.000Z",
-   "tags": []
-  },
-  {
-   "t": "Milei destacó la baja de retenciones en su Gobierno y dijo que desaparecerán en el largo plazo",
-   "link": "https://www.lanacion.com.ar/economia/campo/milei-destaco-la-baja-de-retenciones-en-su-gobierno-y-dijo-que-desapareceran-en-el-largo-plazo-nid06112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-06T16:22:19.000Z",
-   "tags": []
-  },
-  {
-   "t": "Alejandro Díaz, CEO de AmCham, habló de las inversiones de EEUU en Argentina: “Van a depender del recorrido que tenga el país”",
-   "link": "https://www.infobae.com/economia/2026/11/06/alejandro-diaz-ceo-de-amcham-hablo-de-las-inversiones-de-eeuu-en-argentina-van-a-depender-del-recorrido-que-tenga-el-pais/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-06T16:19:37.000Z",
-   "tags": []
-  },
-  {
-   "t": "Milei en la Sociedad Rural: llamó héroes a los empresarios y dijo que relajar la política monetaria sería “tirarle nafta al fuego”",
-   "link": "https://www.infobae.com/economia/2026/11/06/milei-en-la-sociedad-rural-llamo-heroes-a-los-empresarios-y-dijo-que-relajar-la-politica-monetaria-seria-tirarle-nafta-al-fuego/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-06T16:16:30.000Z",
-   "tags": []
-  },
-  {
-   "t": "U.S. economy added 165,000 jobs in October, way more than expected; unemployment rate slips to 4.1%",
-   "link": "https://www.cnbc.com/2026/11/06/jobs-report-october-2026.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-06T16:06:59.000Z",
-   "tags": []
-  },
-  {
-   "t": "El Gobierno comienza a restringir la llegada de celulares chinos a la Argentina",
-   "link": "https://www.lanacion.com.ar/economia/el-gobierno-comienza-a-restringir-la-llegada-de-celulares-chinos-a-la-argentina-nid06112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-06T15:41:01.000Z",
-   "tags": []
-  },
-  {
-   "t": "“Neoproteccionismo ambiental”: Quirno cuestionó las exigencias de Europa y advirtió por nuevas trabas para el campo",
-   "link": "https://www.lanacion.com.ar/economia/campo/neoproteccionismo-ambiental-quirno-cuestiono-las-exigencias-de-europa-y-advirtio-por-nuevas-trabas-nid06112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-06T15:37:59.000Z",
-   "tags": []
-  },
-  {
-   "t": "Cuánto cobrarán los ahorristas del Ueno Bank y qué tienen que hacer para recuperar su dinero",
-   "link": "https://www.infobae.com/economia/2026/11/06/cuanto-cobraran-los-ahorristas-del-ueno-bank-y-que-tienen-que-hacer-para-recuperar-su-dinero/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-06T15:29:02.000Z",
-   "tags": []
-  },
-  {
-   "t": "Tesla confirmó su llegada a la Argentina para los próximos días: los detalles del desembarco de los autos eléctricos de Elon Musk",
-   "link": "https://www.infobae.com/economia/2026/11/06/tesla-confirmo-su-llegada-a-la-argentina-para-los-proximos-dias-los-detalles-del-desembarco-de-los-autos-electricos-de-elon-musk/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-06T15:14:36.000Z",
-   "tags": [
-    "TSLA"
-   ]
-  },
-  {
-   "t": "“Libremente y en igualdad”: CRA le planteó a Sturzenegger un reclamo por Visec",
-   "link": "https://www.lanacion.com.ar/economia/campo/libremente-y-en-igualdad-cra-le-planteo-a-sturzenegger-un-reclamo-por-visec-nid06112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-06T15:10:32.000Z",
    "tags": []
   }
  ]
