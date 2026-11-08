@@ -1,6 +1,118 @@
 {
- "actualizado": "2026-11-08T19:05:42.519Z",
+ "actualizado": "2026-11-08T22:52:17.749Z",
  "items": [
+  {
+   "t": "Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy",
+   "link": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-08T22:51:19.000Z",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "t": "Dólar hoy: a cuánto cotiza este domingo 8 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-domingo-8-noviembre-n6342876",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-08T22:24:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar blue hoy: a cuánto opera este domingo 8 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-domingo-8-noviembre-n6342877",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-08T22:24:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he could still strike",
+   "link": "https://www.cnbc.com/2026/11/08/trump-iran-strikes-unlikely-talks-hormuz.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-08T21:53:02.000Z",
+   "tags": []
+  },
+  {
+   "t": "Nvidia’s board will probe CEO Jensen Huang’s relationship with an alleged spy. Here’s what to know.",
+   "link": "https://www.marketwatch.com/story/nvidias-board-will-probe-ceo-jensen-huangs-relationship-with-an-alleged-spy-heres-what-to-know-86656cd9?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-08T21:29:00.000Z",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "t": "“Castigo”: CRA no descarta una acción judicial en medio de la polémica abierta con la plataforma Visec por una exigencia de la Unión Europea",
+   "link": "https://www.lanacion.com.ar/economia/campo/castigo-cra-no-descarta-una-accion-judicial-en-medio-de-la-polemica-abierta-con-la-plataforma-visec-nid08112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-08T20:57:39.000Z",
+   "tags": []
+  },
+  {
+   "t": "Sebastián Castillo, CEO de Abuelo Julio, que exporta carne: “Potenciamos el negocio familiar de más de cuatro generaciones”",
+   "link": "https://www.lanacion.com.ar/economia/campo/sebastian-castillo-ceo-de-abuelo-julio-que-exporta-carne-potenciamos-el-negocio-familiar-de-mas-de-nid08112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-08T20:48:29.000Z",
+   "tags": []
+  },
+  {
+   "t": "Argentina LNG: mañana se define la licitación de caños más grande de la historia energética del país",
+   "link": "https://www.infobae.com/economia/2026/11/08/argentina-lng-manana-se-define-la-licitacion-de-canos-mas-grande-de-la-historia-energetica-del-pais/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-08T20:23:01.000Z",
+   "tags": []
+  },
+  {
+   "t": "YPF alista la licitación de tubos para el gasoducto más grande de América del Sur y Techint va por la revancha",
+   "link": "https://www.lanacion.com.ar/economia/ypf-alista-la-licitacion-de-tubos-para-el-gasoducto-mas-grande-de-america-del-sur-y-techint-va-por-nid08112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-08T20:07:30.000Z",
+   "tags": [
+    "YPFD"
+   ]
+  },
+  {
+   "t": "Dólar: las claves que explican por qué no sube pese al salto del riesgo país a máximos del año",
+   "link": "https://www.ambito.com/finanzas/dolar-las-claves-que-explican-que-no-sube-pese-al-salto-del-riesgo-pais-maximos-del-ano-n6342962",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-08T19:37:00.000Z",
+   "tags": [
+    "BONOS"
+   ]
+  },
+  {
+   "t": "Súper Niño: pronostican más de 40 grados y tormentas intensas en una región",
+   "link": "https://www.lanacion.com.ar/economia/campo/super-nino-pronostican-mas-de-40-grados-y-tormentas-intensas-en-una-region-nid07112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-08T19:33:29.000Z",
+   "tags": []
+  },
+  {
+   "t": "Ya está disponible: una plataforma pública permite hacer un mapeo del campo",
+   "link": "https://www.lanacion.com.ar/economia/campo/lanzamiento-una-plataforma-publica-permitira-hacer-un-mapeo-del-campo-nid08112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-08T19:32:14.000Z",
+   "tags": []
+  },
+  {
+   "t": "Estiman que la pobreza subió en el tercer trimestre y ya afecta a 16,2 millones de argentinos",
+   "link": "https://www.ambito.com/economia/estiman-que-la-pobreza-subio-el-tercer-trimestre-y-ya-afecta-162-millones-argentinos-n6342928",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-08T19:12:00.000Z",
+   "tags": []
+  },
   {
    "t": "Democrats amp up Trump investigation threats, Blanche counters he may probe lawmakers",
    "link": "https://www.cnbc.com/2026/11/08/democrats-trump-oversight-blanche-doj-investigations.html",
@@ -18,38 +130,12 @@
    "tags": []
   },
   {
-   "t": "Dólar hoy: a cuánto cotiza este domingo 8 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-domingo-8-noviembre-n6342876",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-08T18:53:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar blue hoy: a cuánto opera este domingo 8 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-domingo-8-noviembre-n6342877",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-08T18:53:00.000Z",
-   "tags": []
-  },
-  {
    "t": "Calendario semanal de Anses: qué pasa con los pagos de jubilaciones y AUH durante los feriados por la visita del papa León XIV a la Argentina",
    "link": "https://www.lanacion.com.ar/economia/calendario-semanal-de-anses-que-pasa-con-los-pagos-de-jubilaciones-y-auh-durante-los-feriados-por-la-nid08112026/",
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-08T18:45:30.000Z",
    "tags": []
-  },
-  {
-   "t": "Nvidia CEO Jensen Huang faces bipartisan congressional scrutiny over reported China spy link",
-   "link": "https://www.cnbc.com/2026/11/08/jensen-huang-nvidia-china-spy-congress.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-08T18:18:30.000Z",
-   "tags": [
-    "NVDA"
-   ]
   },
   {
    "t": "En qué provincias y sectores la industria del juicio golpea más fuerte: las causas y las consecuencias del ranking de conflictividad",
@@ -73,22 +159,6 @@
    "src": "MarketWatch",
    "region": "US",
    "fecha": "2026-11-08T18:00:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Súper Niño: pronostican más de 40 grados y tormentas intensas en una región",
-   "link": "https://www.lanacion.com.ar/economia/campo/super-nino-pronostican-mas-de-40-grados-y-tormentas-intensas-en-una-region-nid07112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-08T17:50:29.000Z",
-   "tags": []
-  },
-  {
-   "t": "Ya está disponible: una plataforma pública permite hacer un mapeo del campo",
-   "link": "https://www.lanacion.com.ar/economia/campo/lanzamiento-una-plataforma-publica-permitira-hacer-un-mapeo-del-campo-nid08112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-08T17:48:59.000Z",
    "tags": []
   },
   {
@@ -436,11 +506,11 @@
    "tags": []
   },
   {
-   "t": "This market signal called the tech selloff. Now it’s sending another warning.",
-   "link": "https://www.marketwatch.com/story/this-market-signal-called-the-tech-selloff-now-its-sending-another-warning-f7f8eb9b?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-08T12:00:00.000Z",
+   "t": "Cuánto cuesta el libro de León XIV, \"La fuerza del Evangelio\" y dónde comprarlo",
+   "link": "https://www.ambito.com/economia/cuanto-cuesta-el-libro-leon-xiv-la-fuerza-del-evangelio-y-donde-comprarlo-n6325182",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-08T12:49:00.000Z",
    "tags": []
   },
   {
@@ -850,14 +920,6 @@
    ]
   },
   {
-   "t": "America's newest small business owners with no employees are off to a hot start in AI era",
-   "link": "https://www.cnbc.com/2026/11/07/americas-new-no-employee-small-business-owners-start-hot-in-ai-era.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-07T14:45:01.000Z",
-   "tags": []
-  },
-  {
    "t": "What midterm election blue wave rebuke of Trump means for renewable energy",
    "link": "https://www.cnbc.com/2026/11/07/midterm-election-blue-wave-trump-renewable-energy.html",
    "src": "CNBC",
@@ -1180,69 +1242,6 @@
    "src": "Ámbito",
    "region": "AR",
    "fecha": "2026-11-06T23:02:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar hoy y dólar blue hoy minuto a minuto: a cuánto opera este viernes 6 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-hoy-y-dolar-blue-hoy-minuto-minuto-cuanto-opera-este-viernes-6-noviembre-n6342270",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-06T22:45:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Finanzas al día: novedades de bancos, inversiones y mercado de capitales",
-   "link": "https://www.ambito.com/economia/finanzas-al-dia-novedades-bancos-inversiones-y-mercado-capitales-n6335525",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-06T22:29:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "El riesgo país marcó otro récord anual arriba de los 900 puntos tras el revés electoral de Donald Trump",
-   "link": "https://www.ambito.com/finanzas/los-bonos-se-someten-la-ultima-rueda-semanal-un-riesgo-pais-que-alcanza-los-900-puntos-n6342318",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-06T22:26:00.000Z",
-   "tags": [
-    "BONOS"
-   ]
-  },
-  {
-   "t": "Wall Street: el Nasdaq rebotó 1,1% tras el desplome que evaporó u$s2,5 billones en una sola rueda",
-   "link": "https://www.ambito.com/finanzas/los-futuros-wall-street-recortan-las-perdidas-pero-los-mercados-asia-y-europa-se-hunden-n6342276",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-06T22:03:00.000Z",
-   "tags": [
-    "SPY",
-    "QQQ"
-   ]
-  },
-  {
-   "t": "El riesgo país subió por sexta rueda consecutiva, rozó los 940 puntos básicos y marcó un nuevo máximo en más de un año",
-   "link": "https://www.infobae.com/economia/2026/11/06/el-riesgo-pais-subio-por-sexta-rueda-consecutiva-rozo-los-940-puntos-basicos-y-marco-un-nuevo-maximo-en-mas-de-un-ano/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-06T21:52:36.000Z",
-   "tags": [
-    "BONOS"
-   ]
-  },
-  {
-   "t": "La pobreza alcanzó el 45,4% con ponderadores actualizados y afectó a 21,1 millones de argentinos",
-   "link": "https://www.ambito.com/economia/la-pobreza-alcanzo-el-454-ponderadores-actualizados-y-afecto-211-millones-argentinos-n6342519",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-06T21:52:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "El precio del petróleo registró a la caída semanal más grande desde la pandemia",
-   "link": "https://www.infobae.com/economia/2026/11/06/el-petroleo-se-encamina-a-la-caida-semanal-mas-grande-desde-la-pandemia/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-06T21:36:09.000Z",
    "tags": []
   }
  ]
