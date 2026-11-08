@@ -1,12 +1,28 @@
 {
- "actualizado": "2026-11-08T16:42:23.340Z",
+ "actualizado": "2026-11-08T19:05:42.519Z",
  "items": [
+  {
+   "t": "Democrats amp up Trump investigation threats, Blanche counters he may probe lawmakers",
+   "link": "https://www.cnbc.com/2026/11/08/democrats-trump-oversight-blanche-doj-investigations.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-08T18:57:56.000Z",
+   "tags": []
+  },
+  {
+   "t": "Tras la derrota de Trump, EEUU ratificó su apoyo a Milei, pero crecen las dudas sobre la asistencia financiera en 2027",
+   "link": "https://www.ambito.com/economia/tras-la-derrota-trump-eeuu-ratifico-su-apoyo-milei-pero-crecen-las-dudas-la-asistencia-financiera-2027-n6342951",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-08T18:54:00.000Z",
+   "tags": []
+  },
   {
    "t": "Dólar hoy: a cuánto cotiza este domingo 8 de noviembre",
    "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-domingo-8-noviembre-n6342876",
    "src": "Ámbito",
    "region": "AR",
-   "fecha": "2026-11-08T16:22:00.000Z",
+   "fecha": "2026-11-08T18:53:00.000Z",
    "tags": []
   },
   {
@@ -14,7 +30,115 @@
    "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-domingo-8-noviembre-n6342877",
    "src": "Ámbito",
    "region": "AR",
-   "fecha": "2026-11-08T16:22:00.000Z",
+   "fecha": "2026-11-08T18:53:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Calendario semanal de Anses: qué pasa con los pagos de jubilaciones y AUH durante los feriados por la visita del papa León XIV a la Argentina",
+   "link": "https://www.lanacion.com.ar/economia/calendario-semanal-de-anses-que-pasa-con-los-pagos-de-jubilaciones-y-auh-durante-los-feriados-por-la-nid08112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-08T18:45:30.000Z",
+   "tags": []
+  },
+  {
+   "t": "Nvidia CEO Jensen Huang faces bipartisan congressional scrutiny over reported China spy link",
+   "link": "https://www.cnbc.com/2026/11/08/jensen-huang-nvidia-china-spy-congress.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-08T18:18:30.000Z",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "t": "En qué provincias y sectores la industria del juicio golpea más fuerte: las causas y las consecuencias del ranking de conflictividad",
+   "link": "https://www.infobae.com/economia/2026/11/08/en-que-provincias-y-sectores-la-industria-del-juicio-golpea-mas-fuerte-las-causas-y-las-consecuencias-del-ranking-de-conflictividad/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-08T18:18:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "León XIV: quién es Ramona Casas, elegida para hacer quesillos para el papa",
+   "link": "https://www.lanacion.com.ar/economia/campo/leon-xiv-quien-es-ramona-casas-elegida-para-hacer-quesillos-para-el-papa-nid08112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-08T18:12:14.000Z",
+   "tags": []
+  },
+  {
+   "t": "‘It seems bizarre’: We’re in our 80s with $950,000 in traditional IRAs. Why is our adviser pushing Roth conversions?",
+   "link": "https://www.marketwatch.com/story/it-seems-bizarre-were-in-our-80s-with-950-000-in-traditional-iras-why-is-our-adviser-pushing-us-to-do-roth-conversions-a665f990?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-08T18:00:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Súper Niño: pronostican más de 40 grados y tormentas intensas en una región",
+   "link": "https://www.lanacion.com.ar/economia/campo/super-nino-pronostican-mas-de-40-grados-y-tormentas-intensas-en-una-region-nid07112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-08T17:50:29.000Z",
+   "tags": []
+  },
+  {
+   "t": "Ya está disponible: una plataforma pública permite hacer un mapeo del campo",
+   "link": "https://www.lanacion.com.ar/economia/campo/lanzamiento-una-plataforma-publica-permitira-hacer-un-mapeo-del-campo-nid08112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-08T17:48:59.000Z",
+   "tags": []
+  },
+  {
+   "t": "Here are the 2 big things we're watching in the stock market in the week ahead",
+   "link": "https://www.cnbc.com/investingclub/2026/11/08/here-are-the-2-big-things-were-watching-in-the-stock-market-in-the-week-ahead.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-08T17:40:15.000Z",
+   "tags": []
+  },
+  {
+   "t": "Clima de Negocios: en medio del ruido financiero, los empresarios locales siguen de compras y miran atentos una norma del Gobierno",
+   "link": "https://www.infobae.com/economia/2026/11/08/clima-de-negocios-en-medio-del-ruido-financiero-los-empresarios-locales-siguen-de-compras-y-miran-atentos-una-norma-del-gobierno/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-08T17:35:31.000Z",
+   "tags": []
+  },
+  {
+   "t": "Two months after my father’s funeral, my stepmother asked me to repay his $40,000 wedding gift. Should I do what she says?",
+   "link": "https://www.marketwatch.com/story/shes-a-type-a-personality-my-stepmother-wants-me-to-repay-my-late-fathers-40-000-wedding-gift-should-i-oblige-51fc64f7?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-08T17:30:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Funeral homes are finding new life hosting weddings and golf outings, as the traditional burial business dies out",
+   "link": "https://www.marketwatch.com/story/funeral-homes-are-finding-new-life-hosting-weddings-and-golf-outings-as-the-traditional-burial-business-dies-out-15831d13?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-08T17:23:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Morgan Stanley apuesta por la tokenización y comienza a operar acciones y bonos del Tesoro de EEUU en blockchain",
+   "link": "https://www.ambito.com/finanzas/morgan-stanley-apuesta-la-tokenizacion-y-comienza-operar-acciones-y-bonos-del-tesoro-eeuu-blockchain-n6342937",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-08T17:16:00.000Z",
+   "tags": [
+    "BONOS"
+   ]
+  },
+  {
+   "t": "Elon Musk se mete en el negocio de las telecomunicaciones y busca competir con AT&T, Verizon y T-Mobile",
+   "link": "https://www.ambito.com/finanzas/elon-musk-se-mete-el-negocio-las-telecomunicaciones-y-busca-competir-att-verizon-y-t-mobile-n6342931",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-08T17:16:00.000Z",
    "tags": []
   },
   {
@@ -36,14 +160,6 @@
   {
    "t": "‘It feels like he’s quietly building a separate life’: My husband inherited $500,000, but he refuses to spend it on our home",
    "link": "https://www.marketwatch.com/story/it-feels-like-hes-quietly-building-a-separate-life-my-husband-inherited-500-000-but-he-refuses-to-spend-it-on-our-home-06535cff?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-08T16:00:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Funeral homes are finding new life hosting weddings and golf outings, as the traditional burial business dies out",
-   "link": "https://www.marketwatch.com/story/funeral-homes-are-finding-new-life-hosting-weddings-and-golf-outings-as-the-traditional-burial-business-dies-out-15831d13?mod=mw_rss_topstories",
    "src": "MarketWatch",
    "region": "US",
    "fecha": "2026-11-08T16:00:00.000Z",
@@ -394,14 +510,6 @@
    "tags": []
   },
   {
-   "t": "Ya está disponible: una plataforma pública permite hacer un mapeo del campo",
-   "link": "https://www.lanacion.com.ar/economia/campo/lanzamiento-una-plataforma-publica-permitira-hacer-un-mapeo-del-campo-nid08112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-08T06:00:00.000Z",
-   "tags": []
-  },
-  {
    "t": "El Gobierno busca encapsular la suba del riesgo país para evitar un impacto en el dólar y la actividad",
    "link": "https://www.infobae.com/economia/2026/11/08/el-gobierno-busca-encapsular-la-suba-del-riesgo-pais-para-evitar-un-impacto-en-el-dolar-y-la-actividad/",
    "src": "Infobae",
@@ -410,14 +518,6 @@
    "tags": [
     "BONOS"
    ]
-  },
-  {
-   "t": "Clima de Negocios: en medio del ruido financiero, los empresarios locales siguen de compras y miran atentos una norma del Gobierno",
-   "link": "https://www.infobae.com/economia/2026/11/08/clima-de-negocios-en-medio-del-ruido-financiero-los-empresarios-locales-siguen-de-compras-y-miran-atentos-una-norma-del-gobierno/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-08T03:50:46.000Z",
-   "tags": []
   },
   {
    "t": "¿Habrá menos autos chinos?: todo lo que hay que saber del cupo de autos híbridos y eléctricos de 2027",
@@ -566,14 +666,6 @@
    "tags": []
   },
   {
-   "t": "Súper Niño: pronostican más de 40 grados y tormentas intensas en una región",
-   "link": "https://www.lanacion.com.ar/economia/campo/super-nino-pronostican-mas-de-40-grados-y-tormentas-intensas-en-una-region-nid07112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-07T23:08:15.000Z",
-   "tags": []
-  },
-  {
    "t": "Súper Niño: miles de hectáreas fueron alcanzadas por violentas tormentas y hay cultivos “barridos por completo”",
    "link": "https://www.lanacion.com.ar/economia/campo/super-nino-miles-de-hectareas-fueron-alcanzadas-por-violentas-tormentas-y-hay-cultivos-barridos-por-nid07112026/",
    "src": "La Nación",
@@ -638,22 +730,6 @@
    "tags": [
     "BONOS"
    ]
-  },
-  {
-   "t": "This retired professor has reinvented himself — as a Taylor Swift scholar",
-   "link": "https://www.marketwatch.com/story/this-retired-professor-has-reinvented-himself-as-a-taylor-swift-scholar-88456c8d?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-07T20:48:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Second-guessing my adviser: Is an annuity the right move in this market?",
-   "link": "https://www.marketwatch.com/story/my-adviser-recommended-an-annuity-is-it-the-right-move-in-this-market-environment-00edbbf6?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-07T20:36:00.000Z",
-   "tags": []
   },
   {
    "t": "A partir de qué precio del dólar el carry trade deja de ser negocio para inversores",
@@ -865,14 +941,6 @@
    "tags": []
   },
   {
-   "t": "Cosm rides premium moviegoing wave with more immersive screenings and a wider library",
-   "link": "https://www.cnbc.com/2026/11/07/cosm-immersive-movie-screenings.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-07T13:00:01.000Z",
-   "tags": []
-  },
-  {
    "t": "Tech companies face mounting child safety lawsuits while pushing AI into schools",
    "link": "https://www.cnbc.com/2026/11/07/snap-social-media-teen-safety-lawsuits.html",
    "src": "CNBC",
@@ -939,14 +1007,6 @@
    "tags": [
     "BONOS"
    ]
-  },
-  {
-   "t": "Why a wave of bomb threats is proving so difficult for Europe's aviation authorities to contain",
-   "link": "https://www.cnbc.com/2026/11/07/hoax-bomb-threats-flights-europe.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-07T09:01:57.000Z",
-   "tags": []
   },
   {
    "t": "Maíz tardío: las claves del nitrógeno para destrabar el rinde",
@@ -1183,67 +1243,6 @@
    "src": "Infobae",
    "region": "AR",
    "fecha": "2026-11-06T21:36:09.000Z",
-   "tags": []
-  },
-  {
-   "t": "El dólar blue sufrió su primera baja semanal en un mes y volvió a cerrar debajo del minorista",
-   "link": "https://www.ambito.com/finanzas/el-dolar-blue-sufrio-su-primera-baja-semanal-un-mes-y-volvio-cerrar-debajo-del-minorista-n6342596",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-06T21:28:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Billeteras, fintechs y plataformas van por el negocio de los freelancers: por qué Argentina es un mercado clave",
-   "link": "https://www.ambito.com/finanzas/billeteras-fintechs-y-plataformas-van-el-negocio-los-freelancers-que-argentina-es-un-mercado-clave-n6342018",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-06T21:28:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "La particular forma que un hombre encontró para que no lo obliguen a usar IA en el trabajo",
-   "link": "https://www.lanacion.com.ar/tecnologia/la-particular-forma-que-un-hombre-encontro-para-que-no-lo-obliguen-a-usar-ia-en-el-trabajo-nid06112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-06T21:26:28.000Z",
-   "tags": []
-  },
-  {
-   "t": "El Niño: las lluvias no dan tregua y en el sur bonaerense hay hasta 20 días de atraso en la siembra",
-   "link": "https://www.lanacion.com.ar/economia/campo/el-nino-las-lluvias-no-dan-tregua-y-en-el-sur-bonaerense-hay-hasta-20-dias-de-atraso-en-la-siembra-nid05112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-06T21:23:25.000Z",
-   "tags": []
-  },
-  {
-   "t": "Subió el riesgo país argentino y se alejó de los 900 puntos, mientras Wall Street insinuó un rebote",
-   "link": "https://www.infobae.com/economia/2026/11/06/el-riesgo-pais-argentino-cae-debajo-de-los-900-puntos-mientras-que-wall-street-insinua-un-rebote/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-06T21:18:07.000Z",
-   "tags": [
-    "SPY",
-    "BONOS"
-   ]
-  },
-  {
-   "t": "El riesgo país volvió a subir y se acercó a los 940 puntos, nuevo máximo en más de un año",
-   "link": "https://www.iprofesional.com/finanzas/468549-el-riesgo-pais-volvio-a-subir-y-se-acerco-a-los-940-puntos-nuevo-maximo-en-mas-de-un-ano",
-   "src": "iProfesional",
-   "region": "AR",
-   "fecha": "2026-11-06T21:10:00.000Z",
-   "tags": [
-    "BONOS"
-   ]
-  },
-  {
-   "t": "El presidente de OpenAI confirmó que la compañía podría salir a la Bolsa en 2027",
-   "link": "https://www.lanacion.com.ar/economia/IA/el-presidente-de-openai-confirmo-que-la-compania-podria-salir-a-la-bolsa-en-2027-nid06112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-06T21:04:54.000Z",
    "tags": []
   }
  ]
