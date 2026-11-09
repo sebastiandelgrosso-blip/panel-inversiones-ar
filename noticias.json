@@ -1,20 +1,363 @@
 {
- "actualizado": "2026-11-09T02:37:23.081Z",
+ "actualizado": "2026-11-09T11:22:59.287Z",
  "items": [
   {
-   "t": "China wholesale inflation hits highest in more than four years as consumer measure slows",
-   "link": "https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html",
+   "t": "Nvidia stock falls 4% as scrutiny turns to Jensen Huang’s relationship with alleged Chinese spy",
+   "link": "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html",
    "src": "CNBC",
    "region": "US",
-   "fecha": "2026-11-09T02:28:50.000Z",
+   "fecha": "2026-11-09T11:10:11.000Z",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "t": "Rubio sees little hope of diplomatic breakthrough to Mideast deadlock amid 'outrageous' Iranian demands",
+   "link": "https://www.cnbc.com/2026/11/09/us-iran-war-trump-hormuz.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-09T11:09:14.000Z",
    "tags": []
+  },
+  {
+   "t": "Congress returns with government funding, Pete Hegseth and the debt limit on the agenda",
+   "link": "https://www.cnbc.com/2026/11/09/congress-government-funding-debt-limit-elections.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-09T11:00:01.000Z",
+   "tags": []
+  },
+  {
+   "t": "Gonzalo Goñi, sobre un desarrollo argentino innovador: “Esto me va a decir cuánta plata te puedo prestar a partir de tu productividad”",
+   "link": "https://www.lanacion.com.ar/economia/campo/gonzalo-goni-sobre-un-desarrollo-argentino-innovador-esto-me-va-a-decir-cuanta-plata-te-puedo-nid09112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-09T11:00:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Creación y destrucción de empresas y de empleo: el riesgo de que la economía argentina se termine pareciendo al Deportivo La Coruña",
+   "link": "https://www.infobae.com/economia/2026/11/09/creacion-y-destruccion-de-empresas-y-de-empleo-el-riesgo-de-que-la-economia-argentina-se-termine-pareciendo-al-deportivo-la-coruna/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-09T10:52:13.000Z",
+   "tags": []
+  },
+  {
+   "t": "The biggest takeaway from Berkshire Hathaway’s latest quarter isn’t the $357 billion cash or its stock buybacks",
+   "link": "https://www.marketwatch.com/story/the-biggest-takeaway-from-berkshire-hathaways-latest-quarter-isnt-the-357-billion-cash-or-its-stock-buybacks-3069f6a9?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-09T10:48:00.000Z",
+   "tags": [
+    "BRKB"
+   ]
+  },
+  {
+   "t": "What is MegaSpeed? The Nvidia chip buyer in the spotlight after Jensen Haung’s affair",
+   "link": "https://www.cnbc.com/2026/11/09/megaspeed-nvidia-jensen-huang-alice-huang.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-09T10:35:23.000Z",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "t": "The market’s correction is entering its final phase — but wait before buying the dip, says Morgan Stanley chief strategist",
+   "link": "https://www.marketwatch.com/story/the-markets-correction-is-entering-its-final-phase-but-wait-before-buying-the-dip-says-morgan-stanley-chief-strategist-2c1be13e?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-09T10:26:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Until sentiment in the AI trade improves, Citi tells investors it’s better to sit out the global tech trade",
+   "link": "https://www.marketwatch.com/story/until-sentiment-in-the-ai-trade-improves-citi-tells-investors-its-better-to-sit-out-the-global-tech-trade-ed939f30?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-09T10:20:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "‘We had the worst fight we’ve ever had’: I want my husband to retire at 65. But I don’t want to lose his $280,000 salary.",
+   "link": "https://www.marketwatch.com/story/we-had-the-worst-fight-weve-ever-had-i-want-my-husband-to-retire-at-65-but-i-dont-want-to-lose-his-280-000-salary-48511469?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-09T10:15:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Calendario PNC de la Anses: cuándo se cobran las Pensiones no Contributivas de noviembre 2026",
+   "link": "https://www.lanacion.com.ar/economia/calendario-pnc-de-la-anses-cuando-se-cobran-las-pensiones-no-contributivas-de-noviembre-2026-nid04112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-09T10:13:49.000Z",
+   "tags": []
+  },
+  {
+   "t": "Calendario de jubilaciones de la Anses: cuándo cobro en noviembre 2026 con el bono oficial y el aumento confirmado",
+   "link": "https://www.lanacion.com.ar/economia/calendario-de-jubilaciones-de-la-anses-cuando-cobro-en-noviembre-2026-con-el-bono-oficial-y-el-nid28102026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-09T10:13:47.000Z",
+   "tags": []
+  },
+  {
+   "t": "Calendario de pagos de Anses: cuándo se cobra la PUAM de noviembre de 2026",
+   "link": "https://www.lanacion.com.ar/economia/calendario-de-pagos-de-anses-cuando-se-cobra-la-puam-de-noviembre-de-2026-nid02112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-09T10:13:45.000Z",
+   "tags": []
+  },
+  {
+   "t": "De cuánto es el bono de noviembre 2026 para jubilados y a quiénes les corresponde",
+   "link": "https://www.lanacion.com.ar/economia/de-cuanto-es-el-bono-de-noviembre-2026-para-jubilados-y-a-quienes-les-corresponde-nid29102026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-09T10:13:42.000Z",
+   "tags": []
+  },
+  {
+   "t": "SUAF de Anses: el monto de las asignaciones familiares en noviembre de 2026",
+   "link": "https://www.lanacion.com.ar/economia/suaf-de-anses-el-monto-de-las-asignaciones-familiares-en-noviembre-de-2026-nid21102026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-09T10:13:40.000Z",
+   "tags": []
+  },
+  {
+   "t": "A cuánto llega la PUAM en noviembre de 2026 con el aumento confirmado",
+   "link": "https://www.lanacion.com.ar/economia/a-cuanto-llega-la-puam-en-noviembre-de-2026-con-el-aumento-confirmado-nid20102026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-09T10:13:38.000Z",
+   "tags": []
+  },
+  {
+   "t": "PNC de Anses: cuál es el monto de las Pensiones No Contributivas en noviembre de 2026",
+   "link": "https://www.lanacion.com.ar/economia/pnc-de-anses-cual-es-el-monto-de-las-pensiones-no-contributivas-en-noviembre-de-2026-nid19102026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-09T10:13:35.000Z",
+   "tags": []
+  },
+  {
+   "t": "Monto de la Asignación Universal por Hijo: de cuánto es la AUH en noviembre 2026, con el aumento oficial",
+   "link": "https://www.lanacion.com.ar/economia/monto-de-la-asignacion-universal-por-hijo-de-cuanto-es-la-auh-en-noviembre-2026-con-el-aumento-nid15102026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-09T10:13:34.000Z",
+   "tags": []
+  },
+  {
+   "t": "Jubilaciones de Anses: cuánto cobro en noviembre 2026, con el bono oficial y el aumento confirmado",
+   "link": "https://www.lanacion.com.ar/economia/jubilaciones-de-anses-cuanto-cobro-en-noviembre-2026-con-el-bono-oficial-y-el-aumento-confirmado-nid14102026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-09T10:13:32.000Z",
+   "tags": []
+  },
+  {
+   "t": "Cuándo cobro Anses: el calendario completo de noviembre 2026",
+   "link": "https://www.lanacion.com.ar/economia/cuando-cobro-anses-el-calendario-completo-de-noviembre-2026-nid27102026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-09T10:13:29.000Z",
+   "tags": []
+  },
+  {
+   "t": "Nueva paritaria de octubre a diciembre: cuánto cobran los empleados de comercio con el aumento confirmado",
+   "link": "https://www.lanacion.com.ar/economia/nueva-paritaria-de-octubre-a-diciembre-cuanto-cobran-los-empleados-de-comercio-con-el-aumento-nid28102026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-09T10:13:27.000Z",
+   "tags": []
+  },
+  {
+   "t": "Servicio doméstico en noviembre 2026: cuánto cobran, quiénes reciben el aumento y cómo se incorpora el bono",
+   "link": "https://www.lanacion.com.ar/economia/servicio-domestico-en-noviembre-de-2026-cuanto-cobran-las-empleadas-quienes-reciben-el-aumento-y-nid22102026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-09T10:13:26.000Z",
+   "tags": []
+  },
+  {
+   "t": "Cuándo se cobra el aguinaldo de diciembre 2026 en la Argentina: fecha de pago y a quiénes les corresponde",
+   "link": "https://www.lanacion.com.ar/economia/cuando-se-cobra-el-aguinaldo-de-diciembre-2026-en-la-argentina-fecha-de-pago-y-a-quienes-les-nid02112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-09T10:13:18.000Z",
+   "tags": []
+  },
+  {
+   "t": "Morgan Stanley enciende luz amarilla para los bonos argentinos tras derrota de Trump",
+   "link": "https://www.iprofesional.com/finanzas/468512-morgan-stanley-lanza-advierte-por-bonos-argentinos-tras-derrota-de-trump",
+   "src": "iProfesional",
+   "region": "AR",
+   "fecha": "2026-11-09T10:08:00.000Z",
+   "tags": [
+    "BONOS"
+   ]
+  },
+  {
+   "t": "Calendario semanal de Anses: qué pasa con los pagos de jubilaciones y AUH durante los feriados por la visita del papa León XIV a la Argentina",
+   "link": "https://www.lanacion.com.ar/economia/calendario-semanal-de-anses-que-pasa-con-los-pagos-de-jubilaciones-y-auh-durante-los-feriados-por-la-nid08112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-09T10:06:56.000Z",
+   "tags": []
+  },
+  {
+   "t": "Ryan Serhant of ‘Owning Manhattan’ on why you shouldn’t wait to buy a house, and the hot spots to watch for",
+   "link": "https://www.marketwatch.com/story/ryan-serhant-of-owning-manhattan-on-why-you-shouldnt-wait-to-buy-a-house-and-the-hot-spots-to-watch-for-9c2731c3?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-09T10:04:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Brewers star Christian Yelich is selling his hillside Malibu mansion for $30 million",
+   "link": "https://www.marketwatch.com/story/brewers-star-christian-yelich-is-selling-his-hillside-malibu-mansion-for-30-million-92bee567?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-09T10:02:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Suba del dólar achicó ganancia del carry trade y la City avisa qué pasará con el negocio",
+   "link": "https://www.iprofesional.com/finanzas/468641-que-pasara-con-la-maniobra-del-dolar-el-ultimo-bimestre-del-ano",
+   "src": "iProfesional",
+   "region": "AR",
+   "fecha": "2026-11-09T10:00:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "ANSES: cuándo cobro en noviembre 2026 si mi DNI termina en 6",
+   "link": "https://www.infobae.com/economia/2026/11/09/anses-cuando-cobro-en-noviembre-2026-si-mi-dni-termina-en-6/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-09T09:35:32.000Z",
+   "tags": []
+  },
+  {
+   "t": "Sorpresa en una feria gigantesca: la IA, los robots y su impacto no son un cuento chino",
+   "link": "https://www.lanacion.com.ar/economia/campo/sorpresa-en-una-feria-gigantesca-la-ia-los-robots-y-su-impacto-no-son-un-cuento-chino-nid09112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-09T09:30:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "How Wall Street is reacting to the news of Nvidia’s investigation into Jensen Huang spy claims",
+   "link": "https://www.marketwatch.com/story/how-wall-street-is-reacting-to-the-news-of-nvidias-jensen-huang-investigation-into-spy-claims-d8c839ab?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-09T09:12:00.000Z",
+   "tags": [
+    "NVDA",
+    "SPY"
+   ]
+  },
+  {
+   "t": "From supermarket fridges to passenger flights, a wave of threats is testing Europe's defenses",
+   "link": "https://www.cnbc.com/2026/11/09/europe-fridge-hacks-bomb-threats-cyberattack.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-09T08:59:16.000Z",
+   "tags": []
+  },
+  {
+   "t": "Por qué la suba del riesgo país no movió al dólar: claves de la pelea principal del Gobierno con el mercado",
+   "link": "https://www.infobae.com/economia/2026/11/09/por-que-la-suba-del-riesgo-pais-no-movio-al-dolar-claves-de-la-pelea-principal-del-gobierno-con-el-mercado/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-09T06:13:22.000Z",
+   "tags": [
+    "BONOS"
+   ]
+  },
+  {
+   "t": "Los dólares del RIGI: cuánto tardarán en concretarse los USD 76.000 millones de las inversiones aprobadas",
+   "link": "https://www.infobae.com/economia/2026/11/09/los-dolares-del-rigi-cuanto-tardaran-en-concretarse-los-usd-76000-millones-de-las-inversiones-aprobadas/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-09T06:13:15.000Z",
+   "tags": []
+  },
+  {
+   "t": "El Gobierno mantiene la sintonía fina con el dólar, en medio de la volatilidad financiera",
+   "link": "https://www.infobae.com/economia/2026/11/09/el-gobierno-mantiene-la-sintonia-fina-con-el-dolar-en-medio-de-la-volatilidad-financiera/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-09T06:12:59.000Z",
+   "tags": []
+  },
+  {
+   "t": "Las recientes elecciones en EEUU reavivaron el interés por la construcción de data centers en la Patagonia",
+   "link": "https://www.infobae.com/economia/2026/11/09/las-recientes-elecciones-en-eeuu-reavivaron-el-interes-por-la-construccion-de-data-centers-en-la-patagonia/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-09T06:12:48.000Z",
+   "tags": []
+  },
+  {
+   "t": "El análisis de las consultoras locales sobre las consecuencias para la Argentina de la derrota electoral de Donald Trump",
+   "link": "https://www.infobae.com/economia/2026/11/09/el-analisis-de-las-consultoras-locales-sobre-las-consecuencias-para-la-argentina-de-la-derrota-electoral-de-donald-trump/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-09T06:11:15.000Z",
+   "tags": []
+  },
+  {
+   "t": "“No quedó nada”: retiraron miles de vacas de una zona cercana a un gran humedal",
+   "link": "https://www.lanacion.com.ar/economia/campo/no-quedo-nada-retiraron-miles-de-vacas-de-una-zona-cercana-a-un-gran-humedal-nid09112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-09T06:00:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Los empresarios compartieron la visión del papa León XIV: \"No hay empresa próspera en una sociedad que fracasa\"",
+   "link": "https://www.infobae.com/economia/2026/11/09/los-empresarios-compartieron-la-vision-del-papa-leon-xiv-no-hay-empresa-prospera-en-una-sociedad-que-fracasa/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-09T03:39:31.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar hoy: a cuánto cotiza este lunes 9 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-lunes-9-noviembre-n6343074",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-09T03:01:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar blue hoy: a cuánto opera este lunes 9 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-lunes-9-noviembre-n6343075",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-09T03:01:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Bonos en dólares: por qué el mercado exige una tasa 4 veces mayor por títulos que vencen tras las elecciones de 2027",
+   "link": "https://www.ambito.com/finanzas/bonos-dolares-que-el-mercado-exige-una-tasa-4-veces-mayor-titulos-que-vencen-las-elecciones-2027-n6342942",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-09T03:00:00.000Z",
+   "tags": [
+    "BONOS"
+   ]
   },
   {
    "t": "Dólar hoy: a cuánto cotiza este domingo 8 de noviembre",
    "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-domingo-8-noviembre-n6342876",
    "src": "Ámbito",
    "region": "AR",
-   "fecha": "2026-11-09T02:25:00.000Z",
+   "fecha": "2026-11-09T02:55:00.000Z",
    "tags": []
   },
   {
@@ -22,7 +365,15 @@
    "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-domingo-8-noviembre-n6342877",
    "src": "Ámbito",
    "region": "AR",
-   "fecha": "2026-11-09T02:25:00.000Z",
+   "fecha": "2026-11-09T02:55:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "China wholesale inflation hits highest in more than four years as consumer measure slows",
+   "link": "https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-09T02:50:22.000Z",
    "tags": []
   },
   {
@@ -76,80 +427,12 @@
    "tags": []
   },
   {
-   "t": "‘It feels like he’s quietly building a separate life’: My husband inherited $500,000, but he refuses to spend it on our home",
-   "link": "https://www.marketwatch.com/story/it-feels-like-hes-quietly-building-a-separate-life-my-husband-inherited-500-000-but-he-refuses-to-spend-it-on-our-home-06535cff?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-09T00:02:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Funeral homes are finding new life hosting weddings and golf outings, as the traditional burial business dies out",
-   "link": "https://www.marketwatch.com/story/funeral-homes-are-finding-new-life-hosting-weddings-and-golf-outings-as-the-traditional-burial-business-dies-out-15831d13?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-09T00:00:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "How much in Roth conversions can you do in 2027 with the new tax brackets?",
-   "link": "https://www.marketwatch.com/story/how-much-roth-conversion-can-you-do-in-2027-with-the-new-tax-brackets-a2f940c8?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-08T23:50:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "I’m 65 and worth more than $5.6 million. Can I afford a $200,000 camper?",
-   "link": "https://www.marketwatch.com/story/im-65-and-worth-more-than-5-6-million-can-i-buy-a-200-000-camper-even-though-the-price-feels-crazy-high-55f668f8?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-08T23:49:00.000Z",
-   "tags": []
-  },
-  {
    "t": "Revolut ya le puso fecha al comienzo de sus operaciones como banco en Argentina",
    "link": "https://www.iprofesional.com/economia/468637-revolut-ya-le-puso-fecha-al-comienzo-de-sus-operaciones-como-banco-en-argentina",
    "src": "iProfesional",
    "region": "AR",
    "fecha": "2026-11-08T23:45:00.000Z",
    "tags": []
-  },
-  {
-   "t": "This retired professor has reinvented himself — as a Taylor Swift scholar",
-   "link": "https://www.marketwatch.com/story/this-retired-professor-has-reinvented-himself-as-a-taylor-swift-scholar-88456c8d?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-08T23:35:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "You follow the rules for smart stock trading. But are they the right rules?",
-   "link": "https://www.marketwatch.com/story/you-follow-the-rules-for-smart-stock-trading-but-are-they-the-right-rules-9bfe5846?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-08T23:15:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "A new setback for the AI trade: Nvidia’s board is probing CEO Huang’s relationship with alleged spy",
-   "link": "https://www.marketwatch.com/story/nvidias-board-will-probe-ceo-jensen-huangs-relationship-with-an-alleged-spy-heres-what-to-know-86656cd9?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-08T23:05:00.000Z",
-   "tags": [
-    "NVDA"
-   ]
-  },
-  {
-   "t": "Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy",
-   "link": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-08T22:53:57.000Z",
-   "tags": [
-    "NVDA"
-   ]
   },
   {
    "t": "Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he could still strike",
@@ -236,14 +519,6 @@
    "tags": []
   },
   {
-   "t": "Calendario semanal de Anses: qué pasa con los pagos de jubilaciones y AUH durante los feriados por la visita del papa León XIV a la Argentina",
-   "link": "https://www.lanacion.com.ar/economia/calendario-semanal-de-anses-que-pasa-con-los-pagos-de-jubilaciones-y-auh-durante-los-feriados-por-la-nid08112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-08T18:45:30.000Z",
-   "tags": []
-  },
-  {
    "t": "En qué provincias y sectores la industria del juicio golpea más fuerte: las causas y las consecuencias del ranking de conflictividad",
    "link": "https://www.infobae.com/economia/2026/11/08/en-que-provincias-y-sectores-la-industria-del-juicio-golpea-mas-fuerte-las-causas-y-las-consecuencias-del-ranking-de-conflictividad/",
    "src": "Infobae",
@@ -257,14 +532,6 @@
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-08T18:12:14.000Z",
-   "tags": []
-  },
-  {
-   "t": "Here are the 2 big things we're watching in the stock market in the week ahead",
-   "link": "https://www.cnbc.com/investingclub/2026/11/08/here-are-the-2-big-things-were-watching-in-the-stock-market-in-the-week-ahead.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-08T17:40:15.000Z",
    "tags": []
   },
   {
@@ -392,14 +659,6 @@
    ]
   },
   {
-   "t": "Using miles to fly for Thanksgiving? These are the most expensive and cheapest routes",
-   "link": "https://www.cnbc.com/2026/11/08/frequent-flyer-miles-points-thanksgiving.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-08T13:00:01.000Z",
-   "tags": []
-  },
-  {
    "t": "Amazon's Astro home robot has fans but looks destined for the 'trash heap.' Why it's trying again",
    "link": "https://www.cnbc.com/2026/11/08/amazon-home-robot-fauna-sprout.html",
    "src": "CNBC",
@@ -410,6 +669,14 @@
    ]
   },
   {
+   "t": "Using miles to fly for Thanksgiving? These are the most expensive and cheapest routes",
+   "link": "https://www.cnbc.com/2026/11/08/frequent-flyer-miles-points-thanksgiving.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-08T13:00:01.000Z",
+   "tags": []
+  },
+  {
    "t": "Brands are sponsoring IRL communities. Some experts say that could spell their end",
    "link": "https://www.cnbc.com/make-it/2026/11/08/brand-sponsorship-local-communities.html",
    "src": "CNBC",
@@ -418,115 +685,11 @@
    "tags": []
   },
   {
-   "t": "Cuándo se cobra el aguinaldo de diciembre 2026 en la Argentina: fecha de pago y a quiénes les corresponde",
-   "link": "https://www.lanacion.com.ar/economia/cuando-se-cobra-el-aguinaldo-de-diciembre-2026-en-la-argentina-fecha-de-pago-y-a-quienes-les-nid02112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-08T12:58:55.000Z",
-   "tags": []
-  },
-  {
-   "t": "Calendario PNC de la Anses: cuándo se cobran las Pensiones no Contributivas de noviembre 2026",
-   "link": "https://www.lanacion.com.ar/economia/calendario-pnc-de-la-anses-cuando-se-cobran-las-pensiones-no-contributivas-de-noviembre-2026-nid04112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-08T12:56:38.000Z",
-   "tags": []
-  },
-  {
-   "t": "Calendario de jubilaciones de la Anses: cuándo cobro en noviembre 2026 con el bono oficial y el aumento confirmado",
-   "link": "https://www.lanacion.com.ar/economia/calendario-de-jubilaciones-de-la-anses-cuando-cobro-en-noviembre-2026-con-el-bono-oficial-y-el-nid28102026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-08T12:56:36.000Z",
-   "tags": []
-  },
-  {
-   "t": "Calendario de pagos de Anses: cuándo se cobra la PUAM de noviembre de 2026",
-   "link": "https://www.lanacion.com.ar/economia/calendario-de-pagos-de-anses-cuando-se-cobra-la-puam-de-noviembre-de-2026-nid02112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-08T12:56:33.000Z",
-   "tags": []
-  },
-  {
    "t": "Calendario AUH de Anses: cuándo se cobra la Asignación Universal por Hijo en noviembre 2026",
    "link": "https://www.lanacion.com.ar/economia/calendario-auh-de-anses-cuando-se-cobra-la-asignacion-universal-por-hijo-en-noviembre-2026-nid29102026/",
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-08T12:56:29.000Z",
-   "tags": []
-  },
-  {
-   "t": "De cuánto es el bono de noviembre 2026 para jubilados y a quiénes les corresponde",
-   "link": "https://www.lanacion.com.ar/economia/de-cuanto-es-el-bono-de-noviembre-2026-para-jubilados-y-a-quienes-les-corresponde-nid29102026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-08T12:56:27.000Z",
-   "tags": []
-  },
-  {
-   "t": "SUAF de Anses: el monto de las asignaciones familiares en noviembre de 2026",
-   "link": "https://www.lanacion.com.ar/economia/suaf-de-anses-el-monto-de-las-asignaciones-familiares-en-noviembre-de-2026-nid21102026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-08T12:56:24.000Z",
-   "tags": []
-  },
-  {
-   "t": "PNC de Anses: cuál es el monto de las Pensiones No Contributivas en noviembre de 2026",
-   "link": "https://www.lanacion.com.ar/economia/pnc-de-anses-cual-es-el-monto-de-las-pensiones-no-contributivas-en-noviembre-de-2026-nid19102026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-08T12:56:20.000Z",
-   "tags": []
-  },
-  {
-   "t": "A cuánto llega la PUAM en noviembre de 2026 con el aumento confirmado",
-   "link": "https://www.lanacion.com.ar/economia/a-cuanto-llega-la-puam-en-noviembre-de-2026-con-el-aumento-confirmado-nid20102026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-08T12:56:15.000Z",
-   "tags": []
-  },
-  {
-   "t": "Monto de la Asignación Universal por Hijo: de cuánto es la AUH en noviembre 2026, con el aumento oficial",
-   "link": "https://www.lanacion.com.ar/economia/monto-de-la-asignacion-universal-por-hijo-de-cuanto-es-la-auh-en-noviembre-2026-con-el-aumento-nid15102026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-08T12:56:08.000Z",
-   "tags": []
-  },
-  {
-   "t": "Jubilaciones de Anses: cuánto cobro en noviembre 2026, con el bono oficial y el aumento confirmado",
-   "link": "https://www.lanacion.com.ar/economia/jubilaciones-de-anses-cuanto-cobro-en-noviembre-2026-con-el-bono-oficial-y-el-aumento-confirmado-nid14102026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-08T12:56:06.000Z",
-   "tags": []
-  },
-  {
-   "t": "Cuándo cobro Anses: el calendario completo de noviembre 2026",
-   "link": "https://www.lanacion.com.ar/economia/cuando-cobro-anses-el-calendario-completo-de-noviembre-2026-nid27102026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-08T12:56:04.000Z",
-   "tags": []
-  },
-  {
-   "t": "Nueva paritaria de octubre a diciembre: cuánto cobran los empleados de comercio con el aumento confirmado",
-   "link": "https://www.lanacion.com.ar/economia/nueva-paritaria-de-octubre-a-diciembre-cuanto-cobran-los-empleados-de-comercio-con-el-aumento-nid28102026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-08T12:56:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Servicio doméstico en noviembre 2026: cuánto cobran, quiénes reciben el aumento y cómo se incorpora el bono",
-   "link": "https://www.lanacion.com.ar/economia/servicio-domestico-en-noviembre-de-2026-cuanto-cobran-las-empleadas-quienes-reciben-el-aumento-y-nid22102026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-08T12:55:58.000Z",
    "tags": []
   },
   {
@@ -544,16 +707,6 @@
    "region": "AR",
    "fecha": "2026-11-08T12:49:00.000Z",
    "tags": []
-  },
-  {
-   "t": "Top Wall Street analysts like these 3 dividend stocks for consistent income",
-   "link": "https://www.cnbc.com/2026/11/08/top-analysts-like-these-3-dividend-stocks-for-consistent-income.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-08T11:47:24.000Z",
-   "tags": [
-    "SPY"
-   ]
   },
   {
    "t": "Radiografía de uno de los números que más le preocupan al papa León XIV",
@@ -694,16 +847,16 @@
    "tags": []
   },
   {
-   "t": "Finanzas: nerviosismo e incertidumbre afuera y adentro",
-   "link": "https://www.lanacion.com.ar/economia/finanzas-nerviosismo-e-incertidumbre-afuera-y-adentro-nid08112026/",
+   "t": "Cuál es el impacto del nuevo escenario mundial para la Argentina",
+   "link": "https://www.lanacion.com.ar/economia/cual-es-el-impacto-del-nuevo-escenario-mundial-para-la-argentina-nid08112026/",
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-08T03:01:00.000Z",
    "tags": []
   },
   {
-   "t": "Cuál es el impacto del nuevo escenario mundial para la Argentina",
-   "link": "https://www.lanacion.com.ar/economia/cual-es-el-impacto-del-nuevo-escenario-mundial-para-la-argentina-nid08112026/",
+   "t": "Finanzas: nerviosismo e incertidumbre afuera y adentro",
+   "link": "https://www.lanacion.com.ar/economia/finanzas-nerviosismo-e-incertidumbre-afuera-y-adentro-nid08112026/",
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-08T03:01:00.000Z",
@@ -757,14 +910,6 @@
    "src": "Infobae",
    "region": "AR",
    "fecha": "2026-11-07T23:16:30.000Z",
-   "tags": []
-  },
-  {
-   "t": "Trump offers UFC chief Dana White press secretary job",
-   "link": "https://www.cnbc.com/2026/11/07/trump-ufc-dana-white-press-secretary-offer.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-07T23:13:38.000Z",
    "tags": []
   },
   {
@@ -952,11 +1097,11 @@
    ]
   },
   {
-   "t": "What midterm election blue wave rebuke of Trump means for renewable energy",
-   "link": "https://www.cnbc.com/2026/11/07/midterm-election-blue-wave-trump-renewable-energy.html",
+   "t": "Many workers lose unused FSA money — but could still come out ahead. Here's how",
+   "link": "https://www.cnbc.com/2026/11/07/fsa-forfeit.html",
    "src": "CNBC",
    "region": "US",
-   "fecha": "2026-11-07T14:33:32.000Z",
+   "fecha": "2026-11-07T14:30:01.000Z",
    "tags": []
   },
   {
@@ -965,14 +1110,6 @@
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-07T14:18:16.000Z",
-   "tags": []
-  },
-  {
-   "t": "31-year-old dumpster diver brought in $140,000 in 12 months: I 'did much more than I thought was possible'",
-   "link": "https://www.cnbc.com/make-it/2026/11/07/dumpster-diver-resale-business.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-07T14:15:01.000Z",
    "tags": []
   },
   {
@@ -993,14 +1130,6 @@
     "BRKB",
     "SPY"
    ]
-  },
-  {
-   "t": "Mark Cuban says he doesn’t ‘give a f---' about growing his net worth—a healthy mindset for non-billionaires too, a financial therapist says",
-   "link": "https://www.cnbc.com/make-it/2026/11/07/mark-cuban-net-worth-money-mindset.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-07T14:05:01.000Z",
-   "tags": []
   },
   {
    "t": "Will this week's blue wave election usher in a Democratic president in 2028?",
@@ -1029,6 +1158,14 @@
   {
    "t": "Anthropic IPO meets AI backlash after midterms show stinging rebuke of data centers",
    "link": "https://www.cnbc.com/2026/11/07/anthropic-ipo-ai-data-center-backlash.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-07T13:00:01.000Z",
+   "tags": []
+  },
+  {
+   "t": "Cosm rides premium moviegoing wave with more immersive screenings and a wider library",
+   "link": "https://www.cnbc.com/2026/11/07/cosm-immersive-movie-screenings.html",
    "src": "CNBC",
    "region": "US",
    "fecha": "2026-11-07T13:00:01.000Z",
@@ -1077,14 +1214,6 @@
    "tags": []
   },
   {
-   "t": "Envases vacíos de agroquímicos: el 44% del plástico recuperado se usa para fabricar caños de fibra óptica",
-   "link": "https://www.lanacion.com.ar/economia/campo/envases-vacios-de-agroquimicos-el-44-del-plastico-recuperado-se-usa-para-fabricar-canos-de-fibra-nid06112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-07T09:35:00.000Z",
-   "tags": []
-  },
-  {
    "t": "Que la volatilidad no nuble el negocio: bonos argentinos están a precios muy apetecibles",
    "link": "https://www.iprofesional.com/finanzas/468564-bonos-argentinos-caen-precios-irresistibles-oportunidad-compra-noviembre-2026",
    "src": "iProfesional",
@@ -1093,14 +1222,6 @@
    "tags": [
     "BONOS"
    ]
-  },
-  {
-   "t": "Maíz tardío: las claves del nitrógeno para destrabar el rinde",
-   "link": "https://www.lanacion.com.ar/economia/campo/agricultura/maiz-tardio-las-claves-del-nitrogeno-para-destrabar-el-rinde-nid07112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-07T09:00:01.000Z",
-   "tags": []
   },
   {
    "t": "Trump says U.S. carried out ‘minor strikes’ on Iran as missiles hit Qeshm Island",
@@ -1124,124 +1245,6 @@
    "src": "Infobae",
    "region": "AR",
    "fecha": "2026-11-07T05:28:55.000Z",
-   "tags": []
-  },
-  {
-   "t": "La gran trampa argentina",
-   "link": "https://www.infobae.com/opinion/2026/11/07/la-gran-trampa-argentina/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-07T05:28:33.000Z",
-   "tags": []
-  },
-  {
-   "t": "Fondos comunes de inversión: qué dejó octubre y qué mirar en noviembre",
-   "link": "https://www.infobae.com/opinion/2026/11/07/fondos-comunes-de-inversion-que-dejo-octubre-y-que-mirar-en-noviembre/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-07T05:28:23.000Z",
-   "tags": []
-  },
-  {
-   "t": "Un proyecto puede parecer rentable y destruir valor: el error está en el método",
-   "link": "https://www.infobae.com/opinion/2026/11/07/un-proyecto-puede-parecer-rentable-y-destruir-valor-el-error-esta-en-el-metodo/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-07T05:28:08.000Z",
-   "tags": []
-  },
-  {
-   "t": "El riesgo país no para de subir y se duplicó en tres meses: cuánto se explica por factores locales y cuánto pesa el frente externo",
-   "link": "https://www.infobae.com/economia/2026/11/07/el-riesgo-pais-no-para-de-subir-y-se-duplico-en-tres-meses-cuanto-se-explica-por-factores-locales-y-cuanto-pesa-el-frente-externo/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-07T05:26:41.000Z",
-   "tags": [
-    "BONOS"
-   ]
-  },
-  {
-   "t": "Wall Street en caída libre: por qué el mercado teme una espiral de ventas forzadas y hasta dónde puede bajar",
-   "link": "https://www.ambito.com/finanzas/wall-street-caida-libre-que-el-mercado-teme-una-espiral-ventas-forzadas-y-donde-puede-bajar-n6342639",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-07T03:00:00.000Z",
-   "tags": [
-    "SPY"
-   ]
-  },
-  {
-   "t": "Destitución de Santiago Peña: el impacto financiero según Moody's del cimbronazo político en Paraguay",
-   "link": "https://www.ambito.com/finanzas/destitucion-santiago-pena-el-impacto-financiero-segun-moodys-del-cimbronazo-politico-paraguay-n6342640",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-07T03:00:00.000Z",
-   "tags": [
-    "BONOS"
-   ]
-  },
-  {
-   "t": "Inside the card-grading empire shaping the price of Pokémon cards",
-   "link": "https://www.cnbc.com/2026/11/06/card-pokemon-grading-psa-collectors-price.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-07T02:00:01.000Z",
-   "tags": []
-  },
-  {
-   "t": "Motos vs autos: Argentina ya tiene una relación de patentamientos propia de países de bajos ingresos",
-   "link": "https://www.ambito.com/economia/motos-vs-autos-argentina-ya-tiene-una-relacion-patentamientos-propia-paises-bajos-ingresos-n6342655",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-07T00:25:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Los principales bancos brasileños recortaron sus previsiones de crecimiento para 2027",
-   "link": "https://www.infobae.com/america/america-latina/2026/11/07/los-principales-bancos-brasilenos-recortaron-sus-previsiones-de-crecimiento-para-2027/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-07T00:24:29.000Z",
-   "tags": []
-  },
-  {
-   "t": "El banco VALO compró la sociedad de bolsa PPI y cambia el mapa financiero en la City",
-   "link": "https://www.iprofesional.com/finanzas/468597-el-banco-valo-compro-la-sociedad-de-bolsa-ppi-y-cambia-el-mapa-financiero-en-la-city",
-   "src": "iProfesional",
-   "region": "AR",
-   "fecha": "2026-11-06T23:50:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Puente tenía dólares en Ueno Bank y el vicepresidente de la firma habló tras la crisis",
-   "link": "https://www.iprofesional.com/finanzas/468598-broker-argentino-tenia-dolares-depositados-en-ueno-bank-esperamos-que-se-acomode-pronto",
-   "src": "iProfesional",
-   "region": "AR",
-   "fecha": "2026-11-06T23:24:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar o tasa en pesos: qué conviene para cerrar 2026 según las nuevas proyecciones del BCRA",
-   "link": "https://www.ambito.com/finanzas/dolar-o-tasa-pesos-que-conviene-cerrar-2026-segun-las-nuevas-proyecciones-del-bcra-n6342485",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-06T23:06:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Los estrategas de Deutsche Bank recomendaron comprar acciones de SpaceX: el motivo",
-   "link": "https://www.ambito.com/finanzas/los-estrategas-deutsche-bank-recomendaron-comprar-acciones-spacex-el-motivo-n6342566",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-06T23:02:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Oro: Goldman Sachs recortó fuerte sus proyecciones y reveló a cuánto llegará el precio en 2027",
-   "link": "https://www.ambito.com/finanzas/oro-goldman-sachs-recorto-fuerte-sus-proyecciones-y-revelo-cuanto-llegara-el-precio-2027-n6342558",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-06T23:02:00.000Z",
    "tags": []
   }
  ]
