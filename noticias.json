@@ -1,22 +1,20 @@
 {
- "actualizado": "2026-11-08T22:52:17.749Z",
+ "actualizado": "2026-11-09T02:37:23.081Z",
  "items": [
   {
-   "t": "Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy",
-   "link": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html",
+   "t": "China wholesale inflation hits highest in more than four years as consumer measure slows",
+   "link": "https://www.cnbc.com/2026/11/09/china-wholesale-inflation-rises-consumer.html",
    "src": "CNBC",
    "region": "US",
-   "fecha": "2026-11-08T22:51:19.000Z",
-   "tags": [
-    "NVDA"
-   ]
+   "fecha": "2026-11-09T02:28:50.000Z",
+   "tags": []
   },
   {
    "t": "Dólar hoy: a cuánto cotiza este domingo 8 de noviembre",
    "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-domingo-8-noviembre-n6342876",
    "src": "Ámbito",
    "region": "AR",
-   "fecha": "2026-11-08T22:24:00.000Z",
+   "fecha": "2026-11-09T02:25:00.000Z",
    "tags": []
   },
   {
@@ -24,8 +22,134 @@
    "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-domingo-8-noviembre-n6342877",
    "src": "Ámbito",
    "region": "AR",
-   "fecha": "2026-11-08T22:24:00.000Z",
+   "fecha": "2026-11-09T02:25:00.000Z",
    "tags": []
+  },
+  {
+   "t": "Súper Niño: pronostican más de 40 grados y tormentas intensas en una región",
+   "link": "https://www.lanacion.com.ar/economia/campo/super-nino-pronostican-mas-de-40-grados-y-tormentas-intensas-en-una-region-nid07112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-09T01:59:50.000Z",
+   "tags": []
+  },
+  {
+   "t": "‘My life could be cut short’: I’m 55, married and have a brain tumor. Should I splash out on a $210,000 Porsche?",
+   "link": "https://www.marketwatch.com/story/my-life-could-be-cut-short-im-55-married-with-4-3-million-and-have-a-brain-tumor-should-i-buy-a-210-000-custom-porsche-ed825ada?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-09T01:21:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "The S&P 500 could be dangerously exposed to AI. Here are some simple alternatives.",
+   "link": "https://www.marketwatch.com/story/the-s-p-500-has-become-a-big-ai-bet-here-are-some-simple-alternatives-3c7574a4?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-09T00:40:00.000Z",
+   "tags": [
+    "SPY"
+   ]
+  },
+  {
+   "t": "Los empresarios del Grupo de los Seis propondrán una mesa de diálogo nacional tras la visita del Papa",
+   "link": "https://www.lanacion.com.ar/economia/los-empresarios-del-grupo-de-los-seis-propondran-una-mesa-de-dialogo-nacional-tras-la-visita-del-nid08112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-09T00:36:39.000Z",
+   "tags": []
+  },
+  {
+   "t": "I’m second-guessing my adviser: Is an annuity the right move in this market?",
+   "link": "https://www.marketwatch.com/story/my-adviser-recommended-an-annuity-is-it-the-right-move-in-this-market-environment-00edbbf6?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-09T00:30:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Contra viento y marea: en los últimos 12 meses la base monetaria cayó más del 13% y Milei ratificó que no piensa aflojarla",
+   "link": "https://www.infobae.com/economia/2026/11/09/contra-viento-y-marea-en-los-ultimos-12-meses-la-base-monetaria-cayo-mas-del-13-y-milei-ratifico-que-no-piensa-aflojarla/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-09T00:11:09.000Z",
+   "tags": []
+  },
+  {
+   "t": "‘It feels like he’s quietly building a separate life’: My husband inherited $500,000, but he refuses to spend it on our home",
+   "link": "https://www.marketwatch.com/story/it-feels-like-hes-quietly-building-a-separate-life-my-husband-inherited-500-000-but-he-refuses-to-spend-it-on-our-home-06535cff?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-09T00:02:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Funeral homes are finding new life hosting weddings and golf outings, as the traditional burial business dies out",
+   "link": "https://www.marketwatch.com/story/funeral-homes-are-finding-new-life-hosting-weddings-and-golf-outings-as-the-traditional-burial-business-dies-out-15831d13?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-09T00:00:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "How much in Roth conversions can you do in 2027 with the new tax brackets?",
+   "link": "https://www.marketwatch.com/story/how-much-roth-conversion-can-you-do-in-2027-with-the-new-tax-brackets-a2f940c8?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-08T23:50:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "I’m 65 and worth more than $5.6 million. Can I afford a $200,000 camper?",
+   "link": "https://www.marketwatch.com/story/im-65-and-worth-more-than-5-6-million-can-i-buy-a-200-000-camper-even-though-the-price-feels-crazy-high-55f668f8?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-08T23:49:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Revolut ya le puso fecha al comienzo de sus operaciones como banco en Argentina",
+   "link": "https://www.iprofesional.com/economia/468637-revolut-ya-le-puso-fecha-al-comienzo-de-sus-operaciones-como-banco-en-argentina",
+   "src": "iProfesional",
+   "region": "AR",
+   "fecha": "2026-11-08T23:45:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "This retired professor has reinvented himself — as a Taylor Swift scholar",
+   "link": "https://www.marketwatch.com/story/this-retired-professor-has-reinvented-himself-as-a-taylor-swift-scholar-88456c8d?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-08T23:35:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "You follow the rules for smart stock trading. But are they the right rules?",
+   "link": "https://www.marketwatch.com/story/you-follow-the-rules-for-smart-stock-trading-but-are-they-the-right-rules-9bfe5846?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-08T23:15:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "A new setback for the AI trade: Nvidia’s board is probing CEO Huang’s relationship with alleged spy",
+   "link": "https://www.marketwatch.com/story/nvidias-board-will-probe-ceo-jensen-huangs-relationship-with-an-alleged-spy-heres-what-to-know-86656cd9?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-08T23:05:00.000Z",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "t": "Nvidia investigates CEO Jensen Huang's relationship with alleged Chinese spy",
+   "link": "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-08T22:53:57.000Z",
+   "tags": [
+    "NVDA"
+   ]
   },
   {
    "t": "Trump says renewed Iran strikes ‘highly unlikely’ if talks progress but warns he could still strike",
@@ -34,16 +158,6 @@
    "region": "US",
    "fecha": "2026-11-08T21:53:02.000Z",
    "tags": []
-  },
-  {
-   "t": "Nvidia’s board will probe CEO Jensen Huang’s relationship with an alleged spy. Here’s what to know.",
-   "link": "https://www.marketwatch.com/story/nvidias-board-will-probe-ceo-jensen-huangs-relationship-with-an-alleged-spy-heres-what-to-know-86656cd9?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-08T21:29:00.000Z",
-   "tags": [
-    "NVDA"
-   ]
   },
   {
    "t": "“Castigo”: CRA no descarta una acción judicial en medio de la polémica abierta con la plataforma Visec por una exigencia de la Unión Europea",
@@ -88,14 +202,6 @@
    "tags": [
     "BONOS"
    ]
-  },
-  {
-   "t": "Súper Niño: pronostican más de 40 grados y tormentas intensas en una región",
-   "link": "https://www.lanacion.com.ar/economia/campo/super-nino-pronostican-mas-de-40-grados-y-tormentas-intensas-en-una-region-nid07112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-08T19:33:29.000Z",
-   "tags": []
   },
   {
    "t": "Ya está disponible: una plataforma pública permite hacer un mapeo del campo",
@@ -154,14 +260,6 @@
    "tags": []
   },
   {
-   "t": "‘It seems bizarre’: We’re in our 80s with $950,000 in traditional IRAs. Why is our adviser pushing Roth conversions?",
-   "link": "https://www.marketwatch.com/story/it-seems-bizarre-were-in-our-80s-with-950-000-in-traditional-iras-why-is-our-adviser-pushing-us-to-do-roth-conversions-a665f990?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-08T18:00:00.000Z",
-   "tags": []
-  },
-  {
    "t": "Here are the 2 big things we're watching in the stock market in the week ahead",
    "link": "https://www.cnbc.com/investingclub/2026/11/08/here-are-the-2-big-things-were-watching-in-the-stock-market-in-the-week-ahead.html",
    "src": "CNBC",
@@ -175,22 +273,6 @@
    "src": "Infobae",
    "region": "AR",
    "fecha": "2026-11-08T17:35:31.000Z",
-   "tags": []
-  },
-  {
-   "t": "Two months after my father’s funeral, my stepmother asked me to repay his $40,000 wedding gift. Should I do what she says?",
-   "link": "https://www.marketwatch.com/story/shes-a-type-a-personality-my-stepmother-wants-me-to-repay-my-late-fathers-40-000-wedding-gift-should-i-oblige-51fc64f7?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-08T17:30:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Funeral homes are finding new life hosting weddings and golf outings, as the traditional burial business dies out",
-   "link": "https://www.marketwatch.com/story/funeral-homes-are-finding-new-life-hosting-weddings-and-golf-outings-as-the-traditional-burial-business-dies-out-15831d13?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-08T17:23:00.000Z",
    "tags": []
   },
   {
@@ -228,14 +310,6 @@
    "tags": []
   },
   {
-   "t": "‘It feels like he’s quietly building a separate life’: My husband inherited $500,000, but he refuses to spend it on our home",
-   "link": "https://www.marketwatch.com/story/it-feels-like-hes-quietly-building-a-separate-life-my-husband-inherited-500-000-but-he-refuses-to-spend-it-on-our-home-06535cff?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-08T16:00:00.000Z",
-   "tags": []
-  },
-  {
    "t": "Cuánto cobra el papa León XIV y qué beneficios económicos recibe del Vaticano",
    "link": "https://www.ambito.com/economia/cuanto-cobra-el-papa-leon-xiv-y-que-beneficios-economicos-recibe-del-vaticano-n6342922",
    "src": "Ámbito",
@@ -249,14 +323,6 @@
    "src": "CNBC",
    "region": "US",
    "fecha": "2026-11-08T15:36:39.000Z",
-   "tags": []
-  },
-  {
-   "t": "‘I have no financial safety net’: I’m 66, rely on Social Security and have just $500 in savings. What hope do I have?",
-   "link": "https://www.marketwatch.com/story/i-have-no-financial-safety-net-im-66-rely-on-social-security-and-have-500-in-savings-what-politician-speaks-for-me-be2126cb?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-08T15:30:00.000Z",
    "tags": []
   },
   {
@@ -276,30 +342,12 @@
    "tags": []
   },
   {
-   "t": "My 93-year-old father changed his will at the 11th hour, leaving my brother his entire $500,000 estate. Can I challenge it?",
-   "link": "https://www.marketwatch.com/story/my-93-year-old-father-changed-his-will-at-the-11th-hour-leaving-my-brother-his-entire-500-000-estate-can-i-challenge-it-ecfc63d2?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-08T15:16:00.000Z",
-   "tags": []
-  },
-  {
    "t": "Las ventas minoristas del comercio pyme bajaron 1,6% interanual en octubre",
    "link": "https://www.infobae.com/economia/2026/11/08/las-ventas-minoristas-del-comercio-pyme-bajaron-16-interanual-en-octubre/",
    "src": "Infobae",
    "region": "AR",
    "fecha": "2026-11-08T15:06:45.000Z",
    "tags": []
-  },
-  {
-   "t": "Corporate America’s profit numbers are just barely beating Wall Street’s expectations",
-   "link": "https://www.marketwatch.com/story/corporate-americas-profit-numbers-are-just-barely-beating-wall-streets-expectations-eaa67fe2?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-08T15:00:00.000Z",
-   "tags": [
-    "SPY"
-   ]
   },
   {
    "t": "Trump targets Slotkin in call for DOJ probe of alleged Democratic threats to Republicans",
@@ -318,27 +366,11 @@
    "tags": []
   },
   {
-   "t": "‘We’re losing to cottage cheese’: The protein-maxxing craze is hurting cream-cheese sales",
-   "link": "https://www.marketwatch.com/story/were-losing-to-cottage-cheese-the-protein-maxxing-craze-is-hurting-cream-cheese-sales-40ae94f3?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-08T14:13:00.000Z",
-   "tags": []
-  },
-  {
    "t": "Poppi founders are going after PepsiCo's Gatorade with new beverage startup Jetty",
    "link": "https://www.cnbc.com/2026/11/08/poppi-founders-jetty-hydration-gatorade.html",
    "src": "CNBC",
    "region": "US",
    "fecha": "2026-11-08T14:00:01.000Z",
-   "tags": []
-  },
-  {
-   "t": "Stocks are moving in sync again for the first time in a while. There’s just one problem.",
-   "link": "https://www.marketwatch.com/story/stocks-are-moving-in-sync-again-for-the-first-time-in-a-while-theres-just-one-problem-c953bf72?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-08T14:00:00.000Z",
    "tags": []
   },
   {
@@ -928,14 +960,6 @@
    "tags": []
   },
   {
-   "t": "Many workers lose unused FSA money — but could still come out ahead. Here's how",
-   "link": "https://www.cnbc.com/2026/11/07/fsa-forfeit.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-07T14:30:01.000Z",
-   "tags": []
-  },
-  {
    "t": "La CAME le pidió a Caputo modificar las condiciones del plan de facilidades de pago de ARCA",
    "link": "https://www.lanacion.com.ar/economia/la-came-le-pidio-a-caputo-modificar-las-condiciones-del-plan-de-facilidades-de-pago-de-arca-nid07112026/",
    "src": "La Nación",
@@ -987,6 +1011,14 @@
    "tags": []
   },
   {
+   "t": "World’s No. 1 restaurant crowned as contest comes under increasing scrutiny",
+   "link": "https://www.cnbc.com/2026/11/07/worlds-50-best-restaurants-2026-asador-etxebarri.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-07T13:38:44.000Z",
+   "tags": []
+  },
+  {
    "t": "America doesn't like socialism. So why are socialists winning?",
    "link": "https://www.cnbc.com/2026/11/07/socialism-elections-economy.html",
    "src": "CNBC",
@@ -1000,14 +1032,6 @@
    "src": "CNBC",
    "region": "US",
    "fecha": "2026-11-07T13:00:01.000Z",
-   "tags": []
-  },
-  {
-   "t": "Tech companies face mounting child safety lawsuits while pushing AI into schools",
-   "link": "https://www.cnbc.com/2026/11/07/snap-social-media-teen-safety-lawsuits.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-07T12:00:01.000Z",
    "tags": []
   },
   {
@@ -1157,19 +1181,11 @@
    ]
   },
   {
-   "t": "El Niño: anticipan temperaturas de más de 40 grados, riesgo de heladas y tormentas intensas",
-   "link": "https://www.lanacion.com.ar/economia/campo/el-nino-anticipan-temperaturas-de-mas-de-40-grados-riesgo-de-heladas-y-tormentas-intensas-nid05112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-07T02:20:14.000Z",
-   "tags": []
-  },
-  {
-   "t": "Qué pasó con Ueno Bank y cómo sigue la crisis en Paraguay hoy, viernes 6 de noviembre",
-   "link": "https://www.lanacion.com.ar/economia/que-paso-con-ueno-bank-y-como-sigue-la-crisis-en-paraguay-hoy-viernes-6-de-noviembre-nid06112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-07T02:14:29.000Z",
+   "t": "Inside the card-grading empire shaping the price of Pokémon cards",
+   "link": "https://www.cnbc.com/2026/11/06/card-pokemon-grading-psa-collectors-price.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-07T02:00:01.000Z",
    "tags": []
   },
   {
@@ -1189,14 +1205,6 @@
    "tags": []
   },
   {
-   "t": "Banco de Valores absorberá Portfolio Personal Inversiones",
-   "link": "https://www.lanacion.com.ar/economia/banco-de-valores-absorbera-portfolio-personal-inversiones-nid06112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-07T00:00:30.000Z",
-   "tags": []
-  },
-  {
    "t": "El banco VALO compró la sociedad de bolsa PPI y cambia el mapa financiero en la City",
    "link": "https://www.iprofesional.com/finanzas/468597-el-banco-valo-compro-la-sociedad-de-bolsa-ppi-y-cambia-el-mapa-financiero-en-la-city",
    "src": "iProfesional",
@@ -1210,14 +1218,6 @@
    "src": "iProfesional",
    "region": "AR",
    "fecha": "2026-11-06T23:24:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Mississippi Senate: Colom increases lead over Hyde-Smith to nearly 2,500 votes",
-   "link": "https://www.cnbc.com/2026/11/05/mississippi-senate-election-scott-colom-hyde-smith.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-06T23:12:56.000Z",
    "tags": []
   },
   {
