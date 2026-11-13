@@ -1,6 +1,102 @@
 {
- "actualizado": "2026-11-13T17:09:38.169Z",
+ "actualizado": "2026-11-13T17:45:49.074Z",
  "items": [
+  {
+   "t": "10-year Treasury yield moves to 5.17% as traders weigh producer price report",
+   "link": "https://www.cnbc.com/2026/11/13/treasury-yields-fed-rates.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-13T17:39:48.000Z",
+   "tags": [
+    "BONOS"
+   ]
+  },
+  {
+   "t": "Dólar hoy y dólar blue, EN VIVO: a cuánto cotizan el oficial y el paralelo este viernes 13 de noviembre, minuto a minuto",
+   "link": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-en-vivo-a-cuanto-cotizan-el-oficial-y-el-paralelo-este-viernes-13-de-nid13112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-13T17:34:32.000Z",
+   "tags": []
+  },
+  {
+   "t": "Los bonos en dólares revierten subas iniciales y el riesgo país salta por encima de los 840 puntos",
+   "link": "https://www.ambito.com/finanzas/las-acciones-y-los-bonos-se-someten-la-ultima-rueda-semanal-conocerse-el-dato-inflacion-n6344826",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-13T17:30:00.000Z",
+   "tags": [
+    "BONOS"
+   ]
+  },
+  {
+   "t": "La devaluación en Brasil alerta a Caputo y reaparece el fantasma del atraso cambiario",
+   "link": "https://www.iprofesional.com/economia/469007-caida-del-real-frente-al-dolar-en-brasil-le-mete-presion-a-caputo",
+   "src": "iProfesional",
+   "region": "AR",
+   "fecha": "2026-11-13T17:30:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "La caída de Nvidia no se detiene: su capitalización bursátil bajó más de USD 500.000 millones por el escándalo de su CEO",
+   "link": "https://www.infobae.com/economia/2026/11/13/la-caida-de-nvidia-no-se-detiene-su-capitalizacion-bursatil-bajo-mas-de-usd-500000-millones-por-el-escandalo-de-su-ceo/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-13T17:27:54.000Z",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "t": "Dólar hoy y dólar blue hoy minuto a minuto: a cuánto opera este viernes 13 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-hoy-y-dolar-blue-hoy-minuto-minuto-cuanto-opera-este-viernes-13-noviembre-n6344766",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-13T17:21:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Should a widow leave her late partner’s home to her stepkids — or cut off contact with them?",
+   "link": "https://www.marketwatch.com/story/she-can-always-change-her-mind-should-a-widow-leave-the-family-home-to-her-stepchildren-649b06af?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-13T17:16:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Reforma laboral: el Gobierno asegura que el incentivo a la formalización creó 82.000 empleos en blanco en cuatro meses",
+   "link": "https://www.infobae.com/economia/2026/11/13/reforma-laboral-el-gobierno-asegura-que-el-incentivo-a-la-formalizacion-creo-82000-empleos-en-blanco-en-cuatro-meses/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-13T17:14:54.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar blue hoy: a cuánto opera este viernes 13 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-viernes-13-noviembre-n6344748",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-13T17:10:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar hoy: a cuánto cotiza este viernes 13 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-13-noviembre-n6344747",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-13T17:10:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Outlook sigue caído desde el jueves en todo el mundo, pero Microsoft dice que el servicio se está recuperando",
+   "link": "https://www.lanacion.com.ar/tecnologia/reportan-fallas-en-el-servicio-microsoft-365-a-nivel-mundial-nid12112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-13T17:08:43.000Z",
+   "tags": [
+    "MSFT"
+   ]
+  },
   {
    "t": "How low does Nvidia’s stock need to go before it’s a screaming bargain?",
    "link": "https://www.marketwatch.com/story/how-low-does-nvidias-stock-need-to-go-before-its-a-screaming-bargain-c25302ed?mod=mw_rss_topstories",
@@ -17,6 +113,16 @@
    "src": "CNBC",
    "region": "US",
    "fecha": "2026-11-13T17:06:57.000Z",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "t": "After Jensen Huang’s exit, what top financial advisors are doing with Nvidia: Exclusive CNBC poll",
+   "link": "https://www.cnbc.com/2026/11/13/nvidia-stock-advisors-jensen-huang-exit-exclusive-poll.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-13T17:01:26.000Z",
    "tags": [
     "NVDA"
    ]
@@ -46,6 +152,14 @@
    "tags": []
   },
   {
+   "t": "Supermercados lanzan descuentos de hasta 50% y hasta 18 cuotas en electrodomésticos",
+   "link": "https://www.iprofesional.com/actualidad/469060-supermercados-lanzan-descuentos-de-hasta-50-y-hasta-18-cuotas-en-electrodomesticos",
+   "src": "iProfesional",
+   "region": "AR",
+   "fecha": "2026-11-13T16:55:00.000Z",
+   "tags": []
+  },
+  {
    "t": "Why the data center slowdown concern is overblown. Two stocks to buy amid the fear",
    "link": "https://www.cnbc.com/2026/11/13/data-center-slowdown-utility-stocks.html",
    "src": "CNBC",
@@ -72,64 +186,12 @@
    ]
   },
   {
-   "t": "Dólar hoy y dólar blue hoy minuto a minuto: a cuánto opera este viernes 13 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-hoy-y-dolar-blue-hoy-minuto-minuto-cuanto-opera-este-viernes-13-noviembre-n6344766",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-13T16:47:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar blue hoy: a cuánto opera este viernes 13 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-viernes-13-noviembre-n6344748",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-13T16:40:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar hoy: a cuánto cotiza este viernes 13 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-13-noviembre-n6344747",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-13T16:40:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "La bomba que podría frenar a Nvidia y la pregunta que inquieta a Silicon Valley",
-   "link": "https://www.lanacion.com.ar/tecnologia/la-bomba-que-podria-frenar-a-nvidia-y-la-pregunta-que-inquieta-a-silicon-valley-nid13112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-13T16:38:12.000Z",
-   "tags": [
-    "NVDA"
-   ]
-  },
-  {
    "t": "De cuánto son las Pensiones No Contributivas de ANSES en noviembre 2026",
    "link": "https://www.infobae.com/economia/2026/11/13/de-cuanto-son-las-pensiones-no-contributivas-de-anses-en-noviembre-2026/",
    "src": "Infobae",
    "region": "AR",
    "fecha": "2026-11-13T16:33:49.000Z",
    "tags": []
-  },
-  {
-   "t": "Dólar hoy y dólar blue, EN VIVO: a cuánto cotizan el oficial y el paralelo este viernes 13 de noviembre, minuto a minuto",
-   "link": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-en-vivo-a-cuanto-cotizan-el-oficial-y-el-paralelo-este-viernes-13-de-nid13112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-13T16:31:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Outlook sigue caído desde el jueves en todo el mundo, pero Microsoft dice que el servicio se está recuperando",
-   "link": "https://www.lanacion.com.ar/tecnologia/reportan-fallas-en-el-servicio-microsoft-365-a-nivel-mundial-nid12112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-13T16:30:21.000Z",
-   "tags": [
-    "MSFT"
-   ]
   },
   {
    "t": "‘The thought of living to 100 terrifies me’: Is Social Security a giant Ponzi scheme?",
@@ -179,14 +241,6 @@
    "src": "MarketWatch",
    "region": "US",
    "fecha": "2026-11-13T16:10:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Reforma laboral: el Gobierno asegura que el incentivo a la formalización creó 82.000 empleos en blanco en cuatro meses",
-   "link": "https://www.infobae.com/economia/2026/11/13/reforma-laboral-el-gobierno-asegura-que-el-incentivo-a-la-formalizacion-creo-82000-empleos-en-blanco-en-cuatro-meses/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-13T16:08:08.000Z",
    "tags": []
   },
   {
@@ -254,26 +308,6 @@
    "region": "US",
    "fecha": "2026-11-13T15:44:16.000Z",
    "tags": []
-  },
-  {
-   "t": "Microsoft Outlook outage stretches into a second day, causing widespread disruption",
-   "link": "https://www.marketwatch.com/story/microsoft-stock-slumps-on-outage-that-includes-the-copilot-tool-it-has-been-heavily-promoting-4007dc4f?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-13T15:44:00.000Z",
-   "tags": [
-    "MSFT"
-   ]
-  },
-  {
-   "t": "10-year Treasury yield moves to 5.15% as traders weigh producer price report",
-   "link": "https://www.cnbc.com/2026/11/13/treasury-yields-fed-rates.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-13T15:40:10.000Z",
-   "tags": [
-    "BONOS"
-   ]
   },
   {
    "t": "Caputo destacó que el FMI ve una mejora de los fundamentos económicos pese a la volatilidad de los mercados",
@@ -419,16 +453,6 @@
    "region": "US",
    "fecha": "2026-11-13T14:59:57.000Z",
    "tags": []
-  },
-  {
-   "t": "Los bonos en dólares revierten subas iniciales y el riesgo país salta por encima de los 840 puntos",
-   "link": "https://www.ambito.com/finanzas/las-acciones-y-los-bonos-se-someten-la-ultima-rueda-semanal-conocerse-el-dato-inflacion-n6344826",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-13T14:55:00.000Z",
-   "tags": [
-    "BONOS"
-   ]
   },
   {
    "t": "El Gobierno sumó al RIGI dos megaproyectos por USD 3.245 millones para potenciar las exportaciones de gas",
@@ -619,7 +643,7 @@
    "tags": []
   },
   {
-   "t": "Bitcoin se desploma y perfora la barrera de los u$s70.000, en medio de una tormenta perfecta para las cripto",
+   "t": "Criptomonedas: Bitcoin se derrumba y toca su menor valor en tres meses",
    "link": "https://www.ambito.com/finanzas/bitcoin-cae-se-aleja-los-us73000-y-acumula-una-perdida-semanal-cercana-al-10-n6344364",
    "src": "Ámbito",
    "region": "AR",
@@ -765,14 +789,6 @@
    "tags": [
     "BONOS"
    ]
-  },
-  {
-   "t": "La devaluación en Brasil alerta a Caputo y reaparece el fantasma del atraso cambiario",
-   "link": "https://www.iprofesional.com/economia/469007-caida-del-real-frente-al-dolar-en-brasil-le-mete-presion-a-caputo",
-   "src": "iProfesional",
-   "region": "AR",
-   "fecha": "2026-11-13T09:56:00.000Z",
-   "tags": []
   },
   {
    "t": "ANSES: quiénes cobran hoy, viernes 13 de noviembre de 2026",
@@ -1267,22 +1283,6 @@
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-12T20:10:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Donald Trump Jr. exits advisory role at Kalshi prediction market",
-   "link": "https://www.cnbc.com/2026/11/12/donald-trump-jr-exits-kalshi-advisory-role.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-12T20:03:57.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar hoy y dólar blue, EN VIVO: a cuánto cotizan el oficial y el paralelo este jueves 12 de noviembre, minuto a minuto",
-   "link": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-en-vivo-a-cuanto-cotizan-el-oficial-y-el-paralelo-este-jueves-12-de-noviembre-nid12112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-12T20:02:58.000Z",
    "tags": []
   }
  ]
