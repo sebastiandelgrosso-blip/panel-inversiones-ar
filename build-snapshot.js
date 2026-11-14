@@ -135,6 +135,8 @@ async function pool(items, n, fn) {
   const carterasFile = path.join(__dirname, 'carteras.json');
   if (fs.existsSync(carterasFile)) urls['carteras.json'] = { t: 'raw', v: JSON.parse(fs.readFileSync(carterasFile, 'utf8')) };
   const flujosFile = path.join(__dirname, 'flujos.json');
+  const fundFile = path.join(__dirname, 'fundamentales.json');
+  if (fs.existsSync(fundFile)) urls['fundamentales.json'] = { t: 'raw', v: JSON.parse(fs.readFileSync(fundFile, 'utf8')) };
   if (fs.existsSync(flujosFile)) urls['flujos.json'] = { t: 'raw', v: JSON.parse(fs.readFileSync(flujosFile, 'utf8')) };
   else console.warn('Sin flujos.json: corré antes "node actualizar-flujos.js" para tener TIR de ONs');
 

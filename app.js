@@ -32,7 +32,7 @@ const TAB_LABEL = { acciones: 'Acción AR', cedears: 'CEDEAR', bonos: 'Bono', on
    ============================================================ */
 const PARAM_SPEC = [
   { grp: 'Análisis' },
-  { k: 'estrategia', label: 'Estrategia', type: 'select', opts: Object.entries({ tmr: 'TMR (combinada)', cruce: 'Cruce de medias', momentum: 'Momentum 12‑1', rsi2: 'Comprar caídas (RSI‑2)', rango: 'Comprar barato, vender caro' }), def: 'tmr',
+  { k: 'estrategia', label: 'Estrategia', type: 'select', opts: Object.entries({ tmr: 'TMR (combinada)', cruce: 'Cruce de medias', momentum: 'Momentum 12‑1', rsi2: 'Comprar caídas (RSI‑2)', rango: 'Comprar barato, vender caro', calidad: 'Calidad barata (balances)' }), def: 'tmr',
     help: 'Cambia las señales de todo el panel. La pestaña Estrategia explica cada una y las compara con un backtest.' },
   { k: 'moneda', label: 'Moneda de análisis', type: 'select', opts: [['USD', 'Dólares (CCL)'], ['ARS', 'Pesos nominales']], def: 'USD',
     help: 'En pesos, la inflación distorsiona máximos y mínimos.' },
@@ -55,7 +55,7 @@ const PARAM_SPEC = [
     help: 'En la prueba de 5 años el stop ajustado empeoró los resultados.' },
 ];
 const DEFAULTS = Object.fromEntries(PARAM_SPEC.filter(p => p.k).map(p => [p.k, p.def]));
-const ESTRATEGIAS = { tmr: 'TMR', cruce: 'Cruce de medias', momentum: 'Momentum 12‑1', rsi2: 'RSI‑2 (comprar caídas)', rango: 'Barato/caro (52 sem.)' };
+const ESTRATEGIAS = { tmr: 'TMR', cruce: 'Cruce de medias', momentum: 'Momentum 12‑1', rsi2: 'RSI‑2 (comprar caídas)', rango: 'Barato/caro (52 sem.)', calidad: 'Calidad barata' };
 const PERFILES = {
   conservador: { buy: 60, acc: 30, red: -15, sell: -40 },
   moderado: { buy: 50, acc: 20, red: -20, sell: -50 },
@@ -366,7 +366,7 @@ function toUSD(rows, ccl) {
 async function getSeries(row) {
   const { tab, sym } = row;
   const wantUSD = S.params.moneda === 'USD';
-  let rows, cur, src;
+  let rows, cur, src, usK;
   if (row.variant) {
     rows = await getRaw(tab, sym); cur = 'USD'; src = `especie en dólares (${row.variant === 'D' ? 'MEP' : 'cable'})`;
   } else if (!wantUSD) {
@@ -380,7 +380,7 @@ async function getSeries(row) {
         const k = cedUSD / u[u.length - 1].c;
         if (u.length > 300 && ok(k) && k > 0) {
           rows = u.map(r => ({ d: r.d, o: r.c * k, h: r.c * k, l: r.c * k, c: r.c * k }));
-          cur = 'USD'; src = `acción ${sym} en EE.UU., escalada al precio del CEDEAR`;
+          cur = 'USD'; src = `acción ${sym} en EE.UU., escalada al precio del CEDEAR`; usK = k;
         }
       } catch { /* sigue con CCL */ }
     }
@@ -407,7 +407,7 @@ async function getSeries(row) {
   if (ok(px) && px > 0 && rows.length && rows[rows.length - 1].d < t) {
     rows.push({ d: t, o: px, h: px, l: px, c: px, live: true });
   }
-  return { rows, cur, src };
+  return { rows, cur, src, usK };
 }
 
 /* ============================================================
@@ -699,6 +699,18 @@ function scoreAlt(ctx, i, withText) {
     if (!ok(mom)) return parts;
     add(mom > 0 ? `Subió ${pct(mom)} en 12 meses (sin contar el último): estar comprado` : `Bajó ${pct(mom)} en 12 meses (sin contar el último): estar afuera`, mom > 0 ? 40 : -40);
     add(withText ? 'Fuerza del momentum' : '', Math.round(Math.max(-40, Math.min(40, mom / 0.30 * 40))));
+  } else if (P.estrategia === 'calidad') {
+    // Value con filtro de calidad: empresa sana (puntaje F de Piotroski), barata (P/E) y castigada por el mercado
+    const f = fundAt(ctx.sym, ctx.dates[i]);
+    if (!f || !ctx.usK) return parts;
+    const q = f.n ? f.f / f.n : 0, Ftxt = `F ${f.f}/${f.n}`;
+    const pe = f.eps > 0 ? px / ctx.usK / f.eps : null, barata = ok(pe) && pe <= 20;
+    const dMx = px / ctx.max52(i) - 1;
+    const PEtxt = ok(pe) ? `P/E ${fmt(pe, 1)}` : 'sin ganancias';
+    if (f.ni <= 0 || q <= 0.35) add(`Números flojos (${Ftxt}, ${f.ni <= 0 ? 'con pérdidas' : PEtxt}): evitar; vender si estás comprado`, -60);
+    else if (q >= 0.65 && barata && dMx <= -0.25) add(`Empresa sana (${Ftxt}), barata (${PEtxt}) y castigada (${pct(dMx, 0)} del máximo anual): comprar`, 60);
+    else if (dMx >= -P.nearHigh / 100 || pe > 35) add(`Ya se recuperó o está cara (${PEtxt}, ${pct(dMx, 0)} del máximo anual): vender si estás comprado; si no, esperar`, -30);
+    else add(`Mantener si estás comprado; para comprar falta ${[q < 0.65 && `mejor calidad (${Ftxt}, se pide 65%+)`, !barata && `precio más bajo (${PEtxt}, se pide 20 o menos)`, dMx > -0.25 && `más castigo (${pct(dMx, 0)} del máximo, se pide −25%)`].filter(Boolean).join(', ')}`, 0);
   } else if (P.estrategia === 'rango') {
     // Comprar cerca del mínimo de 52 semanas y vender cerca del máximo de 52 semanas
     const mx = ctx.max52(i), mn = ctx.min52(i);
@@ -735,7 +747,7 @@ function backtest(a, P, desdeIdx = 0) {
     for (let j = Math.max(0, i - 251); j <= i; j++) { if (c[j] > a1) a1 = c[j]; if (c[j] < b1) b1 = c[j]; }
     mx[i] = a1; mn[i] = b1;
   }
-  const ctx = { c, smaF: a.smaF, smaS: a.smaS, rsiA, hist: m.hist, nF: a.nF, nS: a.nS, P, max52: i => mx[i], min52: i => mn[i], rsi2: rsi(c, 2), sma5: sma(c, 5) };
+  const ctx = { c, smaF: a.smaF, smaS: a.smaS, rsiA, hist: m.hist, nF: a.nF, nS: a.nS, P, max52: i => mx[i], min52: i => mn[i], rsi2: rsi(c, 2), sma5: sma(c, 5), dates: rows.map(r => r.d), sym: a.sym, usK: a.usK };
   const T = PERFILES[P.perfil] || PERFILES.moderado;
   const cost = (P.comision || 0) / 100;
   const start = Math.max(desdeIdx, a.nS + 20, 60);
@@ -745,6 +757,7 @@ function backtest(a, P, desdeIdx = 0) {
   let wait = false, exitPeak = 0;
   let peakEq = 1, mdd = 0, bh = 1, peakBh = 1, mddBh = 0;
   const curve = [{ d: rows[start].d, s: 1, b: 1 }];
+  const held = [false]; // posición al cierre de cada rueda desde start (para armar carteras)
   for (let i = start + 1; i < n; i++) {
     const r = c[i] / c[i - 1];
     bh *= r; peakBh = Math.max(peakBh, bh); mddBh = Math.min(mddBh, bh / peakBh - 1);
@@ -763,6 +776,7 @@ function backtest(a, P, desdeIdx = 0) {
       }
     }
     peakEq = Math.max(peakEq, eq); mdd = Math.min(mdd, eq / peakEq - 1);
+    held.push(inPos);
     if (i % 5 === 0 || i === n - 1) curve.push({ d: rows[i].d, s: eq, b: bh });
   }
   if (inPos) trades.push(c[n - 1] / entry - 1);
@@ -771,12 +785,16 @@ function backtest(a, P, desdeIdx = 0) {
   return {
     desde: rows[start].d, years, total: eq - 1, totalBh: bh - 1, cagr: cagr(eq), cagrBh: cagr(bh), mdd, mddBh,
     trades: trades.length, win: trades.length ? trades.filter(t => t > 0).length / trades.length : null,
-    tiempo: daysIn / (n - 1 - start), curve, abierta: inPos,
+    tiempo: daysIn / (n - 1 - start), curve, abierta: inPos, start, held,
   };
 }
 
 function analyze(series, row, P) {
-  const { rows, cur, src } = series;
+  const { rows, cur, src, usK } = series;
+  if (P.estrategia === 'calidad') {
+    if (!fundDe(row.sym)) throw new Error('Sin balances');
+    if (!usK) throw new Error('Calidad barata necesita análisis en dólares');
+  }
   const n = rows.length;
   if (n < 60) throw new Error('Historia insuficiente');
   const c = rows.map(r => r.c), h = rows.map(r => r.h), l = rows.map(r => r.l);
@@ -819,7 +837,7 @@ function analyze(series, row, P) {
   const nearMin52 = distMin52 <= P.nearLow / 100;
 
   // ---- Puntaje (misma función que usa el backtest) ----
-  const ctx = { c, smaF, smaS, rsiA, hist: m.hist, nF, nS, P, max52: () => max52, min52: () => min52, rsi2: rsi(c, 2), sma5: sma(c, 5) };
+  const ctx = { c, smaF, smaS, rsiA, hist: m.hist, nF, nS, P, max52: () => max52, min52: () => min52, rsi2: rsi(c, 2), sma5: sma(c, 5), dates: rows.map(r => r.d), sym: row.sym, usK };
   const parts = scoreAt(ctx, n - 1, true);
   const score = Math.max(-100, Math.min(100, parts.reduce((a, p) => a + p.pts, 0)));
 
@@ -911,7 +929,7 @@ function analyze(series, row, P) {
   if (short) acts.push(`Historia corta (${n} ruedas): la media lenta se calculó con ${nS} ruedas. Tomar la señal con cautela.`);
 
   return {
-    tab: row.tab, sym: row.sym, cur, src, n, rows, smaF, smaS, rsiA, nF, nS,
+    tab: row.tab, sym: row.sym, cur, src, usK, n, rows, smaF, smaS, rsiA, nF, nS,
     px, sF, sS, R, H, ATR, ath, athD: rows[athI].d, atl, atlD: rows[atlI].d, max52, min52,
     distATH, distMax52, distMin52, pos52: max52 > min52 ? (px - min52) / (max52 - min52) : 0.5,
     r1m: ret(21), r3m: ret(63), r6m: ret(126), r12m: ret(252), ytd: ytd(rows), mom, vol, mdd, up, cross,
@@ -1173,6 +1191,35 @@ async function openDetail(key) {
   renderDetail(row, a);
 }
 
+// Balances de empresas de EE.UU. (fundamentales.json, generado por actualizar-fundamentales.js)
+function fundDe(sym) { return S.fund?.empresas?.[sym] || null; }
+function fundAt(sym, date) {
+  const e = fundDe(sym);
+  if (!e) return null;
+  let r = null;
+  for (const x of e.anios) if (x.disp <= date) r = x;
+  return r;
+}
+function fundBlock(row, a) {
+  const e = fundDe(row.sym);
+  const f = e && fundAt(row.sym, today());
+  if (!f) return '';
+  const kv = (k, v, sub) => `<div class="kv"><div class="k">${k}</div><div class="v">${v}${sub ? ` <small>${sub}</small>` : ''}</div></div>`;
+  const pe = a?.usK && f.eps > 0 ? a.px / a.usK / f.eps : null;
+  const q = f.n ? f.f / f.n : 0;
+  return `
+    <h4>Balance · ${esc(e.nombre)} · ejercicio cerrado el ${f.end}</h4>
+    <div class="plan">
+      ${kv('Puntaje F (Piotroski)', `<span class="${q >= 0.65 ? 'up' : q <= 0.35 ? 'down' : ''}">${f.f} de ${f.n}</span>`, q >= 0.65 ? 'empresa sana' : q <= 0.35 ? 'números flojos' : 'intermedio')}
+      ${kv('P/E', ok(pe) ? fmt(pe, 1) : f.eps <= 0 ? 'con pérdidas' : '—', ok(pe) ? `ganancia por acción US$ ${fmt(f.eps, 2)}` : '')}
+      ${kv('ROE', ok(f.roe) ? pct(f.roe, 0, false) : '—', 'ganancia ÷ patrimonio')}
+      ${kv('Deuda / patrimonio', ok(f.de) ? fmt(f.de, 2) : '—', 'deuda de largo plazo')}
+      ${kv('Ganancia vs año anterior', ok(f.crec) ? `<span class="${cls(f.crec)}">${pct(f.crec, 0)}</span>` : '—')}
+      ${kv('Margen bruto', ok(f.mb) ? pct(f.mb, 0, false) : '—')}
+    </div>
+    <p class="note">Puntaje F: 9 pruebas de salud (gana plata, genera caja, mejora rentabilidad, baja deuda, mejora márgenes, no emite acciones…); se cuentan las que se pueden calcular con lo que publica la empresa. Fuente: ${esc(S.fund.fuente)}, descargado el ${S.fund.descargado}.</p>`;
+}
+
 function bondBlock(row) {
   const B = bondInfo(row);
   if (!B) return '';
@@ -1246,6 +1293,7 @@ function renderDetail(row, a) {
         ${kv('Tamaño sugerido', ok(a.size) ? pct(a.size / 100, 1, false) : '—', `de la cartera (riesgo ${fmt(S.params.riesgo, 2)}%)`)}
       </div>
       ${bondBlock(row)}
+      ${fundBlock(row, a)}
       ${typeof newsFor === 'function' ? newsFor(row) : ''}
 
       <div class="chartbox">
@@ -1558,6 +1606,9 @@ async function init() {
   // Flujos de fondos de ONs y soberanos nuevos (archivo local generado por actualizar-flujos.js)
   fetchJSON(SNAP ? 'flujos.json' : 'flujos.json?v=' + Date.now(), 15000)
     .then(f => { S.flujos = f; renderTable(); })
+    .catch(() => { });
+  fetchJSON(SNAP ? 'fundamentales.json' : 'fundamentales.json?v=' + Date.now(), 15000)
+    .then(f => { S.fund = f; if (S.params.estrategia === 'calidad') reanalyzeAll(); })
     .catch(() => { });
   fetchJSON(API.cer, 20000)
     .then(j => {

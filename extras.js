@@ -89,8 +89,10 @@ async function runBacktestAll() {
   const ced = (S.live.cedears || []).filter(r => !r.variant && r.v > 0).sort((a, b) => b.monto - a.monto).slice(0, 30);
   const lid = (S.live.acciones || []).filter(r => LIDER.has(r.sym));
   const rows = [...lid, ...ced];
-  await analyzeMany(rows, { front: true });
-  const EST = Object.keys(ESTRATEGIAS);
+  // Calidad barata se prueba como cartera sobre todos los CEDEARs con balances
+  const conBal = (S.live.cedears || []).filter(r => !r.variant && fundDe(r.sym));
+  await analyzeMany([...rows, ...conBal], { front: true });
+  const EST = Object.keys(ESTRATEGIAS).filter(e => e !== 'calidad');
   const res = [];
   for (const r of rows) {
     const a = S.an[r.tab + ':' + r.sym];
@@ -106,9 +108,12 @@ async function runBacktestAll() {
   const bhC = avg(x => x.b.tmr.cagrBh), bhD = avg(x => x.b.tmr.mddBh);
   const sum = EST.map(e => {
     const c = avg(x => x.b[e].cagr), d = avg(x => x.b[e].mdd);
-    return { e, c, d, rd: ratio(c, d), gana: res.filter(x => x.b[e].cagr > x.b[e].cagrBh).length,
-      ops: avg(x => x.b[e].trades / x.b[e].years), t: avg(x => x.b[e].tiempo) };
-  }).sort((a, b) => (b.rd ?? -9) - (a.rd ?? -9));
+    return { e, c, d, rd: ratio(c, d), gana: res.filter(x => x.b[e].cagr > x.b[e].cagrBh).length + ' de ' + res.length,
+      ops: avg(x => x.b[e].trades / x.b[e].years), t: avg(x => x.b[e].tiempo), bh: bhC };
+  });
+  const cq = carteraCalidad(conBal);
+  // Calidad barata va aparte: se mide sobre otro grupo de activos, así que no se mezcla en este ranking
+  sum.sort((a, b) => (b.rd ?? -9) - (a.rd ?? -9));
   const best = {};
   for (const x of res) best[x.r.sym] = EST.reduce((m, e) => x.b[e].cagr > x.b[m].cagr ? e : m, EST[0]);
   out.innerHTML = `
@@ -116,10 +121,24 @@ async function runBacktestAll() {
       <tr><th>Estrategia</th><th>Rinde anual (prom.)</th><th>Peor caída (prom.)</th><th>Retorno / caída</th><th>Le ganó a mantener</th><th>Operaciones por año</th><th>Tiempo invertido</th></tr>
       ${sum.map((x, i) => `<tr${x.e === S.params.estrategia ? ' style="background:var(--bg2,rgba(78,161,255,.08))"' : ''}><td><b>${ESTRATEGIAS[x.e]}</b>${i === 0 ? ' 🏆' : ''}${x.e === S.params.estrategia ? ' <span class="muted">(elegida)</span>' : ''}</td>
         <td class="${cls(x.c)}">${pct(x.c)}</td><td>${pct(x.d, 0)}</td><td>${fmt(x.rd, 2)}</td>
-        <td>${x.gana} de ${res.length}</td><td>${fmt(x.ops, 1)}</td><td>${pct(x.t, 0, false)}</td></tr>`).join('')}
+        <td>${x.gana}</td><td>${fmt(x.ops, 1)}</td><td>${pct(x.t, 0, false)}</td></tr>`).join('')}
       <tr><td><b>Comprar y mantener</b></td><td class="${cls(bhC)}">${pct(bhC)}</td><td>${pct(bhD, 0)}</td><td>${fmt(ratio(bhC, bhD), 2)}</td><td>—</td><td>0</td><td>100%</td></tr>
     </table>
-    <p class="note">Ordenadas por <b>retorno / caída</b> (rinde anual ÷ peor caída): cuánto rendimiento da cada punto de caída que tuviste que aguantar. 🏆 = la mejor de todas en eso. Si comprar y mantener sale mejor, ninguna estrategia le ganó en este período.</p>
+    <p class="note">Ordenadas por <b>retorno / caída</b> (rinde anual ÷ peor caída): cuánto rendimiento da cada punto de caída que tuviste que aguantar. 🏆 = la mejor de todas en eso.
+      Si comprar y mantener sale mejor, ninguna estrategia le ganó en este período.</p>
+    ${cq ? `<h3 style="margin-top:18px">Calidad barata (balances), como cartera</h3>
+    <p>Se prueba sobre los <b>${cq.N} CEDEARs con balances de la SEC</b> (las acciones argentinas no tienen): cada día se tienen, por partes iguales, todas las empresas que cumplen la regla,
+      y el resto queda en efectivo. Se compara con tener esas mismas ${cq.N} empresas por partes iguales todo el tiempo.</p>
+    <div class="plan">
+      <div class="kv"><div class="k">Rinde anual</div><div class="v ${cls(cq.cagr)}">${pct(cq.cagr)} <small>vs ${pct(cq.cagrBh)} manteniendo</small></div></div>
+      <div class="kv"><div class="k">Peor caída</div><div class="v">${pct(cq.mdd, 0)} <small>vs ${pct(cq.mddBh, 0)}</small></div></div>
+      <div class="kv"><div class="k">Empresas en cartera</div><div class="v">${fmt(cq.prom, 1)} <small>en promedio (máx. ${cq.max})</small></div></div>
+      <div class="kv"><div class="k">Tiempo invertido</div><div class="v">${pct(cq.tiempo, 0, false)}</div></div>
+      <div class="kv"><div class="k">Hoy califican</div><div class="v">${cq.hoy.length}</div></div>
+    </div>
+    ${cq.hoy.length ? `<p class="note">Califican hoy: ${cq.hoy.map(s => '<b>' + esc(s) + '</b>').join(', ')}.</p>` : ''}
+    <p class="note">Aproximación: supone que cada balance anual se conoce 90 días después del cierre y usa los datos tal como figuran hoy en la SEC (pueden incluir correcciones posteriores).
+      Incluye solo empresas que existen hoy (las que quebraron no están), lo que mejora un poco los resultados.</p>` : ''}
     <h3 style="margin-top:18px">Rinde anual por activo</h3>
     <table class="simple" style="font-size:13px">
       <tr><th>Activo</th><th>Mantener</th>${EST.map(e => `<th>${ESTRATEGIAS[e]}</th>`).join('')}</tr>
@@ -129,6 +148,56 @@ async function runBacktestAll() {
     </table>
     <p class="note">En negrita, la mejor estrategia para cada activo. Rendimientos anuales en dólares (CCL) de los últimos 5 años. CEDEARs incluyen dividendos; acciones argentinas, solo precio.
       Simplificaciones: se opera al cierre del día de la señal y el tiempo fuera del mercado no rinde interés.</p>`;
+}
+
+// Cartera "Calidad barata": cada día, partes iguales entre todas las empresas que cumplen la regla
+function carteraCalidad(lista) {
+  const P = { ...S.params, estrategia: 'calidad' }, cost = (P.comision || 0) / 100;
+  const series = [];
+  for (const r of lista) {
+    const a = S.an['cedears:' + r.sym];
+    if (!a || a.err || !a.rows || !a.usK) continue;
+    const b = backtest(a, P, Math.max(0, a.rows.length - 1 - 1260));
+    if (!b) continue;
+    const m = new Map();
+    for (let k = 0; k < b.held.length; k++) m.set(a.rows[b.start + k].d, { c: a.rows[b.start + k].c, h: b.held[k] });
+    series.push({ sym: r.sym, m, abierta: b.abierta });
+  }
+  if (series.length < 20) return null;
+  const fechas = [...new Set(series.flatMap(s => [...s.m.keys()]))].sort();
+  const prev = new Map(); // último dato visto de cada empresa
+  let eq = 1, bh = 1, pk = 1, pkB = 1, mdd = 0, mddB = 0, dias = 0, conPos = 0, suma = 0, max = 0, entradas = 0;
+  for (const d of fechas) {
+    let rP = 0, nP = 0, rB = 0, nB = 0, cambios = 0, nHoy = 0;
+    for (const s of series) {
+      const x = s.m.get(d);
+      if (!x) continue;
+      const p = prev.get(s.sym);
+      if (p) {
+        const r = x.c / p.c - 1;
+        rB += r; nB++;
+        if (p.h) { rP += r; nP++; }
+        if (x.h !== p.h) { cambios++; if (x.h) entradas++; }
+      }
+      if (x.h) nHoy++;
+      prev.set(s.sym, x);
+    }
+    if (!nB) continue;
+    dias++;
+    eq *= 1 + (nP ? rP / nP : 0);
+    eq *= 1 - cost * cambios / Math.max(1, nHoy, nP); // comisión de las compras y ventas del día (aprox.)
+    bh *= 1 + rB / nB;
+    pk = Math.max(pk, eq); pkB = Math.max(pkB, bh);
+    mdd = Math.min(mdd, eq / pk - 1); mddB = Math.min(mddB, bh / pkB - 1);
+    if (nHoy) conPos++;
+    suma += nHoy; max = Math.max(max, nHoy);
+  }
+  const years = dias / 252;
+  return {
+    N: series.length, cagr: Math.pow(eq, 1 / years) - 1, cagrBh: Math.pow(bh, 1 / years) - 1, mdd, mddBh: mddB,
+    tiempo: conPos / dias, prom: suma / dias, max, ops: entradas / years / series.length,
+    hoy: series.filter(s => s.abierta).map(s => s.sym),
+  };
 }
 
 /* ============================================================
