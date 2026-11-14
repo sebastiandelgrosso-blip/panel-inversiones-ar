@@ -1,12 +1,36 @@
 {
- "actualizado": "2026-11-14T16:37:12.256Z",
+ "actualizado": "2026-11-14T17:00:29.807Z",
  "items": [
   {
    "t": "Ground stop followed updates to older L3Harris communication system: DOT’s Duffy",
    "link": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
    "src": "CNBC",
    "region": "US",
-   "fecha": "2026-11-14T16:18:49.000Z",
+   "fecha": "2026-11-14T16:46:11.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar blue hoy: a cuánto opera este sábado 14 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-sabado-14-noviembre-n6345200",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-14T16:44:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar hoy: a cuánto cotiza este sábado 14 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-sabado-14-noviembre-n6345199",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-14T16:44:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "En agosto hubo 139 empresas registradas menos y ya son 10.234 en el acumulado anual",
+   "link": "https://www.lanacion.com.ar/economia/en-agosto-hubo-139-empresas-registradas-menos-y-ya-son-10234-en-el-acumulado-anual-nid13112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-14T16:43:01.000Z",
    "tags": []
   },
   {
@@ -15,22 +39,6 @@
    "src": "MarketWatch",
    "region": "US",
    "fecha": "2026-11-14T16:15:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar hoy: a cuánto cotiza este sábado 14 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-sabado-14-noviembre-n6345199",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-14T16:14:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar blue hoy: a cuánto opera este sábado 14 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-sabado-14-noviembre-n6345200",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-14T16:14:00.000Z",
    "tags": []
   },
   {
@@ -230,14 +238,6 @@
    "src": "MarketWatch",
    "region": "US",
    "fecha": "2026-11-14T13:00:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "En agosto hubo 139 empresas registradas menos y ya son 10.234 en el acumulado anual",
-   "link": "https://www.lanacion.com.ar/economia/en-agosto-hubo-139-empresas-registradas-menos-y-ya-son-10234-en-el-acumulado-anual-nid13112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-14T12:55:03.000Z",
    "tags": []
   },
   {
@@ -1264,11 +1264,11 @@
    "tags": []
   },
   {
-   "t": "El Gobierno recortó un beneficio para los colectivos impulsados a GNC y reavivó la guerra en el sector",
-   "link": "https://www.infobae.com/economia/2026/11/13/el-gobierno-recorto-un-beneficio-para-los-colectivos-impulsados-a-gnc-y-reavivo-la-guerra-en-el-sector/",
-   "src": "Infobae",
+   "t": "El Banco Central de Brasil advirtió que el 30% de los exchanges cripto no cumple con el capital exigido",
+   "link": "https://www.ambito.com/finanzas/el-banco-central-brasil-advirtio-que-el-30-los-exchanges-cripto-no-cumple-el-capital-exigido-n6344924",
+   "src": "Ámbito",
    "region": "AR",
-   "fecha": "2026-11-13T15:26:19.000Z",
+   "fecha": "2026-11-13T15:32:00.000Z",
    "tags": []
   }
  ]
