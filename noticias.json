@@ -1,12 +1,84 @@
 {
- "actualizado": "2026-11-14T21:25:35.469Z",
+ "actualizado": "2026-11-14T23:36:10.911Z",
  "items": [
   {
-   "t": "SpaceX succeeds at first-ever catch of Starship rocket from orbit",
+   "t": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy",
+   "link": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-14T23:21:21.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar blue hoy: a cuánto opera este sábado 14 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-sabado-14-noviembre-n6345200",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-14T23:16:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar hoy: a cuánto cotiza este sábado 14 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-sabado-14-noviembre-n6345199",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-14T23:16:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "SpaceX catches upper stage of Starship rocket in historic first",
    "link": "https://www.cnbc.com/2026/11/14/spacex-plans-to-try-first-ever-catch-of-starship-rocket-from-orbit.html",
    "src": "CNBC",
    "region": "US",
-   "fecha": "2026-11-14T21:24:43.000Z",
+   "fecha": "2026-11-14T23:10:14.000Z",
+   "tags": []
+  },
+  {
+   "t": "Cuáles fueron las provincias con mayor inflación en octubre y dónde subieron menos los precios",
+   "link": "https://www.infobae.com/economia/2026/11/14/cuales-fueron-las-provincias-con-mayor-inflacion-en-octubre-y-donde-subieron-menos-los-precios/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-14T22:52:12.000Z",
+   "tags": []
+  },
+  {
+   "t": "\"Queda para el próximo\": Carlos Melconian descartó que el Gobierno pueda bajar la inflación",
+   "link": "https://www.ambito.com/economia/queda-el-proximo-carlos-melconian-descarto-que-el-gobierno-pueda-bajar-la-inflacion-n6345314",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-14T22:51:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "$180 million Van Gogh tests the art market and collector confidence",
+   "link": "https://www.cnbc.com/2026/11/14/180-million-van-gogh-tests-the-art-market-and-collector-confidence-.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-14T22:34:07.000Z",
+   "tags": []
+  },
+  {
+   "t": "Ciclo económico de raíz política: ¿una idea relevante?",
+   "link": "https://www.lanacion.com.ar/economia/ciclo-economico-de-raiz-politica-una-idea-relevante-nid14112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-14T22:00:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Superan los u$s22.000 millones los proyectos de inversión en San Juan: el impacto energético y del RIGI",
+   "link": "https://www.ambito.com/economia/superan-los-us22000-millones-los-proyectos-inversion-san-juan-el-impacto-energetico-y-del-rigi-n6345293",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-14T21:45:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "I’m 63 and spending $95,000 on a roof deck for my $500,000 home. Is that a good investment?",
+   "link": "https://www.marketwatch.com/story/im-63-and-want-to-spend-95-000-on-a-roof-deck-for-my-500-000-home-is-that-a-good-investment-f1a59c27?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-14T21:31:00.000Z",
    "tags": []
   },
   {
@@ -18,19 +90,11 @@
    "tags": []
   },
   {
-   "t": "Dólar hoy: a cuánto cotiza este sábado 14 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-sabado-14-noviembre-n6345199",
+   "t": "Plazo fijo: cuánto se obtiene al invertir $1.500.000",
+   "link": "https://www.ambito.com/economia/plazo-fijo-cuanto-se-obtiene-al-invertir-1500000-n6344958",
    "src": "Ámbito",
    "region": "AR",
-   "fecha": "2026-11-14T21:15:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar blue hoy: a cuánto opera este sábado 14 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-sabado-14-noviembre-n6345200",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-14T21:15:00.000Z",
+   "fecha": "2026-11-14T21:00:00.000Z",
    "tags": []
   },
   {
@@ -126,14 +190,6 @@
    ]
   },
   {
-   "t": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy",
-   "link": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-14T18:32:47.000Z",
-   "tags": []
-  },
-  {
    "t": "Should a widow leave her late partner’s home to her stepkids — or cut off contact with them?",
    "link": "https://www.marketwatch.com/story/she-can-always-change-her-mind-should-a-widow-leave-the-family-home-to-her-stepchildren-649b06af?mod=mw_rss_topstories",
    "src": "MarketWatch",
@@ -192,14 +248,6 @@
   {
    "t": "The lonely labor of caregiving: ‘You shouldn’t have to be rich to take care of the people you love’",
    "link": "https://www.marketwatch.com/story/if-you-could-change-one-thing-about-caregiving-what-would-it-be-8b20be29?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-14T17:50:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Medicare at age 50? What ‘Medicare for more’ could mean for American workers.",
-   "link": "https://www.marketwatch.com/story/its-not-medicare-for-all-but-medicare-for-more-what-this-could-mean-for-workers-over-50-4a5c51a3?mod=mw_rss_topstories",
    "src": "MarketWatch",
    "region": "US",
    "fecha": "2026-11-14T17:50:00.000Z",
@@ -438,6 +486,14 @@
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-14T10:02:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "El resultado fiscal de octubre definirá si el Gobierno logra cumplir la meta de superávit acordada con el FMI",
+   "link": "https://www.ambito.com/economia/el-resultado-fiscal-octubre-definira-si-el-gobierno-logra-cumplir-la-meta-superavit-acordada-el-fmi-n6345009",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-14T10:00:00.000Z",
    "tags": []
   },
   {
@@ -1135,14 +1191,6 @@
    "tags": []
   },
   {
-   "t": "OpenAI launches ChatGPT Wallet, allowing its 'dots' AI agents to make purchases for users",
-   "link": "https://www.cnbc.com/2026/11/13/openai-chatgpt-wallet-dot-purchases.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-13T18:56:26.000Z",
-   "tags": []
-  },
-  {
    "t": "Visec: fuerte reclamo de consignatarios por demoras en la plataforma de trazabilidad para exportar carne a Europa",
    "link": "https://www.lanacion.com.ar/economia/campo/visec-fuerte-reclamo-de-consignatarios-por-demoras-en-la-plataforma-de-trazabilidad-para-exportar-nid13112026/",
    "src": "La Nación",
@@ -1220,60 +1268,6 @@
    "tags": [
     "NVDA"
    ]
-  },
-  {
-   "t": "Inminente desembarco de Anthropic en Wall Street: cómo SpaceX cambió las reglas para las grandes salidas a bolsa",
-   "link": "https://www.ambito.com/finanzas/inminente-desembarco-anthropic-wall-street-como-spacex-cambio-las-reglas-las-grandes-salidas-bolsa-n6344983",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-13T17:52:00.000Z",
-   "tags": [
-    "SPY"
-   ]
-  },
-  {
-   "t": "La devaluación en Brasil alerta a Caputo y reaparece el fantasma del atraso cambiario",
-   "link": "https://www.iprofesional.com/economia/469007-caida-del-real-frente-al-dolar-en-brasil-le-mete-presion-a-caputo",
-   "src": "iProfesional",
-   "region": "AR",
-   "fecha": "2026-11-13T17:30:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "La caída de Nvidia no se detiene: su capitalización bursátil bajó más de USD 500.000 millones por el escándalo de su CEO",
-   "link": "https://www.infobae.com/economia/2026/11/13/la-caida-de-nvidia-no-se-detiene-su-capitalizacion-bursatil-bajo-mas-de-usd-500000-millones-por-el-escandalo-de-su-ceo/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-13T17:27:54.000Z",
-   "tags": [
-    "NVDA"
-   ]
-  },
-  {
-   "t": "Reforma laboral: el Gobierno asegura que el incentivo a la formalización creó 82.000 empleos en blanco en cuatro meses",
-   "link": "https://www.infobae.com/economia/2026/11/13/reforma-laboral-el-gobierno-asegura-que-el-incentivo-a-la-formalizacion-creo-82000-empleos-en-blanco-en-cuatro-meses/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-13T17:14:54.000Z",
-   "tags": []
-  },
-  {
-   "t": "Bessent blames Lutnick’s Commerce as he slams Nvidia chip ‘leakage’ to China",
-   "link": "https://www.cnbc.com/2026/11/13/us-inflation-outlook-federal-reserve-rate-hike.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-13T17:06:57.000Z",
-   "tags": [
-    "NVDA"
-   ]
-  },
-  {
-   "t": "HappyRobot, el unicornio con presencia en 5 países que desarrolla agentes de IA, desembarca en la Argentina",
-   "link": "https://www.lanacion.com.ar/tecnologia/happyrobot-el-unicornio-con-presencia-en-5-paises-que-desarrolla-agentes-de-ia-desembarca-en-la-nid13112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-13T16:55:29.000Z",
-   "tags": []
   }
  ]
 }

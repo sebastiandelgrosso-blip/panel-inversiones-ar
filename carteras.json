@@ -1,6 +1,6 @@
 {
  "fuente": "SEC EDGAR (formulario 13F)",
- "descargado": "2026-11-05",
+ "descargado": "2026-11-14",
  "carteras": [
   {
    "id": "berkshire",
@@ -1062,11 +1062,7 @@
      "ticker": "ROKU",
      "nombre": "Roku Inc",
      "peso": 0.00584,
-     "ar": {
-      "sym": "ROKU",
-      "tab": "cedears",
-      "usa": "ROKU"
-     },
+     "ar": null,
      "cambio": -0.7547
     },
     {
@@ -1502,7 +1498,7 @@
     "TWLO",
     "TWST"
    ],
-   "pesoEnCedear": 0.5266
+   "pesoEnCedear": 0.5207
   },
   {
    "id": "baupost",
@@ -1510,76 +1506,72 @@
    "gestor": "Seth Klarman",
    "estilo": "Value, margen de seguridad",
    "cik": 1061768,
-   "periodo": "2026-06-30",
-   "presentado": "2026-08-13",
-   "periodoAnterior": "2026-03-31",
-   "totalUSD": 5415853,
+   "periodo": "2026-09-30",
+   "presentado": "2026-11-13",
+   "periodoAnterior": "2026-06-30",
+   "totalUSD": 5045853,
    "posiciones": [
     {
      "ticker": "AMZN",
      "nombre": "AMAZON COM INC",
-     "peso": 0.16476,
+     "peso": 0.18486,
      "ar": {
       "sym": "AMZN",
       "tab": "cedears",
       "usa": "AMZN"
      },
-     "cambio": 0.2004
+     "cambio": 0
     },
     {
      "ticker": "ELV",
      "nombre": "ELEVANCE HEALTH INC FORMERLY",
-     "peso": 0.09105,
+     "peso": 0.09826,
      "ar": null,
      "cambio": 0
     },
     {
      "ticker": "QSR",
      "nombre": "RESTAURANT BRANDS INTL INC",
-     "peso": 0.0904,
+     "peso": 0.09515,
      "ar": null,
-     "cambio": -0.1642
+     "cambio": 0
+    },
+    {
+     "ticker": "GPC",
+     "nombre": "GENUINE PARTS CO",
+     "peso": 0.0772,
+     "ar": null,
+     "cambio": 0.1001
+    },
+    {
+     "ticker": "FERG",
+     "nombre": "FERGUSON ENTERPRISES INC",
+     "peso": 0.06934,
+     "ar": null,
+     "cambio": 0.0834
     },
     {
      "ticker": "GOOG",
      "nombre": "ALPHABET INC",
-     "peso": 0.0895,
+     "peso": 0.06415,
      "ar": {
       "sym": "GOOGL",
       "tab": "cedears",
       "usa": "GOOG"
      },
-     "cambio": 0.1615
+     "cambio": -0.3076
     },
     {
-     "ticker": "FERG",
-     "nombre": "FERGUSON ENTERPRISES INC",
-     "peso": 0.06357,
+     "ticker": "WCC",
+     "nombre": "WESCO INTL INC",
+     "peso": 0.05121,
      "ar": null,
-     "cambio": 0.0057
-    },
-    {
-     "ticker": "GPC",
-     "nombre": "GENUINE PARTS CO",
-     "peso": 0.06135,
-     "ar": null,
-     "cambio": 0.8896
-    },
-    {
-     "ticker": "UNP",
-     "nombre": "UNION PAC CORP",
-     "peso": 0.05953,
-     "ar": {
-      "sym": "UNP",
-      "tab": "cedears",
-      "usa": "UNP"
-     },
-     "cambio": -0.2308
+     "cambio": 0.0839
     },
     {
      "ticker": "V",
      "nombre": "VISA INC",
-     "peso": 0.04443,
+     "peso": 0.04995,
      "ar": {
       "sym": "V",
       "tab": "cedears",
@@ -1588,116 +1580,108 @@
      "cambio": 0
     },
     {
-     "ticker": "WCC",
-     "nombre": "WESCO INTL INC",
-     "peso": 0.04228,
-     "ar": null,
-     "cambio": -0.5387
+     "ticker": "UNP",
+     "nombre": "UNION PAC CORP",
+     "peso": 0.0429,
+     "ar": {
+      "sym": "UNP",
+      "tab": "cedears",
+      "usa": "UNP"
+     },
+     "cambio": -0.329
     },
     {
      "ticker": "AON PLC",
      "nombre": "AON PLC",
-     "peso": 0.04207,
+     "peso": 0.03701,
      "ar": null,
-     "cambio": -0.1066
-    },
-    {
-     "ticker": "TFX",
-     "nombre": "TELEFLEX INCORPORATED",
-     "peso": 0.03298,
-     "ar": null,
-     "cambio": -0.1166
-    },
-    {
-     "ticker": "NORWEGIAN CRUISE LINE HLDGS",
-     "nombre": "NORWEGIAN CRUISE LINE HLDGS",
-     "peso": 0.03013,
-     "ar": null,
-     "cambio": 1.1295
-    },
-    {
-     "ticker": "MOH",
-     "nombre": "MOLINA HEALTHCARE INC",
-     "peso": 0.02676,
-     "ar": null,
-     "cambio": 0
+     "cambio": -0.0178
     },
     {
      "ticker": "CME",
      "nombre": "CME GROUP INC",
-     "peso": 0.02524,
+     "peso": 0.03559,
+     "ar": null,
+     "cambio": 0.1073
+    },
+    {
+     "ticker": "HONA",
+     "nombre": "HONEYWELL AEROSPACE INC",
+     "peso": 0.03477,
      "ar": null,
      "cambio": "nueva"
     },
     {
      "ticker": "HERBALIFE LTD",
      "nombre": "HERBALIFE LTD",
-     "peso": 0.02248,
+     "peso": 0.02466,
+     "ar": null,
+     "cambio": 0.108
+    },
+    {
+     "ticker": "GDS",
+     "nombre": "GDS HLDGS LTD",
+     "peso": 0.02333,
+     "ar": null,
+     "cambio": 0
+    },
+    {
+     "ticker": "SITE",
+     "nombre": "SITEONE LANDSCAPE SUPPLY INC",
+     "peso": 0.02228,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "COLD",
+     "nombre": "AMERICOLD REALTY TRUST INC",
+     "peso": 0.01892,
      "ar": null,
      "cambio": 0
     },
     {
      "ticker": "EXP",
      "nombre": "EAGLE MATLS INC",
-     "peso": 0.02205,
-     "ar": null,
-     "cambio": -0.4055
-    },
-    {
-     "ticker": "GDS",
-     "nombre": "GDS HLDGS LTD",
-     "peso": 0.0209,
-     "ar": null,
-     "cambio": 0.2381
-    },
-    {
-     "ticker": "COLD",
-     "nombre": "AMERICOLD REALTY TRUST INC",
-     "peso": 0.01983,
-     "ar": null,
-     "cambio": -0.1222
-    },
-    {
-     "ticker": "LIBERTY GLOBAL LTD",
-     "nombre": "LIBERTY GLOBAL LTD",
-     "peso": 0.01735,
-     "ar": null,
-     "cambio": -0.3623
-    },
-    {
-     "ticker": "AERO",
-     "nombre": "GRUPO AEROMEXICO SAB DE CV",
-     "peso": 0.01622,
+     "peso": 0.01799,
      "ar": null,
      "cambio": 0
     },
     {
-     "ticker": "AXALTA COATING SYS LTD",
-     "nombre": "AXALTA COATING SYS LTD",
-     "peso": 0.00805,
+     "ticker": "MOH",
+     "nombre": "MOLINA HEALTHCARE INC",
+     "peso": 0.01685,
      "ar": null,
-     "cambio": "nueva"
+     "cambio": -0.2904
     },
     {
-     "ticker": "DNOW",
-     "nombre": "DNOW INC",
-     "peso": 0.00668,
+     "ticker": "AXALTA COATING SYS LTD",
+     "nombre": "AXALTA COATING SYS LTD",
+     "peso": 0.01597,
      "ar": null,
-     "cambio": -0.2309
+     "cambio": 0.9665
+    },
+    {
+     "ticker": "AERO",
+     "nombre": "GRUPO AEROMEXICO SAB DE CV",
+     "peso": 0.01527,
+     "ar": null,
+     "cambio": 0
     },
     {
      "ticker": "PS",
      "nombre": "PERSHING SQUARE INC",
-     "peso": 0.00238,
+     "peso": 0.00435,
      "ar": null,
-     "cambio": "nueva"
+     "cambio": 0
     }
    ],
    "vendidas": [
-    "PCVX",
-    "WILLIS TOWERS WATSON PLC LTD"
+    "TFX",
+    "DNOW",
+    "LIBERTY GLOBAL LTD",
+    "NORWEGIAN CRUISE LINE HLDGS"
    ],
-   "pesoEnCedear": 0.3582
+   "pesoEnCedear": 0.3419
   },
   {
    "id": "akre",
@@ -1705,126 +1689,115 @@
    "gestor": "Chuck Akre",
    "estilo": "Calidad, compounders",
    "cik": 1112520,
-   "periodo": "2026-06-30",
-   "presentado": "2026-08-14",
-   "periodoAnterior": "2026-03-31",
-   "totalUSD": 5106870308,
+   "periodo": "2026-09-30",
+   "presentado": "2026-11-13",
+   "periodoAnterior": "2026-06-30",
+   "totalUSD": 4401918808,
    "posiciones": [
     {
      "ticker": "MA",
      "nombre": "MASTERCARD INCORPORATED",
-     "peso": 0.20013,
+     "peso": 0.2204,
      "ar": {
       "sym": "MA",
       "tab": "cedears",
       "usa": "MA"
      },
-     "cambio": -0.1277
+     "cambio": -0.1159
     },
     {
      "ticker": "MCO",
      "nombre": "MOODYS CORP",
-     "peso": 0.1026,
+     "peso": 0.10512,
      "ar": null,
-     "cambio": -0.0716
-    },
-    {
-     "ticker": "BN",
-     "nombre": "BROOKFIELD CORP",
-     "peso": 0.10108,
-     "ar": null,
-     "cambio": -0.2882
+     "cambio": -0.1193
     },
     {
      "ticker": "KKR",
      "nombre": "KKR &amp; CO L P DEL",
-     "peso": 0.08953,
+     "peso": 0.08939,
      "ar": null,
-     "cambio": -0.2585
+     "cambio": -0.1348
     },
     {
-     "ticker": "FICO",
-     "nombre": "FAIR ISAAC CORP",
-     "peso": 0.08465,
+     "ticker": "BN",
+     "nombre": "BROOKFIELD CORP",
+     "peso": 0.08699,
      "ar": null,
-     "cambio": -0.0053
+     "cambio": -0.1334
     },
     {
      "ticker": "ROP",
      "nombre": "ROPER TECHNOLOGIES INC",
-     "peso": 0.07796,
+     "peso": 0.07957,
      "ar": null,
-     "cambio": -0.0642
+     "cambio": -0.148
     },
     {
      "ticker": "V",
      "nombre": "VISA INC",
-     "peso": 0.07463,
+     "peso": 0.07592,
      "ar": {
       "sym": "V",
       "tab": "cedears",
       "usa": "V"
      },
-     "cambio": -0.3221
+     "cambio": -0.1628
     },
     {
      "ticker": "CSGP",
      "nombre": "COSTAR GROUP INC",
-     "peso": 0.06488,
+     "peso": 0.06729,
      "ar": null,
-     "cambio": 0.1306
+     "cambio": -0.076
+    },
+    {
+     "ticker": "FICO",
+     "nombre": "FAIR ISAAC CORP",
+     "peso": 0.05062,
+     "ar": null,
+     "cambio": 0.0394
     },
     {
      "ticker": "CPRT",
      "nombre": "COPART INC",
-     "peso": 0.04408,
+     "peso": 0.04597,
      "ar": null,
-     "cambio": -0.0016
+     "cambio": -0.0712
+    },
+    {
+     "ticker": "CCC",
+     "nombre": "CCC INTELLIGENT SOLUTIONS HL",
+     "peso": 0.04417,
+     "ar": null,
+     "cambio": -0.0223
     },
     {
      "ticker": "ORLY",
      "nombre": "OREILLY AUTOMOTIVE INC",
-     "peso": 0.03898,
+     "peso": 0.03939,
      "ar": {
       "sym": "ORLY",
       "tab": "cedears",
       "usa": "ORLY"
      },
-     "cambio": -0.4437
-    },
-    {
-     "ticker": "ABNB",
-     "nombre": "AIRBNB INC",
-     "peso": 0.03317,
-     "ar": {
-      "sym": "ABNB",
-      "tab": "cedears",
-      "usa": "ABNB"
-     },
-     "cambio": -0.4182
-    },
-    {
-     "ticker": "CCC",
-     "nombre": "CCC INTELLIGENT SOLUTIONS HL",
-     "peso": 0.03017,
-     "ar": null,
-     "cambio": -0.0525
+     "cambio": -0.0609
     },
     {
      "ticker": "NOW",
      "nombre": "SERVICENOW INC",
-     "peso": 0.02422,
+     "peso": 0.03794,
      "ar": {
       "sym": "NOW",
       "tab": "cedears",
       "usa": "NOW"
      },
-     "cambio": 0.1368
+     "cambio": 0
     },
     {
      "ticker": "CRM",
      "nombre": "SALESFORCE INC",
-     "peso": 0.02202,
+     "peso": 0.03743,
      "ar": {
       "sym": "CRM",
       "tab": "cedears",
@@ -1833,47 +1806,63 @@
      "cambio": 0
     },
     {
-     "ticker": "GSHD",
-     "nombre": "GOOSEHEAD INS INC",
-     "peso": 0.00421,
+     "ticker": "SOPHIA GENETICS SA",
+     "nombre": "SOPHIA GENETICS SA",
+     "peso": 0.00708,
      "ar": null,
      "cambio": 0
     },
     {
-     "ticker": "SOPHIA GENETICS SA",
-     "nombre": "SOPHIA GENETICS SA",
-     "peso": 0.0042,
+     "ticker": "GSHD",
+     "nombre": "GOOSEHEAD INS INC",
+     "peso": 0.00427,
      "ar": null,
-     "cambio": 0
+     "cambio": -0.0652
+    },
+    {
+     "ticker": "TDG",
+     "nombre": "TRANSDIGM GROUP INC",
+     "peso": 0.00283,
+     "ar": null,
+     "cambio": "nueva"
+    },
+    {
+     "ticker": "ROL",
+     "nombre": "ROLLINS INC",
+     "peso": 0.00219,
+     "ar": null,
+     "cambio": "nueva"
     },
     {
      "ticker": "PRM",
      "nombre": "PERIMETER SOLUTIONS INC",
-     "peso": 0.00175,
+     "peso": 0.00149,
      "ar": null,
      "cambio": 0
     },
     {
      "ticker": "AMT",
      "nombre": "AMERICAN TOWER CORP NEW",
-     "peso": 0.00094,
+     "peso": 0.00105,
      "ar": null,
-     "cambio": -0.4238
+     "cambio": -0.0354
     },
     {
      "ticker": "BRK/B",
      "nombre": "BERKSHIRE HATHAWAY INC DEL",
-     "peso": 0.0008,
+     "peso": 0.0009,
      "ar": {
       "sym": "BRKB",
       "tab": "cedears",
       "usa": "BRKB"
      },
-     "cambio": -0.2084
+     "cambio": -0.0244
     }
    ],
-   "vendidas": [],
-   "pesoEnCedear": 0.394
+   "vendidas": [
+    "ABNB"
+   ],
+   "pesoEnCedear": 0.412
   },
   {
    "id": "fundsmith",
