@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Panel de Inversiones AR</title>
-  <link rel="stylesheet" href="styles.css?v=20261114">
+  <link rel="stylesheet" href="styles.css?v=20261114b">
 </head>
 <body>
   <header class="top">
@@ -139,7 +139,7 @@
         <a href="https://github.com/arisbdar/rendimientos-ar" target="_blank" rel="noopener">rendimientos-ar</a>, por cada 100 de valor nominal y con el precio en dólar MEP.
         Si una TIR aparece con "?", el precio probablemente esté desactualizado por poca liquidez. Las ONs no tienen análisis técnico porque la fuente no publica su histórico.</p>
 
-      <h2>Otras estrategias: las tres más usadas</h2>
+      <h2>Otras estrategias para comparar</h2>
       <p>TMR mezcla tres ideas clásicas. También podés usar cada una por separado, en su versión más conocida: elegila en
         <b>⚙ Parámetros → Estrategia</b> y todas las señales del panel pasan a seguir esa regla.</p>
       <div class="cards">
@@ -163,6 +163,14 @@
           <p class="src">Estrategia de Larry Connors, de las más probadas en YouTube y foros. Muchas operaciones cortas y la mayoría ganadoras,
             pero pasa poco tiempo invertida y las comisiones pesan.</p>
         </div>
+        <div class="card">
+          <h3>Comprar barato, vender caro</h3>
+          <p><b>Regla:</b> comprar cuando el precio está cerca del mínimo de 52 semanas (a menos del 10%) y vender cuando llega cerca del máximo de 52 semanas (a menos del 5%).
+            En el medio, mantener. Las distancias se cambian en Parámetros → Zonas de precio.</p>
+          <p class="src">La idea más intuitiva. Los estudios no se ponen de acuerdo: George &amp; Hwang (2004) encontraron que las acciones cerca de máximos tienden a seguir subiendo,
+            pero Chen &amp; Yu (2015) encontraron que comprar cerca de mínimos también rinde, sobre todo en mercados bajistas. Funciona en activos que suben y bajan dentro de un rango;
+            en tendencias largas vende muy temprano o compra caídas que siguen. Pasa mucho tiempo afuera del mercado.</p>
+        </div>
       </div>
       <p>Con estas tres el perfil de riesgo casi no cambia nada: las señales son "estar comprado" (Acumular o Comprar) o "estar afuera" (Reducir o Vender).
         El detalle de cada activo igual muestra el contexto de TMR, con zona de precio, stop y objetivo.</p>
@@ -185,8 +193,8 @@
 
   <footer>Datos: data912.com (BYMA, demorados), argentinadatos.com (CCL histórico), dolarapi.com. Uso educativo, no es recomendación de inversión.</footer>
 
-  <script src="app.js?v=20261114"></script>
-  <script src="cartera.js?v=20261114"></script>
-  <script src="extras.js?v=20261114"></script>
+  <script src="app.js?v=20261114b"></script>
+  <script src="cartera.js?v=20261114b"></script>
+  <script src="extras.js?v=20261114b"></script>
 </body>
 </html>

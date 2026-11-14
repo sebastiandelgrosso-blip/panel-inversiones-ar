@@ -32,7 +32,7 @@ const TAB_LABEL = { acciones: 'Acción AR', cedears: 'CEDEAR', bonos: 'Bono', on
    ============================================================ */
 const PARAM_SPEC = [
   { grp: 'Análisis' },
-  { k: 'estrategia', label: 'Estrategia', type: 'select', opts: Object.entries({ tmr: 'TMR (combinada)', cruce: 'Cruce de medias', momentum: 'Momentum 12‑1', rsi2: 'Comprar caídas (RSI‑2)' }), def: 'tmr',
+  { k: 'estrategia', label: 'Estrategia', type: 'select', opts: Object.entries({ tmr: 'TMR (combinada)', cruce: 'Cruce de medias', momentum: 'Momentum 12‑1', rsi2: 'Comprar caídas (RSI‑2)', rango: 'Comprar barato, vender caro' }), def: 'tmr',
     help: 'Cambia las señales de todo el panel. La pestaña Estrategia explica cada una y las compara con un backtest.' },
   { k: 'moneda', label: 'Moneda de análisis', type: 'select', opts: [['USD', 'Dólares (CCL)'], ['ARS', 'Pesos nominales']], def: 'USD',
     help: 'En pesos, la inflación distorsiona máximos y mínimos.' },
@@ -55,7 +55,7 @@ const PARAM_SPEC = [
     help: 'En la prueba de 5 años el stop ajustado empeoró los resultados.' },
 ];
 const DEFAULTS = Object.fromEntries(PARAM_SPEC.filter(p => p.k).map(p => [p.k, p.def]));
-const ESTRATEGIAS = { tmr: 'TMR', cruce: 'Cruce de medias', momentum: 'Momentum 12‑1', rsi2: 'RSI‑2 (comprar caídas)' };
+const ESTRATEGIAS = { tmr: 'TMR', cruce: 'Cruce de medias', momentum: 'Momentum 12‑1', rsi2: 'RSI‑2 (comprar caídas)', rango: 'Barato/caro (52 sem.)' };
 const PERFILES = {
   conservador: { buy: 60, acc: 30, red: -15, sell: -40 },
   moderado: { buy: 50, acc: 20, red: -20, sell: -50 },
@@ -699,6 +699,13 @@ function scoreAlt(ctx, i, withText) {
     if (!ok(mom)) return parts;
     add(mom > 0 ? `Subió ${pct(mom)} en 12 meses (sin contar el último): estar comprado` : `Bajó ${pct(mom)} en 12 meses (sin contar el último): estar afuera`, mom > 0 ? 40 : -40);
     add(withText ? 'Fuerza del momentum' : '', Math.round(Math.max(-40, Math.min(40, mom / 0.30 * 40))));
+  } else if (P.estrategia === 'rango') {
+    // Comprar cerca del mínimo de 52 semanas y vender cerca del máximo de 52 semanas
+    const mx = ctx.max52(i), mn = ctx.min52(i);
+    const dMx = px / mx - 1, dMn = px / mn - 1;
+    if (dMn <= P.nearLow / 100) add(`Barata: a ${pct(dMn, 1, false)} del mínimo de 52 semanas: comprar`, 60);
+    else if (dMx >= -P.nearHigh / 100) add(`Cara: a ${pct(-dMx, 1, false)} del máximo de 52 semanas: vender si estás comprado; si no, esperar`, -30);
+    else add(`En el medio del rango anual (${pct(dMn, 0, false)} sobre el mínimo, ${pct(-dMx, 0, false)} bajo el máximo): mantener si estás comprado; si no, esperar`, 0);
   } else if (P.estrategia === 'rsi2') {
     // RSI‑2 de Larry Connors: compra caídas cortas dentro de una tendencia alcista y vende en el rebote
     const R2 = ctx.rsi2[i], s5 = ctx.sma5[i];

@@ -74,7 +74,7 @@ function setupStrategyBacktest() {
   const div = document.createElement('div');
   div.innerHTML = `
     <h2>¿Cuál funciona mejor? Backtest general</h2>
-    <p>Prueba las cuatro estrategias sobre las acciones del panel líder y los 30 CEDEARs más operados, en los últimos 5 años,
+    <p>Prueba todas las estrategias sobre las acciones del panel líder y los 30 CEDEARs más operados, en los últimos 5 años,
       y las compara con comprar y mantener. Usa los parámetros actuales (perfil, medias, comisión); podés cambiarlos y volver a probar.</p>
     <button id="btnBtAll" class="primary">Correr backtest general</button>
     <div id="btAllOut"></div>`;
@@ -119,7 +119,7 @@ async function runBacktestAll() {
         <td>${x.gana} de ${res.length}</td><td>${fmt(x.ops, 1)}</td><td>${pct(x.t, 0, false)}</td></tr>`).join('')}
       <tr><td><b>Comprar y mantener</b></td><td class="${cls(bhC)}">${pct(bhC)}</td><td>${pct(bhD, 0)}</td><td>${fmt(ratio(bhC, bhD), 2)}</td><td>—</td><td>0</td><td>100%</td></tr>
     </table>
-    <p class="note">Ordenadas por <b>retorno / caída</b> (rinde anual ÷ peor caída): cuánto rendimiento da cada punto de caída que tuviste que aguantar. 🏆 = la mejor de las cuatro en eso. Si comprar y mantener sale mejor, ninguna estrategia le ganó en este período.</p>
+    <p class="note">Ordenadas por <b>retorno / caída</b> (rinde anual ÷ peor caída): cuánto rendimiento da cada punto de caída que tuviste que aguantar. 🏆 = la mejor de todas en eso. Si comprar y mantener sale mejor, ninguna estrategia le ganó en este período.</p>
     <h3 style="margin-top:18px">Rinde anual por activo</h3>
     <table class="simple" style="font-size:13px">
       <tr><th>Activo</th><th>Mantener</th>${EST.map(e => `<th>${ESTRATEGIAS[e]}</th>`).join('')}</tr>
