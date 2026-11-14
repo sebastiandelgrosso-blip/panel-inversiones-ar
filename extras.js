@@ -43,10 +43,10 @@ function renderBacktest(a, desde) {
   box.innerHTML = `
     <div class="chartbox"><div class="ctrl">
       ${['3a', '5a', 'todo'].map(x => `<button data-bt="${x}" class="${x === desde ? 'on' : ''}">${x === 'todo' ? 'Toda la historia' : 'Últimos ' + x.replace('a', ' años')}</button>`).join('')}
-      <span class="legend"><span><i style="background:#4ea1ff"></i>Estrategia</span><span><i style="background:#8b98a8"></i>Comprar y mantener</span></span></div>
+      <span class="legend"><span><i style="background:#4ea1ff"></i>${ESTRATEGIAS[S.params.estrategia] || 'TMR'}</span><span><i style="background:#8b98a8"></i>Comprar y mantener</span></span></div>
       <canvas id="btChart" style="width:100%;height:200px;display:block"></canvas></div>
     <div class="plan">
-      ${kv('Estrategia', `<span class="${cls(r.cagr)}">${pct(r.cagr)}</span>`, 'anual')}
+      ${kv(ESTRATEGIAS[S.params.estrategia] || 'TMR', `<span class="${cls(r.cagr)}">${pct(r.cagr)}</span>`, 'anual')}
       ${kv('Comprar y mantener', `<span class="${cls(r.cagrBh)}">${pct(r.cagrBh)}</span>`, 'anual')}
       ${kv('Peor caída estrategia', `<span class="down">${pct(r.mdd, 0)}</span>`, `vs ${pct(r.mddBh, 0)} manteniendo`)}
       ${kv('Operaciones', r.trades, ok(r.win) ? `${pct(r.win, 0, false)} ganadoras` : '')}
@@ -73,9 +73,9 @@ function setupStrategyBacktest() {
   const sec = $('#viewStrategy');
   const div = document.createElement('div');
   div.innerHTML = `
-    <h2>¿Funciona la estrategia? Backtest general</h2>
-    <p>Prueba las señales sobre las acciones del panel líder y los 30 CEDEARs más operados, en los últimos 5 años,
-      y lo compara con comprar y mantener. Usa los parámetros actuales (podés cambiarlos y volver a probar).</p>
+    <h2>¿Cuál funciona mejor? Backtest general</h2>
+    <p>Prueba las cuatro estrategias sobre las acciones del panel líder y los 30 CEDEARs más operados, en los últimos 5 años,
+      y las compara con comprar y mantener. Usa los parámetros actuales (perfil, medias, comisión); podés cambiarlos y volver a probar.</p>
     <button id="btnBtAll" class="primary">Correr backtest general</button>
     <div id="btAllOut"></div>`;
   sec.insertBefore(div, sec.querySelector('.disclaimer'));
@@ -90,36 +90,44 @@ async function runBacktestAll() {
   const lid = (S.live.acciones || []).filter(r => LIDER.has(r.sym));
   const rows = [...lid, ...ced];
   await analyzeMany(rows, { front: true });
+  const EST = Object.keys(ESTRATEGIAS);
   const res = [];
   for (const r of rows) {
     const a = S.an[r.tab + ':' + r.sym];
     if (!a || a.err || !a.rows) continue;
-    const b = backtest(a, S.params, Math.max(0, a.rows.length - 1 - 1260));
-    if (b && b.years > 2) res.push({ r, b });
+    const desde = Math.max(0, a.rows.length - 1 - 1260);
+    const b = {};
+    for (const e of EST) b[e] = backtest(a, { ...S.params, estrategia: e }, desde);
+    if (b.tmr && b.tmr.years > 2) res.push({ r, b });
   }
   if (!res.length) { out.innerHTML = '<p class="muted">No hubo instrumentos con historia suficiente.</p>'; return; }
-  const avg = f => res.reduce((s, x) => s + f(x.b), 0) / res.length;
-  const ganan = res.filter(x => x.b.cagr > x.b.cagrBh).length;
-  const menosCaida = res.filter(x => x.b.mdd > x.b.mddBh).length;
+  const avg = f => res.reduce((s, x) => s + f(x), 0) / res.length;
   const ratio = (c, d) => d < 0 ? c / -d : null;
-  res.sort((a, b) => (b.b.cagr - b.b.cagrBh) - (a.b.cagr - a.b.cagrBh));
+  const bhC = avg(x => x.b.tmr.cagrBh), bhD = avg(x => x.b.tmr.mddBh);
+  const sum = EST.map(e => {
+    const c = avg(x => x.b[e].cagr), d = avg(x => x.b[e].mdd);
+    return { e, c, d, rd: ratio(c, d), gana: res.filter(x => x.b[e].cagr > x.b[e].cagrBh).length,
+      ops: avg(x => x.b[e].trades / x.b[e].years), t: avg(x => x.b[e].tiempo) };
+  }).sort((a, b) => (b.rd ?? -9) - (a.rd ?? -9));
+  const best = {};
+  for (const x of res) best[x.r.sym] = EST.reduce((m, e) => x.b[e].cagr > x.b[m].cagr ? e : m, EST[0]);
   out.innerHTML = `
-    <div class="plan" style="margin-top:12px">
-      <div class="kv"><div class="k">Rinde promedio estrategia</div><div class="v ${cls(avg(b => b.cagr))}">${pct(avg(b => b.cagr))} <small>anual</small></div></div>
-      <div class="kv"><div class="k">Comprar y mantener</div><div class="v ${cls(avg(b => b.cagrBh))}">${pct(avg(b => b.cagrBh))} <small>anual</small></div></div>
-      <div class="kv"><div class="k">Peor caída promedio</div><div class="v">${pct(avg(b => b.mdd), 0)} <small>vs ${pct(avg(b => b.mddBh), 0)}</small></div></div>
-      <div class="kv"><div class="k">Le ganó a mantener</div><div class="v">${ganan} de ${res.length}</div></div>
-      <div class="kv"><div class="k">Con menos caída</div><div class="v">${menosCaida} de ${res.length}</div></div>
-      <div class="kv"><div class="k">Retorno / caída</div><div class="v">${fmt(ratio(avg(b => b.cagr), avg(b => b.mdd)), 2)} <small>vs ${fmt(ratio(avg(b => b.cagrBh), avg(b => b.mddBh)), 2)}</small></div></div>
-    </div>
-    <table class="simple" style="font-size:13px">
-      <tr><th>Activo</th><th>Estrategia</th><th>Mantener</th><th>Diferencia</th><th>Caída estrategia</th><th>Caída mantener</th><th>Operaciones</th></tr>
-      ${res.map(x => `<tr><td><b>${x.r.sym}</b> <span class="muted">${TAB_LABEL[x.r.tab]}</span></td>
-        <td class="${cls(x.b.cagr)}">${pct(x.b.cagr)}</td><td class="${cls(x.b.cagrBh)}">${pct(x.b.cagrBh)}</td>
-        <td class="${cls(x.b.cagr - x.b.cagrBh)}">${pct(x.b.cagr - x.b.cagrBh)}</td>
-        <td>${pct(x.b.mdd, 0)}</td><td>${pct(x.b.mddBh, 0)}</td><td>${x.b.trades}</td></tr>`).join('')}
+    <table class="simple" style="font-size:13px;margin-top:12px">
+      <tr><th>Estrategia</th><th>Rinde anual (prom.)</th><th>Peor caída (prom.)</th><th>Retorno / caída</th><th>Le ganó a mantener</th><th>Operaciones por año</th><th>Tiempo invertido</th></tr>
+      ${sum.map((x, i) => `<tr${x.e === S.params.estrategia ? ' style="background:var(--bg2,rgba(78,161,255,.08))"' : ''}><td><b>${ESTRATEGIAS[x.e]}</b>${i === 0 ? ' 🏆' : ''}${x.e === S.params.estrategia ? ' <span class="muted">(elegida)</span>' : ''}</td>
+        <td class="${cls(x.c)}">${pct(x.c)}</td><td>${pct(x.d, 0)}</td><td>${fmt(x.rd, 2)}</td>
+        <td>${x.gana} de ${res.length}</td><td>${fmt(x.ops, 1)}</td><td>${pct(x.t, 0, false)}</td></tr>`).join('')}
+      <tr><td><b>Comprar y mantener</b></td><td class="${cls(bhC)}">${pct(bhC)}</td><td>${pct(bhD, 0)}</td><td>${fmt(ratio(bhC, bhD), 2)}</td><td>—</td><td>0</td><td>100%</td></tr>
     </table>
-    <p class="note">Rendimientos anuales en dólares (CCL) de los últimos 5 años. CEDEARs incluyen dividendos; acciones argentinas, solo precio.
+    <p class="note">Ordenadas por <b>retorno / caída</b> (rinde anual ÷ peor caída): cuánto rendimiento da cada punto de caída que tuviste que aguantar. 🏆 = la mejor de las cuatro en eso. Si comprar y mantener sale mejor, ninguna estrategia le ganó en este período.</p>
+    <h3 style="margin-top:18px">Rinde anual por activo</h3>
+    <table class="simple" style="font-size:13px">
+      <tr><th>Activo</th><th>Mantener</th>${EST.map(e => `<th>${ESTRATEGIAS[e]}</th>`).join('')}</tr>
+      ${res.map(x => `<tr><td><b>${x.r.sym}</b> <span class="muted">${TAB_LABEL[x.r.tab]}</span></td>
+        <td class="${cls(x.b.tmr.cagrBh)}">${pct(x.b.tmr.cagrBh)}</td>
+        ${EST.map(e => `<td class="${cls(x.b[e].cagr)}"${best[x.r.sym] === e ? ' style="font-weight:700"' : ''}>${pct(x.b[e].cagr)}</td>`).join('')}</tr>`).join('')}
+    </table>
+    <p class="note">En negrita, la mejor estrategia para cada activo. Rendimientos anuales en dólares (CCL) de los últimos 5 años. CEDEARs incluyen dividendos; acciones argentinas, solo precio.
       Simplificaciones: se opera al cierre del día de la señal y el tiempo fuera del mercado no rinde interés.</p>`;
 }
 

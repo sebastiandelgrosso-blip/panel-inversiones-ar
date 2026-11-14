@@ -32,6 +32,8 @@ const TAB_LABEL = { acciones: 'Acción AR', cedears: 'CEDEAR', bonos: 'Bono', on
    ============================================================ */
 const PARAM_SPEC = [
   { grp: 'Análisis' },
+  { k: 'estrategia', label: 'Estrategia', type: 'select', opts: Object.entries({ tmr: 'TMR (combinada)', cruce: 'Cruce de medias', momentum: 'Momentum 12‑1', rsi2: 'Comprar caídas (RSI‑2)' }), def: 'tmr',
+    help: 'Cambia las señales de todo el panel. La pestaña Estrategia explica cada una y las compara con un backtest.' },
   { k: 'moneda', label: 'Moneda de análisis', type: 'select', opts: [['USD', 'Dólares (CCL)'], ['ARS', 'Pesos nominales']], def: 'USD',
     help: 'En pesos, la inflación distorsiona máximos y mínimos.' },
   { k: 'perfil', label: 'Perfil de riesgo', type: 'select', opts: [['conservador', 'Conservador'], ['moderado', 'Moderado'], ['agresivo', 'Agresivo']], def: 'moderado' },
@@ -53,6 +55,7 @@ const PARAM_SPEC = [
     help: 'En la prueba de 5 años el stop ajustado empeoró los resultados.' },
 ];
 const DEFAULTS = Object.fromEntries(PARAM_SPEC.filter(p => p.k).map(p => [p.k, p.def]));
+const ESTRATEGIAS = { tmr: 'TMR', cruce: 'Cruce de medias', momentum: 'Momentum 12‑1', rsi2: 'RSI‑2 (comprar caídas)' };
 const PERFILES = {
   conservador: { buy: 60, acc: 30, red: -15, sell: -40 },
   moderado: { buy: 50, acc: 20, red: -20, sell: -50 },
@@ -653,6 +656,7 @@ function bondInfo(r) {
    ============================================================ */
 // Puntaje de la estrategia TMR en la rueda i (solo usa datos hasta i)
 function scoreAt(ctx, i, withText) {
+  if (ctx.P.estrategia && ctx.P.estrategia !== 'tmr') return scoreAlt(ctx, i, withText);
   const { c, smaF, smaS, rsiA, hist, nF, nS, P } = ctx;
   const parts = [];
   const add = (txt, pts) => parts.push(withText ? { txt, pts } : { pts });
@@ -676,6 +680,37 @@ function scoreAt(ctx, i, withText) {
   return parts;
 }
 
+/* Estrategias clásicas, para comparar con TMR. Cada una da un puntaje pensado para que
+   "estar comprado" caiga en Acumular/Comprar y "estar afuera" en Reducir/Vender con cualquier perfil,
+   así el backtest y las señales siguen exactamente la regla original. */
+function scoreAlt(ctx, i, withText) {
+  const { c, smaF, smaS, nF, nS, P } = ctx;
+  const parts = [];
+  const add = (txt, pts) => parts.push(withText ? { txt, pts } : { pts });
+  const px = c[i], sF = smaF[i], sS = smaS[i];
+  if (!ok(sS) || !ok(sF)) return parts;
+  if (P.estrategia === 'cruce') {
+    // Cruce dorado / de la muerte: comprado mientras la media rápida esté sobre la lenta
+    add(sF > sS ? `Media rápida (${nF}) sobre la lenta (${nS}): estar comprado` : `Media rápida (${nF}) bajo la lenta (${nS}): estar afuera`, sF > sS ? 60 : -60);
+    add(px > sS ? 'Precio sobre la media lenta' : 'Precio bajo la media lenta', px > sS ? 20 : -20);
+  } else if (P.estrategia === 'momentum') {
+    // Momentum absoluto 12‑1 (Antonacci): comprado si subió en los últimos 12 meses, sin contar el último
+    const mom = i > 252 ? c[i - 21] / c[i - 252] - 1 : i > 126 ? c[i - 21] / c[i - 126] - 1 : null;
+    if (!ok(mom)) return parts;
+    add(mom > 0 ? `Subió ${pct(mom)} en 12 meses (sin contar el último): estar comprado` : `Bajó ${pct(mom)} en 12 meses (sin contar el último): estar afuera`, mom > 0 ? 40 : -40);
+    add(withText ? 'Fuerza del momentum' : '', Math.round(Math.max(-40, Math.min(40, mom / 0.30 * 40))));
+  } else if (P.estrategia === 'rsi2') {
+    // RSI‑2 de Larry Connors: compra caídas cortas dentro de una tendencia alcista y vende en el rebote
+    const R2 = ctx.rsi2[i], s5 = ctx.sma5[i];
+    if (!ok(R2) || !ok(s5)) return parts;
+    if (px <= sS) add(`Precio bajo la media de ${nS}: no operar (salir si estás comprado)`, -60);
+    else if (R2 < 10) add(`Caída fuerte dentro de tendencia alcista (RSI‑2 = ${fmt(R2, 0)}): comprar`, 60);
+    else if (px > s5) add(`Rebotó sobre la media de 5 ruedas (RSI‑2 = ${fmt(R2, 0)}): vender si estás comprado; si no, esperar`, -30);
+    else add(`Tendencia alcista sin caída fuerte (RSI‑2 = ${fmt(R2, 0)}): mantener si estás comprado; si no, esperar`, 0);
+  }
+  return parts;
+}
+
 /* ============================================================
    Backtest: ¿qué hubiera pasado siguiendo las señales?
    Compra al cierre cuando el puntaje llega a "Acumular" o más; vende cuando cae a "Reducir" o menos
@@ -693,7 +728,7 @@ function backtest(a, P, desdeIdx = 0) {
     for (let j = Math.max(0, i - 251); j <= i; j++) { if (c[j] > a1) a1 = c[j]; if (c[j] < b1) b1 = c[j]; }
     mx[i] = a1; mn[i] = b1;
   }
-  const ctx = { c, smaF: a.smaF, smaS: a.smaS, rsiA, hist: m.hist, nF: a.nF, nS: a.nS, P, max52: i => mx[i], min52: i => mn[i] };
+  const ctx = { c, smaF: a.smaF, smaS: a.smaS, rsiA, hist: m.hist, nF: a.nF, nS: a.nS, P, max52: i => mx[i], min52: i => mn[i], rsi2: rsi(c, 2), sma5: sma(c, 5) };
   const T = PERFILES[P.perfil] || PERFILES.moderado;
   const cost = (P.comision || 0) / 100;
   const start = Math.max(desdeIdx, a.nS + 20, 60);
@@ -777,7 +812,7 @@ function analyze(series, row, P) {
   const nearMin52 = distMin52 <= P.nearLow / 100;
 
   // ---- Puntaje (misma función que usa el backtest) ----
-  const ctx = { c, smaF, smaS, rsiA, hist: m.hist, nF, nS, P, max52: () => max52, min52: () => min52 };
+  const ctx = { c, smaF, smaS, rsiA, hist: m.hist, nF, nS, P, max52: () => max52, min52: () => min52, rsi2: rsi(c, 2), sma5: sma(c, 5) };
   const parts = scoreAt(ctx, n - 1, true);
   const score = Math.max(-100, Math.min(100, parts.reduce((a, p) => a + p.pts, 0)));
 
@@ -843,6 +878,10 @@ function analyze(series, row, P) {
     title = 'Tendencia bajista';
     acts.push(`Evitar compras nuevas. Señal de reingreso: cierre sobre la media lenta (${M(sS)}).`);
     acts.push('Si tenés posición: reducir en rebotes hacia la media rápida.');
+  }
+  if (P.estrategia && P.estrategia !== 'tmr' && parts.length) {
+    acts.unshift(`Contexto general (análisis TMR): ${title.toLowerCase()}.`);
+    title = `${ESTRATEGIAS[P.estrategia]}: ${parts[0].txt}`;
   }
   if (stopHit && trailing) acts.push(`Atención: el precio ya cayó más de ${fmt(P.atrMult, 1)}×ATR desde el máximo del último mes (${M(hi22)}): quien venía con stop móvil ya habría salido.`);
   if (cross) acts.push(cross.type === 'dorado'
@@ -1083,7 +1122,7 @@ function renderTable() {
   rows.forEach(r => { const A = an(r); if (A) { analyzed++; counts[A.signal] = (counts[A.signal] || 0) + 1; } });
   $('#summary').innerHTML = `<span>${rows.length} instrumentos${rows.length > MAX ? ` (mostrando ${MAX})` : ''} · ${analyzed} analizados</span>` +
     ['COMPRAR', 'ACUMULAR', 'MANTENER', 'REDUCIR', 'VENDER'].filter(s => counts[s]).map(s => `<span class="sig s-${s}">${s} ${counts[s]}</span>`).join('') +
-    (S.liveTime ? `<span class="spacer"></span><span>Cotizaciones: ${S.liveTime.toLocaleTimeString('es-AR')} · moneda de análisis: ${S.params.moneda === 'USD' ? 'US$ CCL' : 'pesos'}</span>` : '');
+    (S.liveTime ? `<span class="spacer"></span><span>Cotizaciones: ${S.liveTime.toLocaleTimeString('es-AR')} · estrategia: ${ESTRATEGIAS[S.params.estrategia] || 'TMR'} · moneda: ${S.params.moneda === 'USD' ? 'US$ CCL' : 'pesos'}</span>` : '');
 
   const notes = {
     acciones: 'Hacé clic en una fila para ver el análisis completo. "•" = panel líder. Los precios están en pesos; el análisis usa dólar CCL por defecto.',

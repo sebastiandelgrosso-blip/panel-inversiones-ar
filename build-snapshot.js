@@ -146,10 +146,10 @@ async function pool(items, n, fn) {
   const app = fs.readFileSync(path.join(dir, 'app.js'), 'utf8');
   const cartera = fs.readFileSync(path.join(dir, 'cartera.js'), 'utf8');
   html = html
-    .replace('<link rel="stylesheet" href="styles.css">', () => `<style>\n${css}\n</style>`)
-    .replace('<script src="app.js"></script>', () => `<script>window.SNAPSHOT=${json};</script>\n<script>\n${app}\n</script>`)
-    .replace('<script src="cartera.js"></script>', () => `<script>\n${cartera}\n</script>`)
-    .replace('<script src="extras.js"></script>', () => `<script>\n${fs.readFileSync(path.join(dir, 'extras.js'), 'utf8')}\n</script>`);
+    .replace(/<link rel="stylesheet" href="styles.css[^"]*">/, () => `<style>\n${css}\n</style>`)
+    .replace(/<script src="app.js[^"]*"><\/script>/, () => `<script>window.SNAPSHOT=${json};</script>\n<script>\n${app}\n</script>`)
+    .replace(/<script src="cartera.js[^"]*"><\/script>/, () => `<script>\n${cartera}\n</script>`)
+    .replace(/<script src="extras.js[^"]*"><\/script>/, () => `<script>\n${fs.readFileSync(path.join(dir, 'extras.js'), 'utf8')}\n</script>`);
   fs.writeFileSync(path.join(dir, 'panel-compartible.html'), html);
   console.log(`Listo: panel-compartible.html (${(html.length / 1024 / 1024).toFixed(2)} MB, ${Object.keys(urls).length} series)`);
 })();

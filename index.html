@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Panel de Inversiones AR</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261114">
 </head>
 <body>
   <header class="top">
@@ -139,6 +139,34 @@
         <a href="https://github.com/arisbdar/rendimientos-ar" target="_blank" rel="noopener">rendimientos-ar</a>, por cada 100 de valor nominal y con el precio en dólar MEP.
         Si una TIR aparece con "?", el precio probablemente esté desactualizado por poca liquidez. Las ONs no tienen análisis técnico porque la fuente no publica su histórico.</p>
 
+      <h2>Otras estrategias: las tres más usadas</h2>
+      <p>TMR mezcla tres ideas clásicas. También podés usar cada una por separado, en su versión más conocida: elegila en
+        <b>⚙ Parámetros → Estrategia</b> y todas las señales del panel pasan a seguir esa regla.</p>
+      <div class="cards">
+        <div class="card">
+          <h3>Cruce de medias</h3>
+          <p><b>Regla:</b> comprado mientras la media rápida (50 ruedas) esté sobre la lenta (200). Cuando la cruza hacia arriba es el
+            "cruce dorado" (comprar); hacia abajo, el "cruce de la muerte" (vender).</p>
+          <p class="src">La más popular entre inversores particulares y en los programas de backtest de GitHub. Evita las caídas largas, pero entra y sale tarde
+            y da señales falsas cuando el mercado va de costado.</p>
+        </div>
+        <div class="card">
+          <h3>Momentum 12‑1</h3>
+          <p><b>Regla:</b> comprado si el activo subió en los últimos 12 meses (sin contar el último mes); afuera si bajó.</p>
+          <p class="src">Momentum "absoluto" (Antonacci) basado en Jegadeesh &amp; Titman (1993). Es de las ideas con más respaldo académico y la que más usan los fondos.
+            Sufre cuando el mercado se da vuelta de golpe.</p>
+        </div>
+        <div class="card">
+          <h3>Comprar caídas (RSI‑2)</h3>
+          <p><b>Regla:</b> si el precio está sobre la media de 200, comprar cuando el RSI de 2 ruedas baja de 10 (caída fuerte de pocos días)
+            y vender cuando cierra sobre la media de 5 ruedas. Bajo la media de 200 no opera.</p>
+          <p class="src">Estrategia de Larry Connors, de las más probadas en YouTube y foros. Muchas operaciones cortas y la mayoría ganadoras,
+            pero pasa poco tiempo invertida y las comisiones pesan.</p>
+        </div>
+      </div>
+      <p>Con estas tres el perfil de riesgo casi no cambia nada: las señales son "estar comprado" (Acumular o Comprar) o "estar afuera" (Reducir o Vender).
+        El detalle de cada activo igual muestra el contexto de TMR, con zona de precio, stop y objetivo.</p>
+
       <p class="disclaimer">Herramienta educativa y de análisis técnico. No es asesoramiento financiero personalizado. Los rendimientos pasados no garantizan resultados futuros. Verificá precios en tu broker antes de operar.</p>
     </section>
   </main>
@@ -157,8 +185,8 @@
 
   <footer>Datos: data912.com (BYMA, demorados), argentinadatos.com (CCL histórico), dolarapi.com. Uso educativo, no es recomendación de inversión.</footer>
 
-  <script src="app.js"></script>
-  <script src="cartera.js"></script>
-  <script src="extras.js"></script>
+  <script src="app.js?v=20261114"></script>
+  <script src="cartera.js?v=20261114"></script>
+  <script src="extras.js?v=20261114"></script>
 </body>
 </html>
