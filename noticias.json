@@ -1,12 +1,20 @@
 {
- "actualizado": "2026-11-14T23:36:10.911Z",
+ "actualizado": "2026-11-15T01:18:01.954Z",
  "items": [
   {
-   "t": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy",
-   "link": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-14T23:21:21.000Z",
+   "t": "Argentina volvió a quedar en el segundo puesto de países con mayor inflación de Latinoamérica",
+   "link": "https://www.ambito.com/economia/argentina-volvio-quedar-el-segundo-puesto-paises-mayor-inflacion-latinoamerica-n6345351",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-15T01:03:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Nuevos resultados de un relevamiento que cuestionó Milei: dos de cada tres argentinos agotan sus ingresos al 20 de cada mes",
+   "link": "https://www.infobae.com/economia/2026/11/15/nuevos-resultados-de-un-relevamiento-que-cuestiono-milei-dos-de-cada-tres-argentinos-agotan-sus-ingresos-el-20-de-cada-mes/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-15T00:56:04.000Z",
    "tags": []
   },
   {
@@ -14,7 +22,7 @@
    "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-sabado-14-noviembre-n6345200",
    "src": "Ámbito",
    "region": "AR",
-   "fecha": "2026-11-14T23:16:00.000Z",
+   "fecha": "2026-11-15T00:46:00.000Z",
    "tags": []
   },
   {
@@ -22,7 +30,23 @@
    "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-sabado-14-noviembre-n6345199",
    "src": "Ámbito",
    "region": "AR",
-   "fecha": "2026-11-14T23:16:00.000Z",
+   "fecha": "2026-11-15T00:46:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "SpaceX successfully catches Starship rocket in huge milestone for the space industry",
+   "link": "https://www.marketwatch.com/story/spacex-successfully-catches-starship-rocket-in-huge-milestone-for-the-space-industry-f42c136c?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-15T00:33:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy",
+   "link": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-14T23:21:21.000Z",
    "tags": []
   },
   {
@@ -240,14 +264,6 @@
   {
    "t": "Retirees should be big beneficiaries of the midterms: ‘Democrats will hold every gavel that matters for aging and public policy’",
    "link": "https://www.marketwatch.com/story/retirees-should-be-big-beneficiaries-of-the-midterms-democrats-will-hold-every-gavel-that-matters-for-aging-and-public-policy-71e966f0?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-14T17:50:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "The lonely labor of caregiving: ‘You shouldn’t have to be rich to take care of the people you love’",
-   "link": "https://www.marketwatch.com/story/if-you-could-change-one-thing-about-caregiving-what-would-it-be-8b20be29?mod=mw_rss_topstories",
    "src": "MarketWatch",
    "region": "US",
    "fecha": "2026-11-14T17:50:00.000Z",
@@ -1247,27 +1263,6 @@
    "region": "AR",
    "fecha": "2026-11-13T18:33:00.000Z",
    "tags": []
-  },
-  {
-   "t": "Las acciones argentinas rebotaron hasta casi 9% en Wall Street, mientras que el riesgo país cerró la semana en 830 puntos",
-   "link": "https://www.lanacion.com.ar/economia/las-acciones-argentinas-rebotan-hasta-9-en-wall-street-mientras-que-el-riesgo-pais-cierra-la-semana-nid13112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-13T18:31:52.000Z",
-   "tags": [
-    "SPY",
-    "BONOS"
-   ]
-  },
-  {
-   "t": "La bomba que podría frenar a Nvidia y la pregunta que inquieta a Silicon Valley",
-   "link": "https://www.lanacion.com.ar/tecnologia/la-bomba-que-podria-frenar-a-nvidia-y-la-pregunta-que-inquieta-a-silicon-valley-nid13112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-13T17:59:14.000Z",
-   "tags": [
-    "NVDA"
-   ]
   }
  ]
 }
