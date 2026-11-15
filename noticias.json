@@ -1,6 +1,190 @@
 {
- "actualizado": "2026-11-15T01:18:01.954Z",
+ "actualizado": "2026-11-15T08:25:53.592Z",
  "items": [
+  {
+   "t": "Megaspeed says Alice Huang left in 2025 as it launches internal probe into reports about its business",
+   "link": "https://www.cnbc.com/2026/11/15/megaspeed-alice-huang-probe-nvidia-scandal.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-15T08:22:21.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar blue hoy: a cuánto opera este domingo 15 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-domingo-15-noviembre-n6345364",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-15T08:18:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar hoy: a cuánto cotiza este domingo 15 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-domingo-15-noviembre-n6345363",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-15T08:18:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Could Budapest be the next digital nomad hotspot?",
+   "link": "https://www.cnbc.com/2026/11/15/budapest-europes-next-digital-nomad-hotspot.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-15T06:00:01.000Z",
+   "tags": []
+  },
+  {
+   "t": "A Milei no le sobra nada para la reelección: cuida la estabilidad cambiaria y se juega a un rebote de la actividad",
+   "link": "https://www.infobae.com/economia/2026/11/15/a-milei-no-le-sobra-nada-para-la-reeleccion-cuida-la-estabilidad-cambiaria-y-se-juega-a-un-rebote-de-la-actividad/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-15T04:09:37.000Z",
+   "tags": []
+  },
+  {
+   "t": "Por qué se compran cada vez más alimentos por internet: la estrategia de las apps",
+   "link": "https://www.infobae.com/economia/2026/11/15/por-que-se-compran-cada-vez-mas-alimentos-por-internet-la-estrategia-de-las-apps/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-15T04:08:50.000Z",
+   "tags": []
+  },
+  {
+   "t": "La historia del desarrollo nuclear argentino: del anuncio de la fusión en la Patagonia a un posible canje por Malvinas y el status actual",
+   "link": "https://www.infobae.com/economia/2026/11/15/la-historia-del-desarrollo-nuclear-argentino-del-anuncio-de-la-fusion-en-la-patagonia-a-un-posible-canje-por-malvinas-y-el-status-actual/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-15T04:08:25.000Z",
+   "tags": []
+  },
+  {
+   "t": "Marcela Cristini, economista de FIEL: “Parte del saldo comercial tendrá como destino el pago de la deuda externa”",
+   "link": "https://www.infobae.com/economia/2026/11/15/marcela-cristini-economista-de-fiel-parte-del-saldo-comercial-tendra-como-destino-el-pago-de-la-deuda-externa/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-15T04:07:55.000Z",
+   "tags": []
+  },
+  {
+   "t": "El mercado de futuros sobreestimó la devaluación oficial en 29 de los últimos 35 meses",
+   "link": "https://www.infobae.com/opinion/2026/11/15/el-mercado-de-futuros-sobreestimo-la-devaluacion-oficial-en-29-de-los-ultimos-35-meses/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-15T04:07:34.000Z",
+   "tags": []
+  },
+  {
+   "t": "Shocks externos",
+   "link": "https://www.infobae.com/opinion/2026/11/15/shocks-externos/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-15T04:07:18.000Z",
+   "tags": []
+  },
+  {
+   "t": "La coyuntura ante el año electoral",
+   "link": "https://www.infobae.com/opinion/2026/11/15/la-coyuntura-ante-el-ano-electoral/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-15T04:07:01.000Z",
+   "tags": []
+  },
+  {
+   "t": "El Gobierno eliminó el pago adicional de 30% al uso del GNC en los colectivos y reavivó la guerra por los subsidios",
+   "link": "https://www.lanacion.com.ar/economia/el-gobierno-elimino-el-pago-adicional-de-30-al-uso-del-gnc-en-los-colectivos-y-reavivo-la-guerra-por-nid15112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-15T04:00:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "¿Y si la batalla de la IA no la gana nadie?",
+   "link": "https://www.lanacion.com.ar/economia/y-si-la-batalla-de-la-ia-no-la-gana-nadie-nid15112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-15T03:01:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Finanzas: dos datos de inflación ponen en alerta a los inversores",
+   "link": "https://www.lanacion.com.ar/economia/finanzas-dos-datos-de-inflacion-ponen-en-alerta-a-los-inversores-nid15112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-15T03:01:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Fausto Spotorno: “La economía está saliendo de la recesión, pero este año se crecerá menos de 1%, casi de casualidad”",
+   "link": "https://www.lanacion.com.ar/economia/fausto-spotorno-la-economia-esta-saliendo-de-la-recesion-pero-este-ano-se-crecera-menos-de-1-casi-de-nid15112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-15T03:01:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "El contexto externo no es el responsable del estancamiento",
+   "link": "https://www.lanacion.com.ar/economia/el-contexto-externo-no-es-el-responsable-del-estancamiento-nid15112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-15T03:01:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Los 15 casos más innovadores del año",
+   "link": "https://www.lanacion.com.ar/economia/los-15-casos-mas-innovadores-del-ano-nid15112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-15T03:01:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy",
+   "link": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-15T02:53:59.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar blue hoy: a cuánto opera este sábado 14 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-sabado-14-noviembre-n6345200",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-15T02:47:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar hoy: a cuánto cotiza este sábado 14 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-sabado-14-noviembre-n6345199",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-15T02:47:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Exportaciones: en lo que va del 2026, el petróleo destronó a la soja como principal producto",
+   "link": "https://www.ambito.com/economia/exportaciones-lo-que-va-del-2026-el-petroleo-destrono-la-soja-como-principal-producto-n6345334",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-15T01:39:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Un importante empresario del agro compró 10.000 hectáreas en una zona con condiciones excepcionales",
+   "link": "https://www.lanacion.com.ar/economia/campo/un-importante-empresario-del-agro-compro-10000-hectareas-en-una-zona-con-condiciones-excepcionales-nid14112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-15T01:21:35.000Z",
+   "tags": []
+  },
+  {
+   "t": "Una batalla inédita. Cuatro economistas ya están en carrera por la presidencia",
+   "link": "https://www.lanacion.com.ar/economia/una-batalla-inedita-cuatro-economistas-ya-estan-en-carrera-por-la-presidencia-nid14112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-15T01:16:31.000Z",
+   "tags": []
+  },
   {
    "t": "Argentina volvió a quedar en el segundo puesto de países con mayor inflación de Latinoamérica",
    "link": "https://www.ambito.com/economia/argentina-volvio-quedar-el-segundo-puesto-paises-mayor-inflacion-latinoamerica-n6345351",
@@ -18,35 +202,11 @@
    "tags": []
   },
   {
-   "t": "Dólar blue hoy: a cuánto opera este sábado 14 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-sabado-14-noviembre-n6345200",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-15T00:46:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar hoy: a cuánto cotiza este sábado 14 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-sabado-14-noviembre-n6345199",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-15T00:46:00.000Z",
-   "tags": []
-  },
-  {
    "t": "SpaceX successfully catches Starship rocket in huge milestone for the space industry",
    "link": "https://www.marketwatch.com/story/spacex-successfully-catches-starship-rocket-in-huge-milestone-for-the-space-industry-f42c136c?mod=mw_rss_topstories",
    "src": "MarketWatch",
    "region": "US",
    "fecha": "2026-11-15T00:33:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Nationwide ground stop followed contractor upgrade to L3Harris telecommunication system: DOT’s Duffy",
-   "link": "https://www.cnbc.com/2026/11/14/faa-ground-stop-flights-resume-delays.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-14T23:21:21.000Z",
    "tags": []
   },
   {
@@ -175,14 +335,6 @@
    "src": "MarketWatch",
    "region": "US",
    "fecha": "2026-11-14T19:30:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Un importante empresario del agro compró 10.000 hectáreas en una zona con condiciones excepcionales",
-   "link": "https://www.lanacion.com.ar/economia/campo/un-importante-empresario-del-agro-compro-10000-hectareas-en-una-zona-con-condiciones-excepcionales-nid14112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-14T19:12:01.000Z",
    "tags": []
   },
   {
@@ -1007,14 +1159,6 @@
    ]
   },
   {
-   "t": "Supreme Court agrees to hear Robinhood challenge to IPO information omission lawsuit",
-   "link": "https://www.cnbc.com/2026/11/13/robinhood-supreme-court-ipo-lawsuit.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-13T20:48:13.000Z",
-   "tags": []
-  },
-  {
    "t": "Los depósitos en dólares del Gobierno en el BCRA tocaron un piso, pero la entidad sigue comprando reservas",
    "link": "https://www.lanacion.com.ar/economia/los-depositos-en-dolares-del-gobierno-en-el-bcra-tocaron-un-piso-pero-la-entidad-sigue-comprando-nid13112026/",
    "src": "La Nación",
@@ -1112,156 +1256,6 @@
    "src": "Infobae",
    "region": "AR",
    "fecha": "2026-11-13T19:36:31.000Z",
-   "tags": []
-  },
-  {
-   "t": "Anthropic, rival de OpenAI, promete hacer historia con su salida a bolsa en Wall Street",
-   "link": "https://www.iprofesional.com/finanzas/469077-anthropic-rival-de-openai-promete-hacer-historia-con-su-salida-a-bolsa-en-wall-street",
-   "src": "iProfesional",
-   "region": "AR",
-   "fecha": "2026-11-13T19:35:00.000Z",
-   "tags": [
-    "SPY"
-   ]
-  },
-  {
-   "t": "El dólar blue anotó su mayor suba semanal en cuatro meses y cerró en máximos nominales",
-   "link": "https://www.ambito.com/finanzas/el-dolar-blue-anoto-su-mayor-suba-semanal-cuatro-meses-y-cerro-maximos-nominales-n6345069",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-13T19:34:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "A trading strategy to ride out the Nvidia uncertainty and generate income in the process",
-   "link": "https://www.cnbc.com/2026/11/13/a-trading-strategy-to-ride-out-the-nvidia-uncertainty-and-generate-income-in-the-process.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-13T19:30:36.000Z",
-   "tags": [
-    "NVDA"
-   ]
-  },
-  {
-   "t": "Los salarios registrados crecieron 1,9% en septiembre y empataron con la inflación",
-   "link": "https://www.lanacion.com.ar/economia/los-salarios-registrados-crecieron-19-en-septiembre-y-empataron-con-la-inflacion-nid13112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-13T19:21:38.000Z",
-   "tags": []
-  },
-  {
-   "t": "Invierten US$ 55 millones para la reapertura de un hotel en el Caribe: “Lo fácil era tirarlo abajo y hacer un desarrollo eficiente, pero perdía la identidad”",
-   "link": "https://www.lanacion.com.ar/economia/negocios/invierten-us-55-millones-para-la-reapertura-de-un-hotel-en-el-caribe-lo-facil-era-tirarlo-abajo-y-nid13112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-13T19:21:15.000Z",
-   "tags": []
-  },
-  {
-   "t": "Industria: el uso de capacidad instalada cruzó el 60% por primera vez en 2026, aunque tuvo una caída anual",
-   "link": "https://www.ambito.com/industria-el-uso-capacidad-instalada-cruzo-el-60-primera-vez-2026-aunque-tuvo-una-caida-anual-n6345064",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-13T19:21:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar hoy y dólar blue, EN VIVO: a cuánto cotizan el oficial y el paralelo este viernes 13 de noviembre, minuto a minuto",
-   "link": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-en-vivo-a-cuanto-cotizan-el-oficial-y-el-paralelo-este-viernes-13-de-nid13112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-13T19:20:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Los salarios privados registrados le empataron a la inflación en septiembre, pero los públicos volvieron a perder",
-   "link": "https://www.ambito.com/economia/los-salarios-privados-registrados-le-empataron-la-inflacion-septiembre-pero-los-publicos-volvieron-perder-n6345076",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-13T19:16:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar blue hoy: a cuánto cerró este viernes 13 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-cerro-este-viernes-13-noviembre-n6345066",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-13T19:07:51.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar hoy: a cuánto cerró este viernes 13 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cerro-este-viernes-13-noviembre-n6345065",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-13T19:07:43.000Z",
-   "tags": []
-  },
-  {
-   "t": "Retirees sometimes tap savings for one-off expenses. Here’s what advisors say to consider first",
-   "link": "https://www.cnbc.com/2026/11/13/retirement-401k-ira-withdrawal-taxes.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-13T19:01:12.000Z",
-   "tags": []
-  },
-  {
-   "t": "Visec: fuerte reclamo de consignatarios por demoras en la plataforma de trazabilidad para exportar carne a Europa",
-   "link": "https://www.lanacion.com.ar/economia/campo/visec-fuerte-reclamo-de-consignatarios-por-demoras-en-la-plataforma-de-trazabilidad-para-exportar-nid13112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-13T18:51:40.000Z",
-   "tags": []
-  },
-  {
-   "t": "Una nueva pick-up podría llegar a la Argentina: qué modelo es y qué novedades ofrece",
-   "link": "https://www.infobae.com/economia/2026/11/13/una-nueva-pick-up-podria-llegar-a-la-argentina-que-modelo-es-y-que-novedades-ofrece/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-13T18:43:53.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar blue hoy: a cuánto opera este viernes 13 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-viernes-13-noviembre-n6344748",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-13T18:40:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar hoy: a cuánto cotiza este viernes 13 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-13-noviembre-n6344747",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-13T18:40:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Wall Street anticipa balances flojos para bancos argentinos y recomienda una sola acción",
-   "link": "https://www.iprofesional.com/finanzas/468851-wall-street-recomienda-una-sola-accion-entre-los-bancos-argentinos",
-   "src": "iProfesional",
-   "region": "AR",
-   "fecha": "2026-11-13T18:40:00.000Z",
-   "tags": [
-    "SPY"
-   ]
-  },
-  {
-   "t": "Remate especial en el Mercado Agroganadero de Cañuelas",
-   "link": "https://www.lanacion.com.ar/economia/campo/ganaderia/remate-especial-en-el-mercado-agroganadero-de-canuelas-nid13112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-13T18:38:50.000Z",
-   "tags": []
-  },
-  {
-   "t": "Generación sin casa propia: se sumaron 600.000 hogares inquilinos en la última década",
-   "link": "https://www.ambito.com/economia/generacion-casa-propia-se-sumaron-600000-hogares-inquilinos-la-ultima-decada-n6345015",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-13T18:33:00.000Z",
    "tags": []
   }
  ]
