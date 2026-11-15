@@ -1,6 +1,64 @@
 {
- "actualizado": "2026-11-15T15:51:35.608Z",
+ "actualizado": "2026-11-15T17:13:27.701Z",
  "items": [
+  {
+   "t": "Trump breaks silence about FAA nationwide ground stop, blames Biden administration",
+   "link": "https://www.cnbc.com/2026/11/15/trump-breaks-silence-on-faa-nationwide-ground-stop-blames-biden-.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-15T16:56:40.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar hoy: a cuánto cotiza este domingo 15 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-domingo-15-noviembre-n6345363",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-15T16:50:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar blue hoy: a cuánto opera este domingo 15 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-domingo-15-noviembre-n6345364",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-15T16:50:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Bessent calls for ‘dramatic shakeup’ at Nvidia, urges outside CEO",
+   "link": "https://www.cnbc.com/2026/11/15/bessent-nvidia-ceo-lutnick-megaspeed.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-15T16:49:11.000Z",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "t": "De la Patagonia a San Pablo: empieza a tomar forma el proyecto de exportar gas de Vaca Muerta a Brasil",
+   "link": "https://www.infobae.com/economia/2026/11/15/de-la-patagonia-a-san-pablo-empieza-a-tomar-forma-el-proyecto-de-exportar-gas-de-vaca-muerta-a-brasil/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-15T16:34:04.000Z",
+   "tags": []
+  },
+  {
+   "t": "Bitcoin llegó a perforar los u$s63.000 pero logró un leve rebote: qué hay detrás de la fuerte caída",
+   "link": "https://www.ambito.com/finanzas/bitcoin-se-desploma-minimos-cuatro-meses-y-llego-perforar-los-us63000-que-hay-detras-la-fuerte-caida-n6345421",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-15T16:07:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "‘We had the worst fight’: I want my husband to retire at 65, but I don’t want to lose his $280,000 salary. Is that unreasonable?",
+   "link": "https://www.marketwatch.com/story/we-had-the-worst-fight-weve-ever-had-i-want-my-husband-to-retire-at-65-but-i-dont-want-to-lose-his-280-000-salary-48511469?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-15T16:00:00.000Z",
+   "tags": []
+  },
   {
    "t": "Menos ventas, más stock: la demora en definir el cupo de autos híbridos y eléctricos generó 4 meses de colchón a las automotrices",
    "link": "https://www.infobae.com/economia/2026/11/15/menos-ventas-mas-stock-la-demora-en-definir-el-cupo-de-autos-hibridos-y-electricos-genero-4-meses-de-colchon-a-las-automotrices/",
@@ -42,22 +100,6 @@
    "tags": [
     "SPY"
    ]
-  },
-  {
-   "t": "Dólar hoy: a cuánto cotiza este domingo 15 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-domingo-15-noviembre-n6345363",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-15T15:20:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar blue hoy: a cuánto opera este domingo 15 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-domingo-15-noviembre-n6345364",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-15T15:20:00.000Z",
-   "tags": []
   },
   {
    "t": "‘I’m sick of flying’: I paid for priority boarding, but the overhead bins were full. Was I duped?",
@@ -465,14 +507,6 @@
    "tags": []
   },
   {
-   "t": "Megaspeed says Alice Huang left in 2025 as it launches internal probe into reports about its business",
-   "link": "https://www.cnbc.com/2026/11/15/megaspeed-alice-huang-probe-nvidia-scandal.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-15T08:34:46.000Z",
-   "tags": []
-  },
-  {
    "t": "Could Budapest be the next digital nomad hotspot?",
    "link": "https://www.cnbc.com/2026/11/15/budapest-europes-next-digital-nomad-hotspot.html",
    "src": "CNBC",
@@ -553,16 +587,16 @@
    "tags": []
   },
   {
-   "t": "Fausto Spotorno: “La economía está saliendo de la recesión, pero este año se crecerá menos de 1%, casi de casualidad”",
-   "link": "https://www.lanacion.com.ar/economia/fausto-spotorno-la-economia-esta-saliendo-de-la-recesion-pero-este-ano-se-crecera-menos-de-1-casi-de-nid15112026/",
+   "t": "El contexto externo no es el responsable del estancamiento",
+   "link": "https://www.lanacion.com.ar/economia/el-contexto-externo-no-es-el-responsable-del-estancamiento-nid15112026/",
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-15T03:01:00.000Z",
    "tags": []
   },
   {
-   "t": "El contexto externo no es el responsable del estancamiento",
-   "link": "https://www.lanacion.com.ar/economia/el-contexto-externo-no-es-el-responsable-del-estancamiento-nid15112026/",
+   "t": "Fausto Spotorno: “La economía está saliendo de la recesión, pero este año se crecerá menos de 1%, casi de casualidad”",
+   "link": "https://www.lanacion.com.ar/economia/fausto-spotorno-la-economia-esta-saliendo-de-la-recesion-pero-este-ano-se-crecera-menos-de-1-casi-de-nid15112026/",
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-15T03:01:00.000Z",
@@ -638,14 +672,6 @@
    "src": "Infobae",
    "region": "AR",
    "fecha": "2026-11-15T00:56:04.000Z",
-   "tags": []
-  },
-  {
-   "t": "SpaceX successfully catches Starship rocket in huge milestone for the space industry",
-   "link": "https://www.marketwatch.com/story/spacex-successfully-catches-starship-rocket-in-huge-milestone-for-the-space-industry-f42c136c?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-15T00:33:00.000Z",
    "tags": []
   },
   {
@@ -777,6 +803,16 @@
    "region": "AR",
    "fecha": "2026-11-14T18:10:39.000Z",
    "tags": []
+  },
+  {
+   "t": "Nvidia board urged to consider 'potential return of Jensen Huang' by two major investors",
+   "link": "https://www.cnbc.com/2026/11/14/nvidia-investors-jensen-huang-return-board-letter.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-14T17:46:06.000Z",
+   "tags": [
+    "NVDA"
+   ]
   },
   {
    "t": "La baja del precio del oro le restó más de USD 1.800 millones a las reservas del Banco Central desde su máximo del año",
@@ -1203,38 +1239,6 @@
    "src": "iProfesional",
    "region": "AR",
    "fecha": "2026-11-13T23:21:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "El dólar oficial retrocedió sobre el cierre de la jornada y anotó su primera baja semanal en un mes",
-   "link": "https://www.ambito.com/finanzas/el-dolar-encara-el-cierre-la-semana-corta-un-leve-repunte-el-tramo-mayorista-n6344803",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-13T23:18:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Contraste: cayó un 11,2% el consumo de carne vacuna y, por primera vez en la historia, la exportación se llevó el 31,1% de la producción",
-   "link": "https://www.lanacion.com.ar/economia/campo/contraste-cayo-un-112-el-consumo-de-carne-vacuna-y-por-primera-vez-en-la-historia-la-exportacion-se-nid13112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-13T23:15:58.000Z",
-   "tags": []
-  },
-  {
-   "t": "Deuda: el Tesoro lanzó un nuevo canje de letras dólar linked para postergar vencimientos a enero de 2027",
-   "link": "https://www.ambito.com/finanzas/deuda-el-tesoro-lanzo-un-nuevo-canje-letras-dolar-linked-postergar-vencimientos-enero-2027-n6345166",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-13T23:13:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "La demanda de pesos que sigue el BCRA cayó en octubre, pero hubo señales positivas: ¿arranca la remonetización?",
-   "link": "https://www.ambito.com/economia/la-demanda-pesos-que-sigue-el-bcra-cayo-octubre-pero-hubo-senales-positivas-arranca-la-remonetizacion-n6345059",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-13T23:13:00.000Z",
    "tags": []
   }
  ]
