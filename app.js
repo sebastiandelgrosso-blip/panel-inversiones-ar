@@ -842,7 +842,11 @@ function analyze(series, row, P) {
   const score = Math.max(-100, Math.min(100, parts.reduce((a, p) => a + p.pts, 0)));
 
   const T = PERFILES[P.perfil] || PERFILES.moderado;
-  const signal = score >= T.buy ? 'COMPRAR' : score >= T.acc ? 'ACUMULAR' : score > T.red ? 'MANTENER' : score > T.sell ? 'REDUCIR' : 'VENDER';
+  const sigOf = sc => sc >= T.buy ? 'COMPRAR' : sc >= T.acc ? 'ACUMULAR' : sc > T.red ? 'MANTENER' : sc > T.sell ? 'REDUCIR' : 'VENDER';
+  const signal = sigOf(score);
+  // Señal al cierre de la rueda anterior (para mostrar qué cambió)
+  const partsPrev = n > 3 ? scoreAt(ctx, n - 2, false) : [];
+  const prevSignal = partsPrev.length ? sigOf(Math.max(-100, Math.min(100, partsPrev.reduce((s, p) => s + p.pts, 0)))) : null;
 
   // ---- Zona de precio ----
   const zone = nearATH ? 'En máximo histórico' : nearMax52 ? 'Cerca del máx. 52s'
@@ -933,7 +937,7 @@ function analyze(series, row, P) {
     px, sF, sS, R, H, ATR, ath, athD: rows[athI].d, atl, atlD: rows[atlI].d, max52, min52,
     distATH, distMax52, distMin52, pos52: max52 > min52 ? (px - min52) / (max52 - min52) : 0.5,
     r1m: ret(21), r3m: ret(63), r6m: ret(126), r12m: ret(252), ytd: ytd(rows), mom, vol, mdd, up, cross,
-    score, signal, parts, zone, title, acts, stop, stopPct, target, targetTxt, rr, size, entryLo, entryHi,
+    score, signal, prevSignal, parts, zone, title, acts, stop, stopPct, target, targetTxt, rr, size, entryLo, entryHi,
   };
 }
 
@@ -1046,6 +1050,7 @@ const COLS = [
   { k: 'tipo', t: 'Tipo', l: true, onlyFav: true, sort: r => r.tab },
   { k: 'c', t: 'Último', sort: r => r.c },
   { k: 'chg', t: 'Var. día', sort: r => r.chg },
+  { k: 'spark', t: '3 meses', sort: r => an(r)?.r3m ?? -9 },
   { k: 'usd', t: 'US$ (CCL)', sort: r => usdPx(r) },
   { k: 'monto', t: 'Monto op.', sort: r => r.monto },
   { k: 'tir', t: 'TIR', onlyBonos: true, sort: r => bondInfo(r)?.tir ?? -9 },
@@ -1098,14 +1103,29 @@ function sigOk(r, sig) {
   return a && a.signal === sig;
 }
 
+// Mini gráfico de los últimos 3 meses (63 ruedas)
+function sparkSVG(a, w = 84, h = 24) {
+  if (!a || !a.rows || a.rows.length < 5) return '';
+  const k = w + 'x' + h;
+  if (a._sp && a._sp.k === k) return a._sp.svg;
+  const c = a.rows.slice(-64).map(r => r.c);
+  const mn = Math.min(...c), mx = Math.max(...c), rg = mx - mn || 1;
+  const pts = c.map((v, i) => (i / (c.length - 1) * (w - 2) + 1).toFixed(1) + ',' + (h - 2 - (v - mn) / rg * (h - 4)).toFixed(1)).join(' ');
+  const col = c[c.length - 1] >= c[0] ? 'var(--up)' : 'var(--down)';
+  const svg = `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" aria-hidden="true"><polyline points="${pts}" fill="none" stroke="${col}" stroke-width="1.5" stroke-linejoin="round"/></svg>`;
+  a._sp = { k, svg };
+  return svg;
+}
+
 function renderTable() {
+  if (S.tab === 'resumen') { if (typeof renderResumenSoon === 'function') renderResumenSoon(); return; }
   if (S.tab === 'estrategia') return;
   const fixedIncome = S.tab === 'bonos' || S.tab === 'ons';
   const cols = COLS.filter(c => (!c.onlyFav || S.tab === 'favoritos')
     && (!c.onlyBonos || (c.onlyBonos === true ? fixedIncome : S.tab === c.onlyBonos))
-    && !(S.tab === 'ons' && ['signal', 'score', 'zone', 'ath', 'r52', 'rsi', 'r3m', 'r12m', 'vol'].includes(c.k)));
+    && !(S.tab === 'ons' && ['spark', 'signal', 'score', 'zone', 'ath', 'r52', 'rsi', 'r3m', 'r12m', 'vol'].includes(c.k)));
   $('#tbl thead').innerHTML = '<tr>' + cols.map(c =>
-    `<th data-k="${c.k}" class="${c.l ? 'l' : ''} ${S.sort.k === c.k ? 'sorted' : ''}">${c.t}${S.sort.k === c.k ? (S.sort.dir > 0 ? ' ▲' : ' ▼') : ''}</th>`).join('') + '</tr>';
+    `<th data-k="${c.k}" class="${c.l ? 'l' : ''} c-${c.k} ${S.sort.k === c.k ? 'sorted' : ''}">${c.t}${S.sort.k === c.k ? (S.sort.dir > 0 ? ' ▲' : ' ▼') : ''}</th>`).join('') + '</tr>';
   const rows = visibleRows();
   const MAX = 400;
   const html = rows.slice(0, MAX).map(r => {
@@ -1125,6 +1145,7 @@ function renderTable() {
       tipo: TAB_LABEL[r.tab],
       c: (cur === 'USD' ? 'US$ ' : '') + fmt(r.c),
       chg: `<span class="${cls(r.chg)}">${pct(r.chg, 2)}</span>`,
+      spark: A ? sparkSVG(A) : '',
       usd: fmt(usdPx(r)),
       monto: compact(r.monto),
       signal: a?.err ? `<span class="sig s-ERR" title="${esc(a.err)}">${r.tab === 'ons' ? 'sin histórico' : esc(a.err)}</span>` : A ? `<span class="sig s-${A.signal}">${A.signal}</span>` : '<span class="muted">—</span>',
@@ -1137,7 +1158,7 @@ function renderTable() {
       r12m: A ? `<span class="${cls(A.r12m)}">${pct(A.r12m, 0)}</span>` : '',
       vol: A ? pct(A.vol, 0, false) : '',
     };
-    return `<tr data-key="${esc(key)}">` + cols.map(c => `<td class="${c.l ? 'l' : ''}">${cell[c.k]}</td>`).join('') + '</tr>';
+    return `<tr data-key="${esc(key)}">` + cols.map(c => `<td class="${c.l ? 'l' : ''} c-${c.k}">${cell[c.k]}</td>`).join('') + '</tr>';
   }).join('');
   $('#tbl tbody').innerHTML = html || `<tr><td class="l muted" colspan="${cols.length}">${S.tab === 'favoritos' ? 'Todavía no marcaste favoritos (★).' : 'Sin resultados.'}</td></tr>`;
 
@@ -1157,6 +1178,8 @@ function renderTable() {
     favoritos: 'Tus instrumentos marcados con ★ (se guardan en este navegador).',
   };
   $('#tabNote').textContent = notes[S.tab] || '';
+  const ss = $('#sortSel');
+  if (ss) ss.value = [...ss.options].some(o => o.value === S.sort.k) ? S.sort.k : '';
 }
 
 /* ============================================================
@@ -1491,11 +1514,13 @@ function onParamChange() {
 async function setTab(tab) {
   S.tab = tab;
   document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
-  const strat = tab === 'estrategia', cart = tab === 'cartera', seg = tab === 'seguir';
+  const strat = tab === 'estrategia', cart = tab === 'cartera', seg = tab === 'seguir', res = tab === 'resumen';
+  $('#viewResumen').hidden = !res;
   $('#viewStrategy').hidden = !strat;
   $('#viewCartera').hidden = !cart;
   $('#viewSeguir').hidden = !seg;
-  $('#viewTable').hidden = strat || cart || seg;
+  $('#viewTable').hidden = strat || cart || seg || res;
+  if (res) return renderResumen();
   if (cart) return renderCartera();
   if (seg) return renderSeguir();
   if (strat) return;
@@ -1569,6 +1594,10 @@ function bind() {
   $('#btnReset').addEventListener('click', () => { S.params = { ...DEFAULTS }; renderParams(); onParamChange(); });
 
   $('#btnRefresh').addEventListener('click', () => refreshAll());
+  $('#sortSel').addEventListener('change', e => {
+    const k = e.target.value;
+    if (k) { S.sort = { k, dir: k === 'sym' ? 1 : -1 }; renderTable(); }
+  });
 }
 
 // Vuelve a traer cotizaciones y recalcula lo analizado (usa el histórico en memoria)
@@ -1618,6 +1647,6 @@ async function init() {
       renderTable();
     })
     .catch(() => { });
-  await setTab('acciones'); // analiza sola toda la pestaña (ver autoAnalyze)
+  await setTab('resumen'); // el resumen carga y analiza acciones y CEDEARs en segundo plano
   if (typeof afterInit === 'function') afterInit();
 }

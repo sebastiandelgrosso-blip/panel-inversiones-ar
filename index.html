@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Panel de Inversiones AR</title>
-  <link rel="stylesheet" href="styles.css?v=20261114d">
+  <link rel="stylesheet" href="styles.css?v=20261116c">
 </head>
 <body>
   <header class="top">
@@ -18,7 +18,8 @@
   </header>
 
   <nav class="tabs" id="tabs">
-    <button data-tab="acciones" class="active">Acciones AR</button>
+    <button data-tab="resumen" class="active">Resumen</button>
+    <button data-tab="acciones">Acciones AR</button>
     <button data-tab="cedears">CEDEARs</button>
     <button data-tab="bonos">Bonos</button>
     <button data-tab="ons">ONs</button>
@@ -29,7 +30,8 @@
   </nav>
 
   <main>
-    <section id="viewTable">
+    <section id="viewResumen"></section>
+    <section id="viewTable" hidden>
       <div class="tmain">
       <div class="toolbar">
         <input id="q" type="search" placeholder="Buscar ticker…" autocomplete="off">
@@ -41,6 +43,15 @@
           <option value="REDUCIR">Reducir</option>
           <option value="VENDER">Vender / evitar</option>
           <option value="__sin">Sin analizar</option>
+        </select>
+        <select id="sortSel" title="Ordenar">
+          <option value="">Ordenar por…</option>
+          <option value="monto">Más operadas</option>
+          <option value="chg">Variación del día</option>
+          <option value="score">Puntaje</option>
+          <option value="spark">Rendimiento 3 meses</option>
+          <option value="tir">TIR</option>
+          <option value="sym">Ticker (A-Z)</option>
         </select>
         <label id="lblLider"><input type="checkbox" id="fLider"> Solo panel líder</label>
         <label><input type="checkbox" id="fVol" checked> Solo con volumen</label>
@@ -200,8 +211,8 @@
 
   <footer>Datos: data912.com (BYMA, demorados), argentinadatos.com (CCL histórico), dolarapi.com. Uso educativo, no es recomendación de inversión.</footer>
 
-  <script src="app.js?v=20261114d"></script>
-  <script src="cartera.js?v=20261114d"></script>
-  <script src="extras.js?v=20261114d"></script>
+  <script src="app.js?v=20261116c"></script>
+  <script src="cartera.js?v=20261116c"></script>
+  <script src="extras.js?v=20261116c"></script>
 </body>
 </html>

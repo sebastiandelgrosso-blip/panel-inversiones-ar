@@ -548,6 +548,159 @@ document.addEventListener('click', async e => {
 /* ============================================================
    Enganches con app.js
    ============================================================ */
+/* ============================================================
+   Resumen: el mercado de un vistazo (pantalla de inicio)
+   ============================================================ */
+S.mercado = {};
+let resTimer;
+function renderResumenSoon() { clearTimeout(resTimer); resTimer = setTimeout(drawResumen, 200); }
+
+async function renderResumen() {
+  drawResumen();
+  await Promise.all(['acciones', 'cedears'].map(t => loadLive(t).catch(() => { })));
+  drawResumen();
+  loadMercado();
+  // Cotizaciones de lo que haya en la cartera (bonos, ONs)
+  const faltan = [...new Set(S.cartera.map(p => p.tab))].filter(t => !S.live[t]);
+  if (faltan.length) Promise.all(faltan.map(t => loadLive(t).catch(() => { }))).then(renderResumenSoon);
+  // Analiza todo en segundo plano: primero las acciones, después los CEDEARs
+  autoAnalyze('cedears');
+  autoAnalyze('acciones');
+}
+
+// Datos de contexto: riesgo país y S&P 500 (se piden una sola vez)
+async function loadMercado() {
+  if (S.mercado.pedido) return;
+  S.mercado.pedido = true;
+  fetchJSON('https://api.argentinadatos.com/v1/finanzas/indices/riesgo-pais', 20000).then(d => {
+    const u = d[d.length - 1], p = d[d.length - 2];
+    if (u && u.valor > 0) { S.mercado.rp = { v: u.valor, ant: p && p.valor, d: u.fecha }; renderResumenSoon(); }
+  }).catch(() => { });
+  getUSA('SPY').then(r => {
+    const u = r[r.length - 1], p = r[r.length - 2];
+    if (u && p) { S.mercado.spy = { chg: u.c / p.c - 1, d: u.d }; renderResumenSoon(); }
+  }).catch(() => { });
+  loadCCL().then(renderResumenSoon).catch(() => { });
+}
+
+const SIG_ORD = ['VENDER', 'REDUCIR', 'MANTENER', 'ACUMULAR', 'COMPRAR'];
+const sigBadge = s => `<span class="sig s-${s}">${s}</span>`;
+const dm = d => d ? d.slice(8, 10) + '/' + d.slice(5, 7) : '';
+
+function drawResumen() {
+  const v = $('#viewResumen');
+  if (!v || S.tab !== 'resumen') return;
+  const acc = (S.live.acciones || []).filter(r => !r.variant && r.v > 0 && r.c > 0);
+  const ced = (S.live.cedears || []).filter(r => !r.variant && r.v > 0 && r.c > 0);
+  if (!acc.length && !ced.length) { v.innerHTML = '<p class="muted">Cargando cotizaciones…</p>'; return; }
+  const kv = (k, val, sub) => `<div class="kv"><div class="k">${k}</div><div class="v">${val}${sub ? ` <small>${sub}</small>` : ''}</div></div>`;
+
+  // ---- Mercado hoy ----
+  const lid = acc.filter(r => LIDER.has(r.sym) && ok(r.chg));
+  const lidChg = lid.length ? lid.reduce((s, r) => s + r.chg, 0) / lid.length : null;
+  const suben = acc.filter(r => r.chg > 0).length, bajan = acc.filter(r => r.chg < 0).length;
+  const ccl = currentCCL(), serie = S.cclSeries;
+  const cclAnt = serie && serie.filter(x => x.d < today()).pop();
+  const cclChg = ccl && cclAnt ? ccl / cclAnt.v - 1 : null;
+  const M = S.mercado;
+  const tiles = [
+    kv('Panel líder', `<span class="${cls(lidChg)}">${pct(lidChg, 2)}</span>`, 'promedio del día, en pesos'),
+    kv('Acciones argentinas', `<span class="up">${suben} ▲</span> <span class="down">${bajan} ▼</span>`, 'suben / bajan'),
+    M.spy ? kv('S&P 500', `<span class="${cls(M.spy.chg)}">${pct(M.spy.chg, 2)}</span>`, 'última rueda (' + dm(M.spy.d) + ')') : '',
+    ccl ? kv('Dólar CCL', '$' + fmt(ccl, 0), ok(cclChg) ? `<span class="${cls(cclChg)}">${pct(cclChg, 1)}</span> vs ayer` : '') : '',
+    M.rp ? kv('Riesgo país', fmt(M.rp.v, 0), (M.rp.ant ? `<span class="${cls(M.rp.ant - M.rp.v)}">${M.rp.v - M.rp.ant > 0 ? '+' : ''}${M.rp.v - M.rp.ant}</span> · ` : '') + dm(M.rp.d)) : '',
+  ].join('');
+
+  // ---- Las que más se movieron ----
+  const fila = r => {
+    const a = an(r);
+    return `<div class="rs-row" data-key="${r.tab}:${esc(r.sym)}"><b class="rs-tk">${esc(r.sym)}</b>
+      <span class="rs-sp">${a ? sparkSVG(a, 60, 20) : ''}</span>
+      <span class="rs-px">$ ${fmt(r.c)}</span><span class="rs-chg ${cls(r.chg)}">${pct(r.chg, 1)}</span>
+      <span class="rs-sig">${a ? sigBadge(a.signal) : ''}</span></div>`;
+  };
+  const movers = (rows, n, titulo, nota) => {
+    const top = rows.slice().sort((a, b) => b.monto - a.monto).slice(0, n).filter(r => ok(r.chg) && Math.abs(r.chg) < 0.6); // más de 60% en un día es un error de datos
+    const up = top.slice().sort((a, b) => b.chg - a.chg).slice(0, 5).filter(r => r.chg > 0);
+    const dn = top.slice().sort((a, b) => a.chg - b.chg).slice(0, 5).filter(r => r.chg < 0);
+    return `<div class="card rs-card"><h3>${titulo} <span class="muted">${nota}</span></h3>
+      <div class="rs-two"><div><div class="rs-sub up">Las que más subieron</div>${up.map(fila).join('') || '<p class="muted">Ninguna subió.</p>'}</div>
+      <div><div class="rs-sub down">Las que más bajaron</div>${dn.map(fila).join('') || '<p class="muted">Ninguna bajó.</p>'}</div></div></div>`;
+  };
+
+  // ---- Señales ----
+  const barra = (rows, titulo) => {
+    const A = rows.map(an).filter(Boolean);
+    const n = A.length;
+    const cnt = Object.fromEntries(SIG_ORD.map(s => [s, A.filter(a => a.signal === s).length]));
+    const orden = SIG_ORD.slice().reverse();
+    return `<div class="rs-bar-t"><b>${titulo}</b> <span class="muted">${n} de ${rows.length} analizadas${n < rows.length && AQ.running ? '…' : ''}</span></div>
+      <div class="rs-bar">${n ? orden.filter(s => cnt[s]).map(s => `<i class="s-${s}" style="flex:${cnt[s]}" title="${s}: ${cnt[s]}"></i>`).join('') : ''}</div>
+      <div class="rs-leg">${orden.filter(s => cnt[s]).map(s => `<span><i class="s-${s}"></i>${s[0] + s.slice(1).toLowerCase()} ${cnt[s]}</span>`).join('')}</div>`;
+  };
+  const cambios = [...acc, ...ced].map(r => ({ r, a: an(r) })).filter(x => x.a && x.a.prevSignal && x.a.prevSignal !== x.a.signal)
+    .sort((x, y) => y.r.monto - x.r.monto);
+  const mejor = cambios.filter(x => SIG_ORD.indexOf(x.a.signal) > SIG_ORD.indexOf(x.a.prevSignal));
+  const peor = cambios.filter(x => SIG_ORD.indexOf(x.a.signal) < SIG_ORD.indexOf(x.a.prevSignal));
+  const filaCambio = x => `<div class="rs-row" data-key="${x.r.tab}:${esc(x.r.sym)}"><b class="rs-tk">${esc(x.r.sym)}</b>
+    <span class="rs-cmb">${sigBadge(x.a.prevSignal)} → ${sigBadge(x.a.signal)}</span></div>`;
+  const listaCambios = (L, vacio) => L.length
+    ? L.slice(0, 6).map(filaCambio).join('') + (L.length > 6 ? `<p class="muted rs-mas">y ${L.length - 6} más</p>` : '')
+    : `<p class="muted">${vacio}</p>`;
+
+  // ---- Mi cartera ----
+  let cartera;
+  if (S.cartera.length) {
+    const pos = S.cartera.map(posCalc);
+    const totARS = pos.reduce((s, x) => s + (x.valARS || 0), 0), totUSD = pos.reduce((s, x) => s + (x.valUSD || 0), 0);
+    const dia = pos.reduce((s, x) => s + (x.r && ok(x.r.chg) && x.valARS ? x.valARS - x.valARS / (1 + x.r.chg) : 0), 0);
+    const nuevas = S.alertas.filter(a => !a.leida);
+    cartera = `<div class="card rs-card"><h3>Mi cartera <a class="rs-link" data-go="cartera">ver todo →</a></h3>
+      <div class="plan">
+        ${kv('Valor', '$ ' + compact(totARS), 'US$ ' + compact(totUSD))}
+        ${kv('Hoy', `<span class="${cls(dia)}">${dia >= 0 ? '+' : '−'}$ ${compact(Math.abs(dia))}</span>`, totARS > 0 ? pct(dia / (totARS - dia), 2) : '')}
+      </div>
+      ${pos.filter(x => x.r).sort((a, b) => (b.valARS || 0) - (a.valARS || 0)).slice(0, 8).map(x => `<div class="rs-row" data-key="${x.p.tab}:${esc(x.p.sym)}">
+        <b class="rs-tk">${esc(x.p.sym)}</b><span class="rs-chg ${cls(x.r.chg)}">${pct(x.r.chg, 1)} hoy</span>
+        <span class="rs-px ${cls(x.res)}">${ok(x.res) ? pct(x.res, 0) + ' total' : ''}</span>
+        <span class="rs-sig">${x.A ? sigBadge(x.A.signal) : ''}</span></div>`).join('')}
+      ${nuevas.length ? `<p class="rs-alerta">🔔 ${nuevas.length} alerta${nuevas.length > 1 ? 's' : ''} sin leer: ${esc(nuevas[nuevas.length - 1].txt)}</p>` : ''}</div>`;
+  } else {
+    cartera = `<div class="card rs-card"><h3>Mi cartera</h3>
+      <p class="muted">Cargá lo que tenés (cantidad y precio de compra) para ver acá cuánto vale, cuánto ganó hoy y qué señal tiene cada posición.</p>
+      <button class="primary" data-go="cartera">Cargar mi cartera</button></div>`;
+  }
+
+  // ---- Noticias ----
+  const noticias = S.noticias && S.noticias.items.length
+    ? `<div class="card rs-card"><h3>Noticias <span class="muted">actualizadas ${hace(S.noticias.actualizado)}</span></h3>
+        ${S.noticias.items.slice(0, 6).map(newsItem).join('')}</div>` : '';
+
+  v.innerHTML = `
+    <div class="rs-head"><h2>Mercado hoy</h2>
+      <span class="muted">${S.liveTime ? 'Cotizaciones de las ' + S.liveTime.toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit' }) : ''} · estrategia ${ESTRATEGIAS[S.params.estrategia] || 'TMR'}</span></div>
+    <div class="plan rs-tiles">${tiles}</div>
+    <div class="rs-grid">
+      ${cartera}
+      <div class="card rs-card"><h3>Señales <span class="muted">según la estrategia elegida</span></h3>
+        ${barra(acc, 'Acciones argentinas')}${barra(ced, 'CEDEARs')}
+        <div class="rs-two" style="margin-top:12px"><div><div class="rs-sub up">Mejoraron desde la rueda anterior</div>${listaCambios(mejor, 'Ninguna.')}</div>
+        <div><div class="rs-sub down">Empeoraron</div>${listaCambios(peor, 'Ninguna.')}</div></div></div>
+      ${movers(acc, 60, 'Acciones argentinas', 'las 60 más operadas')}
+      ${movers(ced, 100, 'CEDEARs', 'los 100 más operados')}
+      ${noticias}
+    </div>
+    <p class="note">Tocá cualquier activo para ver su análisis completo. Precios en pesos, demorados.</p>`;
+}
+document.addEventListener('click', e => {
+  const v = e.target.closest('#viewResumen');
+  if (!v) return;
+  const go = e.target.closest('[data-go]');
+  if (go) return setTab(go.dataset.go);
+  const row = e.target.closest('[data-key]');
+  if (row) openDetail(row.dataset.key);
+});
+
 function afterTab(tab) { renderCurveBox(); renderNews(); }
 function afterRefresh() { curveCache = null; renderCurveBox(); checkAlerts(); }
 function afterInit() { checkAlerts(); }
