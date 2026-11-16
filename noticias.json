@@ -1,20 +1,126 @@
 {
- "actualizado": "2026-11-16T16:38:55.714Z",
+ "actualizado": "2026-11-16T18:25:27.517Z",
  "items": [
   {
-   "t": "Morgan Stanley advierte que la demanda de dólares previa a las elecciones podría frenar la baja de la inflación",
-   "link": "https://www.infobae.com/economia/2026/11/16/morgan-stanley-advierte-que-la-demanda-de-dolares-previa-a-las-elecciones-podria-frenar-la-baja-de-la-inflacion/",
-   "src": "Infobae",
+   "t": "Nvidia board is not considering bringing Jensen Huang back as CEO, source tells CNBC",
+   "link": "https://www.cnbc.com/2026/11/16/nvidia-ceo-jensen-huang.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-16T18:22:06.000Z",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "t": "Dólar hoy y dólar blue, EN VIVO: a cuánto cotizan el oficial y el paralelo este lunes 16 de noviembre, minuto a minuto",
+   "link": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-en-vivo-a-cuanto-cotizan-el-oficial-y-el-paralelo-este-lunes-16-de-noviembre-nid16112026/",
+   "src": "La Nación",
    "region": "AR",
-   "fecha": "2026-11-16T16:24:17.000Z",
+   "fecha": "2026-11-16T18:19:00.000Z",
    "tags": []
   },
   {
-   "t": "Dólar hoy y dólar blue hoy minuto a minuto: a cuánto opera este lunes 16 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-hoy-y-dolar-blue-hoy-minuto-minuto-cuanto-opera-este-lunes-16-noviembre-n6345534",
+   "t": "En octubre, el Gobierno volvió a conseguir un superávit financiero",
+   "link": "https://www.infobae.com/economia/2026/11/16/en-octubre-el-gobierno-volvio-a-conseguir-un-superavit-financiero/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-16T18:18:51.000Z",
+   "tags": []
+  },
+  {
+   "t": "El dólar oficial extiende las subas y el blue alcanza un nuevo récord en los $1.600",
+   "link": "https://www.ambito.com/finanzas/dolar-el-mercado-pone-la-lupa-la-brecha-cambiaria-la-suba-del-blue-y-la-baja-del-oficial-n6345542",
    "src": "Ámbito",
    "region": "AR",
-   "fecha": "2026-11-16T16:24:00.000Z",
+   "fecha": "2026-11-16T18:18:00.000Z",
+   "tags": [
+    "BONOS"
+   ]
+  },
+  {
+   "t": "El riesgo país sube hasta los 840 puntos básicos y los ADRs se hunden hasta casi 7%",
+   "link": "https://www.ambito.com/finanzas/el-riesgo-pais-retoma-las-subas-una-nueva-caida-los-bonos-dolares-n6345672",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-16T18:14:00.000Z",
+   "tags": [
+    "BONOS"
+   ]
+  },
+  {
+   "t": "El cierre de empresas no da tregua: las provincias más afectadas y los sectores que lideran las pérdidas",
+   "link": "https://www.infobae.com/economia/2026/11/16/el-cierre-de-empresas-no-da-tregua-las-provincias-mas-afectadas-y-los-sectores-que-lideran-las-perdidas/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-16T18:13:40.000Z",
+   "tags": []
+  },
+  {
+   "t": "Pasan a manos nacionales: el gigante chileno CMPC le vendió a Faro Verde, por US$170 millones, sus activos forestales y deja esta actividad en la Argentina",
+   "link": "https://www.lanacion.com.ar/economia/campo/pasan-a-manos-nacionales-el-gigante-chileno-cmpc-le-vendio-a-faro-verde-por-us170-millones-sus-nid16112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-16T18:12:51.000Z",
+   "tags": []
+  },
+  {
+   "t": "Toyota develó la incógnita y confirmó qué vehículo fabricará en la nueva planta de Zárate",
+   "link": "https://www.infobae.com/economia/2026/11/16/toyota-develo-la-incognita-y-confirmo-que-vehiculo-fabricara-en-la-nueva-planta-de-zarate/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-16T18:11:09.000Z",
+   "tags": []
+  },
+  {
+   "t": "OpenAI inks agreements with four independent evaluators to boost company's safety work",
+   "link": "https://www.cnbc.com/2026/11/16/openai-independent-ai-safety-evaluators.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-16T18:11:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Nvidia’s stock extends declines following harsh words from the U.S. government",
+   "link": "https://www.marketwatch.com/story/nvidias-stock-extends-declines-following-harsh-words-from-the-u-s-government-d721188e?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-16T18:11:00.000Z",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "t": "El Gobierno obtuvo un superávit de $1,58 billones en octubre y acumula un saldo positivo de 0,4% del PBI en el año",
+   "link": "https://www.lanacion.com.ar/economia/el-gobierno-obtuvo-un-superavit-de-158-billones-en-octubre-y-acumula-un-saldo-positivo-de-04-del-pbi-nid16112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-16T18:08:58.000Z",
+   "tags": []
+  },
+  {
+   "t": "El riesgo país vuelve a subir y la Bolsa porteña arranca la semana en rojo",
+   "link": "https://www.iprofesional.com/finanzas/469257-riesgo-pais-alza-preocupo-inversores-bonos-argentinos-fuerte-caida-noviembre-2026",
+   "src": "iProfesional",
+   "region": "AR",
+   "fecha": "2026-11-16T18:03:00.000Z",
+   "tags": [
+    "BONOS"
+   ]
+  },
+  {
+   "t": "Dólar blue hoy: a cuánto opera este lunes 16 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-lunes-16-noviembre-n6345526",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-16T17:55:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "What’s the most tax-efficient way to donate to charity?",
+   "link": "https://www.marketwatch.com/story/whats-the-most-tax-efficient-way-to-donate-to-charity-3f5864bb?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-16T17:55:00.000Z",
    "tags": []
   },
   {
@@ -22,15 +128,188 @@
    "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-lunes-16-noviembre-n6345525",
    "src": "Ámbito",
    "region": "AR",
-   "fecha": "2026-11-16T16:24:00.000Z",
+   "fecha": "2026-11-16T17:54:00.000Z",
    "tags": []
   },
   {
-   "t": "Dólar blue hoy: a cuánto opera este lunes 16 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-lunes-16-noviembre-n6345526",
+   "t": "How will AI shake up the economy? Warsh says the Fed is starting to figure that out.",
+   "link": "https://www.marketwatch.com/story/how-will-ai-shake-up-the-economy-warsh-says-the-fed-is-starting-to-figure-that-out-a72f80c4?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-16T17:53:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Bitcoin slides to $62,000 following liquidation cascade, then rebounds slightly",
+   "link": "https://www.cnbc.com/2026/11/16/bitcoin-slides-to-62000-following-liquidation-cascade-then-rebounds-slightly.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-16T17:52:38.000Z",
+   "tags": []
+  },
+  {
+   "t": "Newsan compra el negocio de Procenex y suma marcas de limpieza a su portafolio",
+   "link": "https://www.lanacion.com.ar/economia/negocios/newsan-compra-el-negocio-de-procenex-y-suma-marcas-de-limpieza-a-su-portafolio-nid16112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-16T17:52:21.000Z",
+   "tags": []
+  },
+  {
+   "t": "Altimeter's Brad Gerstner investing $5 billion in Anthropic IPO",
+   "link": "https://www.cnbc.com/2026/11/16/altimeters-brad-gerstner-investing-5-billion-in-anthropic-ipo.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-16T17:50:45.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar hoy y dólar blue hoy minuto a minuto: a cuánto opera este lunes 16 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-hoy-y-dolar-blue-hoy-minuto-minuto-cuanto-opera-este-lunes-16-noviembre-n6345534",
    "src": "Ámbito",
    "region": "AR",
-   "fecha": "2026-11-16T16:24:00.000Z",
+   "fecha": "2026-11-16T17:50:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Lunes rojo en Wall Street: el Nasdaq se hunde 2% a la espera de novedades en dos gigantes de IA",
+   "link": "https://www.ambito.com/finanzas/wall-street-adelanta-bajas-el-arranque-la-semana-la-espera-novedades-dos-firmas-tecnologicas-clave-n6345574",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-16T17:48:00.000Z",
+   "tags": [
+    "SPY",
+    "QQQ"
+   ]
+  },
+  {
+   "t": "Santiago Bausili reconoció que la estabilidad no alcanza para crecer",
+   "link": "https://www.ambito.com/economia/santiago-bausili-reconocio-que-la-estabilidad-no-alcanza-crecer-n6345774",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-16T17:48:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Warren Buffett donates $5.5 billion, says kindness 'compounds' in Thanksgiving letter",
+   "link": "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-16T17:39:32.000Z",
+   "tags": [
+    "BRKB"
+   ]
+  },
+  {
+   "t": "Fed Chairman Kevin Warsh stresses importance of AI to economy, but says it could ‘disappoint’",
+   "link": "https://www.cnbc.com/2026/11/16/fed-ai-task-force-kevin-warsh.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-16T17:29:04.000Z",
+   "tags": []
+  },
+  {
+   "t": "How Rockstar's 'GTA VI' release could reshape gaming, streaming and even paid time off",
+   "link": "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-16T17:27:23.000Z",
+   "tags": []
+  },
+  {
+   "t": "Robert Pattinson cast as next James Bond",
+   "link": "https://www.cnbc.com/2026/11/16/robert-pattinson-james-bond.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-16T17:25:51.000Z",
+   "tags": []
+  },
+  {
+   "t": "Nvidia fallout: Commerce targets loophole for China's data center use",
+   "link": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-16T17:22:11.000Z",
+   "tags": [
+    "NVDA",
+    "BONOS"
+   ]
+  },
+  {
+   "t": "Cae el real brasileño a semanas del inicio de la temporada de veraneo: cómo beneficia a los turistas argentinos",
+   "link": "https://www.infobae.com/economia/2026/11/16/cae-el-real-brasileno-a-semanas-del-inicio-de-la-temporada-de-veraneo-como-beneficia-a-los-turistas-argentinos/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-16T17:20:25.000Z",
+   "tags": []
+  },
+  {
+   "t": "Ramón Díaz: la insólita conferencia simulada donde el principal anuncio no fue sobre su destino como entrenador",
+   "link": "https://www.lanacion.com.ar/economia/campo/ramon-diaz-la-insolita-conferencia-simulada-donde-el-principal-anuncio-no-fue-sobre-su-destino-como-nid16112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-16T17:18:55.000Z",
+   "tags": []
+  },
+  {
+   "t": "Anthropic debuta en Wall Street: qué lugar ocuparía entre las 10 mayores salidas a bolsa de la historia",
+   "link": "https://www.ambito.com/finanzas/anthropic-debuta-wall-street-que-lugar-ocuparia-las-10-mayores-salidas-bolsa-la-historia-n6345749",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-16T17:17:00.000Z",
+   "tags": [
+    "SPY"
+   ]
+  },
+  {
+   "t": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
+   "link": "https://www.cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-16T17:14:13.000Z",
+   "tags": []
+  },
+  {
+   "t": "Bausili planteó el desafío de pasar de la estabilidad al crecimiento",
+   "link": "https://www.lanacion.com.ar/economia/bausili-abrio-las-jornadas-del-banco-central-y-puso-el-foco-en-como-pasar-de-la-estabilidad-al-nid16112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-16T17:08:44.000Z",
+   "tags": []
+  },
+  {
+   "t": "‘He calls my plans a fantasy’: My husband says we can’t afford a $200,000-a-year retirement. Is he being cheap?",
+   "link": "https://www.marketwatch.com/story/he-calls-my-plans-a-fantasy-my-husband-says-we-cant-afford-our-200-000-a-year-dream-retirement-i-think-hes-cheap-45bc5b4e?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-16T17:00:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Cramer: Take some profits in these 2 stocks if you have big gains and do this with the cash",
+   "link": "https://www.cnbc.com/investingclub/2026/11/16/cramer-take-some-profits-in-these-2-stocks-and-do-this-with-the-cash.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-16T16:59:01.000Z",
+   "tags": []
+  },
+  {
+   "t": "Nvidia is gearing up for one of Wall Street’s most anticipated earnings calls in years",
+   "link": "https://www.marketwatch.com/story/nvidia-is-gearing-up-for-one-of-wall-streets-most-anticipated-earnings-calls-in-years-91855b1e?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-16T16:37:00.000Z",
+   "tags": [
+    "NVDA",
+    "SPY"
+   ]
+  },
+  {
+   "t": "Morgan Stanley advierte que la demanda de dólares previa a las elecciones podría frenar la baja de la inflación",
+   "link": "https://www.infobae.com/economia/2026/11/16/morgan-stanley-advierte-que-la-demanda-de-dolares-previa-a-las-elecciones-podria-frenar-la-baja-de-la-inflacion/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-16T16:24:17.000Z",
    "tags": []
   },
   {
@@ -48,17 +327,6 @@
    "region": "US",
    "fecha": "2026-11-16T16:20:00.000Z",
    "tags": []
-  },
-  {
-   "t": "Nvidia fallout: Commerce targets loophole for China's data center use",
-   "link": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-16T16:19:27.000Z",
-   "tags": [
-    "NVDA",
-    "BONOS"
-   ]
   },
   {
    "t": "U.S. crude oil declines to $87 a barrel on recovering Middle East exports",
@@ -99,14 +367,6 @@
    ]
   },
   {
-   "t": "Dólar hoy y dólar blue, EN VIVO: a cuánto cotizan el oficial y el paralelo este lunes 16 de noviembre, minuto a minuto",
-   "link": "https://www.lanacion.com.ar/economia/dolar/dolar-hoy-y-dolar-blue-en-vivo-a-cuanto-cotizan-el-oficial-y-el-paralelo-este-lunes-16-de-noviembre-nid16112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-16T16:10:00.000Z",
-   "tags": []
-  },
-  {
    "t": "Anthropic’s Wall Street whisperer: Meet CFO Krishna Rao",
    "link": "https://www.cnbc.com/2026/11/16/anthropic-cfo-krishna-rao-ipo.html",
    "src": "CNBC",
@@ -117,7 +377,7 @@
    ]
   },
   {
-   "t": "Semana clave para la IA: las acciones argentinas caen un 3%, el dólar oficial sube a $1575 y el riesgo país rebota",
+   "t": "Semana clave para la IA: las acciones argentinas caen un 5%, el dólar oficial sube a $1575 y el riesgo país rebota",
    "link": "https://www.lanacion.com.ar/economia/semana-clave-para-la-ia-las-acciones-argentinas-caen-un-3-el-dolar-oficial-sube-a-1575-y-el-riesgo-nid16112026/",
    "src": "La Nación",
    "region": "AR",
@@ -203,16 +463,6 @@
    "tags": []
   },
   {
-   "t": "Trump says Nvidia scandal did not put U.S. national security ‘at risk,’ defends Lutnick",
-   "link": "https://www.cnbc.com/2026/11/16/trump-lutnick-nvidia-national-security-jensen-huant.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-16T15:40:28.000Z",
-   "tags": [
-    "NVDA"
-   ]
-  },
-  {
    "t": "Revolucionaron un antiguo modelo forestal de 1000 hectáreas y el cambio en el negocio fue impactante",
    "link": "https://www.lanacion.com.ar/economia/campo/cambiaron-un-viejo-modelo-forestal-de-1000-hectareas-y-el-resultado-fue-contundente-nid16112026/",
    "src": "La Nación",
@@ -237,7 +487,7 @@
    "tags": []
   },
   {
-   "t": "Las criptomonedas rebotan luego de tocar mínimos de tres meses: bitcoin sube, pero sigue en la zona de u$s65.000",
+   "t": "Las criptomonedas rebotan tras días de turbulencias: el Bitcoin sube y roza los u$s65.000",
    "link": "https://www.ambito.com/finanzas/las-criptomonedas-rebotan-luego-tocar-minimos-tres-meses-bitcoin-sube-pero-sigue-la-zona-us65000-n6345661",
    "src": "Ámbito",
    "region": "AR",
@@ -267,26 +517,6 @@
    "region": "AR",
    "fecha": "2026-11-16T15:27:16.000Z",
    "tags": []
-  },
-  {
-   "t": "Nvidia’s stock extends declines following harsh words from the U.S. government",
-   "link": "https://www.marketwatch.com/story/nvidias-stock-extends-declines-following-harsh-words-from-the-u-s-government-d721188e?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-16T15:22:00.000Z",
-   "tags": [
-    "NVDA"
-   ]
-  },
-  {
-   "t": "El riesgo país retoma las subas ante una nueva caída de los bonos en dólares",
-   "link": "https://www.ambito.com/finanzas/el-riesgo-pais-retoma-las-subas-una-nueva-caida-los-bonos-dolares-n6345672",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-16T15:18:00.000Z",
-   "tags": [
-    "BONOS"
-   ]
   },
   {
    "t": "Rest llega a América Latina: la app creada por un argentino en Silicon Valley para dormir mejor",
@@ -337,40 +567,6 @@
    "tags": []
   },
   {
-   "t": "My older brother, who has no children, cut our only sister out of his will. I’ll get everything instead. Do I tell her?",
-   "link": "https://www.marketwatch.com/story/she-has-a-history-of-financial-mismanagement-my-brother-cut-my-sister-out-of-his-will-im-getting-everything-do-i-tell-her-3e537851?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-16T15:00:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Parents told us what it’s like to help their kids battle sports-gambling addiction: ‘There’s no handbook’",
-   "link": "https://www.marketwatch.com/story/parents-told-us-what-its-like-to-help-their-kids-battle-sports-gambling-addiction-theres-no-handbook-6e2d5bb2?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-16T15:00:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "‘It leaves me with a sour taste’: My elderly mother gave our cousin $800 for a car repair. Should I be worried?",
-   "link": "https://www.marketwatch.com/story/it-leaves-me-with-a-sour-taste-my-elderly-mother-gave-our-cousin-800-for-a-car-repair-should-i-be-worried-88dbd188?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-16T15:00:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Warren Buffett donates $5.5 billion, says kindness 'compounds' in Thanksgiving letter",
-   "link": "https://www.cnbc.com/2026/11/16/warren-buffett-donates-5point5-billion-thanksgiving.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-16T14:56:21.000Z",
-   "tags": [
-    "BRKB"
-   ]
-  },
-  {
    "t": "Radiografía del crédito bancario: quiénes prestan más y cuáles los que pisan el freno",
    "link": "https://www.iprofesional.com/finanzas/469231-credito-bancario-alerta-retiro-bancos-privados-avance-nacion-noviembre-2026",
    "src": "iProfesional",
@@ -379,27 +575,11 @@
    "tags": []
   },
   {
-   "t": "Budget airlines are going upscale with first-class seats and faster wifi",
-   "link": "https://www.marketwatch.com/story/budget-airlines-are-going-upscale-with-first-class-seats-and-faster-wifi-999868ab?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-16T14:34:00.000Z",
-   "tags": []
-  },
-  {
    "t": "El sobrecosto para sacar dólares del país crece y el mercado apunta al efecto electoral",
    "link": "https://www.iprofesional.com/economia/468857-se-dispara-el-costo-para-sacar-dolares-del-pais-y-el-mercado-dice-por-que",
    "src": "iProfesional",
    "region": "AR",
    "fecha": "2026-11-16T14:30:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Bitcoin slides to $62,000 following liquidation cascade, then rebounds slightly",
-   "link": "https://www.cnbc.com/2026/11/16/bitcoin-slides-to-62000-following-liquidation-cascade-then-rebounds-slightly.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-16T14:29:19.000Z",
    "tags": []
   },
   {
@@ -419,16 +599,6 @@
    "tags": [
     "CEPU",
     "BA.C"
-   ]
-  },
-  {
-   "t": "El dólar extiende las subas, mientras el mercado pone la lupa en la brecha cambiaria",
-   "link": "https://www.ambito.com/finanzas/dolar-el-mercado-pone-la-lupa-la-brecha-cambiaria-la-suba-del-blue-y-la-baja-del-oficial-n6345542",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-16T14:23:00.000Z",
-   "tags": [
-    "BONOS"
    ]
   },
   {
@@ -474,14 +644,6 @@
    "tags": []
   },
   {
-   "t": "We're booking huge profits on a tech winner and making a chip stock swap",
-   "link": "https://www.cnbc.com/investingclub/2026/11/16/were-booking-huge-profits-on-a-tech-winner-and-making-a-chip-stock-swap.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-16T13:58:53.000Z",
-   "tags": []
-  },
-  {
    "t": "Scott Bessent pidió una reestructuración \"drástica\" en Nvidia y la elección de un nuevo CEO genera controversia",
    "link": "https://www.ambito.com/finanzas/scott-bessent-pidio-una-reestructuracion-drastica-nvidia-y-la-eleccion-un-nuevo-ceo-genera-controversia-n6345632",
    "src": "Ámbito",
@@ -500,19 +662,21 @@
    "tags": []
   },
   {
+   "t": "Nvidia's Colette Kress confronts key questions in first earnings report since Jensen Huang’s exit",
+   "link": "https://www.cnbc.com/2026/11/16/nvidia-earnings-jensen-huang-resignation.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-16T13:42:43.000Z",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
    "t": "Jubilaciones de Anses: cuánto cobro en noviembre 2026 con el aumento, el bono y el aguinaldo",
    "link": "https://www.lanacion.com.ar/economia/jubilaciones-de-anses-cuanto-cobro-en-noviembre-2026-con-el-aumento-el-bono-y-el-aguinaldo-nid16112026/",
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-16T13:25:49.000Z",
-   "tags": []
-  },
-  {
-   "t": "How Rockstar's 'GTA VI' release could reshape gaming, streaming and even paid time off",
-   "link": "https://www.cnbc.com/2026/11/14/gta-6-grand-theft-auto-launch.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-16T13:24:20.000Z",
    "tags": []
   },
   {
@@ -592,32 +756,12 @@
    "tags": []
   },
   {
-   "t": "Lutnick faces questions over Nvidia spy scandal. His sons' firm has ties to the chipmaker",
-   "link": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-16T12:14:46.000Z",
-   "tags": [
-    "NVDA"
-   ]
-  },
-  {
    "t": "Cantwell urges Lutnick to stop AI chip sales to China ahead of Xi meeting",
    "link": "https://www.cnbc.com/2026/11/16/cantwell-lutnick-ai-chip-china.html",
    "src": "CNBC",
    "region": "US",
    "fecha": "2026-11-16T12:13:47.000Z",
    "tags": []
-  },
-  {
-   "t": "Wall Street adelanta bajas en el arranque de la semana, a la espera de novedades en dos firmas tecnológicas clave",
-   "link": "https://www.ambito.com/finanzas/wall-street-adelanta-bajas-el-arranque-la-semana-la-espera-novedades-dos-firmas-tecnologicas-clave-n6345574",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-16T12:02:00.000Z",
-   "tags": [
-    "SPY"
-   ]
   },
   {
    "t": "Big-ticket holiday items may be harder to find as shipping costs rise",
@@ -729,14 +873,6 @@
    "src": "Infobae",
    "region": "AR",
    "fecha": "2026-11-16T09:54:16.000Z",
-   "tags": []
-  },
-  {
-   "t": "AI is reshaping banking jobs – but its ability to drive profits remains unclear",
-   "link": "https://www.cnbc.com/2026/11/16/how-ai-is-changing-banking-jobs-hiring-and-revenue.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-16T09:35:14.000Z",
    "tags": []
   },
   {
@@ -1124,134 +1260,6 @@
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-15T12:56:19.000Z",
-   "tags": []
-  },
-  {
-   "t": "Salario empleo doméstico: cuánto cobran las niñeras y cuidadores de adultos en noviembre de 2026 con el aumento confirmado",
-   "link": "https://www.lanacion.com.ar/economia/salario-empleo-domestico-cuanto-cobran-las-nineras-y-cuidadores-de-adultos-en-noviembre-de-2026-con-nid12112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-15T12:56:15.000Z",
-   "tags": []
-  },
-  {
-   "t": "Jubilaciones de Anses: cuánto cobro en noviembre 2026, con el bono oficial y el aumento confirmado",
-   "link": "https://www.lanacion.com.ar/economia/jubilaciones-de-anses-cuanto-cobro-en-noviembre-2026-con-el-bono-oficial-y-el-aumento-confirmado-nid14102026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-15T12:56:09.000Z",
-   "tags": []
-  },
-  {
-   "t": "Monto de la Asignación Universal por Hijo: de cuánto es la AUH en noviembre 2026, con el aumento oficial",
-   "link": "https://www.lanacion.com.ar/economia/monto-de-la-asignacion-universal-por-hijo-de-cuanto-es-la-auh-en-noviembre-2026-con-el-aumento-nid15102026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-15T12:56:06.000Z",
-   "tags": []
-  },
-  {
-   "t": "PNC de Anses: cuál es el monto de las Pensiones No Contributivas en noviembre de 2026",
-   "link": "https://www.lanacion.com.ar/economia/pnc-de-anses-cual-es-el-monto-de-las-pensiones-no-contributivas-en-noviembre-de-2026-nid19102026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-15T12:56:04.000Z",
-   "tags": []
-  },
-  {
-   "t": "A cuánto llega la PUAM en noviembre de 2026 con el aumento confirmado",
-   "link": "https://www.lanacion.com.ar/economia/a-cuanto-llega-la-puam-en-noviembre-de-2026-con-el-aumento-confirmado-nid20102026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-15T12:56:01.000Z",
-   "tags": []
-  },
-  {
-   "t": "SUAF de Anses: el monto de las asignaciones familiares en noviembre de 2026",
-   "link": "https://www.lanacion.com.ar/economia/suaf-de-anses-el-monto-de-las-asignaciones-familiares-en-noviembre-de-2026-nid21102026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-15T12:55:58.000Z",
-   "tags": []
-  },
-  {
-   "t": "De cuánto es el bono de noviembre 2026 para jubilados y a quiénes les corresponde",
-   "link": "https://www.lanacion.com.ar/economia/de-cuanto-es-el-bono-de-noviembre-2026-para-jubilados-y-a-quienes-les-corresponde-nid29102026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-15T12:55:55.000Z",
-   "tags": []
-  },
-  {
-   "t": "Calendario AUH de Anses: cuándo se cobra la Asignación Universal por Hijo en noviembre 2026",
-   "link": "https://www.lanacion.com.ar/economia/calendario-auh-de-anses-cuando-se-cobra-la-asignacion-universal-por-hijo-en-noviembre-2026-nid29102026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-15T12:55:51.000Z",
-   "tags": []
-  },
-  {
-   "t": "Calendario de pagos de Anses: cuándo se cobra la PUAM de noviembre de 2026",
-   "link": "https://www.lanacion.com.ar/economia/calendario-de-pagos-de-anses-cuando-se-cobra-la-puam-de-noviembre-de-2026-nid02112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-15T12:55:48.000Z",
-   "tags": []
-  },
-  {
-   "t": "Calendario de jubilaciones de la Anses: cuándo cobro en noviembre 2026 con el bono oficial y el aumento confirmado",
-   "link": "https://www.lanacion.com.ar/economia/calendario-de-jubilaciones-de-la-anses-cuando-cobro-en-noviembre-2026-con-el-bono-oficial-y-el-nid28102026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-15T12:55:45.000Z",
-   "tags": []
-  },
-  {
-   "t": "Calendario PNC de la Anses: cuándo se cobran las Pensiones no Contributivas de noviembre 2026",
-   "link": "https://www.lanacion.com.ar/economia/calendario-pnc-de-la-anses-cuando-se-cobran-las-pensiones-no-contributivas-de-noviembre-2026-nid04112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-15T12:55:43.000Z",
-   "tags": []
-  },
-  {
-   "t": "Calendario SUAF: cuándo cobro la Asignación Familiar de noviembre 2026",
-   "link": "https://www.lanacion.com.ar/economia/calendario-suaf-cuando-cobro-la-asignacion-familiar-de-noviembre-2026-nid11112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-15T12:55:41.000Z",
-   "tags": []
-  },
-  {
-   "t": "Cuándo cobran los jubilados de la Anses en noviembre 2026",
-   "link": "https://www.lanacion.com.ar/economia/cuando-cobran-los-jubilados-de-la-anses-en-noviembre-2026-nid12112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-15T12:55:39.000Z",
-   "tags": []
-  },
-  {
-   "t": "A cuánto abre el dólar el lunes 16 de noviembre",
-   "link": "https://www.lanacion.com.ar/economia/dolar/a-cuanto-abre-el-dolar-el-lunes-16-de-noviembre-nid14112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-15T12:26:32.000Z",
-   "tags": []
-  },
-  {
-   "t": "Anthropic’s IPO lands as the embattled AI trade looks for a much-needed bright spot",
-   "link": "https://www.cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-15T12:00:01.000Z",
-   "tags": []
-  },
-  {
-   "t": "El campo está sentado sobre u$s13.500 millones y Caputo busca que sea su bazuca de dólares",
-   "link": "https://www.iprofesional.com/economia/468833-por-que-la-verdadera-bazuca-de-dolares-caputo-la-tiene-en-el-campo",
-   "src": "iProfesional",
-   "region": "AR",
-   "fecha": "2026-11-15T11:06:00.000Z",
    "tags": []
   }
  ]
