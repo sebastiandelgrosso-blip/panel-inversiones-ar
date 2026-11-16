@@ -422,7 +422,48 @@ let newsRegion = store.get('newsRegion', 'todas');
 async function loadNews() {
   try { S.noticias = await fetchJSON(SNAP ? 'noticias.json' : 'noticias.json?v=' + Date.now(), 15000); } catch { S.noticias = null; }
   renderNews();
+  refreshNewsLive();
 }
+
+// El archivo de noticias lo actualiza GitHub cada varias horas. Si quedó viejo, la página lee los RSS por su cuenta:
+// los de EE.UU. directo, y los argentinos (que no permiten lectura desde otro sitio) a través de un servicio público de retransmisión.
+const NEWS_MAX_MIN = 20;
+let newsBusy = false;
+async function refreshNewsLive() {
+  if (SNAP || newsBusy || typeof NEWS === 'undefined') return;
+  const edad = S.noticias && S.noticias.actualizado ? (Date.now() - Date.parse(S.noticias.actualizado)) / 60000 : Infinity;
+  if (edad < NEWS_MAX_MIN) return;
+  newsBusy = true;
+  try {
+    const limite = Date.now() - NEWS.HORAS * 3600e3;
+    const texto = async url => {
+      const ctl = new AbortController(), t = setTimeout(() => ctl.abort(), 12000);
+      try { const r = await fetch(url, { signal: ctl.signal }); if (!r.ok) throw new Error('HTTP ' + r.status); return await r.text(); }
+      finally { clearTimeout(t); }
+    };
+    const res = await Promise.all(NEWS.FEEDS.map(async f => {
+      const u = encodeURIComponent(f.url);
+      // En orden: lectura directa, rss2json.com y, si falla, allorigins.win
+      const vias = f.cors ? [async () => NEWS.parse(await texto(f.url), f, limite)] : [
+        async () => NEWS.deJSON(JSON.parse(await texto('https://api.rss2json.com/v1/api.json?rss_url=' + u)), f, limite),
+        async () => NEWS.parse(await texto('https://api.allorigins.win/raw?url=' + u), f, limite),
+      ];
+      for (const via of vias) {
+        try { const items = await via(); if (items.length) return items; } catch { /* prueba la siguiente */ }
+      }
+      return null;
+    }));
+    const okN = res.filter(Boolean).length;
+    if (!okN) return;
+    const items = NEWS.unir([...res.filter(Boolean), (S.noticias && S.noticias.items) || []]);
+    // Solo se marca como "recién actualizado" si respondió la mayoría de las fuentes
+    const actualizado = okN > NEWS.FEEDS.length / 2 ? new Date().toISOString() : (S.noticias && S.noticias.actualizado) || new Date().toISOString();
+    S.noticias = { actualizado, items };
+    renderNews();
+    if (typeof renderResumenSoon === 'function') renderResumenSoon();
+  } finally { newsBusy = false; }
+}
+if (!SNAP) setInterval(() => { if (document.visibilityState === 'visible') refreshNewsLive(); }, 10 * 60 * 1000);
 const hace = t => {
   const m = Math.round((Date.now() - Date.parse(t)) / 60000);
   return m < 60 ? `hace ${Math.max(m, 1)} min` : m < 1440 ? `hace ${Math.round(m / 60)} h` : new Date(t).toLocaleDateString('es-AR');
