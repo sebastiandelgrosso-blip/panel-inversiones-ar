@@ -1026,10 +1026,25 @@ function findRow(key) {
    Render: barra de dólares
    ============================================================ */
 function renderFX() {
+  renderDataDates();
   const it = (label, v, sub) => v ? `<span class="it">${label}<b>$${fmt(v, 0)}</b>${sub ? ` <small>${sub}</small>` : ''}</span>` : '';
   $('#fx').innerHTML = it('Oficial', S.fx.oficial) + it('MEP', S.fx.bolsa) + it('CCL', S.fx.contadoconliqui) + it('Blue', S.fx.blue) + cerChip();
 }
 // CER que usan los bonos que se compran hoy: liquidación T+1 menos 10 días hábiles
+// Pie de página: de cuándo es cada dato que no es en vivo
+function renderDataDates() {
+  const el = $('#dataDates');
+  if (!el) return;
+  const f = d => d ? d.slice(8, 10) + '/' + d.slice(5, 7) : null;
+  const p = [
+    S.liveTime && `cotizaciones ${S.liveTime.toLocaleTimeString('es-AR', { hour: '2-digit', minute: '2-digit' })}`,
+    S.cer && S.cer.length && `CER publicado hasta el ${f(S.cer[S.cer.length - 1].d)}`,
+    S.flujos && `flujos de bonos ${f(S.flujos.descargado)}`,
+    S.fund && `balances ${f(S.fund.descargado)}`,
+    S.publicas && S.publicas.descargado && `carteras de fondos ${f(S.publicas.descargado)}`,
+  ].filter(Boolean);
+  el.textContent = p.length ? 'Última actualización: ' + p.join(' · ') + '.' : '';
+}
 function cerChip() {
   if (!S.cer || !S.cer.length) return '';
   const settle = settleDate(today()), ref = businessDaysBack(settle, 10), v = cerAt(ref);
@@ -1038,7 +1053,8 @@ function cerChip() {
   const hoy = cerAt(today());
   const tip = `CER del ${f(ref)} (10 días hábiles antes de la liquidación del ${f(settle)}): es el que se usa para ajustar los bonos CER que comprás hoy.`
     + (hoy ? ` CER de hoy: ${fmt(hoy, 4)}.` : '') + ' Fuente: BCRA.';
-  return `<span class="it" title="${esc(tip)}">CER<b>${fmt(v, 4)}</b> <small>${f(ref)}</small></span>`;
+  // Se muestra el CER de hoy y, al lado, el que corresponde a los bonos (va 10 días hábiles atrasado por norma)
+  return `<span class="it" title="${esc(tip)}">CER hoy<b>${fmt(hoy || v, 4)}</b> <small>· para bonos ${fmt(v, 4)} (del ${f(ref)})</small></span>`;
 }
 
 /* ============================================================
@@ -1634,10 +1650,10 @@ async function init() {
   loadLive('bonos').catch(() => { }); // para el MEP implícito
   // Flujos de fondos de ONs y soberanos nuevos (archivo local generado por actualizar-flujos.js)
   fetchJSON(SNAP ? 'flujos.json' : 'flujos.json?v=' + Date.now(), 15000)
-    .then(f => { S.flujos = f; renderTable(); })
+    .then(f => { S.flujos = f; renderTable(); renderDataDates(); })
     .catch(() => { });
   fetchJSON(SNAP ? 'fundamentales.json' : 'fundamentales.json?v=' + Date.now(), 15000)
-    .then(f => { S.fund = f; if (S.params.estrategia === 'calidad') reanalyzeAll(); })
+    .then(f => { S.fund = f; renderDataDates(); if (S.params.estrategia === 'calidad') reanalyzeAll(); })
     .catch(() => { });
   fetchJSON(API.cer, 20000)
     .then(j => {
