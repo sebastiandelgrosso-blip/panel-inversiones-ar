@@ -4,7 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Panel de Inversiones AR</title>
-  <link rel="stylesheet" href="styles.css?v=20261118d">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+  <script>
+    // Modo día/noche: lo elegido por la persona o, si no eligió, el del sistema
+    (function () { var t = null; try { t = JSON.parse(localStorage.getItem('tema')); } catch (e) { }
+      document.documentElement.dataset.theme = t || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); })();
+  </script>
+  <meta name="theme-color" content="#f3eee4">
+  <link rel="stylesheet" href="styles.css?v=20261118g">
 </head>
 <body>
   <header class="top">
@@ -218,10 +227,10 @@
   <footer>Datos: data912.com (BYMA, demorados), argentinadatos.com (CCL histórico), dolarapi.com. Uso educativo, no es recomendación de inversión.
     <div id="dataDates"></div></footer>
 
-  <script src="app.js?v=20261118d"></script>
-  <script src="cartera.js?v=20261118d"></script>
-  <script src="noticias-comun.js?v=20261118d"></script>
-  <script src="extras.js?v=20261118d"></script>
-  <script src="buscador.js?v=20261118d"></script>
+  <script src="app.js?v=20261118g"></script>
+  <script src="cartera.js?v=20261118g"></script>
+  <script src="noticias-comun.js?v=20261118g"></script>
+  <script src="extras.js?v=20261118g"></script>
+  <script src="buscador.js?v=20261118g"></script>
 </body>
 </html>

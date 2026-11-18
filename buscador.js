@@ -375,7 +375,7 @@ function bxRenderAll() {
         ${bxKv('Si rebalanceás hoy', rot.hoy.length ? rot.hoy.map(h => `<b>${esc(h.row.sym)}</b> <small>${pct(h.s, 0)}</small>`).join('<br>') : '<span class="muted">liquidez (nada sube)</span>', '')}
       </div>
       <div class="chartbox"><div class="ctrl"><span class="muted" style="font-size:12px">${rot.d0} → ${rot.d1} · validación desde ${rot.cutD}</span>
-        <span class="legend"><span><i style="background:#4ea1ff"></i>Rotación</span><span><i style="background:#8b98a8"></i>Todos por igual</span></span></div>
+        <span class="legend"><span><i style="background:var(--c-fast)"></i>Rotación</span><span><i style="background:var(--muted)"></i>Todos por igual</span></span></div>
         <canvas id="bxRotChart" style="width:100%;height:220px;display:block"></canvas></div>
       <p class="note">${gana ? '✓ En validación la rotación rindió más que tener todos por igual' : '✗ En validación la rotación rindió menos que tener todos por igual'}${menos ? ', con caídas más chicas.' : '.'}
         Simplificaciones: se rebalancea a partes iguales entre los elegidos, la plata sin asignar no rinde interés y la comisión se cobra sobre lo que cambia.
@@ -430,8 +430,8 @@ function bxRenderAll() {
       por eso lo que vale es la columna de validación.</p>
     <p class="disclaimer">Herramienta educativa. No es asesoramiento financiero. Resultados pasados no garantizan resultados futuros.</p>`;
   if (rot) lineChart($('#bxRotChart'), [
-    { y: rot.best.curve.map(p => p.b), color: '#8b98a8' },
-    { y: rot.best.curve.map(p => p.s), color: '#4ea1ff' },
+    { y: rot.best.curve.map(p => p.b), color: tc('--muted') },
+    { y: rot.best.curve.map(p => p.s), color: tc('--c-fast') },
   ], { labels: rot.best.curve.map(p => p.d) });
 }
 
@@ -466,7 +466,7 @@ function bxRenderDetail(ruleIx) {
       </ul>
     </div>
     <div class="chartbox"><div class="ctrl"><span class="muted" style="font-size:12px">Toda la historia · validación desde ${res.dates[res.cut]}</span>
-      <span class="legend"><span><i style="background:#4ea1ff"></i>Regla</span><span><i style="background:#8b98a8"></i>Comprar y mantener</span></span></div>
+      <span class="legend"><span><i style="background:var(--c-fast)"></i>Regla</span><span><i style="background:var(--muted)"></i>Comprar y mantener</span></span></div>
       <canvas id="bxChart" style="width:100%;height:200px;display:block"></canvas></div>
     <div class="bxwrap"><table class="simple bxt bxclick" style="font-size:12px">
       <tr><th>Regla (mejores en entrenamiento)</th><th>Entren.</th><th>Validación</th><th>Caída val.</th><th>Sharpe val.</th><th>Ops</th><th>Hoy</th></tr>
@@ -477,8 +477,8 @@ function bxRenderDetail(ruleIx) {
     <p class="note">Ordenadas por ${BX_CRIT[res.crit]} en entrenamiento (${res.dates[0]} → ${res.dates[res.cut]}); rendimientos anuales${a.cur === 'USD' ? ' en dólares' : ' en pesos'},
       con comisión de ${fmt(S.params.comision, 2)}% por operación. Tocá una regla para ver su curva. No es asesoramiento financiero.</p>`;
   lineChart($('#bxChart'), [
-    { y: e.curve.map(p => p.b), color: '#8b98a8' },
-    { y: e.curve.map(p => p.s), color: '#4ea1ff' },
+    { y: e.curve.map(p => p.b), color: tc('--muted') },
+    { y: e.curve.map(p => p.s), color: tc('--c-fast') },
   ], { labels: e.curve.map(p => p.d) });
 }
 

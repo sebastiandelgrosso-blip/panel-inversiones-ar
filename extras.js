@@ -15,7 +15,7 @@ function lineChart(cv, series, opts = {}) {
   const lo = Math.log(Math.min(...all)), hi = Math.log(Math.max(...all));
   const n = series[0].y.length;
   const X = i => padL + (n === 1 ? 0 : i / (n - 1) * pw), Y = v => top + (1 - (Math.log(v) - lo) / ((hi - lo) || 1)) * ph;
-  g.font = '11px Segoe UI, sans-serif'; g.fillStyle = '#8b98a8'; g.strokeStyle = '#273243';
+  g.font = '11px "IBM Plex Sans", system-ui, sans-serif'; g.fillStyle = tc('--muted'); g.strokeStyle = tc('--line');
   for (let k = 0; k <= 3; k++) {
     const v = Math.exp(lo + (hi - lo) * k / 3), yy = Y(v);
     g.beginPath(); g.moveTo(padL, yy); g.lineTo(padL + pw, yy); g.stroke();
@@ -43,7 +43,7 @@ function renderBacktest(a, desde) {
   box.innerHTML = `
     <div class="chartbox"><div class="ctrl">
       ${['3a', '5a', 'todo'].map(x => `<button data-bt="${x}" class="${x === desde ? 'on' : ''}">${x === 'todo' ? 'Toda la historia' : 'Últimos ' + x.replace('a', ' años')}</button>`).join('')}
-      <span class="legend"><span><i style="background:#4ea1ff"></i>${ESTRATEGIAS[S.params.estrategia] || 'TMR'}</span><span><i style="background:#8b98a8"></i>Comprar y mantener</span></span></div>
+      <span class="legend"><span><i style="background:var(--c-fast)"></i>${ESTRATEGIAS[S.params.estrategia] || 'TMR'}</span><span><i style="background:var(--muted)"></i>Comprar y mantener</span></span></div>
       <canvas id="btChart" style="width:100%;height:200px;display:block"></canvas></div>
     <div class="plan">
       ${kv(ESTRATEGIAS[S.params.estrategia] || 'TMR', `<span class="${cls(r.cagr)}">${pct(r.cagr)}</span>`, 'anual')}
@@ -57,8 +57,8 @@ function renderBacktest(a, desde) {
       El objetivo principal de la estrategia es evitar las caídas grandes; en activos con subas sostenidas suele rendir menos que mantener.
       Resultados pasados no garantizan resultados futuros.</p>`;
   lineChart($('#btChart'), [
-    { y: r.curve.map(p => p.b), color: '#8b98a8' },
-    { y: r.curve.map(p => p.s), color: '#4ea1ff' },
+    { y: r.curve.map(p => p.b), color: tc('--muted') },
+    { y: r.curve.map(p => p.s), color: tc('--c-fast') },
   ], { labels: r.curve.map(p => p.d) });
 }
 
@@ -119,7 +119,7 @@ async function runBacktestAll() {
   out.innerHTML = `
     <table class="simple" style="font-size:13px;margin-top:12px">
       <tr><th>Estrategia</th><th>Rinde anual (prom.)</th><th>Peor caída (prom.)</th><th>Retorno / caída</th><th>Le ganó a mantener</th><th>Operaciones por año</th><th>Tiempo invertido</th></tr>
-      ${sum.map((x, i) => `<tr${x.e === S.params.estrategia ? ' style="background:var(--bg2,rgba(78,161,255,.08))"' : ''}><td><b>${ESTRATEGIAS[x.e]}</b>${i === 0 ? ' 🏆' : ''}${x.e === S.params.estrategia ? ' <span class="muted">(elegida)</span>' : ''}</td>
+      ${sum.map((x, i) => `<tr${x.e === S.params.estrategia ? ' style="background:var(--hl)"' : ''}><td><b>${ESTRATEGIAS[x.e]}</b>${i === 0 ? ' 🏆' : ''}${x.e === S.params.estrategia ? ' <span class="muted">(elegida)</span>' : ''}</td>
         <td class="${cls(x.c)}">${pct(x.c)}</td><td>${pct(x.d, 0)}</td><td>${fmt(x.rd, 2)}</td>
         <td>${x.gana}</td><td>${fmt(x.ops, 1)}</td><td>${pct(x.t, 0, false)}</td></tr>`).join('')}
       <tr><td><b>Comprar y mantener</b></td><td class="${cls(bhC)}">${pct(bhC)}</td><td>${pct(bhD, 0)}</td><td>${fmt(ratio(bhC, bhD), 2)}</td><td>—</td><td>0</td><td>100%</td></tr>
@@ -294,14 +294,14 @@ function drawCurve() {
   const dpr = window.devicePixelRatio || 1, W = cv.clientWidth, H = cv.clientHeight;
   cv.width = W * dpr; cv.height = H * dpr;
   const g = cv.getContext('2d'); g.scale(dpr, dpr);
-  g.font = '11px Segoe UI, sans-serif';
-  if (all.length < 2) { g.fillStyle = '#8b98a8'; g.fillText('No hay suficientes bonos con TIR en este grupo.', 10, 20); return; }
+  g.font = '11px "IBM Plex Sans", system-ui, sans-serif';
+  if (all.length < 2) { g.fillStyle = tc('--muted'); g.fillText('No hay suficientes bonos con TIR en este grupo.', 10, 20); return; }
   const padL = 44, padR = 14, top = 10, bot = 26, pw = W - padL - padR, ph = H - top - bot;
   const x0 = 0, x1 = Math.max(...all.map(p => p.x)) * 1.08;
   let y0 = Math.min(...all.map(p => p.y)), y1 = Math.max(...all.map(p => p.y));
   const pad = (y1 - y0) * 0.15 || 0.01; y0 -= pad; y1 += pad;
   const X = x => padL + (x - x0) / (x1 - x0) * pw, Y = y => top + (1 - (y - y0) / (y1 - y0)) * ph;
-  g.strokeStyle = '#273243'; g.fillStyle = '#8b98a8';
+  g.strokeStyle = tc('--line'); g.fillStyle = tc('--muted');
   for (let k = 0; k <= 4; k++) {
     const y = y0 + (y1 - y0) * k / 4; g.beginPath(); g.moveTo(padL, Y(y)); g.lineTo(padL + pw, Y(y)); g.stroke();
     g.textBaseline = 'middle'; g.fillText((y * 100).toFixed(1) + '%', 4, Y(y));
@@ -309,7 +309,7 @@ function drawCurve() {
   g.textBaseline = 'top';
   for (let k = 0; k <= 5; k++) { const x = x0 + (x1 - x0) * k / 5; g.fillText(x.toFixed(1), X(x) - 8, H - bot + 6); }
   g.fillText('duration (años)', padL + pw - 80, H - 12);
-  const COLORS = { local: '#4ea1ff', NY: '#2fbf71', all: '#4ea1ff', BOPREAL: '#e8b339' };
+  const COLORS = { local: tc('--c-fast'), NY: tc('--up'), all: tc('--c-fast'), BOPREAL: tc('--c-slow') };
   // curvas ajustadas
   for (const [k, fit] of Object.entries(c.fits)) {
     const [grp, sub] = k.split(':');
@@ -321,9 +321,9 @@ function drawCurve() {
   }
   // puntos
   all.forEach(p => {
-    g.fillStyle = COLORS[p.sub] || '#4ea1ff';
+    g.fillStyle = COLORS[p.sub] || tc('--c-fast');
     g.beginPath(); g.arc(X(p.x), Y(p.y), 4, 0, 7); g.fill();
-    g.fillStyle = '#e6edf3'; g.textBaseline = 'bottom';
+    g.fillStyle = tc('--text'); g.textBaseline = 'bottom';
     g.fillText(p.r.sym, X(p.x) + 5, Y(p.y) - 2);
   });
   const subs = [...new Set(all.map(p => p.sub))];
@@ -890,9 +890,9 @@ document.addEventListener('click', e => {
    ============================================================ */
 const SECTOR_ORD = ['Tecnología', 'Comunicaciones', 'Consumo discrecional', 'Consumo básico', 'Finanzas', 'Salud', 'Energía', 'Materiales', 'Industria', 'Servicios públicos', 'Inmobiliario', 'ETFs y otros'];
 function heatColor(v) {
-  if (!ok(v)) return 'var(--panel2)';
+  if (!ok(v)) return 'var(--heat0)';
   const k = Math.min(1, Math.abs(v) / 0.03);
-  return v >= 0 ? `rgba(47,191,113,${0.18 + 0.72 * k})` : `rgba(240,86,91,${0.18 + 0.72 * k})`;
+  return `color-mix(in srgb, var(${v >= 0 ? '--up' : '--down'}) ${Math.round(22 + 70 * k)}%, var(--heat0))`;
 }
 // Reparte un rectángulo en rectángulos de área proporcional a cada valor, lo más cuadrados posible
 // (algoritmo "squarified treemap", Bruls, Huizing y van Wijk, 2000)
@@ -978,7 +978,7 @@ function renderHeatBox() {
       const v = chgUSD(r), lado = Math.sqrt(t.w * t.h);
       const fs = Math.max(9, Math.min(18, lado / 5.5));
       const sym = t.w > fs * r.sym.length * 0.62 && t.h > fs + 2, num = sym && t.h > fs * 2.3;
-      html += `<div class="ht" data-key="cedears:${esc(r.sym)}" style="left:${t.x + 1}px;top:${t.y + (conTitulo ? HEAD : 0) + 1}px;width:${Math.max(0, t.w - GAP)}px;height:${Math.max(0, t.h - GAP)}px;background:${heatColor(v)};font-size:${fs.toFixed(1)}px"
+      html += `<div class="ht${Math.abs(v || 0) < 0.012 ? ' ht-l' : ''}" data-key="cedears:${esc(r.sym)}" style="left:${t.x + 1}px;top:${t.y + (conTitulo ? HEAD : 0) + 1}px;width:${Math.max(0, t.w - GAP)}px;height:${Math.max(0, t.h - GAP)}px;background:${heatColor(v)};font-size:${fs.toFixed(1)}px"
         title="${esc(r.sym)}: ${pct(v, 2)} en dólares hoy · operado $ ${compact(r.monto)}">${sym ? `<b>${esc(r.sym)}</b>` : ''}${num ? `<span>${pct(v, 1)}</span>` : ''}</div>`;
     });
     html += '</div>';
@@ -1023,3 +1023,33 @@ setupAlerts();
 loadNews();
 checkImportHash();
 setupCloud();
+
+/* ============================================================
+   Modo día / noche y fecha en la cabecera
+   ============================================================ */
+function setupTema() {
+  const sub = document.querySelector('.brand .sub');
+  if (sub) sub.textContent = new Date((SNAP && SNAP.time) || Date.now()).toLocaleDateString('es-AR', { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' });
+  const btn = document.createElement('button');
+  btn.id = 'btnTema';
+  const pintar = () => {
+    const osc = document.documentElement.dataset.theme === 'dark';
+    btn.textContent = osc ? '☀' : '☾';
+    btn.title = osc ? 'Pasar a modo día' : 'Pasar a modo noche';
+  };
+  pintar();
+  btn.addEventListener('click', () => {
+    const t = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+    document.documentElement.dataset.theme = t;
+    store.set('tema', t);
+    pintar();
+    // Redibuja lo que está en canvas o usa colores calculados
+    try { drawChart(); } catch { }
+    try { if (typeof drawCurve === 'function') drawCurve(); } catch { }
+    try { renderHeatBox(); } catch { }
+    try { if (S.tab === 'cartera') renderCartera(); } catch { }
+    try { if (curDetail && !$('#detail').hidden) renderDetail(findRow(curDetail.tab + ':' + curDetail.sym), curDetail); } catch { }
+  });
+  $('#btnParams').before(btn);
+}
+setupTema();

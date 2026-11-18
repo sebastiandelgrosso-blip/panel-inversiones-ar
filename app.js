@@ -105,6 +105,14 @@ function pct(x, d = 1, sign = true) {
   if (!ok(x)) return '–';
   return (sign && x > 0 ? '+' : '') + (x * 100).toLocaleString('es-AR', { minimumFractionDigits: d, maximumFractionDigits: d }) + '%';
 }
+// Color del tema actual (variables CSS), para dibujar en canvas
+const tcCache = {};
+function tc(name) {
+  const t = document.documentElement.dataset.theme || 'light';
+  const k = t + name;
+  if (!(k in tcCache)) tcCache[k] = getComputedStyle(document.documentElement).getPropertyValue(name).trim() || '#888';
+  return tcCache[k];
+}
 const cls = x => !ok(x) || x === 0 ? '' : x > 0 ? 'up' : 'down';
 function money(x, cur) { return ok(x) ? (cur === 'USD' ? 'US$ ' : '$ ') + fmt(x) : '–'; }
 function compact(x) {
@@ -1350,11 +1358,11 @@ function renderDetail(row, a) {
           ${['6m', '1a', '3a', '5a', 'max'].map(r => `<button data-range="${r}" class="${chartRange === r ? 'on' : ''}">${r === 'max' ? 'Todo' : r}</button>`).join('')}
           <button data-log="1" class="${chartLog ? 'on' : ''}">Log</button>
           <span class="legend">
-            <span><i style="background:#e6edf3"></i>Precio</span>
-            <span><i style="background:#4ea1ff"></i>Media ${a.nF}</span>
-            <span><i style="background:#e8b339"></i>Media ${a.nS}</span>
-            <span><i style="background:#2fbf71"></i>Máx. hist.</span>
-            <span><i style="background:#f0565b"></i>Stop</span>
+            <span><i style="background:var(--text)"></i>Precio</span>
+            <span><i style="background:var(--c-fast)"></i>Media ${a.nF}</span>
+            <span><i style="background:var(--c-slow)"></i>Media ${a.nS}</span>
+            <span><i style="background:var(--up)"></i>Máx. hist.</span>
+            <span><i style="background:var(--down)"></i>Stop</span>
           </span>
         </div>
         <canvas id="chart"></canvas>
@@ -1426,10 +1434,10 @@ function drawChart(hoverX) {
   const y = v => top + (1 - (tf(v) - (tLo - pad)) / ((tHi + pad) - (tLo - pad))) * (priceH - top);
   const x = i => padL + (rows.length === 1 ? 0 : i / (rows.length - 1) * plotW);
 
-  g.font = '11px Segoe UI, sans-serif';
+  g.font = '11px "IBM Plex Sans", system-ui, sans-serif';
   g.textBaseline = 'middle';
   // grilla
-  g.strokeStyle = '#273243'; g.fillStyle = '#8b98a8'; g.lineWidth = 1;
+  g.strokeStyle = tc('--line'); g.fillStyle = tc('--muted'); g.lineWidth = 1;
   for (let k = 0; k <= 4; k++) {
     const tv = (tLo - pad) + ((tHi + pad) - (tLo - pad)) * k / 4;
     const v = useLog ? Math.exp(tv) : tv;
@@ -1459,23 +1467,23 @@ function drawChart(hoverX) {
     g.beginPath(); g.moveTo(padL, yy); g.lineTo(padL + plotW, yy); g.stroke(); g.setLineDash([]);
     g.fillStyle = color; g.textBaseline = 'bottom'; g.fillText(label, padL + 4, yy - 2);
   };
-  hline(a.ath, '#2fbf71', 'Máx. histórico ' + fmt(a.ath));
-  hline(a.stop, '#f0565b', 'Stop ' + fmt(a.stop));
-  line(L, '#e8b339', 1.4);
-  line(F, '#4ea1ff', 1.4);
-  line(rows, '#e6edf3', 1.6, r => r.c);
+  hline(a.ath, tc('--up'), 'Máx. histórico ' + fmt(a.ath));
+  hline(a.stop, tc('--down'), 'Stop ' + fmt(a.stop));
+  line(L, tc('--c-slow'), 1.4);
+  line(F, tc('--c-fast'), 1.4);
+  line(rows, tc('--text'), 1.6, r => r.c);
 
   // RSI
   const ry = v => rsiTop + (1 - v / 100) * rsiH;
-  g.fillStyle = 'rgba(78,161,255,0.06)';
+  g.fillStyle = tc('--band');
   g.fillRect(padL, ry(S.params.rsiOB), plotW, ry(S.params.rsiOS) - ry(S.params.rsiOB));
-  g.strokeStyle = '#273243'; g.lineWidth = 1;
+  g.strokeStyle = tc('--line'); g.lineWidth = 1;
   [S.params.rsiOB, S.params.rsiOS].forEach(v => { g.beginPath(); g.moveTo(padL, ry(v)); g.lineTo(padL + plotW, ry(v)); g.stroke(); });
-  g.fillStyle = '#8b98a8'; g.textBaseline = 'middle';
+  g.fillStyle = tc('--muted'); g.textBaseline = 'middle';
   g.fillText('RSI', padL + plotW + 6, rsiTop + rsiH / 2);
   g.fillText(S.params.rsiOB, padL + plotW + 30, ry(S.params.rsiOB));
   g.fillText(S.params.rsiOS, padL + plotW + 30, ry(S.params.rsiOS));
-  g.strokeStyle = '#b48ef0'; g.lineWidth = 1.2; g.beginPath();
+  g.strokeStyle = tc('--c-alt'); g.lineWidth = 1.2; g.beginPath();
   let st = false;
   RS.forEach((v, i) => { if (!ok(v)) return; st ? g.lineTo(x(i), ry(v)) : g.moveTo(x(i), ry(v)); st = true; });
   g.stroke();
@@ -1484,14 +1492,14 @@ function drawChart(hoverX) {
   if (hoverX != null && hoverX >= padL && hoverX <= padL + plotW) {
     const i = Math.round((hoverX - padL) / plotW * (rows.length - 1));
     const r = rows[i];
-    g.strokeStyle = '#8b98a8'; g.setLineDash([3, 3]);
+    g.strokeStyle = tc('--muted'); g.setLineDash([3, 3]);
     g.beginPath(); g.moveTo(x(i), top); g.lineTo(x(i), Hh - 18); g.stroke(); g.setLineDash([]);
     const txt = `${r.d}  ${fmt(r.c)}${ok(F[i]) ? `  M${a.nF} ${fmt(F[i])}` : ''}${ok(L[i]) ? `  M${a.nS} ${fmt(L[i])}` : ''}${ok(RS[i]) ? `  RSI ${fmt(RS[i], 0)}` : ''}`;
     const tw = g.measureText(txt).width + 12;
     const bx = Math.min(Math.max(padL, x(i) - tw / 2), padL + plotW - tw);
-    g.fillStyle = '#0f1419ee'; g.fillRect(bx, top, tw, 20);
-    g.fillStyle = '#e6edf3'; g.textBaseline = 'middle'; g.fillText(txt, bx + 6, top + 10);
-    g.fillStyle = '#e6edf3'; g.beginPath(); g.arc(x(i), y(r.c), 3, 0, 7); g.fill();
+    g.fillStyle = tc('--tip'); g.fillRect(bx, top, tw, 20);
+    g.fillStyle = tc('--tip-text'); g.textBaseline = 'middle'; g.fillText(txt, bx + 6, top + 10);
+    g.fillStyle = tc('--text'); g.beginPath(); g.arc(x(i), y(r.c), 3, 0, 7); g.fill();
   }
 }
 

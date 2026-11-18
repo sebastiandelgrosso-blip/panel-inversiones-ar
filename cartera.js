@@ -107,7 +107,7 @@ function drawCartera() {
   // Distribución por tipo y alertas
   const byTab = {};
   rows.forEach(x => byTab[x.p.tab] = (byTab[x.p.tab] || 0) + (x.valARS || 0));
-  const COL = { acciones: '#4ea1ff', cedears: '#b48ef0', bonos: '#2fbf71', ons: '#e8b339' };
+  const COL = { acciones: 'var(--c-fast)', cedears: 'var(--c-alt)', bonos: 'var(--up)', ons: 'var(--c-slow)' };
   const alerts = [];
   rows.forEach(x => { if (totARS && x.valARS / totARS > 0.25) alerts.push(`${x.p.sym} pesa ${pct(x.valARS / totARS, 0, false)} de la cartera: mucha concentración en un solo activo (ideal: menos de 20–25%).`); });
   const sells = rows.filter(x => x.A && (x.A.signal === 'VENDER' || x.A.signal === 'REDUCIR'));
