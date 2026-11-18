@@ -152,7 +152,8 @@ async function pool(items, n, fn) {
     .replace(/<script src="app.js[^"]*"><\/script>/, () => `<script>window.SNAPSHOT=${json};</script>\n<script>\n${app}\n</script>`)
     .replace(/<script src="cartera.js[^"]*"><\/script>/, () => `<script>\n${cartera}\n</script>`)
     .replace(/\s*<script src="noticias-comun.js[^"]*"><\/script>/, '') // la foto no actualiza noticias
-    .replace(/<script src="extras.js[^"]*"><\/script>/, () => `<script>\n${fs.readFileSync(path.join(dir, 'extras.js'), 'utf8')}\n</script>`);
+    .replace(/<script src="extras.js[^"]*"><\/script>/, () => `<script>\n${fs.readFileSync(path.join(dir, 'extras.js'), 'utf8')}\n</script>`)
+    .replace(/<script src="buscador.js[^"]*"><\/script>/, () => `<script>\n${fs.readFileSync(path.join(dir, 'buscador.js'), 'utf8')}\n</script>`);
   fs.writeFileSync(path.join(dir, 'panel-compartible.html'), html);
   console.log(`Listo: panel-compartible.html (${(html.length / 1024 / 1024).toFixed(2)} MB, ${Object.keys(urls).length} series)`);
 })();

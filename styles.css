@@ -297,3 +297,15 @@ table.carry tr[data-key]:hover { background: #1a2330; }
   .mktbar { padding: 6px 12px; }
   #tbl td.c-rs { display: none; }
 }
+
+/* Buscador de estrategias (buscador.js) */
+.tabs { overflow-x: auto; }
+.bx { max-width: 1200px; }
+.bx h1 { font-size: 22px; }
+.bx h2 { font-size: 17px; margin-top: 26px; }
+.bx .lead { color: #c9d4df; }
+.bx .toolbar label { color: var(--muted); font-size: 13px; }
+.bxwrap { overflow-x: auto; }
+table.bxt th, table.bxt td { white-space: nowrap; }
+table.bxclick tr[data-bxkey], table.bxclick tr[data-bxr] { cursor: pointer; }
+table.bxclick tr[data-bxkey]:hover, table.bxclick tr[data-bxr]:hover, table.bxt tr.sel { background: #1a2330; }

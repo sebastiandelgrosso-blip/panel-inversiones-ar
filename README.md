@@ -4,6 +4,7 @@ Panel para seguir acciones argentinas, CEDEARs, bonos, letras y ONs que se opera
 
 - **Señales** con la estrategia TMR (Tendencia + Momentum + Retroceso) y recomendación por instrumento.
 - **Backtest** por activo y general.
+- **Buscador de estrategias**: prueba 167 reglas de compra/venta por activo y una rotación mensual entre activos; elige con la historia vieja y valida con la reciente, siempre contra comprar y mantener.
 - **TIR, duration y paridad** de soberanos, BOPREAL, LECAP/BONCAP, bonos CER y ONs, con **curva de rendimientos**.
 - **Mi cartera**: resultado en pesos y en dólares, señal y qué hacer con cada posición.
 - **Seguir carteras** públicas (13F de la SEC) y copiarlas con CEDEARs.

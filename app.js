@@ -1385,6 +1385,8 @@ function renderDetail(row, a) {
       <div id="btBox"><button id="btnBacktest" class="primary">Probar la estrategia con la historia de ${esc(row.sym)}</button>
         <span class="muted" style="font-size:12px">Simula comprar y vender según las señales, contra comprar y mantener.</span></div>
 
+      ${typeof bxDetailHTML === 'function' ? bxDetailHTML(row) : ''}
+
       <h4>Cómo se armó el puntaje</h4>
       <table class="breakdown">
         ${a.parts.map(p => `<tr><td>${p.txt}</td><td class="${cls(p.pts)}">${p.pts > 0 ? '+' : ''}${p.pts}</td></tr>`).join('')}
@@ -1540,15 +1542,17 @@ function onParamChange() {
 async function setTab(tab) {
   S.tab = tab;
   document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('active', b.dataset.tab === tab));
-  const strat = tab === 'estrategia', cart = tab === 'cartera', seg = tab === 'seguir', res = tab === 'resumen';
+  const strat = tab === 'estrategia', cart = tab === 'cartera', seg = tab === 'seguir', res = tab === 'resumen', bus = tab === 'buscador';
   $('#viewResumen').hidden = !res;
   $('#viewStrategy').hidden = !strat;
   $('#viewCartera').hidden = !cart;
   $('#viewSeguir').hidden = !seg;
-  $('#viewTable').hidden = strat || cart || seg || res;
+  $('#viewBuscador').hidden = !bus;
+  $('#viewTable').hidden = strat || cart || seg || res || bus;
   if (res) return renderResumen();
   if (cart) return renderCartera();
   if (seg) return renderSeguir();
+  if (bus) return bxView(); // buscador.js
   if (strat) return;
   $('#lblLider').style.display = tab === 'acciones' ? '' : 'none';
   $('#lblTir').style.display = tab === 'bonos' || tab === 'ons' ? '' : 'none';
