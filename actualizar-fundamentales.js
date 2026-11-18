@@ -25,6 +25,27 @@ const INST = { // datos de balance (a fin de año)
   eq: ['StockholdersEquity', 'StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest'],
 };
 
+// Código SIC (actividad declarada ante la SEC) -> sector, en grupos parecidos a los del S&P 500
+function sectorDe(sic) {
+  if (!sic) return null;
+  // Fondos de oro, plata, bitcoin, petróleo, volatilidad (fideicomisos de materias primas): van con los ETFs
+  if ([6221, 6189].includes(sic)) return null;
+  if ([6324, 6411].includes(sic)) return sic === 6324 ? 'Salud' : 'Finanzas'; // prepagas (UnitedHealth, Cigna…)
+  const en = (a, b) => sic >= a && sic <= b;
+  if ([1311, 1381, 1382, 1389, 4922, 4923].includes(sic) || en(2900, 2999)) return 'Energía';
+  if ([2833, 2834, 2835, 2836].includes(sic) || en(3841, 3851) || en(8000, 8099) || sic === 5122 || sic === 5047) return 'Salud';
+  if (en(3570, 3579) || en(3600, 3699) || en(7370, 7379) || sic === 3825 || sic === 3826) return 'Tecnología';
+  if (en(4800, 4899) || en(7800, 7899) || en(2710, 2799)) return 'Comunicaciones';
+  if (en(4900, 4999)) return 'Servicios públicos';
+  if (sic === 6798 || en(6500, 6599)) return 'Inmobiliario';
+  if (en(6000, 6799)) return 'Finanzas';
+  if (en(2000, 2199) || en(2840, 2844) || [5411, 5412, 5912, 5141, 5149, 5331, 5399].includes(sic)) return 'Consumo básico';
+  if (sic === 3711 || sic === 3714 || en(2200, 2399) || en(3940, 3949) || en(5200, 5999) || en(7000, 7099) || en(5800, 5899) || en(7900, 7999) || sic === 3021) return 'Consumo discrecional';
+  if (en(1000, 1499) || en(2400, 2699) || en(2800, 2829) || en(2850, 2899) || en(3200, 3399)) return 'Materiales';
+  if (en(100, 999)) return 'Materiales';
+  return 'Industria';
+}
+
 async function get(url, intentos = 4) {
   for (let i = 0; i < intentos; i++) {
     await sleep(130); // la SEC pide no más de 10 pedidos por segundo
@@ -121,6 +142,27 @@ async function get(url, intentos = 4) {
     if (!lista.length) continue;
     for (const s of e.syms) out.empresas[s] = { nombre: e.nombre, cik, anios: lista };
   }
+  // 5) Sector de cada empresa (código SIC de la SEC), para el mapa de calor
+  out.sectores = {};
+  for (const [cik, e] of emp) {
+    try {
+      const j = await get(`https://data.sec.gov/submissions/CIK${String(cik).padStart(10, '0')}.json`);
+      const sec = j && sectorDe(+j.sic);
+      if (sec) for (const s of e.syms) out.sectores[s] = sec;
+    } catch (err) { /* sin sector: queda en "Otros" */ }
+  }
+  // Empresas conocidas que la SEC agrupa como "servicios" genéricos: se usa el sector del S&P 500
+  const AJUSTE = {
+    V: 'Finanzas', MA: 'Finanzas', PYPL: 'Finanzas', AXP: 'Finanzas', COIN: 'Finanzas', NU: 'Finanzas', HOOD: 'Finanzas', XYZ: 'Finanzas',
+    MELI: 'Consumo discrecional', BABA: 'Consumo discrecional', JD: 'Consumo discrecional', PDD: 'Consumo discrecional', SE: 'Consumo discrecional',
+    BKNG: 'Consumo discrecional', ABNB: 'Consumo discrecional', EBAY: 'Consumo discrecional', ETSY: 'Consumo discrecional',
+    GOOGL: 'Comunicaciones', GOOG: 'Comunicaciones', META: 'Comunicaciones', DIS: 'Comunicaciones', SPOT: 'Comunicaciones', BIDU: 'Comunicaciones',
+    GOLD: 'Materiales', SHOP: 'Tecnología', GLOB: 'Tecnología', DESP: 'Consumo discrecional',
+  };
+  for (const [s, sec] of Object.entries(AJUSTE)) if (base.includes(s)) out.sectores[s] = sec;
+  for (const s of ['VXX', 'UVXY', 'SVXY']) delete out.sectores[s]; // notas de volatilidad: van con los ETFs
+  console.log(`sectores: ${Object.keys(out.sectores).length} CEDEARs`);
+
   const n = Object.keys(out.empresas).length;
   if (n < 50) { console.error(`Solo ${n} empresas: no se sobrescribe fundamentales.json`); process.exit(1); }
   fs.writeFileSync('fundamentales.json', JSON.stringify(out));

@@ -615,7 +615,7 @@ async function loadMercado() {
   S.mercado.pedido = true;
   fetchJSON('https://api.argentinadatos.com/v1/finanzas/indices/riesgo-pais', 20000).then(d => {
     const u = d[d.length - 1], p = d[d.length - 2];
-    if (u && u.valor > 0) { S.mercado.rp = { v: u.valor, ant: p && p.valor, d: u.fecha }; renderResumenSoon(); }
+    if (u && u.valor > 0) { S.mercado.rp = { v: u.valor, ant: p && p.valor, d: u.fecha }; renderResumenSoon(); renderMktBar(); }
   }).catch(() => { });
   getUSA('SPY').then(r => {
     const u = r[r.length - 1], p = r[r.length - 2];
@@ -667,6 +667,18 @@ function drawResumen() {
     return `<div class="card rs-card"><h3>${titulo} <span class="muted">${nota}</span></h3>
       <div class="rs-two"><div><div class="rs-sub up">Las que más subieron</div>${up.map(fila).join('') || '<p class="muted">Ninguna subió.</p>'}</div>
       <div><div class="rs-sub down">Las que más bajaron</div>${dn.map(fila).join('') || '<p class="muted">Ninguna bajó.</p>'}</div></div></div>`;
+  };
+
+  // ---- Rupturas: superaron su máximo anual en las últimas 5 ruedas, ordenadas por fuerza relativa ----
+  const rupturas = rows => {
+    const L = rows.map(r => ({ r, a: an(r), rs: rsOf(r) })).filter(x => x.a && x.a.ruptura && x.r.monto > 0).sort((x, y) => (y.rs || 0) - (x.rs || 0));
+    return `<div class="card rs-card"><h3>Rupturas <span class="muted">superaron su máximo anual en la última semana</span></h3>
+      ${L.length ? L.slice(0, 10).map(x => `<div class="rs-row" data-key="${x.r.tab}:${esc(x.r.sym)}"><b class="rs-tk">${esc(x.r.sym)}</b>
+        <span class="muted" style="font-size:12px">${x.r.tab === 'cedears' ? 'CEDEAR' : 'Acción'} · ${x.a.ruptura.hace ? 'hace ' + x.a.ruptura.hace + (x.a.ruptura.hace > 1 ? ' ruedas' : ' rueda') : 'hoy'}</span>
+        <span class="rs-px">RS <b class="${x.rs >= 80 ? 'up' : ''}">${x.rs ?? '—'}</b></span><span class="rs-sig">${sigBadge(x.a.signal)}</span></div>`).join('')
+        + (L.length > 10 ? `<p class="muted rs-mas">y ${L.length - 10} más</p>` : '')
+        : '<p class="muted">Ninguna por ahora' + (AQ.running ? ' (todavía se están analizando)' : '') + '.</p>'}
+      <p class="note" style="margin:8px 0 0">RS = fuerza relativa de 1 a 99: qué tan bien viene rindiendo contra el resto (99 = de las mejores). Las rupturas con RS alto son las más seguidas por los traders de tendencia.</p></div>`;
   };
 
   // ---- Señales ----
@@ -727,6 +739,7 @@ function drawResumen() {
         ${barra(acc, 'Acciones argentinas')}${barra(ced, 'CEDEARs')}
         <div class="rs-two" style="margin-top:12px"><div><div class="rs-sub up">Mejoraron desde la rueda anterior</div>${listaCambios(mejor, 'Ninguna.')}</div>
         <div><div class="rs-sub down">Empeoraron</div>${listaCambios(peor, 'Ninguna.')}</div></div></div>
+      ${rupturas([...acc, ...ced])}
       ${movers(acc, 60, 'Acciones argentinas', 'las 60 más operadas')}
       ${movers(ced, 100, 'CEDEARs', 'los 100 más operados')}
       ${noticias}
@@ -742,11 +755,207 @@ document.addEventListener('click', e => {
   if (row) openDetail(row.dataset.key);
 });
 
-function afterTab(tab) { renderCurveBox(); renderNews(); }
-function afterRefresh() { curveCache = null; renderCurveBox(); checkAlerts(); }
+/* ============================================================
+   Variación en dólares de un CEDEAR: la variación en pesos menos la del CCL del día
+   ============================================================ */
+function cclVarHoy() {
+  const ccl = currentCCL(), serie = S.cclSeries;
+  const ant = serie && serie.filter(x => x.d < today()).pop();
+  return ccl && ant ? ccl / ant.v - 1 : null;
+}
+function chgUSD(r) {
+  if (!r || !ok(r.chg)) return null;
+  const v = cclVarHoy();
+  return ok(v) ? (1 + r.chg) / (1 + v) - 1 : r.chg;
+}
+
+/* ============================================================
+   Barra de mercados: el mundo y Argentina de un vistazo
+   ============================================================ */
+const BARRA = [
+  ['SPY', 'S&P 500'], ['QQQ', 'Nasdaq'], ['EWZ', 'Brasil'], ['EEM', 'Emergentes'],
+  ['GLD', 'Oro'], ['SLV', 'Plata'], ['XLE', 'Energía'], ['IBIT', 'Bitcoin'], ['ETHA', 'Ethereum'],
+];
+function renderMktBar() {
+  const el = $('#mktBar');
+  if (!el) return;
+  const ced = Object.fromEntries((S.live.cedears || []).map(r => [r.sym, r]));
+  const it = (lbl, val, cl, key, tip) => `<span class="mk${key ? ' clk' : ''}"${key ? ` data-key="${key}"` : ''}${tip ? ` title="${esc(tip)}"` : ''}><span class="mk-l">${lbl}</span><b class="${cl || ''}">${val}</b></span>`;
+  const glob = BARRA.map(([s, l]) => {
+    const r = ced[s], v = chgUSD(r);
+    return ok(v) ? it(l, pct(v, 2), cls(v), 'cedears:' + s, `${l}: variación de hoy en dólares, estimada con el CEDEAR ${s} y el CCL`) : '';
+  }).join('');
+  const lid = (S.live.acciones || []).filter(r => !r.variant && LIDER.has(r.sym) && ok(r.chg));
+  const lidChg = lid.length ? lid.reduce((s, r) => s + r.chg, 0) / lid.length : null;
+  const of = S.fx.oficial, mep = S.fx.bolsa, ccl = S.fx.contadoconliqui, M = S.mercado || {};
+  const ar = [
+    ok(lidChg) ? it('Panel líder', pct(lidChg, 2), cls(lidChg), null, 'Promedio de la variación de hoy de las acciones del panel líder, en pesos') : '',
+    M.rp ? it('Riesgo país', fmt(M.rp.v, 0) + (M.rp.ant ? ` <small>${M.rp.v - M.rp.ant > 0 ? '+' : ''}${M.rp.v - M.rp.ant}</small>` : ''), M.rp.ant ? cls(M.rp.ant - M.rp.v) : '', null, 'Riesgo país (puntos básicos) y cambio contra el día anterior') : '',
+    of && ccl ? it('Brecha CCL', pct(ccl / of - 1, 1, false), '', null, 'Cuánto más caro está el dólar CCL que el oficial') : '',
+    of && mep ? it('Brecha MEP', pct(mep / of - 1, 1, false), '', null, 'Cuánto más caro está el dólar MEP que el oficial') : '',
+    mep && ccl ? it('Canje', pct(ccl / mep - 1, 2, false), '', null, 'Diferencia entre el dólar cable (CCL, afuera) y el MEP (dólares en Argentina)') : '',
+  ].join('');
+  el.innerHTML = (glob ? `<span class="mk-g">Mundo</span>${glob}` : '') + (ar ? `<span class="mk-g">Argentina</span>${ar}` : '');
+  el.hidden = !glob && !ar;
+}
+document.addEventListener('click', e => {
+  const k = e.target.closest('#mktBar [data-key]');
+  if (k) openDetail(k.dataset.key);
+});
+async function setupMktBar() {
+  if (!$('#mktBar')) return;
+  renderMktBar();
+  await Promise.all([loadLive('cedears').catch(() => { }), loadLive('acciones').catch(() => { }), loadCCL().catch(() => { })]);
+  loadMercado();
+  renderMktBar();
+}
+
+/* ============================================================
+   Fuerza relativa (RS): 1 a 99 contra el resto de la misma pestaña
+   ============================================================ */
+// Igual que el "RS rating" clásico: pesa doble los últimos 3 meses
+function rsRaw(a) {
+  if (!a || !ok(a.r3m) || !ok(a.r6m)) return null;
+  const r9 = ok(a.r9m) ? a.r9m : a.r6m, r12 = ok(a.r12m) ? a.r12m : r9;
+  return 0.4 * a.r3m + 0.2 * a.r6m + 0.2 * r9 + 0.2 * r12;
+}
+let rsCache = {};
+function rsMapa(tab) {
+  const rows = (S.live[tab] || []).filter(r => !r.variant);
+  const vals = rows.map(r => [r.sym, rsRaw(an(r))]).filter(x => ok(x[1]));
+  const sig = vals.length + ':' + vals.reduce((s, x) => s + x[1], 0).toFixed(4);
+  if (rsCache[tab] && rsCache[tab].sig === sig) return rsCache[tab].m;
+  vals.sort((a, b) => a[1] - b[1]);
+  const m = {};
+  vals.forEach(([s], i) => { m[s] = vals.length > 1 ? Math.max(1, Math.min(99, Math.round(1 + i / (vals.length - 1) * 98))) : 50; });
+  rsCache[tab] = { sig, m };
+  return m;
+}
+const rsOf = r => r && !r.variant && (r.tab === 'acciones' || r.tab === 'cedears') ? rsMapa(r.tab)[r.sym] ?? null : null;
+
+/* ============================================================
+   Carry trade e inflación implícita (LECAP/BONCAP vs dólar y vs CER)
+   ============================================================ */
+function renderCarryBox() {
+  let box = $('#carryBox');
+  if (S.tab !== 'bonos') { if (box) box.hidden = true; return; }
+  if (!box) {
+    box = document.createElement('details');
+    box.id = 'carryBox'; box.className = 'chartbox curvebox';
+    box.open = store.get('carryAbierto', false);
+    box.addEventListener('toggle', () => { store.set('carryAbierto', box.open); if (box.open) renderCarryBox(); });
+    ($('#curveBox') || $('#summary')).after(box);
+  }
+  box.hidden = false;
+  const mep = S.fx.bolsa;
+  const rows = (S.live.bonos || []).filter(r => !r.variant).map(r => ({ r, B: bondInfo(r) })).filter(x => x.B);
+  const lecaps = rows.filter(x => x.B.kind === 'lecap' && !x.B.raro && x.B.dias > 3).sort((a, b) => a.B.dias - b.B.dias);
+  const cers = rows.filter(x => x.B.kind === 'cer' && !x.B.raro && x.B.dur > 0.08);
+  const head = '<summary>Carry trade e inflación implícita (LECAP y BONCAP)</summary>';
+  if (!box.open) { box.innerHTML = head; return; }
+  if (!lecaps.length || !mep) { box.innerHTML = head + '<p class="muted">Cargando LECAP, CER y dólar MEP…</p>'; return; }
+  const esc2 = [0, 0.05, 0.10];
+  const filas = lecaps.map(({ r, B }) => {
+    const g = B.next.total / B.price;                 // cuánto multiplica los pesos hasta el vencimiento
+    const eq = mep * g;                               // dólar de salida que empata con haber comprado dólares hoy
+    // Bono CER de duración más parecida, para la inflación implícita
+    let c = null;
+    for (const x of cers) if (!c || Math.abs(x.B.dur - B.dur) < Math.abs(c.B.dur - B.dur)) c = x;
+    const infl = c && Math.abs(c.B.dur - B.dur) < Math.max(0.25, B.dur * 0.5) ? (1 + B.tir) / (1 + c.B.tir) - 1 : null;
+    const inflM = ok(infl) ? Math.pow(1 + infl, 1 / 12) - 1 : null;
+    return `<tr data-key="bonos:${esc(r.sym)}"><td class="l"><b>${esc(r.sym)}</b></td><td class="l">${B.venc.split('-').reverse().join('/')}</td><td>${B.dias}</td>
+      <td>${pct(B.tem, 2, false)}</td><td>${pct(B.tir, 1, false)}</td>
+      <td><b>$${fmt(eq, 0)}</b> <small class="muted">${pct(eq / mep - 1, 1)}</small></td>
+      ${esc2.map(s => { const u = g / (1 + s) - 1; return `<td class="${cls(u)}">${pct(u, 1)}</td>`; }).join('')}
+      <td>${ok(inflM) ? `${pct(inflM, 2, false)} <small class="muted">vs ${esc(c.r.sym)}</small>` : '—'}</td></tr>`;
+  }).join('');
+  box.innerHTML = head + `
+    <div class="tablewrap" style="max-height:none"><table class="simple carry">
+      <tr><th>LECAP</th><th>Vence</th><th>Días</th><th>Tasa mensual</th><th>Tasa anual</th><th>Dólar de equilibrio</th>
+        <th>En US$ si el MEP no se mueve</th><th>…si sube 5%</th><th>…si sube 10%</th><th>Inflación implícita mensual</th></tr>
+      ${filas}
+    </table></div>
+    <p class="note" style="margin:6px 0 0"><b>Carry trade</b>: pasar dólares a pesos, comprar la LECAP y volver al dólar al vencimiento. El <b>dólar de equilibrio</b> es el MEP al que
+      ganarías lo mismo que quedándote en dólares (hoy el MEP está en $${fmt(mep, 0)}): si al vencimiento el dólar está por debajo, el carry ganó. Las columnas "En US$" muestran
+      cuánto rendiría en dólares en todo el período según cuánto suba el MEP. La <b>inflación implícita</b> compara la tasa de la LECAP con la tasa real del bono CER de plazo
+      más parecido: es la inflación mensual promedio que descuenta el mercado. Por encima de ella conviene el CER; por debajo, la tasa fija.</p>`;
+}
+document.addEventListener('click', e => {
+  const tr = e.target.closest('#carryBox tr[data-key]');
+  if (tr) openDetail(tr.dataset.key);
+});
+
+/* ============================================================
+   Mapa de calor de CEDEARs por sector
+   ============================================================ */
+const SECTOR_ORD = ['Tecnología', 'Comunicaciones', 'Consumo discrecional', 'Consumo básico', 'Finanzas', 'Salud', 'Energía', 'Materiales', 'Industria', 'Servicios públicos', 'Inmobiliario', 'ETFs y otros'];
+function heatColor(v) {
+  if (!ok(v)) return 'var(--panel2)';
+  const k = Math.min(1, Math.abs(v) / 0.03);
+  return v >= 0 ? `rgba(47,191,113,${0.18 + 0.72 * k})` : `rgba(240,86,91,${0.18 + 0.72 * k})`;
+}
+function renderHeatBox() {
+  let box = $('#heatBox');
+  if (S.tab !== 'cedears') { if (box) box.hidden = true; return; }
+  if (!box) {
+    box = document.createElement('details');
+    box.id = 'heatBox'; box.className = 'chartbox curvebox';
+    box.open = store.get('heatAbierto', true);
+    box.addEventListener('toggle', () => { store.set('heatAbierto', box.open); if (box.open) renderHeatBox(); });
+    $('#summary').before(box);
+  }
+  box.hidden = false;
+  const head = '<summary>Mapa de calor por sector</summary>';
+  if (!box.open) { box.innerHTML = head; return; }
+  const sect = (S.fund && S.fund.sectores) || {};
+  const rows = (S.live.cedears || []).filter(r => !r.variant && r.v > 0 && r.monto > 0).sort((a, b) => b.monto - a.monto).slice(0, 150);
+  if (!rows.length) { box.innerHTML = head + '<p class="muted">Cargando…</p>'; return; }
+  const max = rows[0].monto;
+  const grupos = {};
+  for (const r of rows) (grupos[sect[r.sym] || 'ETFs y otros'] ||= []).push(r);
+  const orden = SECTOR_ORD.filter(s => grupos[s]).sort((a, b) => grupos[b].reduce((s, r) => s + r.monto, 0) - grupos[a].reduce((s, r) => s + r.monto, 0));
+  box.innerHTML = head + `<div class="heat">${orden.map(s => {
+    const L = grupos[s], prom = L.reduce((t, r) => t + (chgUSD(r) || 0) * r.monto, 0) / L.reduce((t, r) => t + r.monto, 0);
+    return `<div class="hg"><div class="hg-t">${s} <span class="${cls(prom)}">${pct(prom, 1)}</span></div><div class="hg-b">${L.map(r => {
+      const v = chgUSD(r), w = Math.round(46 + Math.sqrt(r.monto / max) * 110);
+      return `<div class="ht" data-key="cedears:${esc(r.sym)}" style="flex:${w} 1 ${w}px;min-height:${Math.round(w * 0.55)}px;background:${heatColor(v)}" title="${esc(r.sym)}: ${pct(v, 2)} en dólares hoy · operado $ ${compact(r.monto)}"><b>${esc(r.sym)}</b><span>${pct(v, 1)}</span></div>`;
+    }).join('')}</div></div>`;
+  }).join('')}</div>
+  <p class="note" style="margin:6px 0 0">Los 150 CEDEARs más operados hoy. Tamaño = monto operado; color = variación del día <b>en dólares</b> (la variación en pesos menos la del CCL).
+    Sectores según la actividad que cada empresa declara ante la SEC.</p>`;
+}
+document.addEventListener('click', e => {
+  const t = e.target.closest('#heatBox [data-key]');
+  if (t) openDetail(t.dataset.key);
+});
+
+/* ============================================================
+   Descargar la tabla a Excel (CSV que Excel abre directo)
+   ============================================================ */
+function descargarTabla() {
+  const ths = [...document.querySelectorAll('#tbl thead th')];
+  const skip = new Set(['c-fav', 'c-spark', 'c-r52']);
+  const idx = ths.map((th, i) => [...th.classList].some(c => skip.has(c)) ? -1 : i).filter(i => i >= 0);
+  const q = s => /[;"\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+  const lineas = [idx.map(i => q(ths[i].textContent.replace(/[▲▼]/g, '').trim())).join(';')];
+  for (const tr of document.querySelectorAll('#tbl tbody tr[data-key]')) {
+    const tds = tr.children;
+    lineas.push(idx.map(i => q((tds[i] ? tds[i].innerText : '').replace(/\s+/g, ' ').trim())).join(';'));
+  }
+  const blob = new Blob(['﻿' + lineas.join('\r\n')], { type: 'text/csv;charset=utf-8' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = `panel-${S.tab}-${today()}.csv`;
+  document.body.appendChild(a); a.click(); a.remove();
+  setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+}
+
+function afterTab(tab) { renderCurveBox(); renderCarryBox(); renderHeatBox(); renderNews(); }
+function afterRefresh() { curveCache = null; renderCurveBox(); renderCarryBox(); renderHeatBox(); renderMktBar(); checkAlerts(); }
 function afterInit() { checkAlerts(); }
 
 setupStrategyBacktest();
+setupMktBar();
 setupAlerts();
 loadNews();
 checkImportHash();

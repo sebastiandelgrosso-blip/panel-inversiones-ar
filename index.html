@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Panel de Inversiones AR</title>
-  <link rel="stylesheet" href="styles.css?v=20261116f">
+  <link rel="stylesheet" href="styles.css?v=20261118a">
 </head>
 <body>
   <header class="top">
@@ -29,6 +29,8 @@
     <button data-tab="estrategia">Estrategia</button>
   </nav>
 
+  <div id="mktBar" class="mktbar" hidden></div>
+
   <main>
     <section id="viewResumen"></section>
     <section id="viewTable" hidden>
@@ -49,6 +51,7 @@
           <option value="monto">Más operadas</option>
           <option value="chg">Variación del día</option>
           <option value="score">Puntaje</option>
+          <option value="rs">Fuerza relativa (RS)</option>
           <option value="spark">Rendimiento 3 meses</option>
           <option value="tir">TIR</option>
           <option value="sym">Ticker (A-Z)</option>
@@ -57,6 +60,7 @@
         <label><input type="checkbox" id="fVol" checked> Solo con volumen</label>
         <label id="lblTir"><input type="checkbox" id="fTir"> Solo con TIR</label>
         <label><input type="checkbox" id="fVar"> Mostrar especies D/C</label>
+        <button id="btnCsv" class="mini" title="Descargar esta tabla para abrir en Excel">⤓ Excel</button>
       </div>
       <div id="summary" class="summary"></div>
       <div class="tablewrap">
@@ -212,9 +216,9 @@
   <footer>Datos: data912.com (BYMA, demorados), argentinadatos.com (CCL histórico), dolarapi.com. Uso educativo, no es recomendación de inversión.
     <div id="dataDates"></div></footer>
 
-  <script src="app.js?v=20261116f"></script>
-  <script src="cartera.js?v=20261116f"></script>
-  <script src="noticias-comun.js?v=20261116f"></script>
-  <script src="extras.js?v=20261116f"></script>
+  <script src="app.js?v=20261118a"></script>
+  <script src="cartera.js?v=20261118a"></script>
+  <script src="noticias-comun.js?v=20261118a"></script>
+  <script src="extras.js?v=20261118a"></script>
 </body>
 </html>

@@ -821,6 +821,13 @@ function analyze(series, row, P) {
   let peak = -Infinity, mdd = 0;
   for (let i = n - w; i < n; i++) { peak = Math.max(peak, c[i]); mdd = Math.min(mdd, c[i] / peak - 1); }
 
+  // Ruptura: en las últimas 5 ruedas cerró por encima del máximo del año anterior a esas 5 ruedas
+  let ruptura = null;
+  if (n > 120) {
+    const prevMax = Math.max(...c.slice(Math.max(0, n - 257), n - 5));
+    for (let i = n - 5; i < n; i++) if (c[i] > prevMax) { ruptura = { hace: n - 1 - i, nivel: prevMax }; break; }
+  }
+
   // Cruces de medias en las últimas 20 ruedas
   let cross = null;
   for (let i = n - 1; i > n - 21 && i > 0; i--) {
@@ -936,7 +943,7 @@ function analyze(series, row, P) {
     tab: row.tab, sym: row.sym, cur, src, usK, n, rows, smaF, smaS, rsiA, nF, nS,
     px, sF, sS, R, H, ATR, ath, athD: rows[athI].d, atl, atlD: rows[atlI].d, max52, min52,
     distATH, distMax52, distMin52, pos52: max52 > min52 ? (px - min52) / (max52 - min52) : 0.5,
-    r1m: ret(21), r3m: ret(63), r6m: ret(126), r12m: ret(252), ytd: ytd(rows), mom, vol, mdd, up, cross,
+    r1m: ret(21), r3m: ret(63), r6m: ret(126), r9m: ret(189), r12m: ret(252), ruptura, ytd: ytd(rows), mom, vol, mdd, up, cross,
     score, signal, prevSignal, parts, zone, title, acts, stop, stopPct, target, targetTxt, rr, size, entryLo, entryHi,
   };
 }
@@ -1027,6 +1034,7 @@ function findRow(key) {
    ============================================================ */
 function renderFX() {
   renderDataDates();
+  if (typeof renderMktBar === 'function') renderMktBar();
   const it = (label, v, sub) => v ? `<span class="it">${label}<b>$${fmt(v, 0)}</b>${sub ? ` <small>${sub}</small>` : ''}</span>` : '';
   $('#fx').innerHTML = it('Oficial', S.fx.oficial) + it('MEP', S.fx.bolsa) + it('CCL', S.fx.contadoconliqui) + it('Blue', S.fx.blue) + cerChip();
 }
@@ -1076,6 +1084,7 @@ const COLS = [
   { k: 'venc', t: 'Vencimiento', onlyBonos: 'ons', sort: r => bondInfo(r)?.venc ?? '' },
   { k: 'signal', t: 'Señal', l: true, sort: r => an(r)?.score ?? -999 },
   { k: 'score', t: 'Puntaje', sort: r => an(r)?.score ?? -999 },
+  { k: 'rs', t: 'RS', sort: r => rsOf(r) ?? -1 },
   { k: 'zone', t: 'Zona', l: true, sort: r => an(r)?.distATH ?? -9 },
   { k: 'ath', t: 'vs Máx. hist.', sort: r => an(r)?.distATH ?? -9 },
   { k: 'r52', t: 'Rango 52s', sort: r => an(r)?.pos52 ?? -1 },
@@ -1139,7 +1148,7 @@ function renderTable() {
   const fixedIncome = S.tab === 'bonos' || S.tab === 'ons';
   const cols = COLS.filter(c => (!c.onlyFav || S.tab === 'favoritos')
     && (!c.onlyBonos || (c.onlyBonos === true ? fixedIncome : S.tab === c.onlyBonos))
-    && !(S.tab === 'ons' && ['spark', 'signal', 'score', 'zone', 'ath', 'r52', 'rsi', 'r3m', 'r12m', 'vol'].includes(c.k)));
+    && !(S.tab === 'ons' && ['spark', 'rs', 'signal', 'score', 'zone', 'ath', 'r52', 'rsi', 'r3m', 'r12m', 'vol'].includes(c.k)));
   $('#tbl thead').innerHTML = '<tr>' + cols.map(c =>
     `<th data-k="${c.k}" class="${c.l ? 'l' : ''} c-${c.k} ${S.sort.k === c.k ? 'sorted' : ''}">${c.t}${S.sort.k === c.k ? (S.sort.dir > 0 ? ' ▲' : ' ▼') : ''}</th>`).join('') + '</tr>';
   const rows = visibleRows();
@@ -1166,6 +1175,7 @@ function renderTable() {
       monto: compact(r.monto),
       signal: a?.err ? `<span class="sig s-ERR" title="${esc(a.err)}">${r.tab === 'ons' ? 'sin histórico' : esc(a.err)}</span>` : A ? `<span class="sig s-${A.signal}">${A.signal}</span>` : '<span class="muted">—</span>',
       score: A ? `<span class="score ${cls(A.score)}">${A.score > 0 ? '+' : ''}${A.score}</span>` : '',
+      rs: (() => { const v = A ? rsOf(r) : null; return ok(v) ? `<span class="rs ${v >= 80 ? 'up' : v <= 20 ? 'down' : ''}" title="Fuerza relativa: rinde mejor que el ${v}% de ${TAB_LABEL[r.tab] === 'CEDEAR' ? 'los CEDEARs' : 'las acciones'} del panel (pesa más los últimos 3 meses)">${v}</span>${A.ruptura ? ' <span class="brk" title="Superó su máximo anual hace ' + A.ruptura.hace + ' ruedas">▲</span>' : ''}` : ''; })(),
       zone: A ? `<span class="zone">${A.zone}</span>` : '',
       ath: A ? `<span class="${A.distATH > -0.05 ? 'up' : ''}">${pct(A.distATH, 0)}</span>` : '',
       r52: A ? `<span class="range" title="Mín ${fmt(A.min52)} · Máx ${fmt(A.max52)}"><i style="left:calc(${(A.pos52 * 100).toFixed(0)}% - 2px)"></i></span>` : '',
@@ -1610,6 +1620,7 @@ function bind() {
   $('#btnReset').addEventListener('click', () => { S.params = { ...DEFAULTS }; renderParams(); onParamChange(); });
 
   $('#btnRefresh').addEventListener('click', () => refreshAll());
+  $('#btnCsv').addEventListener('click', () => descargarTabla());
   $('#sortSel').addEventListener('change', e => {
     const k = e.target.value;
     if (k) { S.sort = { k, dir: k === 'sym' ? 1 : -1 }; renderTable(); }

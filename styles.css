@@ -265,3 +265,34 @@ button.mini { padding: 1px 7px; font-size: 12px; }
   .rs-sp { display: none; }
   .strategy h1 { font-size: 20px; }
 }
+
+/* Barra de mercados */
+.mktbar { display: flex; gap: 6px; align-items: center; padding: 6px 18px; background: var(--bg); border-bottom: 1px solid var(--line); overflow-x: auto; scrollbar-width: none; font-size: 12px; white-space: nowrap; }
+.mktbar::-webkit-scrollbar { display: none; }
+.mk-g { color: var(--muted); font-size: 10px; text-transform: uppercase; letter-spacing: .5px; margin: 0 2px 0 8px; }
+.mk-g:first-child { margin-left: 0; }
+.mk { display: inline-flex; gap: 6px; align-items: baseline; padding: 2px 8px; border-radius: 5px; background: var(--panel); border: 1px solid var(--line); }
+.mk.clk { cursor: pointer; }
+.mk.clk:hover { border-color: var(--accent); }
+.mk-l { color: var(--muted); }
+.mk b small { font-weight: 400; }
+/* RS y rupturas */
+.rs { font-weight: 700; }
+.brk { color: var(--up); font-size: 10px; }
+/* Carry */
+table.carry th, table.carry td { white-space: nowrap; text-align: right; font-variant-numeric: tabular-nums; }
+table.carry th.l, table.carry td.l, table.carry th:first-child, table.carry th:nth-child(2) { text-align: left; }
+table.carry tr[data-key] { cursor: pointer; }
+table.carry tr[data-key]:hover { background: #1a2330; }
+/* Mapa de calor */
+.heat { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 10px; }
+.hg-t { font-size: 12px; font-weight: 600; margin-bottom: 4px; }
+.hg-b { display: flex; flex-wrap: wrap; gap: 2px; }
+.ht { display: flex; flex-direction: column; justify-content: center; align-items: center; border-radius: 3px; cursor: pointer; padding: 3px; overflow: hidden; color: #fff; text-shadow: 0 1px 2px #0008; }
+.ht b { font-size: 12px; }
+.ht span { font-size: 11px; }
+.ht:hover { outline: 2px solid var(--text); }
+@media (max-width: 760px) {
+  .mktbar { padding: 6px 12px; }
+  #tbl td.c-rs { display: none; }
+}
