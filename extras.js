@@ -894,6 +894,41 @@ function heatColor(v) {
   const k = Math.min(1, Math.abs(v) / 0.03);
   return v >= 0 ? `rgba(47,191,113,${0.18 + 0.72 * k})` : `rgba(240,86,91,${0.18 + 0.72 * k})`;
 }
+// Reparte un rectángulo en rectángulos de área proporcional a cada valor, lo más cuadrados posible
+// (algoritmo "squarified treemap", Bruls, Huizing y van Wijk, 2000)
+function squarify(vals, x, y, w, h) {
+  const tot = vals.reduce((s, v) => s + v, 0);
+  const out = new Array(vals.length);
+  if (!tot || w <= 0 || h <= 0) return out.fill({ x, y, w: 0, h: 0 });
+  const k = w * h / tot;
+  const items = vals.map((v, i) => ({ i, a: v * k })).sort((p, q) => q.a - p.a);
+  const peor = (fila, lado) => {
+    const s = fila.reduce((t, r) => t + r.a, 0), mx = Math.max(...fila.map(r => r.a)), mn = Math.min(...fila.map(r => r.a));
+    return Math.max(lado * lado * mx / (s * s), s * s / (lado * lado * mn));
+  };
+  let fila = [], j = 0;
+  const ubicar = () => {
+    const s = fila.reduce((t, r) => t + r.a, 0);
+    if (w >= h) { // columna a la izquierda
+      const cw = s / h; let yy = y;
+      for (const r of fila) { const rh = r.a / cw; out[r.i] = { x, y: yy, w: cw, h: rh }; yy += rh; }
+      x += cw; w -= cw;
+    } else {      // fila arriba
+      const rh = s / w; let xx = x;
+      for (const r of fila) { const rw = r.a / rh; out[r.i] = { x: xx, y, w: rw, h: rh }; xx += rw; }
+      y += rh; h -= rh;
+    }
+    fila = [];
+  };
+  while (j < items.length) {
+    const lado = Math.min(w, h), it = items[j];
+    if (!fila.length || peor(fila.concat(it), lado) <= peor(fila, lado)) { fila.push(it); j++; }
+    else ubicar();
+  }
+  if (fila.length) ubicar();
+  return out;
+}
+
 function renderHeatBox() {
   let box = $('#heatBox');
   if (S.tab !== 'cedears') { if (box) box.hidden = true; return; }
@@ -910,20 +945,48 @@ function renderHeatBox() {
   const sect = (S.fund && S.fund.sectores) || {};
   const rows = (S.live.cedears || []).filter(r => !r.variant && r.v > 0 && r.monto > 0).sort((a, b) => b.monto - a.monto).slice(0, 150);
   if (!rows.length) { box.innerHTML = head + '<p class="muted">Cargando…</p>'; return; }
-  const max = rows[0].monto;
+  // Tamaño: monto operado "suavizado", para que las más operadas no tapen al resto
+  const peso = r => Math.pow(r.monto, 0.45);
   const grupos = {};
   for (const r of rows) (grupos[sect[r.sym] || 'ETFs y otros'] ||= []).push(r);
-  const orden = SECTOR_ORD.filter(s => grupos[s]).sort((a, b) => grupos[b].reduce((s, r) => s + r.monto, 0) - grupos[a].reduce((s, r) => s + r.monto, 0));
-  box.innerHTML = head + `<div class="heat">${orden.map(s => {
-    const L = grupos[s], prom = L.reduce((t, r) => t + (chgUSD(r) || 0) * r.monto, 0) / L.reduce((t, r) => t + r.monto, 0);
-    return `<div class="hg"><div class="hg-t">${s} <span class="${cls(prom)}">${pct(prom, 1)}</span></div><div class="hg-b">${L.map(r => {
-      const v = chgUSD(r), w = Math.round(46 + Math.sqrt(r.monto / max) * 110);
-      return `<div class="ht" data-key="cedears:${esc(r.sym)}" style="flex:${w} 1 ${w}px;min-height:${Math.round(w * 0.55)}px;background:${heatColor(v)}" title="${esc(r.sym)}: ${pct(v, 2)} en dólares hoy · operado $ ${compact(r.monto)}"><b>${esc(r.sym)}</b><span>${pct(v, 1)}</span></div>`;
-    }).join('')}</div></div>`;
-  }).join('')}</div>
-  <p class="note" style="margin:6px 0 0">Los 150 CEDEARs más operados hoy. Tamaño = monto operado; color = variación del día <b>en dólares</b> (la variación en pesos menos la del CCL).
-    Sectores según la actividad que cada empresa declara ante la SEC.</p>`;
+  const tot = L => L.reduce((s, r) => s + peso(r), 0);
+  // Sectores de mayor a menor; los ETFs al final, para que las empresas queden adelante
+  const orden = Object.keys(grupos).sort((a, b) => (a === 'ETFs y otros') - (b === 'ETFs y otros') || tot(grupos[b]) - tot(grupos[a]));
+  if (!box.querySelector('.tm')) box.innerHTML = head + `<div class="tm"></div>
+    <p class="note" style="margin:6px 0 0">Los 150 CEDEARs más operados hoy. Tamaño = monto operado; color = variación del día <b>en dólares</b> (la variación en pesos menos la del CCL).
+      Sectores según la actividad que cada empresa declara ante la SEC. Tocá un cuadro para ver su análisis.</p>`;
+  const tm = box.querySelector('.tm');
+  const W = tm.clientWidth || 800;
+  const H = Math.round(Math.max(460, Math.min(760, W * 0.62)) * (W < 600 ? 1.8 : 1));
+  tm.style.height = H + 'px';
+  // Primero los sectores (con los ETFs aparte, en una franja proporcional abajo) y adentro de cada uno, sus CEDEARs
+  const sRects = squarify(orden.map(s => tot(grupos[s])), 0, 0, W, H);
+  const HEAD = 17, GAP = 2;
+  let html = '';
+  orden.forEach((s, si) => {
+    const R = sRects[si], L = grupos[s];
+    if (!R || R.w < 4 || R.h < 4) return;
+    const prom = L.reduce((t, r) => t + (chgUSD(r) || 0) * r.monto, 0) / L.reduce((t, r) => t + r.monto, 0);
+    const conTitulo = R.h > 40 && R.w > 60;
+    html += `<div class="tm-s" style="left:${R.x}px;top:${R.y}px;width:${R.w}px;height:${R.h}px">`
+      + (conTitulo ? `<div class="tm-h" title="${esc(s)}"><span>${esc(s)}</span> <b class="${cls(prom)}">${pct(prom, 1)}</b></div>` : '');
+    const ih = R.h - (conTitulo ? HEAD : 0) - GAP, iw = R.w - GAP;
+    const tRects = squarify(L.map(peso), 0, 0, iw, ih);
+    L.forEach((r, i) => {
+      const t = tRects[i];
+      if (!t || t.w < 2 || t.h < 2) return;
+      const v = chgUSD(r), lado = Math.sqrt(t.w * t.h);
+      const fs = Math.max(9, Math.min(18, lado / 5.5));
+      const sym = t.w > fs * r.sym.length * 0.62 && t.h > fs + 2, num = sym && t.h > fs * 2.3;
+      html += `<div class="ht" data-key="cedears:${esc(r.sym)}" style="left:${t.x + 1}px;top:${t.y + (conTitulo ? HEAD : 0) + 1}px;width:${Math.max(0, t.w - GAP)}px;height:${Math.max(0, t.h - GAP)}px;background:${heatColor(v)};font-size:${fs.toFixed(1)}px"
+        title="${esc(r.sym)}: ${pct(v, 2)} en dólares hoy · operado $ ${compact(r.monto)}">${sym ? `<b>${esc(r.sym)}</b>` : ''}${num ? `<span>${pct(v, 1)}</span>` : ''}</div>`;
+    });
+    html += '</div>';
+  });
+  tm.innerHTML = html;
 }
+let heatResize;
+window.addEventListener('resize', () => { clearTimeout(heatResize); heatResize = setTimeout(() => { if (S.tab === 'cedears') renderHeatBox(); }, 250); });
 document.addEventListener('click', e => {
   const t = e.target.closest('#heatBox [data-key]');
   if (t) openDetail(t.dataset.key);

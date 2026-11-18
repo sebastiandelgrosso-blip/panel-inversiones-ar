@@ -285,13 +285,14 @@ table.carry th.l, table.carry td.l, table.carry th:first-child, table.carry th:n
 table.carry tr[data-key] { cursor: pointer; }
 table.carry tr[data-key]:hover { background: #1a2330; }
 /* Mapa de calor */
-.heat { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 10px; }
-.hg-t { font-size: 12px; font-weight: 600; margin-bottom: 4px; }
-.hg-b { display: flex; flex-wrap: wrap; gap: 2px; }
-.ht { display: flex; flex-direction: column; justify-content: center; align-items: center; border-radius: 3px; cursor: pointer; padding: 3px; overflow: hidden; color: #fff; text-shadow: 0 1px 2px #0008; }
-.ht b { font-size: 12px; }
-.ht span { font-size: 11px; }
-.ht:hover { outline: 2px solid var(--text); }
+.tm { position: relative; width: 100%; margin-top: 4px; }
+.tm-s { position: absolute; box-sizing: border-box; border: 1px solid var(--bg); background: var(--bg); overflow: hidden; }
+.tm-h { height: 17px; padding: 0 4px; font-size: 11px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--text); display: flex; gap: 6px; align-items: center; }
+.tm-h span { overflow: hidden; text-overflow: ellipsis; }
+.ht { position: absolute; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center; border-radius: 2px; cursor: pointer; overflow: hidden; color: #fff; text-shadow: 0 1px 2px #0009; line-height: 1.15; }
+.ht b { font-weight: 700; }
+.ht span { font-size: .82em; opacity: .95; }
+.ht:hover { outline: 2px solid var(--text); z-index: 2; }
 @media (max-width: 760px) {
   .mktbar { padding: 6px 12px; }
   #tbl td.c-rs { display: none; }
