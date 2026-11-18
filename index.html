@@ -6,14 +6,14 @@
   <title>Panel de Inversiones AR</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap">
   <script>
     // Modo día/noche: lo elegido por la persona o, si no eligió, el del sistema
     (function () { var t = null; try { t = JSON.parse(localStorage.getItem('tema')); } catch (e) { }
-      document.documentElement.dataset.theme = t || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); })();
+      document.documentElement.dataset.theme = t || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'); })();
   </script>
-  <meta name="theme-color" content="#f3eee4">
-  <link rel="stylesheet" href="styles.css?v=20261118g">
+  <meta name="theme-color" content="#0b0c0e">
+  <link rel="stylesheet" href="styles.css?v=20261118k">
 </head>
 <body>
   <header class="top">
@@ -21,8 +21,8 @@
     <div class="fx" id="fx"></div>
     <div class="actions">
       <span id="status" class="status"></span>
-      <button id="btnRefresh" title="Volver a traer cotizaciones">⟳ Actualizar</button>
-      <button id="btnParams">⚙ Parámetros</button>
+      <button id="btnRefresh" title="Volver a traer cotizaciones"><span class="lbl">Actualizar</span></button>
+      <button id="btnParams" title="Parámetros"><span class="lbl">Parámetros</span></button>
     </div>
   </header>
 
@@ -32,7 +32,7 @@
     <button data-tab="cedears">CEDEARs</button>
     <button data-tab="bonos">Bonos</button>
     <button data-tab="ons">ONs</button>
-    <button data-tab="favoritos">★ Favoritos</button>
+    <button data-tab="favoritos">Favoritos</button>
     <button data-tab="cartera">Mi cartera</button>
     <button data-tab="seguir">Seguir carteras</button>
     <button data-tab="buscador">Buscador</button>
@@ -70,7 +70,7 @@
         <label><input type="checkbox" id="fVol" checked> Solo con volumen</label>
         <label id="lblTir"><input type="checkbox" id="fTir"> Solo con TIR</label>
         <label><input type="checkbox" id="fVar"> Mostrar especies D/C</label>
-        <button id="btnCsv" class="mini" title="Descargar esta tabla para abrir en Excel">⤓ Excel</button>
+        <button id="btnCsv" class="mini" title="Descargar esta tabla para abrir en Excel">Excel</button>
       </div>
       <div id="summary" class="summary"></div>
       <div class="tablewrap">
@@ -227,10 +227,10 @@
   <footer>Datos: data912.com (BYMA, demorados), argentinadatos.com (CCL histórico), dolarapi.com. Uso educativo, no es recomendación de inversión.
     <div id="dataDates"></div></footer>
 
-  <script src="app.js?v=20261118g"></script>
-  <script src="cartera.js?v=20261118g"></script>
-  <script src="noticias-comun.js?v=20261118g"></script>
-  <script src="extras.js?v=20261118g"></script>
-  <script src="buscador.js?v=20261118g"></script>
+  <script src="app.js?v=20261118k"></script>
+  <script src="cartera.js?v=20261118k"></script>
+  <script src="noticias-comun.js?v=20261118k"></script>
+  <script src="extras.js?v=20261118k"></script>
+  <script src="buscador.js?v=20261118k"></script>
 </body>
 </html>

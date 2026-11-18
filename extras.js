@@ -15,7 +15,7 @@ function lineChart(cv, series, opts = {}) {
   const lo = Math.log(Math.min(...all)), hi = Math.log(Math.max(...all));
   const n = series[0].y.length;
   const X = i => padL + (n === 1 ? 0 : i / (n - 1) * pw), Y = v => top + (1 - (Math.log(v) - lo) / ((hi - lo) || 1)) * ph;
-  g.font = '11px "IBM Plex Sans", system-ui, sans-serif'; g.fillStyle = tc('--muted'); g.strokeStyle = tc('--line');
+  g.font = '500 11px Manrope, system-ui, sans-serif'; g.fillStyle = tc('--muted'); g.strokeStyle = tc('--line');
   for (let k = 0; k <= 3; k++) {
     const v = Math.exp(lo + (hi - lo) * k / 3), yy = Y(v);
     g.beginPath(); g.moveTo(padL, yy); g.lineTo(padL + pw, yy); g.stroke();
@@ -294,7 +294,7 @@ function drawCurve() {
   const dpr = window.devicePixelRatio || 1, W = cv.clientWidth, H = cv.clientHeight;
   cv.width = W * dpr; cv.height = H * dpr;
   const g = cv.getContext('2d'); g.scale(dpr, dpr);
-  g.font = '11px "IBM Plex Sans", system-ui, sans-serif';
+  g.font = '500 11px Manrope, system-ui, sans-serif';
   if (all.length < 2) { g.fillStyle = tc('--muted'); g.fillText('No hay suficientes bonos con TIR en este grupo.', 10, 20); return; }
   const padL = 44, padR = 14, top = 10, bot = 26, pw = W - padL - padR, ph = H - top - bot;
   const x0 = 0, x1 = Math.max(...all.map(p => p.x)) * 1.08;
@@ -338,12 +338,27 @@ window.addEventListener('resize', () => { if ($('#curveBox') && !$('#curveBox').
 /* ============================================================
    Alertas: cambios de señal y stops perforados en tu cartera y favoritos
    ============================================================ */
+/* Íconos de trazo fino (SVG propios) */
+const svgI = d => `<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${d}</svg>`;
+const ICON = {
+  bell: svgI('<path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.9 1.9 0 0 0 3.4 0"/>'),
+  sun: svgI('<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>'),
+  moon: svgI('<path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/>'),
+  refresh: svgI('<path d="M20 11a8 8 0 0 0-14.5-4.5L4 8"/><path d="M4 3v5h5"/><path d="M4 13a8 8 0 0 0 14.5 4.5L20 16"/><path d="M20 21v-5h-5"/>'),
+  sliders: svgI('<path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/>'),
+  download: svgI('<path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/>'),
+};
+(function ponerIconos() {
+  const pre = (sel, ic) => { const b = document.querySelector(sel); if (b && !b.querySelector('svg')) b.insertAdjacentHTML('afterbegin', ic); };
+  pre('#btnRefresh', ICON.refresh); pre('#btnParams', ICON.sliders); pre('#btnCsv', ICON.download);
+})();
+
 S.alertas = store.get('alertas', []);
 S.alertState = store.get('alertState', {});
 
 function renderBell() {
   const unread = S.alertas.filter(a => !a.leida).length;
-  $('#btnBell').innerHTML = `🔔${unread ? ` <span class="badge">${unread}</span>` : ''}`;
+  $('#btnBell').innerHTML = `${ICON.bell}${unread ? ` <span class="badge">${unread}</span>` : ''}`;
   const p = $('#alertPanel');
   if (p.hidden) return;
   const perm = typeof Notification !== 'undefined' ? Notification.permission : 'unsupported';
@@ -1034,7 +1049,7 @@ function setupTema() {
   btn.id = 'btnTema';
   const pintar = () => {
     const osc = document.documentElement.dataset.theme === 'dark';
-    btn.textContent = osc ? '☀' : '☾';
+    btn.innerHTML = osc ? ICON.sun : ICON.moon;
     btn.title = osc ? 'Pasar a modo día' : 'Pasar a modo noche';
   };
   pintar();

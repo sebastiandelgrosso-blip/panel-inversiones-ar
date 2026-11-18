@@ -1434,7 +1434,7 @@ function drawChart(hoverX) {
   const y = v => top + (1 - (tf(v) - (tLo - pad)) / ((tHi + pad) - (tLo - pad))) * (priceH - top);
   const x = i => padL + (rows.length === 1 ? 0 : i / (rows.length - 1) * plotW);
 
-  g.font = '11px "IBM Plex Sans", system-ui, sans-serif';
+  g.font = '500 11px Manrope, system-ui, sans-serif';
   g.textBaseline = 'middle';
   // grilla
   g.strokeStyle = tc('--line'); g.fillStyle = tc('--muted'); g.lineWidth = 1;
