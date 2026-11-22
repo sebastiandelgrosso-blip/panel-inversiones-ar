@@ -1,28 +1,169 @@
 {
- "actualizado": "2026-11-22T01:16:56.266Z",
+ "actualizado": "2026-11-22T08:47:24.421Z",
  "items": [
   {
-   "t": "My husband is happily retired at 64 and thinks I should keep working. Is he being fair?",
-   "link": "https://www.marketwatch.com/story/my-husband-is-happily-retired-at-64-and-thinks-i-should-keep-working-is-he-being-fair-325c5f38?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-22T01:15:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "La ofensiva argentina contra el proyecto petrolero en Malvinas: dos empresas desistieron de participar en Sea Lion",
-   "link": "https://www.infobae.com/economia/2026/11/22/la-ofensiva-argentina-contra-el-proyecto-petrolero-en-malvinas-dos-empresas-desistieron-de-participar-en-sea-lion/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-22T01:09:51.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar hoy: a cuánto cotiza este sábado 21 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-sabado-21-noviembre-n6347837",
+   "t": "Dólar blue hoy: a cuánto opera este domingo 22 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-domingo-22-noviembre-n6348003",
    "src": "Ámbito",
    "region": "AR",
-   "fecha": "2026-11-22T00:43:00.000Z",
+   "fecha": "2026-11-22T08:15:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar hoy: a cuánto cotiza este domingo 22 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-domingo-22-noviembre-n6348002",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-22T08:15:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Quantum computing’s first real-world payoff may come in energy, not drug discovery",
+   "link": "https://www.cnbc.com/2026/11/22/quantum-computing-energy-applications.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-22T06:00:01.000Z",
+   "tags": []
+  },
+  {
+   "t": "El shock financiero complica al Gobierno: presiona al dólar y amenaza el repunte de la economía",
+   "link": "https://www.infobae.com/economia/2026/11/22/el-shock-financiero-complica-al-gobierno-presiona-al-dolar-y-amenaza-el-repunte-de-la-economia/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-22T04:31:55.000Z",
+   "tags": []
+  },
+  {
+   "t": "Clima de Negocios: el magnate de EEUU que maneja el mismo auto hace 25 años, anticipa qué pasará con el dólar en el año electoral",
+   "link": "https://www.infobae.com/economia/2026/11/22/clima-de-negocios-el-magnate-de-eeuu-que-maneja-el-mismo-auto-hace-25-anos-anticipa-que-pasara-con-el-dolar-en-el-ano-electoral/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-22T04:31:41.000Z",
+   "tags": []
+  },
+  {
+   "t": "Las acciones argentinas que cotizan en Wall Street se hunden hasta 61% en el año: por qué no encuentran piso",
+   "link": "https://www.infobae.com/economia/2026/11/22/las-acciones-argentinas-que-cotizan-en-wall-street-se-hunden-hasta-61-en-el-ano-por-que-no-encuentran-piso/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-22T04:31:21.000Z",
+   "tags": [
+    "SPY",
+    "BONOS"
+   ]
+  },
+  {
+   "t": "La Argentina que inventa vuelve al mundo",
+   "link": "https://www.infobae.com/opinion/2026/11/22/la-argentina-que-inventa-vuelve-al-mundo/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-22T04:31:05.000Z",
+   "tags": []
+  },
+  {
+   "t": "Mensaje de Estados Unidos a la Argentina: China ya controla el litio, la soja y la pesca y va por el cobre y la infraestructura digital",
+   "link": "https://www.infobae.com/economia/2026/11/22/mensaje-de-estados-unidos-a-la-argentina-china-ya-controla-el-litio-la-soja-y-la-pesca-y-va-por-el-cobre-y-la-infraestructura-digital/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-22T04:30:45.000Z",
+   "tags": []
+  },
+  {
+   "t": "Fernando Marengo, de Black Toro Global: “El desafío de Argentina no es volver a crecer, sino sostener el crecimiento”",
+   "link": "https://www.infobae.com/economia/2026/11/22/fernando-marengo-de-black-toro-global-el-desafio-de-argentina-no-es-volver-a-crecer-sino-sostener-el-crecimiento/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-22T04:30:20.000Z",
+   "tags": []
+  },
+  {
+   "t": "Rutas deterioradas: el costo invisible que paga la economía argentina",
+   "link": "https://www.infobae.com/opinion/2026/11/22/rutas-deterioradas-el-costo-invisible-que-paga-la-economia-argentina/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-22T04:30:03.000Z",
+   "tags": []
+  },
+  {
+   "t": "La importancia del orden macro para impulsar proyectos de inversión… ¿es suficiente?",
+   "link": "https://www.infobae.com/opinion/2026/11/22/la-importancia-del-orden-macro-para-impulsar-proyectos-de-inversion-es-suficiente/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-22T04:29:44.000Z",
+   "tags": []
+  },
+  {
+   "t": "Boom de IA: un cambio de tendencia es posible",
+   "link": "https://www.infobae.com/opinion/2026/11/22/boom-de-ia-un-cambio-de-tendencia-es-posible/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-22T04:29:03.000Z",
+   "tags": []
+  },
+  {
+   "t": "Del Rubik al cerebro ampliado con la IA: el ascenso de una estrella de bajo perfil en la revolución tecnológica del momento",
+   "link": "https://www.lanacion.com.ar/economia/del-rubik-al-cerebro-ampliado-con-la-ia-el-ascenso-de-una-estrella-de-bajo-perfil-en-la-revolucion-nid22112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-22T03:01:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Qué hacer para que la economía esté al servicio del hombre",
+   "link": "https://www.lanacion.com.ar/economia/que-hacer-para-que-la-economia-este-al-servicio-del-hombre-nid22112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-22T03:01:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Qué se puede hacer para generar empleo formal y de calidad, además de la reforma laboral",
+   "link": "https://www.lanacion.com.ar/economia/que-se-puede-hacer-para-generar-mas-empleo-formal-y-de-calidad-ademas-de-la-reforma-laboral-nid22112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-22T03:01:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Se despertó el dólar en medio de la volatilidad mundial",
+   "link": "https://www.lanacion.com.ar/economia/se-desperto-el-dolar-en-medio-de-la-volatilidad-mundial-nid22112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-22T03:01:00.000Z",
+   "tags": [
+    "BONOS"
+   ]
+  },
+  {
+   "t": "Impuesto de sellos: llegó la hora de terminar con esta reliquia colonial",
+   "link": "https://www.lanacion.com.ar/economia/impuesto-de-sellos-llego-la-hora-de-terminar-con-esta-reliquia-colonial-nid22112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-22T03:01:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Una crisis de confianza que requiere cambios profundos",
+   "link": "https://www.lanacion.com.ar/economia/una-crisis-de-confianza-que-requiere-cambios-profundos-nid22112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-22T03:01:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Claudio Porcel: “La Argentina no puede tener déficit fiscal, porque no le cree nadie, y al otro día hay una crisis”",
+   "link": "https://www.lanacion.com.ar/economia/claudio-porcel-la-argentina-no-puede-tener-deficit-fiscal-porque-no-le-cree-nadie-y-al-otro-dia-hay-nid22112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-22T03:01:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Daniel Schteingart: “En la década previa a Milei, la Argentina gastó como europeo pero rindió como latinoamericano”",
+   "link": "https://www.lanacion.com.ar/economia/daniel-schteingart-en-la-decada-previa-a-milei-la-argentina-gasto-como-europeo-pero-rindio-como-nid22112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-22T03:01:00.000Z",
    "tags": []
   },
   {
@@ -30,7 +171,55 @@
    "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-sabado-21-noviembre-n6347838",
    "src": "Ámbito",
    "region": "AR",
-   "fecha": "2026-11-22T00:43:00.000Z",
+   "fecha": "2026-11-22T02:44:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar hoy: a cuánto cotiza este sábado 21 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-sabado-21-noviembre-n6347837",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-22T02:44:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "“Fuera de lugar”: el gobierno de Kicillof exigirá todos los meses información salarial y laboral de los empleados y la Rural pidió su revisión",
+   "link": "https://www.lanacion.com.ar/economia/campo/fuera-de-lugar-el-gobierno-de-kicillof-exigira-todos-los-meses-informacion-salarial-y-laboral-de-los-nid20112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-22T01:50:38.000Z",
+   "tags": []
+  },
+  {
+   "t": "El Niño y La Niña: un estudio argentino descubrió patrones de recurrencia y planteó una hipótesis hasta 2030",
+   "link": "https://www.lanacion.com.ar/economia/campo/el-nino-y-la-nina-un-estudio-argentino-descubrio-patrones-de-recurrencia-y-planteo-una-hipotesis-nid21112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-22T01:35:05.000Z",
+   "tags": []
+  },
+  {
+   "t": "Fuerte interés por SanCor: tres empresas quieren producir en plantas de la icónica láctea en quiebra",
+   "link": "https://www.lanacion.com.ar/economia/campo/fuerte-interes-por-sancor-tres-empresas-quieren-producir-en-plantas-de-la-iconica-lactea-en-quiebra-nid21112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-22T01:28:31.000Z",
+   "tags": []
+  },
+  {
+   "t": "La ofensiva argentina contra el proyecto petrolero en Malvinas: dos empresas desistieron de participar en Sea Lion",
+   "link": "https://www.infobae.com/economia/2026/11/22/la-ofensiva-argentina-contra-el-proyecto-petrolero-en-malvinas-dos-empresas-desistieron-de-participar-en-sea-lion/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-22T01:22:09.000Z",
+   "tags": []
+  },
+  {
+   "t": "My husband is happily retired at 64 and thinks I should keep working. Is he being fair?",
+   "link": "https://www.marketwatch.com/story/my-husband-is-happily-retired-at-64-and-thinks-i-should-keep-working-is-he-being-fair-325c5f38?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-22T01:15:00.000Z",
    "tags": []
   },
   {
@@ -118,14 +307,6 @@
    "tags": [
     "NVDA"
    ]
-  },
-  {
-   "t": "Fuerte interés por SanCor: tres empresas quieren producir en plantas de la icónica láctea en quiebra",
-   "link": "https://www.lanacion.com.ar/economia/campo/fuerte-interes-por-sancor-tres-empresas-quieren-producir-en-plantas-de-la-iconica-lactea-en-quiebra-nid21112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-21T21:11:30.000Z",
-   "tags": []
   },
   {
    "t": "‘It’s downright dirty’: My brother moved in with our ailing mother and closed her bank account. What can I do?",
@@ -228,14 +409,6 @@
    "tags": []
   },
   {
-   "t": "El Niño y La Niña: un estudio argentino descubrió patrones de recurrencia y planteó una hipótesis hasta 2030",
-   "link": "https://www.lanacion.com.ar/economia/campo/el-nino-y-la-nina-un-estudio-argentino-descubrio-patrones-de-recurrencia-y-planteo-una-hipotesis-nid21112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-21T16:11:10.000Z",
-   "tags": []
-  },
-  {
    "t": "A cuánto abre el dólar el martes 24 de noviembre",
    "link": "https://www.lanacion.com.ar/economia/dolar/a-cuanto-abre-el-dolar-el-martes-24-de-noviembre-nid21112026/",
    "src": "La Nación",
@@ -257,14 +430,6 @@
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-21T15:41:36.000Z",
-   "tags": []
-  },
-  {
-   "t": "“Fuera de lugar”: el gobierno de Kicillof exigirá todos los meses información salarial y laboral de los empleados y la Rural pidió su revisión",
-   "link": "https://www.lanacion.com.ar/economia/campo/fuera-de-lugar-el-gobierno-de-kicillof-exigira-todos-los-meses-informacion-salarial-y-laboral-de-los-nid20112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-21T15:25:16.000Z",
    "tags": []
   },
   {
@@ -1110,174 +1275,6 @@
    "tags": [
     "BONOS"
    ]
-  },
-  {
-   "t": "A massive bearish trade just happened in the chip stocks",
-   "link": "https://www.cnbc.com/2026/11/20/a-massive-bearish-trade-just-happened-in-the-chip-stocks.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-20T19:33:31.000Z",
-   "tags": []
-  },
-  {
-   "t": "Edenor aclaró que todavía no controla Metrogas",
-   "link": "https://www.lanacion.com.ar/economia/edenor-aclaro-que-todavia-no-controla-metrogas-nid20112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-20T19:31:15.000Z",
-   "tags": [
-    "EDN"
-   ]
-  },
-  {
-   "t": "“Reclamar toda la plata”: un municipio recibió más de $3000 millones, solo gastó $18,7 millones en obras viales y los productores van a la Justicia",
-   "link": "https://www.lanacion.com.ar/economia/campo/reclamar-toda-la-plata-un-municipio-recibio-mas-de-3000-millones-solo-gasto-187-millones-en-obras-nid20112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-20T19:30:56.000Z",
-   "tags": []
-  },
-  {
-   "t": "Caputo anunció el ingreso al RIGI de “la mayor inversión de la historia argentina”",
-   "link": "https://www.infobae.com/economia/2026/11/20/caputo-anuncio-el-ingreso-al-rigi-de-la-mayor-inversion-de-la-historia-argentina/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-20T19:30:23.000Z",
-   "tags": []
-  },
-  {
-   "t": "Argentina GNL: el Gobierno aprobó el ingreso al RIGI del megaproyecto de YPF por US$51.000 millones",
-   "link": "https://www.lanacion.com.ar/economia/argentina-gnl-el-gobierno-aprobo-el-ingreso-al-rigi-del-megaproyecto-de-ypf-por-us51000-millones-nid20112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-20T19:29:53.000Z",
-   "tags": [
-    "YPFD"
-   ]
-  },
-  {
-   "t": "Cuáles son las consecuencias para la economía Argentina de un riesgo país de más de 1.000 puntos",
-   "link": "https://www.infobae.com/economia/2026/11/20/cuales-son-las-consecuencias-para-la-economia-argentina-de-un-riesgo-pais-de-mas-de-1000-puntos/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-20T19:14:58.000Z",
-   "tags": [
-    "BONOS"
-   ]
-  },
-  {
-   "t": "Plazo fijo con extra rendimiento: cómo funciona la nueva alternativa que paga hasta 50% más",
-   "link": "https://www.ambito.com/economia/plazo-fijo-extra-rendimiento-como-funciona-la-nueva-alternativa-que-paga-50-mas-n6346803",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-20T19:00:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "El Club de la Milanesa invirtió US$4,5 millones en una planta para multiplicar por 10 su producción",
-   "link": "https://www.lanacion.com.ar/economia/negocios/el-club-de-la-milanesa-invirtio-us45-millones-en-una-planta-para-multiplicar-por-10-su-produccion-nid20112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-20T18:55:20.000Z",
-   "tags": []
-  },
-  {
-   "t": "Las acciones de Anthropic se desplomaron después de su debut en la Bolsa",
-   "link": "https://www.lanacion.com.ar/economia/IA/la-resaca-las-acciones-de-anthropic-se-desplomaron-despues-de-su-debut-en-la-bolsa-nid20112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-20T18:50:14.000Z",
-   "tags": []
-  },
-  {
-   "t": "Clave para el Mercosur: el presidente de Panamá buscará que el país sea parte del bloque antes de 2030",
-   "link": "https://www.ambito.com/economia/clave-el-mercosur-el-presidente-panama-buscara-que-el-pais-sea-parte-del-bloque-antes-2030-n6347643",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-20T18:50:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Por qué Anthropic convirtió a Ashton Kutcher en multimillonario tras su salida a la Bolsa",
-   "link": "https://www.lanacion.com.ar/economia/IA/por-que-anthropic-convirtio-a-ashton-kutcher-en-multimillonario-tras-su-salida-a-la-bolsa-nid20112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-20T18:40:08.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar hoy: a cuánto cotiza este viernes 20 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-20-noviembre-n6347423",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-20T18:38:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Dólar blue hoy: a cuánto opera este viernes 20 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-viernes-20-noviembre-n6347424",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-20T18:38:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Cuánto gasta una familia del AMBA en servicios públicos",
-   "link": "https://www.lanacion.com.ar/economia/cuanto-gasta-una-familia-del-amba-en-servicios-publicos-nid20112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-20T18:30:26.000Z",
-   "tags": []
-  },
-  {
-   "t": "Fallo de la Corte Suprema sobre prepagas: qué cambia para los afiliados y cómo reclamar",
-   "link": "https://www.infobae.com/economia/2026/11/20/fallo-de-la-corte-suprema-sobre-prepagas-que-cambia-para-los-afiliados-y-como-reclamar/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-20T18:25:09.000Z",
-   "tags": []
-  },
-  {
-   "t": "Un matemático de Anthropic dice que demostró la Hipótesis de Riemann, uno de los “problemas del milenio”, ayuda de Claude",
-   "link": "https://www.lanacion.com.ar/tecnologia/un-matematico-de-anthropic-dice-que-demostro-la-hipotesis-de-riemann-un-problema-matematico-nid20112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-20T18:17:16.000Z",
-   "tags": []
-  },
-  {
-   "t": "Neuquén aprobó una ley para proteger sus tierras productivas",
-   "link": "https://www.infobae.com/economia/2026/11/20/neuquen-aprobo-una-ley-para-proteger-sus-tierras-productivas/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-20T18:13:18.000Z",
-   "tags": []
-  },
-  {
-   "t": "Advertencia de Joaquín Cottani: \"Si el Gobierno no actúa, la economía caerá en una lenta agonía\"",
-   "link": "https://www.ambito.com/economia/advertencia-joaquin-cottani-si-el-gobierno-no-actua-la-caera-una-lenta-agonia-n6347584",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-20T18:06:00.000Z",
-   "tags": [
-    "BONOS"
-   ]
-  },
-  {
-   "t": "Vuelos: por qué una ciudad argentina registró un crecimiento del 397% en pasajeros internacionales",
-   "link": "https://www.lanacion.com.ar/economia/vuelos-por-que-una-ciudad-argentina-registro-un-crecimiento-del-397-en-pasajeros-internacionales-nid20112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-20T17:57:25.000Z",
-   "tags": []
-  },
-  {
-   "t": "“Condenadas al fracaso”: Gustavo Grobocopatel reveló detalles desconocidos sobre por qué vendió su empresa hace 10 años",
-   "link": "https://www.lanacion.com.ar/economia/campo/condenadas-al-fracaso-gustavo-grobocopatel-revelo-detalles-desconocidos-de-por-que-vendio-su-empresa-nid19112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-20T17:49:49.000Z",
-   "tags": []
   }
  ]
 }
