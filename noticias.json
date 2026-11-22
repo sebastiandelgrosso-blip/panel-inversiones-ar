@@ -1,12 +1,20 @@
 {
- "actualizado": "2026-11-21T21:06:33.577Z",
+ "actualizado": "2026-11-22T01:16:56.266Z",
  "items": [
   {
-   "t": "Dólar blue hoy: a cuánto opera este sábado 21 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-sabado-21-noviembre-n6347838",
-   "src": "Ámbito",
+   "t": "My husband is happily retired at 64 and thinks I should keep working. Is he being fair?",
+   "link": "https://www.marketwatch.com/story/my-husband-is-happily-retired-at-64-and-thinks-i-should-keep-working-is-he-being-fair-325c5f38?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-22T01:15:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "La ofensiva argentina contra el proyecto petrolero en Malvinas: dos empresas desistieron de participar en Sea Lion",
+   "link": "https://www.infobae.com/economia/2026/11/22/la-ofensiva-argentina-contra-el-proyecto-petrolero-en-malvinas-dos-empresas-desistieron-de-participar-en-sea-lion/",
+   "src": "Infobae",
    "region": "AR",
-   "fecha": "2026-11-21T20:43:00.000Z",
+   "fecha": "2026-11-22T01:09:51.000Z",
    "tags": []
   },
   {
@@ -14,7 +22,109 @@
    "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-sabado-21-noviembre-n6347837",
    "src": "Ámbito",
    "region": "AR",
-   "fecha": "2026-11-21T20:43:00.000Z",
+   "fecha": "2026-11-22T00:43:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar blue hoy: a cuánto opera este sábado 21 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-sabado-21-noviembre-n6347838",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-22T00:43:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "My wife is bankrolling her family’s trips to New York and it’s draining our savings. Should I ask her to stop?",
+   "link": "https://www.marketwatch.com/story/my-wife-pays-thousands-of-dollars-for-her-family-to-visit-from-argentina-how-can-i-convince-her-to-stop-9381351c?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-22T00:03:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "La mejora de los bonos de EEUU y los rindes del trigo, dos faros para la Argentina en medio del vendaval financiero",
+   "link": "https://www.infobae.com/economia/2026/11/21/la-mejora-de-los-bonos-de-eeuu-y-los-rindes-del-trigo-dos-faros-para-la-argentina-en-medio-del-vendaval-financiero/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-21T23:32:11.000Z",
+   "tags": [
+    "BONOS"
+   ]
+  },
+  {
+   "t": "Dato positivo para el Gobierno: se desacelera la inflación en alimentos",
+   "link": "https://www.ambito.com/economia/dato-positivo-el-gobierno-se-desacelera-la-inflacion-alimentos-n6347967",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-21T23:20:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "I’m in my 40s. Should I accept a lower pension in exchange for naming my husband or child as a beneficiary?",
+   "link": "https://www.marketwatch.com/story/im-in-my-40s-should-i-accept-a-lower-pension-in-exchange-for-naming-my-husband-or-child-as-a-beneficiary-b2352059?mod=mw_rss_topstories",
+   "src": "MarketWatch",
+   "region": "US",
+   "fecha": "2026-11-21T23:05:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Caución vs. plazo fijo: qué rinde más hoy, cuánto deja cada uno y dónde conviene poner los pesos",
+   "link": "https://www.ambito.com/economia/caucion-vs-plazo-fijo-que-rinde-mas-hoy-cuanto-deja-cada-uno-y-donde-conviene-poner-los-pesos-n6347341",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-21T23:00:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Así es el megaproyecto para exportar gas que será la mayor inversión de la historia argentina",
+   "link": "https://www.infobae.com/economia/2026/11/21/asi-es-el-megaproyecto-para-exportar-gas-que-sera-la-mayor-inversion-de-la-historia-argentina/",
+   "src": "Infobae",
+   "region": "AR",
+   "fecha": "2026-11-21T22:31:52.000Z",
+   "tags": []
+  },
+  {
+   "t": "Se revierte tendencia y crece el consumo masivo con fuerte impacto del ecommerce",
+   "link": "https://www.ambito.com/economia/se-revierte-tendencia-y-crece-el-consumo-masivo-fuerte-impacto-del-ecommerce-n6347962",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-21T22:30:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Corridas bancarias: ¿qué enseña la historia?",
+   "link": "https://www.lanacion.com.ar/economia/corridas-bancarias-que-ensena-la-historia-nid21112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-21T22:00:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Por qué Wall Street está recortando su apuesta por grandes acciones argentinas",
+   "link": "https://www.iprofesional.com/finanzas/469373-por-que-wall-street-recorta-su-apuesta-por-acciones-argentinas",
+   "src": "iProfesional",
+   "region": "AR",
+   "fecha": "2026-11-21T21:30:00.000Z",
+   "tags": [
+    "SPY"
+   ]
+  },
+  {
+   "t": "Nvidia se bajó del podio de las compañías más valuadas del mundo",
+   "link": "https://www.ambito.com/finanzas/nvidia-se-del-podio-las-companias-mas-valuadas-del-mundo-n6347950",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-21T21:18:31.000Z",
+   "tags": [
+    "NVDA"
+   ]
+  },
+  {
+   "t": "Fuerte interés por SanCor: tres empresas quieren producir en plantas de la icónica láctea en quiebra",
+   "link": "https://www.lanacion.com.ar/economia/campo/fuerte-interes-por-sancor-tres-empresas-quieren-producir-en-plantas-de-la-iconica-lactea-en-quiebra-nid21112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-21T21:11:30.000Z",
    "tags": []
   },
   {
@@ -47,14 +157,6 @@
    "src": "MarketWatch",
    "region": "US",
    "fecha": "2026-11-21T19:45:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "My husband is happily retired at 64 and thinks I should keep working. Is he being fair?",
-   "link": "https://www.marketwatch.com/story/my-husband-is-happily-retired-at-64-and-thinks-i-should-keep-working-is-he-being-fair-325c5f38?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-21T19:23:00.000Z",
    "tags": []
   },
   {
@@ -158,16 +260,6 @@
    "tags": []
   },
   {
-   "t": "Micron and Sandisk stocks might look like bargains, but analysts say that’s actually a red flag",
-   "link": "https://www.marketwatch.com/story/micron-and-sandisk-stocks-might-look-like-bargains-but-analysts-say-thats-actually-a-red-flag-da1f1f5d?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-21T15:35:00.000Z",
-   "tags": [
-    "MU"
-   ]
-  },
-  {
    "t": "“Fuera de lugar”: el gobierno de Kicillof exigirá todos los meses información salarial y laboral de los empleados y la Rural pidió su revisión",
    "link": "https://www.lanacion.com.ar/economia/campo/fuera-de-lugar-el-gobierno-de-kicillof-exigira-todos-los-meses-informacion-salarial-y-laboral-de-los-nid20112026/",
    "src": "La Nación",
@@ -182,16 +274,6 @@
    "region": "AR",
    "fecha": "2026-11-21T15:24:10.000Z",
    "tags": []
-  },
-  {
-   "t": "‘Nvidia’s turmoil has me spooked’: Is it time to sell my stocks?",
-   "link": "https://www.marketwatch.com/story/nvidia-spooked-me-should-i-sell-my-stocks-or-ride-out-the-market-turmoil-560583c6?mod=mw_rss_topstories",
-   "src": "MarketWatch",
-   "region": "US",
-   "fecha": "2026-11-21T15:15:00.000Z",
-   "tags": [
-    "NVDA"
-   ]
   },
   {
    "t": "Tech outages are fueling a new doomsday economy",
@@ -1124,16 +1206,16 @@
    "tags": []
   },
   {
-   "t": "Dólar blue hoy: a cuánto opera este viernes 20 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-viernes-20-noviembre-n6347424",
+   "t": "Dólar hoy: a cuánto cotiza este viernes 20 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-20-noviembre-n6347423",
    "src": "Ámbito",
    "region": "AR",
    "fecha": "2026-11-20T18:38:00.000Z",
    "tags": []
   },
   {
-   "t": "Dólar hoy: a cuánto cotiza este viernes 20 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-viernes-20-noviembre-n6347423",
+   "t": "Dólar blue hoy: a cuánto opera este viernes 20 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-viernes-20-noviembre-n6347424",
    "src": "Ámbito",
    "region": "AR",
    "fecha": "2026-11-20T18:38:00.000Z",
@@ -1195,94 +1277,6 @@
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-20T17:49:49.000Z",
-   "tags": []
-  },
-  {
-   "t": "Javier Milei ahora habla de \"privaciones\": en qué mejoró y en qué empeoró la situación económica de los argentinos",
-   "link": "https://www.ambito.com/economia/javier-milei-ahora-habla-privaciones-que-mejoro-y-que-empeoro-la-situacion-economica-los-argentinos-n6347623",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-20T17:42:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Con un falso Elon Musk, casi estafan a 500.000 personas: prometía fortunas en criptomonedas",
-   "link": "https://www.ambito.com/finanzas/con-un-falso-elon-musk-casi-estafan-500000-personas-prometia-fortunas-criptomonedas-n6347658",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-20T17:28:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Alerta inversores: J.P. Morgan proyecta que la Fed aumentará las tasas en sus tres próximas reuniones",
-   "link": "https://www.ambito.com/finanzas/alerta-inversores-jp-morgan-proyecta-que-la-fed-aumentara-las-tasas-sus-tres-proximas-reuniones-n6347653",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-20T17:25:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Por qué cae la acción de Anthropic: qué muestran otras salidas a bolsa históricas sobre su futuro en Wall Street",
-   "link": "https://www.infobae.com/economia/2026/11/20/por-que-cae-la-accion-de-anthropic-que-muestran-otras-salidas-a-bolsa-historicas-sobre-su-futuro-en-wall-street/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-20T17:23:41.000Z",
-   "tags": [
-    "SPY"
-   ]
-  },
-  {
-   "t": "Tras la explosión en Lanús que dejó dos muertos, Edenor aclaró que todavía no tomó el control de MetroGAS",
-   "link": "https://www.infobae.com/economia/2026/11/20/tras-la-explosion-en-lanus-que-dejo-dos-muertos-edenor-aclaro-que-todavia-no-tomo-el-control-de-metrogas/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-20T17:13:13.000Z",
-   "tags": [
-    "EDN"
-   ]
-  },
-  {
-   "t": "El riesgo país quebró la barrera de los 1.000 puntos y la city alerta sobre dudas por el plan financiero y político",
-   "link": "https://www.ambito.com/finanzas/el-riesgo-pais-supera-los-1000-puntos-y-la-city-ya-alerta-las-dudas-el-plan-financiero-y-el-riesgo-politico-n6347605",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-20T17:06:00.000Z",
-   "tags": [
-    "BONOS"
-   ]
-  },
-  {
-   "t": "Data center construction costs soar 13% in 2026",
-   "link": "https://www.cnbc.com/2026/11/20/data-center-construction-costs-soar-13-percent-in-2026.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-20T16:52:08.000Z",
-   "tags": []
-  },
-  {
-   "t": "Moody’s ve mejoras para las empresas argentinas, pero advierte por los riesgos de 2027",
-   "link": "https://www.iprofesional.com/finanzas/469676-moodys-preve-una-mejora-del-credito-corporativo-en-argentina-pero-alerta-por-los-riesgos",
-   "src": "iProfesional",
-   "region": "AR",
-   "fecha": "2026-11-20T16:33:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Cuánto cuestan los autos eléctricos Tesla en la Argentina vs otros países de la región, Estados Unidos, China y Europa",
-   "link": "https://www.infobae.com/economia/2026/11/20/cuanto-cuestan-los-autos-electricos-tesla-en-la-argentina-vs-otros-paises-de-la-region-estados-unidos-china-y-europa/",
-   "src": "Infobae",
-   "region": "AR",
-   "fecha": "2026-11-20T16:32:14.000Z",
-   "tags": [
-    "TSLA"
-   ]
-  },
-  {
-   "t": "Tardaron diez años en lograrlo: el desarrollo argentino que convirtió la mozzarella en chips",
-   "link": "https://www.lanacion.com.ar/economia/campo/tardaron-diez-anos-en-lograrlo-el-desarrollo-argentino-que-convirtio-la-mozzarella-en-chips-nid20112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-20T16:20:31.000Z",
    "tags": []
   }
  ]
