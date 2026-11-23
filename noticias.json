@@ -1,20 +1,76 @@
 {
- "actualizado": "2026-11-22T22:27:27.440Z",
+ "actualizado": "2026-11-23T03:05:17.443Z",
  "items": [
-  {
-   "t": "Dólar hoy: a cuánto cotiza este domingo 22 de noviembre",
-   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-domingo-22-noviembre-n6348002",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-22T22:19:00.000Z",
-   "tags": []
-  },
   {
    "t": "Dólar blue hoy: a cuánto opera este domingo 22 de noviembre",
    "link": "https://www.ambito.com/finanzas/dolar-blue-hoy-cuanto-opera-este-domingo-22-noviembre-n6348003",
    "src": "Ámbito",
    "region": "AR",
-   "fecha": "2026-11-22T22:19:00.000Z",
+   "fecha": "2026-11-23T02:50:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "Dólar hoy: a cuánto cotiza este domingo 22 de noviembre",
+   "link": "https://www.ambito.com/finanzas/dolar-hoy-cuanto-cotiza-este-domingo-22-noviembre-n6348002",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-23T02:50:00.000Z",
+   "tags": []
+  },
+  {
+   "t": "De la Confederación Diaguita-Calchaquí: Chalimín, el líder indígena que defendió la tierra y la libertad",
+   "link": "https://www.lanacion.com.ar/economia/campo/de-la-confederacion-diaguita-calchaqui-chalimin-el-lider-indigena-que-defendio-la-tierra-y-la-nid22112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-23T02:25:17.000Z",
+   "tags": []
+  },
+  {
+   "t": "3 big things we're watching in the market this Thanksgiving week",
+   "link": "https://www.cnbc.com/investingclub/2026/11/22/3-big-things-were-watching-in-the-market-this-thanksgiving-week.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-23T00:42:54.000Z",
+   "tags": []
+  },
+  {
+   "t": "Let's weigh the cons — and pros — of this brutal market to find a way forward",
+   "link": "https://www.cnbc.com/investingclub/2026/11/22/lets-weigh-the-cons-and-pros-of-this-market-to-find-a-way-forward.html",
+   "src": "CNBC",
+   "region": "US",
+   "fecha": "2026-11-22T23:49:44.000Z",
+   "tags": []
+  },
+  {
+   "t": "Alerta inversores: el dólar golpea al carry trade, el Gobierno se aferra a las \"anclas\" y los activos sufren el \"fly to quality\"",
+   "link": "https://www.ambito.com/finanzas/alerta-inversores-el-dolar-golpea-al-carry-trade-el-gobierno-se-aferra-las-anclas-y-los-activos-sufren-el-fly-to-quality-n6348054",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-22T23:41:53.000Z",
+   "tags": []
+  },
+  {
+   "t": "CABA tiene una carga tributaria menor que el resto del país: cuánto impacta en los precios",
+   "link": "https://www.ambito.com/economia/caba-tiene-una-carga-tributaria-menor-que-el-resto-del-pais-cuanto-impacta-los-precios-n6348123",
+   "src": "Ámbito",
+   "region": "AR",
+   "fecha": "2026-11-22T22:34:25.000Z",
+   "tags": []
+  },
+  {
+   "t": "Fuerte preocupación empresaria por una medida de Kicillof que obligará a informar sueldos y jornadas laborales",
+   "link": "https://www.lanacion.com.ar/economia/fuerte-preocupacion-empresaria-por-una-medida-de-kicillof-que-obligara-a-informar-sueldos-y-jornadas-nid22112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-22T22:29:54.000Z",
+   "tags": []
+  },
+  {
+   "t": "Chalimín, el líder indígena que defendió la tierra y la libertad",
+   "link": "https://www.lanacion.com.ar/economia/campo/chalimin-el-lider-indigena-que-defendio-la-tierra-y-el-derecho-la-libertad-nid21112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-22T22:29:27.000Z",
    "tags": []
   },
   {
@@ -249,7 +305,7 @@
   },
   {
    "t": "La tormenta global desnuda la fragilidad argentina: ¿hasta cuándo seguirá la sangría y qué señales espera la city?",
-   "link": "https://www.ambito.com/finanzas/dolar/la-tormenta-global-desnuda-la-fragilidad-argentina-hasta-cuando-seguira-la-sangria-y-que-senales-espera-la-city-n6348063",
+   "link": "https://www.ambito.com/finanzas/la-tormenta-global-desnuda-la-fragilidad-argentina-hasta-cuando-seguira-la-sangria-y-que-senales-espera-la-city-n6348063",
    "src": "Ámbito",
    "region": "AR",
    "fecha": "2026-11-22T15:10:00.000Z",
@@ -617,6 +673,14 @@
    "tags": []
   },
   {
+   "t": "Del Rubik al cerebro ampliado con la IA: el ascenso de una estrella de bajo perfil en la revolución tecnológica del momento",
+   "link": "https://www.lanacion.com.ar/economia/del-rubik-al-cerebro-ampliado-con-la-ia-el-ascenso-de-una-estrella-de-bajo-perfil-en-la-revolucion-nid22112026/",
+   "src": "La Nación",
+   "region": "AR",
+   "fecha": "2026-11-22T03:01:00.000Z",
+   "tags": []
+  },
+  {
    "t": "Qué hacer para que la economía esté al servicio del hombre",
    "link": "https://www.lanacion.com.ar/economia/que-hacer-para-que-la-economia-este-al-servicio-del-hombre-nid22112026/",
    "src": "La Nación",
@@ -633,12 +697,14 @@
    "tags": []
   },
   {
-   "t": "Del Rubik al cerebro ampliado con la IA: el ascenso de una estrella de bajo perfil en la revolución tecnológica del momento",
-   "link": "https://www.lanacion.com.ar/economia/del-rubik-al-cerebro-ampliado-con-la-ia-el-ascenso-de-una-estrella-de-bajo-perfil-en-la-revolucion-nid22112026/",
+   "t": "Se despertó el dólar en medio de la volatilidad mundial",
+   "link": "https://www.lanacion.com.ar/economia/se-desperto-el-dolar-en-medio-de-la-volatilidad-mundial-nid22112026/",
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-22T03:01:00.000Z",
-   "tags": []
+   "tags": [
+    "BONOS"
+   ]
   },
   {
    "t": "Impuesto de sellos: llegó la hora de terminar con esta reliquia colonial",
@@ -649,14 +715,12 @@
    "tags": []
   },
   {
-   "t": "Se despertó el dólar en medio de la volatilidad mundial",
-   "link": "https://www.lanacion.com.ar/economia/se-desperto-el-dolar-en-medio-de-la-volatilidad-mundial-nid22112026/",
+   "t": "Una crisis de confianza que requiere cambios profundos",
+   "link": "https://www.lanacion.com.ar/economia/una-crisis-de-confianza-que-requiere-cambios-profundos-nid22112026/",
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-22T03:01:00.000Z",
-   "tags": [
-    "BONOS"
-   ]
+   "tags": []
   },
   {
    "t": "Claudio Porcel: “La Argentina no puede tener déficit fiscal, porque no le cree nadie, y al otro día hay una crisis”",
@@ -675,16 +739,8 @@
    "tags": []
   },
   {
-   "t": "Una crisis de confianza que requiere cambios profundos",
-   "link": "https://www.lanacion.com.ar/economia/una-crisis-de-confianza-que-requiere-cambios-profundos-nid22112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-22T03:01:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Gustavo Neffa: \"Es posible un dólar mayorista a $1.700 en diciembre, las cosas cambiaron\"",
-   "link": "https://www.ambito.com/economia/gustavo-neffa-es-posible-un-dolar-mayorista-1700-diciembre-las-cosas-cambiaron-n6347925",
+   "t": "La presión del \"efecto caipirinha\" y el salto del riesgo país profundizan una disyuntiva clave para el Gobierno",
+   "link": "https://www.ambito.com/economia/la-presion-del-efecto-caipirinha-y-el-salto-del-riesgo-pais-profundizan-una-disyuntiva-clave-el-gobierno-n6347884",
    "src": "Ámbito",
    "region": "AR",
    "fecha": "2026-11-22T03:00:00.000Z",
@@ -693,8 +749,8 @@
    ]
   },
   {
-   "t": "La presión del \"efecto caipirinha\" y el salto del riesgo país profundizan una disyuntiva clave para el Gobierno",
-   "link": "https://www.ambito.com/economia/la-presion-del-efecto-caipirinha-y-el-salto-del-riesgo-pais-profundizan-una-disyuntiva-clave-el-gobierno-n6347884",
+   "t": "Gustavo Neffa: \"Es posible un dólar mayorista a $1.700 en diciembre, las cosas cambiaron\"",
+   "link": "https://www.ambito.com/economia/gustavo-neffa-es-posible-un-dolar-mayorista-1700-diciembre-las-cosas-cambiaron-n6347925",
    "src": "Ámbito",
    "region": "AR",
    "fecha": "2026-11-22T03:00:00.000Z",
@@ -935,14 +991,6 @@
    ]
   },
   {
-   "t": "Why Anthropic's blockbuster IPO couldn't escape the stock market correction",
-   "link": "https://www.cnbc.com/2026/11/20/anthropic-ipo-ai-stock-market-selloff.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-21T14:07:53.000Z",
-   "tags": []
-  },
-  {
    "t": "An ‘illusion of glitz and glamour’: Inside California’s modern-day gold rush, where miners can bring in millions",
    "link": "https://www.cnbc.com/make-it/2026/11/21/california-mining-modern-gold-rush.html",
    "src": "CNBC",
@@ -985,14 +1033,6 @@
    "tags": [
     "BRKB"
    ]
-  },
-  {
-   "t": "An early breakdown in the polar vortex is threatening already depleted gas stocks",
-   "link": "https://www.cnbc.com/2026/11/21/polar-vortex-europe-gas-prices.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-21T12:47:25.000Z",
-   "tags": []
   },
   {
    "t": "International first class is over for U.S. airlines. Enter the mega business-class cabin",
@@ -1129,24 +1169,8 @@
    "tags": []
   },
   {
-   "t": "Chalimín, el líder indígena que defendió la tierra y el derecho la libertad",
-   "link": "https://www.lanacion.com.ar/economia/campo/chalimin-el-lider-indigena-que-defendio-la-tierra-y-el-derecho-la-libertad-nid21112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-21T08:00:00.000Z",
-   "tags": []
-  },
-  {
    "t": "How China is using summits to expand its global influence",
    "link": "https://www.cnbc.com/2026/11/21/china-xi-trump-putin-global-diplomacy-shenzhen.html",
-   "src": "CNBC",
-   "region": "US",
-   "fecha": "2026-11-21T06:00:02.000Z",
-   "tags": []
-  },
-  {
-   "t": "Europe's cyber weak spot is the everyday businesses nobody thought to protect",
-   "link": "https://www.cnbc.com/2026/11/21/cyber-attacks-fridges-cybersecurity.html",
    "src": "CNBC",
    "region": "US",
    "fecha": "2026-11-21T06:00:02.000Z",
@@ -1231,30 +1255,6 @@
    "src": "La Nación",
    "region": "AR",
    "fecha": "2026-11-21T03:08:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Ulrike Langer: “En cinco años, todos los medios tendrán que atender a un segundo tipo de lector: los agentes de IA",
-   "link": "https://www.lanacion.com.ar/economia/negocios/ulrike-langer-en-cinco-anos-todos-los-medios-tendran-que-atender-a-un-segundo-tipo-de-lector-los-nid21112026/",
-   "src": "La Nación",
-   "region": "AR",
-   "fecha": "2026-11-21T03:01:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Ciberseguridad en la era de la IA: cómo se adaptan las empresas y dónde están las oportunidades de inversión",
-   "link": "https://www.ambito.com/economia/ciberseguridad-la-era-la-ia-como-se-adaptan-las-empresas-y-donde-estan-las-oportunidades-inversion-n6347298",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-21T03:00:00.000Z",
-   "tags": []
-  },
-  {
-   "t": "Deuda, reservas y dolarización: las tres alertas del mercado sobre el plan económico de Javier Milei para 2027",
-   "link": "https://www.ambito.com/economia/deuda-reservas-y-dolarizacion-las-tres-alertas-del-mercado-el-plan-economico-javier-milei-2027-n6347745",
-   "src": "Ámbito",
-   "region": "AR",
-   "fecha": "2026-11-20T23:35:00.000Z",
    "tags": []
   }
  ]
